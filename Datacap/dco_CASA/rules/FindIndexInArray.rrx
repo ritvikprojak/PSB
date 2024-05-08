@@ -1,0 +1,75 @@
+<?xml version='1.0' ?>
+<rrx namespace="FindIndexOfObject" v="8.0.0"><i ref="rrunner.rrx"/><g>
+<![CDATA[
+'*********************************
+'TIMETOACT group (C) 2019
+' Version
+'  1.0.0 - 02.09.2019 - Benjamin Just
+'
+'*********************************
+]]></g>
+
+<f name="FindIndexOfObject" access="public" qi="Uses the OrderString to sort all pages in the required order">
+<p name="varSource"/>
+<p name="varTarget"/>
+<ap>
+Find Index of Variable in Array<br/>
+</ap>
+<h>
+Find Index of Variable in Array<br/>
+<e>
+FindIndexOfObject("Bestellung,Frontansicht,Grundriss,Perspektive"<br/>
+</e>
+Copyright (c) 202 by Akshay Duduskar
+</h>
+<lvl>
+Batch level
+</lvl>
+<ret>
+<br/>
+<b>True</b>
+</ret>
+<see>
+<br/>
+<scr></scr>
+</see>
+<g>
+<![CDATA[
+'Your VBScript code goes here.
+
+Dim FieldAr
+Dim FieldArraychar
+Dim FieldIndex
+Dim SearchObject
+Dim i
+dim j
+dim l
+
+
+FieldArraychar=MetaWord(varTarget)
+SearchObject=MetaWord(varSource)
+FieldAr = Split(FieldArraychar,",")
+
+
+Writelog("SearchObject " & SearchObject)
+Writelog("FieldArraychar " & FieldArraychar)
+
+
+For j = 0 to uBound(FieldAr) step 1
+	Writelog("Fieldart: "  & FieldAr(j))
+	
+	For i = 0 to Pagecount step 1 
+	Writelog("DokArt: " & CurrentObj.GetChild(i).Type)
+	If CurrentObj.GetChild(i).Type = FieldAr(j) Then
+				
+				Writelog("Move: " & CurrentObj.GetChild(i).Type)
+				Call CurrentObj.MoveChild(i ,l)
+				l = l+1
+			End if
+	next
+
+next
+]]>
+</g>
+</f>
+</rrx>

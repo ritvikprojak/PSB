@@ -1,0 +1,26 @@
+{
+	
+	// fields (includes batch-level fields)
+	"field.RESOLUTION_NUMBER":"RESOLUTION NUMBER",
+	"field.SANCTIONING_AUTHORITY":"SANCTIONING AUTHORITY",
+	"field.TITLE":"NAME OF FILE/TOPIC/ACCOUNT",
+	"field.FY":"FINANCIAL YEAR",
+	
+
+	// shortcuts
+	"shortcut.NAVVScan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyC":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVScan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyC":"Classify Document",
+	"task.NAVMaker":"Document Details",								
+	"task.NAVChecker":"Checker",
+	"task.NAVExport":"Export"
+}

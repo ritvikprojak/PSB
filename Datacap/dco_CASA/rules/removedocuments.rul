@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="44" name="RemoveDocuments" ver="1" modder="admin.0606" qi="">
+	<rule name="Rule1" id="1" dcomap.open="B" qi="">
+		<func name="Function1">
+			<a name="RemoveDocumentStructure" ns="com:Datacap.Libraries.ApplicationObjects.Actions"/>
+		</func>
+	</rule>
+</ruleset>

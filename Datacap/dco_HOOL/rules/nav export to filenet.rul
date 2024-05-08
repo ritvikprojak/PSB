@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="69" name="NAV Export to Filenet" ver="16" modder="dmstest10.1" qi="" dt="11/08/23 16:31:22.947 ">
+	<rule name="Batch Open Rule" id="1" dcomap.open="B" qi="">
+		<func name="Function1" disabled="false" qi="">
+			<a name="FNP8_SetURL" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@APPVAR(values/gen/FileNetURL)" name="StrParam"/>
+			</a>
+			<a name="FNP8_Login" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@APPVAR(values/gen/FileNetUserID),@APPVAR(values/adv/FileNetPassword)" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetLocale" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="en_US" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetTargetClassID" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ObjectStore" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetTargetObjectID" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="HOOL" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetDestinationFolder" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Unfiled Documents" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetRetry" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="2" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetTimeout" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="1800000" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="QUARTERLY REPORT Details" id="2" dcomap.open="D=QUARTERLY REPORT DOC" qi="">
+		<func name="QUARTERLY REPORT Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="QUARTERLYREPORT" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FINANCIALYEAR,@D.P\FINANCIAL YEAR" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="QUARTER,@D.P\QUARTER" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="ANNUAL REPORT" id="3" qi="" dcomap.open="D=ANNUAL REPORT DOC">
+		<func name="RFP Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ANNUALREPORT" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FINANCIALYEAR,@D.P\FINANCIAL YEAR" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="REGION,@D.P\REGION" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="HINDI WORKSHOP" id="4" qi="" dcomap.open="D=HINDI WORKSHOP DOC">
+		<func name="RFP Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="HINDIWORKSHOP" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="FINANCIALYEAR,@D.P\FINANCIAL YEAR_HW"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="QUARTER,@D.P\QUARTER" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="LIBRARY" id="5" qi="" dcomap.open="D=LIBRARY DOC">
+		<func name="RFP Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LIBRARY" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FINANCIALYEAR,@D.P\FINANCIAL YEAR" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="INSPECTION" id="6" qi="" dcomap.open="D=INSPECTION DOC">
+		<func name="RFP Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="INSPECTION" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FINANCIALYEAR,@D.P\FINANCIAL YEAR" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="BOARD NOTES" id="7" qi="" dcomap.open="D=BOARD NOTES DOC">
+		<func name="RFP Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BOARDNOTES" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SUBJECT,@D.P\SUBJECT" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DATE,@D.P\DATE,DateTime" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

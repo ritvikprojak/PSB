@@ -1,0 +1,23 @@
+<?xml-stylesheet type="text/xsl" href="..\..\ProgramSet\set.xsl"?>
+<S lang="en-US">
+  <P n="BatchProcessing" tip="" title="Batch processing">
+    <V label="Page file" n="TaskDCOFile" tip="Enter the name of the page file that will be created during this task. &#xA;Use taskname.xml to automatically assign the name of the task to the page file." type="text">taskname.xml</V>
+  </P>
+  <P n="Rulerunner" tip="" title="Rulerunner settings">
+    <V label="Main task profile" n="TProfile" tip="Enter the name of the task profile to run when users click the Submit button." type="text">NAVPageID</V>
+    <P n="RRSLog" tip="" title="Rulerunner service log settings">
+      <V label="Rulerunner service log" n="ServiceLog" tip="Enter the setting that defines whether to create a Rulerunner service (RRS) log file and &#xA;how much detail the task should write to the log file. The log file name includes the task profile &#xA;name (taskname_rrs.log). Enter one of the following values: &#xA;0  or 1 - No log file is created.&#xA;2 - Log file with action logging is created, but no action parameters are logged.&#xA;3 or 4 - Log file with action logging is created, and action parameters are logged.&#xA;5 or higher - Log file with action logging is created and complete DCO navigation is logged.&#xA;In most situations, a setting of 3 provides enough information to help you debug rule-related problems." type="text">3</V>
+      <V label="Batch log" n="BatchLog" tip="Leave this field blank." type="text" />
+      <V label="Action log level" n="ActionLogLevel" tip="Leave this field blank." type="text" />
+      <V label="Flush buffer" n="LogReflush" tip="Select this check box if you want to write each processing message to the Rulerunner log file and to clear the buffer after each write operation. This method ensures that all messages are captured but reduces performance. Select this option only if you are troubleshooting.&#xA;" type="checkbox">0</V>
+    </P>
+    <V label="RRS Type" n="RRSType" tip="Switch between LocalRRS and HttpWRRS execution" type="text">LocalRRS</V>
+    <V label="WRRS URL" n="HttpWRRS" tip="Specify the HTTP URL path so that WRRS can be run." type="text">http://127.0.0.1/RRS/</V>
+  </P>
+  <P n="DcDesktop" tip="" title="Datacap Desktop">
+    <G n="Desktop-Panels" tip="Key-value pairs to associate DCO Type to dll.class Panel" title="Bind DCO type to panel">
+      <V label="" n="Page_TYPE" tip="Assocciation of DCO Type to Panel (.cs) class name" type="text">Panel name</V>
+      <V label="" n="Default" tip="Assocciation of DCO Type to Panel (.cs) class name" type="text">dcDTlib.rulerunner:B</V>
+    </G>
+  </P>
+</S>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="3" name="Fixup" ver="1" modder="admin.1">
+		<rule name="Fixup Rules" id="1">
+			<func name="UnIdentified Pages (other)">
+				<a name="rrSet" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions">
+					<p name="Source" type="string"/>
+					<p name="Target" type="string"/>
+				</a>
+				<a name="HasDCOChildOfType" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="">
+					<p name="Type"/>
+				</a>
+				<a name="rrSet" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions">
+					<p name="Source" type="string"/>
+					<p name="Target" type="string"/>
+				</a>
+				<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi=""/>
+			</func>
+			<func name="Check batch integrity function">
+				<a name="CheckAllIntegrity" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Batch Route To Fixup function">
+				<a name="Task_NumberOfSplits" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1" name="nNumOfSplits"/>
+				</a>
+				<a name="Task_RaiseCondition" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0,0" name="strParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="3" name="Fixup" ver="2" modder="admin.1" dt="01/11/23 12:34:15.40 ">
+		<rule name="Fixup Rules" id="1" dcomap.open="B" qi="">
+			<func name="UnIdentified Pages (other)">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="No"/>
+					<p name="Target" type="string" v="@B.NeedsVerify"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="HasDCOChildOfType">
+					<p name="Type" v="Other"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="Yes"/>
+					<p name="Target" type="string" v="@B.NeedsVerify"/>
+				</a>
+				<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi=""/>
+			</func>
+			<func name="Check batch integrity function">
+				<a name="CheckAllIntegrity" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompareNot">
+					<p name="Text1" type="string" v="Yes"/>
+					<p name="Text2" type="string" v="@B.NeedsVerify"/>
+				</a>
+			</func>
+			<func name="Batch Route To Fixup function">
+				<a name="Task_NumberOfSplits" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1" name="nNumOfSplits"/>
+				</a>
+				<a name="Task_RaiseCondition" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="0,0" name="strParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

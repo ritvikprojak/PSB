@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="48" name="NAV Assign Doc Type" ver="1" modder="admin.1" qi="">
+		<rule name="Assign Doc Type Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="48" name="NAV Assign Doc Type" ver="2" modder="admin.1" qi="" dt="03/29/23 12:27:53.886 ">
+		<rule name="NAV Assign Doc Type Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="48" name="NAV Assign Doc Type" ver="3" modder="admin.1" qi="" dt="04/04/23 13:41:57.786 ">
+		<rule name="NAV Assign Doc Type Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Assign Trail Page Doc Type Rule" id="2" dcomap.open="P=TrailPage" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.MainPage"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="48" name="NAV Assign Doc Type" ver="4" modder="admin.1" qi="" dt="04/04/23 13:46:26.432 ">
+		<rule name="NAV Assign Doc Type Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@B.MainPage"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Assign Trail Page Doc Type Rule" id="2" dcomap.open="P=TrailPage" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.MainPage"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="48" name="NAV Assign Doc Type" ver="5" modder="admin.1" qi="" dt="04/27/23 13:18:32.841 ">
+		<rule name="NAV Assign Doc Type Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="48" name="NAV Assign Doc Type" ver="6" modder="dmstest10.1" qi="" dt="05/09/23 16:54:22.874 ">
+		<rule name="NAV Assign Doc Type Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@B.MainPage"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Assign Trail Page Doc Type Rule" id="2" dcomap.open="P=TrailPage" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.MainPage"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

@@ -1,0 +1,284 @@
+<?xml-stylesheet type="text/xsl" href="..\..\dco.xsl"?>
+<S>
+	<B type="ZOHUMANRESOURCE">
+		<V n="ID">0</V>
+		<V n="TYPE">Batch</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Other" pos="0" min="0" max="0"/>
+		<D type="Document" pos="0" min="0" max="0"/>
+		<D type="PERSONAL FILE DOC" pos="0" min="0" max="0"/>
+		<D type="OFFICE ORDER DOC" pos="0" min="0" max="0"/>
+	</B>
+	<D type="Document">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Page" pos="1" min="1" max="0"/>
+		<P type="TrailPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="PERSONAL FILE DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="PERSONAL FILE" pos="1" min="1" max="1"/>
+		<P type="PERSONAL FILE_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="OFFICE ORDER DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="OFFICE ORDER" pos="1" min="1" max="1"/>
+		<P type="OFFICE ORDER_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<P type="Other">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="Page">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Document_Type" pos="0" min="0" max="0"/>
+	</P>
+	<P type="TrailPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="PERSONAL FILE">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="PFCODE" pos="0" min="0" max="0"/>
+		<F type="CURRENT POSTING" pos="0" min="0" max="0"/>
+		<F type="FATHER/SPOUSE NAME" pos="0" min="0" max="0"/>
+		<F type="BRANCH CODE" pos="0" min="0" max="0"/>
+		<F type="NAME" pos="0" min="0" max="0"/>
+		<F type="DATE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="PERSONAL FILE_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="OFFICE ORDER">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DATE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="OFFICE ORDER_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<F type="Frequency_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="RecogType">4</V>
+		<F type="Frequency_OMR1_OMR1" pos="0" min="0" max="0"/>
+	</F>
+	<F type="Signature_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Frequency_OMR1_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Field11">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document_Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:NAV Document_Type</V>
+	</F>
+	<F type="NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:NAME</V>
+	</F>
+	<F type="DATE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="DataType">3</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+	</F>
+	<F type="PFCODE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CURRENT POSTING">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="FATHER/SPOUSE NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="BRANCH CODE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<DICT n="P:NAME">
+		<W v="Through IBPS">Through IBPS</W>
+		<W v="Compassionate ground">Compassionate ground</W>
+	</DICT>
+</S>

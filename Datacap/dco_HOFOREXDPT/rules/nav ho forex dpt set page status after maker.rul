@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="65" name="NAV HO FOREX DPT Set Page Status after maker" ver="3" modder="admin.1" qi="" dt="07/28/23 16:09:58.600 ">
+	<rule name="Set page status rule" id="1" dcomap.open="P=SWIFT TENDER RFP;P=SWIFT TENDER AGGREMENT/SLA/BG;P=SWIFT NOTES;P=SWIFT AUDIT;P=SWIFT REPORTING;P=SWIFT DATA;P=SWIFT VENDOR RELATED DATA;P=SWIFT PAYMENT NOTE;P=COMPLIANCE MANUAL;P=COMPLIANCE NOTE;P=COMPLIANCE AUDIT;P=AB EXPORT NOTE;P=BACKUP REPORT;P=EDPMS NOTE;P=RECONCILIATION NOTE" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="ReFormat Date" id="2" qi="" dcomap.open="F=DATE;F=BID SUBMISSION DATE;F=BID QUERY DATE;F=RA DATE;F=RA NOTE DATE;F=SELECTED BIDDERS OFFICE NOTE DATE;F=PO DATE;F=ADDENDUM DATE_SWIFT TENDER RFP;F=BG DATE;F=SLA DATE;F=AUDIT DATE_SWIFT AUDIT;F=REPORTING DATE;F=LAST DATE FOR REPORTING;F=DATA RECEIVING DATE;F=REVISED DATA RECEIVED ON;F=DATE_PAYMENT NOTE">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="en-IN"/>
+				<p name="Target" type="string" v="@F.hr_locale"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat">
+				<p name="NewDateFormat" type="string" v="yyyy/mm/dd"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

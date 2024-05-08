@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="104" name="get file name" ver="1" modder="dmstest10.1" qi="">
+		<rule name="SplitFileName Rule1" id="1" dcomap.open="P=Other" qi="">
+			<func name="Function1">
+				<a ns="rrunner" name="rr_Get">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@B.FNAME"/>
+				</a>
+				<a ns="rrunner" name="rrSet" qi="" disabled="y">
+					<p name="varSource" v="@P.FFILENAME"/>
+					<p name="varTarget" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="104" name="get file name" ver="2" modder="dmstest10.1" qi="" dt="09/21/23 10:52:32.717 ">
+		<rule name="SplitFileName Rule1" id="1" dcomap.open="P=Other" qi="">
+			<func name="Function1">
+				<a ns="rrunner" name="rr_Get" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@P.FNAME"/>
+				</a>
+				<a ns="rrunner" name="rrSet" qi="">
+					<p name="varSource" v="@P.FFILENAME"/>
+					<p name="varTarget" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

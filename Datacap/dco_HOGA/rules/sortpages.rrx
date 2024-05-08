@@ -1,0 +1,69 @@
+<?xml version='1.0' ?>
+<rrx namespace="SortPages" v="8.0.0"><i ref="rrunner.rrx"/><g>
+<![CDATA[
+'*********************************
+'TIMETOACT group (C) 2019
+' Version
+'  1.0.0 - 02.09.2019 - Benjamin Just
+'
+'*********************************
+]]></g>
+
+<f name="SortPages" access="public" qi="Uses the OrderString to sort all pages in the required order">
+<p name="OrderString"/>
+<ap>
+Komma separierte Liste der Sortierreihenfolge der Seiten<br/>
+</ap>
+<h>
+z.B: Bestellung,Frontansicht,Grundriss,Perspektive<br/>
+<e>
+SortPages("Bestellung,Frontansicht,Grundriss,Perspektive"<br/>
+</e>
+Copyright (c) 2019 by Benjamin Just - TIMETOACT
+</h>
+<lvl>
+Batch level
+</lvl>
+<ret>
+<br/>
+<b>True</b>
+</ret>
+<see>
+<br/>
+<scr></scr>
+</see>
+<g>
+<![CDATA[
+'Your VBScript code goes here.
+
+Dim FieldAr
+Dim FieldIndex
+Dim i
+dim j
+dim l
+FieldAr = Split(OrderString,",")
+
+Dim Pagecount
+
+Pagecount = CurrentObj.NumOfChildren
+Pagecount = Pagecount - 1
+
+Writelog("Pagecount " & Pagecount)
+For j = 0 to uBound(FieldAr) step 1
+	Writelog("Fieldart: "  & FieldAr(j))
+	
+	For i = 0 to Pagecount step 1 
+	Writelog("DokArt: " & CurrentObj.GetChild(i).Type)
+	If CurrentObj.GetChild(i).Type = FieldAr(j) Then
+				
+				Writelog("Move: " & CurrentObj.GetChild(i).Type)
+				Call CurrentObj.MoveChild(i ,l)
+				l = l+1
+			End if
+	next
+
+next
+]]>
+</g>
+</f>
+</rrx>

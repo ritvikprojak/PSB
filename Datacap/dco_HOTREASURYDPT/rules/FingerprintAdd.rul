@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset name="FingerprintAdd" id="8" ver="2" modder="admin.2" dt="10/06/14 08:17:17.836 ">
+  <rule name="FingerprintAdd" id="1" dcomap.open="P=Other" qi="">
+    <func name="FingeprintAdd: Other Function 1">
+      <a name="AnalyzeImage" ns="net:SharedRecognitionTools.Actions" qi="" />
+    </func>
+  </rule>
+</ruleset>

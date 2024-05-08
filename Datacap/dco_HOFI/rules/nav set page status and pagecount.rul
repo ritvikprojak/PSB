@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="59" name="NAV Set Page Status And PageCount" ver="8" modder="dmstest10.1" qi="" dt="03/07/24 12:19:57.942 ">
+	<rule name="Set page status rule1" id="1" dcomap.open="P=ADDENDUM_CORRIGENDUM;P=AUDITS;P=LEGAL_COMMERCIAL;P=OFFICE NOTES;P=RECONCILIATION FILES;P=VENDOR TDS;P=TENDER;P=GST;P=CORRESPONDANCE;P=SANCTION;P=APY Death Claim Form;P=APY Enrollment Form;P=APY KYC;P=APY SUPPORTING DOCUMENT;P=PMJJBY DEATH CLAIM FORM;P=PMJJBY Enrollment Form;P=PMJJBY KYC;P=PMJJBY SUPPORTING DOCUMENTS;P=PMSBY Death Claim form;P=PMSBY Enrollment Form;P=PMSBY KYC;P=PMSBY SUPPORTING DOCUMENTS;P=MISCELLANEOUS" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Set page status rule1 - TrailingPages" id="3" dcomap.open="P=ADDENDUM_CORRIGENDUM_TrailingPage;P=OFFICE NOTES_TrailingPage;P=LEGAL_COMMERCIAL_TrailingPage;P=RECONCILIATION FILES_TrailingPage;P=AUDITS_TrailingPage;P=GST_TrailingPage;P=CORRESPONDANCE_TrailingPage;P=VENDOR TDS_TrailingPage;P=SANCTION_TrailingPage;P=TENDER_TrailingPage;P=APY Death Claim Form_TrailingPage;P=APY Enrollment Form_TrailingPage;P=APY KYC_TrailingPage;P=APY SUPPORTING DOCUMENT_TrailingPage;P=MISCELLANEOUS_TrailingPage;P=PMJJBY DEATH CLAIM FORM_TrailingPage;P=PMJJBY Enrollment Form_TrailingPage;P=PMJJBY KYC_TrailingPage;P=PMJJBY SUPPORTING DOCUMENTS_TrailingPage;P=PMSBY Death Claim form_TrailingPage;P=PMSBY Enrollment Form_TrailingPage;P=PMSBY KYC_TrailingPage;P=PMSBY SUPPORTING DOCUMENTS_TrailingPage" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Pages Count" id="2" dcomap.open="B">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+				<p name="Target" type="string" v="@B.PagesCount"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="94" name="(P) NAV PageIdByBarcode" ver="4" modder="admin.1" qi="" dt="05/08/23 11:17:33.91 ">
+  <rule name="(B) IdentifyPages" id="1" dcomap.open="B" qi="">
+    <func name="Check For Settings File Value Location" qi="">
+      <a name="rrSet" ns="rrunner" qi="">
+        <p name="varSource" v="@APPVAR(values/gen/SettingsFile)" />
+        <p name="varTarget" v="@B.Settings File" />
+      </a>
+      <a name="rrCompare" ns="rrunner" qi="">
+        <p name="object1" v="@B.Settings File" />
+        <p name="object2" v="@EMPTY" />
+      </a>
+      <a name="rrSet" ns="rrunner" qi="If the settings file is not set, then get the value from the legacy location&#xA;">
+        <p name="varSource" v="@APPPATH(settingsfile)" />
+        <p name="varTarget" v="@B.Settings File" />
+      </a>
+      <a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;" />
+    </func>
+    <func name="Multipage Origin">
+      <a ns="rrunner" name="rrCompare">
+        <p name="object1" v="Demo-Multipage TIFF" />
+        <p name="object2" v="@JOBNAME" />
+      </a>
+      <a ns="PageID" name="PageIDByVariableChange">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+        <p type="strParam" v="ScanSrcPath,Page,TrailPage" name="StrParam" />
+      </a>
+    </func>
+    <func name="Barcoded Separators and FlexID">
+      <a ns="PageID" name="PageIDByBCSep" qi="">
+        <p type="bInter" />
+        <p type="bDebug" />
+        <p type="strParam" v="@APPPATH(dco_HOOL)+\+settings.ini,Page" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

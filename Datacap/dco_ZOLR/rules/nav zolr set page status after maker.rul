@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="65" name="NAV ZOLR Set Page Status after maker" ver="5" modder="admin.1" qi="" dt="10/25/23 17:26:36.924 ">
+	<rule name="Set page status rule" id="1" dcomap.open="P=MRP FIXATION;P=OTS DOCUMENTS;P=SUITFILE PERMISSION;P=EMPANELMENT AND RENEWAL OF ADVOCATES;P=EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT;P=BILL PAYMENT OF ADVOCATES;P=BILL PAYMENT OF ENFORCEMENT AGENT;P=BILL PAYMENT OF PUBLICATION BILL;P=APPOINTMENT OF AUTHORIZED OFFICER" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="ReFormat Date" id="2" qi="" dcomap.open="F=BILL DATE;F=DATE OF NPA">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="en-IN"/>
+				<p name="Target" type="string" v="@F.hr_locale"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat">
+				<p name="NewDateFormat" type="string" v="yyyy/mm/dd"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

@@ -1,0 +1,8 @@
+Dim CurrentObj 
+sub set_novCDCO(novCDCOObj) 
+	set CurrentObj = Nothing 
+	set CurrentObj = novCDCOObj 
+end sub 
+sub set_CDCOnothing() 
+	set CurrentObj = Nothing 
+end sub 

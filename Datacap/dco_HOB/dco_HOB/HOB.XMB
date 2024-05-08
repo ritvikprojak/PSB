@@ -1,0 +1,1161 @@
+<?xml-stylesheet type="text/xsl" href="..\..\dco.xsl"?>
+<S>
+	<B type="HOB">
+		<V n="ID">0</V>
+		<V n="TYPE">Batch</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Other" pos="0" min="0" max="0"/>
+		<D type="Document" pos="0" min="0" max="0"/>
+		<D type="BOARD MEETINGS DOCS" pos="0" min="0" max="0"/>
+		<D type="MEETING NOTICE DOCS" pos="0" min="0" max="0"/>
+		<D type="DIRECTOR NOTIFICATION DOCS" pos="0" min="0" max="0"/>
+		<D type="DIRECTOR FILE DOCS" pos="0" min="0" max="0"/>
+		<D type="RAR DOCS" pos="0" min="0" max="0"/>
+		<D type="PAYMENT DOCS" pos="0" min="0" max="0"/>
+		<D type="CONSTITUTION OF COMMITEES DOCS" pos="0" min="0" max="0"/>
+		<D type="OFFICE NOTES DOCS" pos="0" min="0" max="0"/>
+		<D type="DEPRICIATION FILES DPCS" pos="0" min="0" max="0"/>
+		<D type="RFP DOCUMENTS DOCS" pos="0" min="0" max="0"/>
+		<D type="ADDENDUM DOCS" pos="0" min="0" max="0"/>
+		<D type="ANNEXURES DOCS" pos="0" min="0" max="0"/>
+		<D type="SUPPORTING DOCUMENTS DOCS" pos="0" min="0" max="0"/>
+	</B>
+	<D type="Document">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Page" pos="1" min="1" max="0"/>
+		<P type="TrailPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="BOARD MEETINGS DOCS">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="BOARD MEETINGS" pos="0" min="0" max="0"/>
+		<P type="BOARD MEETINGS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="MEETING NOTICE DOCS">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="NOTICE" pos="0" min="0" max="0"/>
+		<P type="NOTICE_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="DIRECTOR NOTIFICATION DOCS">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="DIRECTOR NOTIFICATION" pos="0" min="0" max="0"/>
+		<P type="DIRECTOR NOTIFICATION_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="DIRECTOR FILE DOCS">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="DIRECTOR FILE" pos="0" min="0" max="0"/>
+		<P type="DIRECTOR FILE_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="RAR DOCS">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="RAR" pos="0" min="0" max="0"/>
+		<P type="RAR_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="PAYMENT DOCS">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="PAYMENT" pos="0" min="0" max="0"/>
+		<P type="PAYMENT_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="CONSTITUTION OF COMMITEES DOCS">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="CONSTITUTION OF COMMITEES" pos="0" min="0" max="0"/>
+		<P type="CONSTITUTION OF COMMITEES_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="OFFICE NOTES DOCS">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="OFFICE NOTES" pos="0" min="0" max="0"/>
+		<P type="OFFICE NOTES_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="DEPRICIATION FILES DPCS">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="DEPRICIATION FILES" pos="0" min="0" max="0"/>
+		<P type="DEPRICIATION FILES_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="RFP DOCUMENTS DOCS">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="RFP DOCUMENTS" pos="0" min="0" max="0"/>
+		<P type="RFP DOCUMENTS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="ADDENDUM DOCS">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="ADDENDUM" pos="0" min="0" max="0"/>
+		<P type="ADDENDUM_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="ANNEXURES DOCS">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="ANNEXURES" pos="0" min="0" max="0"/>
+		<P type="ANNEXURES_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SUPPORTING DOCUMENTS DOCS">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SUPPORTING DOCUMENTS" pos="0" min="0" max="0"/>
+		<P type="SUPPORTING DOCUMENTS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<P type="Other">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="Page">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Document_Type" pos="0" min="0" max="0"/>
+	</P>
+	<P type="BOARD MEETINGS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DOCUMENT_TYPE" pos="0" min="0" max="0"/>
+		<F type="DATEOFMEET" pos="0" min="0" max="0"/>
+		<F type="RESOLUTION_NUMBER" pos="0" min="0" max="0"/>
+		<F type="TYPEOFMEETING" pos="0" min="0" max="0"/>
+		<F type="DEPARTMENT" pos="0" min="0" max="0"/>
+	</P>
+	<P type="BOARD MEETINGS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="TrailPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="NOTICE">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DATEOFMEET" pos="0" min="0" max="0"/>
+		<F type="NAMEOFMEETING" pos="0" min="0" max="0"/>
+	</P>
+	<P type="NOTICE_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="DIRECTOR NOTIFICATION">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DIRECTORNAME" pos="0" min="0" max="0"/>
+		<F type="DATEOFAPPOINT" pos="0" min="0" max="0"/>
+	</P>
+	<P type="DIRECTOR NOTIFICATION_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="DIRECTOR FILE">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DIRECTORNAME" pos="0" min="0" max="0"/>
+	</P>
+	<P type="DIRECTOR FILE_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="RAR">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="YEARFY" pos="0" min="0" max="0"/>
+	</P>
+	<P type="RAR_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="PAYMENT">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="PAYMENTTYPE" pos="0" min="0" max="0"/>
+		<F type="PAYMENTDATE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="PAYMENT_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="CONSTITUTION OF COMMITEES">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="NAMEOFCOMMITEE" pos="0" min="0" max="0"/>
+		<F type="DATERECONSTITUTION" pos="0" min="0" max="0"/>
+	</P>
+	<P type="CONSTITUTION OF COMMITEES_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="OFFICE NOTES">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="MONTH" pos="0" min="0" max="0"/>
+		<F type="DATE" pos="0" min="0" max="0"/>
+		<F type="NOTESUBJECT" pos="0" min="0" max="0"/>
+		<F type="YEAR" pos="0" min="0" max="0"/>
+	</P>
+	<P type="OFFICE NOTES_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="DEPRICIATION FILES">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="FY" pos="0" min="0" max="0"/>
+	</P>
+	<P type="DEPRICIATION FILES_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="RFP DOCUMENTS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="HODPTCODE" pos="0" min="0" max="0"/>
+		<F type="DATE" pos="0" min="0" max="0"/>
+		<F type="INPRINCIPAL" pos="0" min="0" max="0"/>
+		<F type="PREBIDQUERIES" pos="0" min="0" max="0"/>
+		<F type="BIDDOC" pos="0" min="0" max="0"/>
+		<F type="NOTEFORTECHNICAL" pos="0" min="0" max="0"/>
+		<F type="NOTEFORCOMM" pos="0" min="0" max="0"/>
+		<F type="REVERSEACTION" pos="0" min="0" max="0"/>
+		<F type="L1BIDDER" pos="0" min="0" max="0"/>
+		<F type="APPFORFINALTCO" pos="0" min="0" max="0"/>
+		<F type="MISC" pos="0" min="0" max="0"/>
+		<F type="TENDERNO" pos="0" min="0" max="0"/>
+		<F type="NOTEFORRFP" pos="0" min="0" max="0"/>
+	</P>
+	<P type="RFP DOCUMENTS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="ADDENDUM">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="TENDERNO" pos="0" min="0" max="0"/>
+		<F type="DATE" pos="0" min="0" max="0"/>
+		<F type="HODPTCODE" pos="0" min="0" max="0"/>
+		<F type="NOTESFORADD" pos="0" min="0" max="0"/>
+		<F type="ADDNO" pos="0" min="0" max="0"/>
+		<F type="ADDDATED" pos="0" min="0" max="0"/>
+		<F type="ADDSUBJECT" pos="0" min="0" max="0"/>
+		<F type="RELATEDQURIES" pos="0" min="0" max="0"/>
+	</P>
+	<P type="ADDENDUM_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="ANNEXURES">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="TENDERNO" pos="0" min="0" max="0"/>
+		<F type="DATE" pos="0" min="0" max="0"/>
+		<F type="HODPTCODE" pos="0" min="0" max="0"/>
+		<F type="ANNO" pos="0" min="0" max="0"/>
+		<F type="ANSUBJECT" pos="0" min="0" max="0"/>
+	</P>
+	<P type="ANNEXURES_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SUPPORTING DOCUMENTS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="TENDERNO" pos="0" min="0" max="0"/>
+		<F type="DATE" pos="0" min="0" max="0"/>
+		<F type="HODPTCODE" pos="0" min="0" max="0"/>
+		<F type="DOCTYPE" pos="0" min="0" max="0"/>
+		<F type="REMARKS" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SUPPORTING DOCUMENTS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<F type="Frequency_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="RecogType">4</V>
+		<F type="Frequency_OMR1_OMR1" pos="0" min="0" max="0"/>
+	</F>
+	<F type="Signature_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Frequency_OMR1_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="RESOLUTION_NUMBER">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DATEOFMEET">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DataType">3</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+	</F>
+	<F type="TYPEOFMEETING">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:MEETTYPE</V>
+	</F>
+	<F type="DEPARTMENT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DEPT</V>
+	</F>
+	<F type="">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Field11">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document_Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:NAV Document_Type</V>
+	</F>
+	<F type="NAMEOFMEETING">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DIRECTORNAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DATEOFAPPOINT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="DatePattern">dd/MM/yyyy</V>
+		<V n="DataType">3</V>
+	</F>
+	<F type="PAYMENTTYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:PAYMENTTYPE</V>
+	</F>
+	<F type="PAYMENTDATE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DatePattern">dd/MM/yyyy</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="DataType">3</V>
+	</F>
+	<F type="NAMEOFCOMMITEE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DATERECONSTITUTION">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DatePattern">dd/MM/yyyy</V>
+		<V n="DataType">3</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+	</F>
+	<F type="MONTH">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DATE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DataType">3</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="DatePattern">dd/MM/yyyy</V>
+	</F>
+	<F type="NOTESUBJECT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="YEAR">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="FY">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="TENDERNO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="HODPTCODE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="INPRINCIPAL">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="PREBIDQUERIES">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="BIDDOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOTEFORTECHNICAL">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOTEFORCOMM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="REVERSEACTION">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="L1BIDDER">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="APPFORFINALTCO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="MISC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOTESFORADD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ADDNO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ADDDATED">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DatePattern">dd/MM/yyyy</V>
+		<V n="DataType">3</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+	</F>
+	<F type="ADDSUBJECT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="RELATEDQURIES">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ANNO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ANSUBJECT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCTYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCTYPE</V>
+	</F>
+	<F type="REMARKS">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOTEFORRFP">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT_TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENTTYPE</V>
+	</F>
+	<F type="YEARFY">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<DICT n="P:MEETTYPE">
+		<W v="Board of Directors">Board of Directors</W>
+		<W v="Management Committee">Management Committee</W>
+		<W v="Audit Committee of the Board">Audit Committee of the Board</W>
+		<W v="Risk Management Committee">Risk Management Committee</W>
+		<W v="Committee for Monitoring of Large Value Frauds">Committee for Monitoring of Large Value Frauds</W>
+		<W v="Vigilance Committee of the Board">Vigilance Committee of the Board</W>
+		<W v="Customer Service Committee">Customer Service Committee</W>
+		<W v="HR committee of Board">HR committee of Board</W>
+		<W v="Committee for Monitoring of Recovery">Committee for Monitoring of Recovery</W>
+		<W v="IT Strategy Committee">IT Strategy Committee</W>
+		<W v="Stakeholder Relationship Committee">Stakeholder Relationship Committee</W>
+		<W v="Review Committee for Wilful Defaulter">Review Committee for Wilful Defaulter</W>
+		<W v="Review Committee for Non-Co-operative Borrowers">Review Committee for Non-Co-operative Borrowers</W>
+		<W v="Committee for Dealing with the Case of Appeals and Review">Committee for Dealing with the Case of Appeals and Review</W>
+		<W v="Nomination and Remuneration Committee">Nomination and Remuneration Committee</W>
+		<W v="Board Committee for Performance Evaluation">Board Committee for Performance Evaluation</W>
+		<W v="value">Credit Approval Committee of Board</W>
+	</DICT>
+	<DICT n="P:DEPT">
+		<W v="Accounts &amp; Audit Department">Accounts &amp; Audit Department</W>
+		<W v="ATM Cell">ATM Cell</W>
+		<W v="Alternate Delivery Cell">Alternate Delivery Cell</W>
+		<W v="Board Department">Board Department</W>
+		<W v="Credit Department">Credit Department</W>
+		<W v="Credit Monitoring Department">Credit Monitoring Department</W>
+		<W v="CBS Cell">CBS Cell</W>
+		<W v="CENMARG">CENMARG</W>
+		<W v="Compliance Department">Compliance Department</W>
+		<W v="Central Accounts Department">Central Accounts Department</W>
+		<W v="Fraud Monitoring Department">Fraud Monitoring Department</W>
+		<W v="Foreign Exchange Department">Foreign Exchange Department</W>
+		<W v="Financial Inclusion Department">Financial Inclusion Department</W>
+		<W v="General Administration Department">General Administration Department</W>
+		<W v="Government Business Department">Government Business Department</W>
+		<W v="Human Resource Development Department">Human Resource Development Department</W>
+		<W v="Inspection Department">Inspection Department</W>
+		<W v="IT Department">IT Department</W>
+		<W v="KYC &amp; AML Cell">KYC &amp; AML Cell</W>
+		<W v="Law &amp; Recovery Department">Law &amp; Recovery Department</W>
+		<W v="Marketing &amp; Insurance Department">Marketing &amp; Insurance Department</W>
+		<W v="Priority Sector Advances Department">Priority Sector Advances Department</W>
+		<W v="Provident Fund Department">Provident Fund Department</W>
+		<W v="Pension Department">Pension Department</W>
+		<W v="Planning &amp; Development Department">Planning &amp; Development Department</W>
+		<W v="Printing &amp; Stationery Department">Printing &amp; Stationery Department</W>
+		<W v="Public Relation Department">Public Relation Department</W>
+		<W v="Risk Management Department">Risk Management Department</W>
+		<W v="Retail Lending Department">Retail Lending Department</W>
+		<W v="Security Department">Security Department</W>
+		<W v="SAMVERT">SAMVERT</W>
+		<W v="Treasury Department">Treasury Department</W>
+		<W v="Vigilance Department">Vigilance Department</W>
+	</DICT>
+	<DICT n="P:PAYMENTTYPE">
+		<W v="Sitting Fee">Sitting Fee</W>
+		<W v="Other Expenses">Other Expenses</W>
+		<W v="AMC Payments">AMC Payments</W>
+		<W v="TA Expenses">TA Expenses</W>
+		<W v="Office Stationery">Office Stationery</W>
+		<W v="Professional Charges">Professional Charges</W>
+		<W v="Advocate Charges">Advocate Charges</W>
+		<W v="Computer Consumable">Computer Consumable</W>
+	</DICT>
+	<DICT n="P:DOCTYPE">
+		<W v="Bids">Bids</W>
+		<W v="Corrigendum/Addendum">Corrigendum/Addendum</W>
+		<W v="Agreement">Agreement</W>
+		<W v="Bank Gurrantee">Bank Gurrantee</W>
+		<W v="Minutes of the Meeting">Minutes of the Meeting</W>
+		<W v="Correspondence from other stakeholders">Correspondence from other stakeholders</W>
+		<W v="Minutes of Technial Commitees">Minutes of Technial Commitees</W>
+		<W v="Misc. approvals notes">Misc. approvals notes</W>
+	</DICT>
+	<DICT n="P:DOCUMENTTYPE">
+		<W v="Minutes">Minutes</W>
+		<W v="Agenda Notes">Agenda Notes</W>
+		<W v="Index">Index</W>
+		<W v="Receiving">Receiving</W>
+		<W v="Resolution">Resolution</W>
+	</DICT>
+</S>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="60" name="NAV Batch level activities" ver="5" modder="dmstest10.1" qi="" dt="07/07/23 19:37:15.931 ">
+	<rule name="NAV Delete all fields" id="4" qi="" dcomap.open="P">
+		<func name="Function1">
+			<a name="DeleteDCOChildren" ns="com:Datacap.Libraries.ApplicationObjects.Actions"/>
+		</func>
+	</rule>
+	<rule name="NAV CreateFields" id="1" qi="" dcomap.open="P=Page">
+		<func name="Function1">
+			<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+		</func>
+	</rule>
+	<rule name="NAV Set account number to field" id="2" qi="" dcomap.open="F=ACCOUNT NUMBER">
+		<func name="Set field value" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@B.bAccountNumber"/>
+				<p name="Target" type="string" v="@F"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV Create batch parameters" id="3" dcomap.open="B">
+		<func name="Create empty batch variables" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v=""/>
+				<p name="Target" type="string" v="@B.bCustName1"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v=""/>
+				<p name="Target" type="string" v="@B.bCustName2"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v=""/>
+				<p name="Target" type="string" v="@B.bCIF1"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v=""/>
+				<p name="Target" type="string" v="@B.bCIF2"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

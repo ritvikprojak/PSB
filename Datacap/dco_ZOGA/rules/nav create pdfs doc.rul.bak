@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="61" name="NAV Create PDFs Doc" ver="1" modder="admin.1" qi="">
+		<rule name="NAV Create PDFs Doc Rule1" id="1" qi="" dcomap.open="D">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckDCOStatus" qi="">
+					<p name="ExpectedStatus" v="128"/>
+				</a>
+			</func>
+			<func name="PDF creation Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@X.y_EnableAggressiveTextExtraction"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@X.y_maxPagesForInMemoryProcessing"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ScansoftR.Actions" name="UseOutOfProcessRecogOCR_S" qi="">
+					<p name="UseOutOfProcessRecog" type="bool" v="True"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ScansoftR.Actions" name="SetEngineTimeoutOCR_S">
+					<p name="Seconds" type="int" v="1000"/>
+				</a>
+				<a ns="Recog_Shared" name="SetOutOfProcessRecogTimeout" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1000" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ScansoftR.Actions" name="RecognizeToPDFOCR_S" qi="">
+					<p name="OutputPDFType" type="int" v="4"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="61" name="NAV Create PDFs Doc" ver="2" modder="dmstest10.1" qi="" dt="06/28/23 19:30:30.788 ">
+		<rule name="NAV Create PDFs Doc Rule1" id="1" qi="" dcomap.open="D">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckDCOStatus" qi="">
+					<p name="ExpectedStatus" v="128"/>
+				</a>
+			</func>
+			<func name="PDF creation Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@X.y_EnableAggressiveTextExtraction"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@X.y_maxPagesForInMemoryProcessing"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ScansoftR.Actions" name="UseOutOfProcessRecogOCR_S" qi="">
+					<p name="UseOutOfProcessRecog" type="bool" v="True"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ScansoftR.Actions" name="SetEngineTimeoutOCR_S">
+					<p name="Seconds" type="int" v="1000"/>
+				</a>
+				<a ns="Recog_Shared" name="SetOutOfProcessRecogTimeout" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1000" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ScansoftR.Actions" name="RecognizeToPDFOCR_S" qi="">
+					<p name="OutputPDFType" type="int" v="1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

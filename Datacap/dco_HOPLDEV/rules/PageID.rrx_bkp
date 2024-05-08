@@ -1,0 +1,275 @@
+<?xml version='1.0' ?>
+<rrx namespace="PageID" v="8.0.1.07"><i ref="rrunner"/><i ref="barcode_x"/><g>
+  <![CDATA[
+'-----------------------------------------------------------------------------
+' Licensed Materials - Property of IBM
+' “Restricted Materials of IBM”
+' 5725-C15 5725-C69
+'
+' © Copyright IBM Corp. 1994, 2013 All Rights Reserved
+'
+' US Government Users Restricted Rights - Use, duplication or
+' disclosure restricted by GSA ADP Schedule Contract with
+' IBM Corp.
+'
+'-----------------------------------------------------------------------------  
+'Page Identification Actions
+'PageID.rrx
+
+' Version 
+'  8.0.0.0 - Tom Stuart 11/26/09
+'  8.0.0.1 - 03/31/10 RFerin Added smart parameter support to PageIDByBCSep.
+'  8.0.4   - 08/02/10 RFerin & Tom Stuart
+'          - Added g tags to make the XML format more compliant and help with editing.  Requires buildvbs.rls 1.0.2.2.
+'          - 28188 Added help text to actions.
+'  8.0.5   - 09/02/10 Tom Stuart
+'          - fixed bug in ProcessVarChangeBatch SPR 29521
+'  8.0.6   - 09/02/10 RFerin 29521 minor DStudio help updates
+'  
+' Version = "8.0.1.07"
+' Updated 01/07/2011 PHofle
+' * Removed file extension name (extn) from <i ref="namespace.extn"> tags, just uses namespace for use
+'   with TM8.01 locale RRS. Now looks like <i ref="namespace">.
+'   8.1.0 - Tom Stuart - 5/10/12 33801 Added help text to PageIDBySeqTypes
+'   8.1.1 - Tom Stuart - 5/12/12  Enhanced help text on PageIDByVariableChange
+'
+Version = "8.1.0.1"
+'  12/11/2013 RFerin
+'  Minor help text updates.
+'
+Writelog("PageID Actions " & Version)
+'*********************************
+
+]]></g>
+  
+<f name="ProcessBCSepBatch" access="private"> <p name="oDCO"/> <p name="SettingsFile"/> <p name="DefaultPageType"/> <p name="bSepFound"/> <p name="LastPageType"/> 
+<g><![CDATA[
+Dim BarVal
+Dim i
+Dim RetVal
+
+   if (oDCO.ObjectType = 2) then
+      Writelog("Processing page: " & oDCO.ID)
+
+	
+	  if oDCO.Type <> "Other" then 'Page was previously identified
+	     Writelog("   Page was previously identified as: " & oDCO.Type)
+		 LastPageType = oDCO.Type
+		 Exit Function
+      End if 		 
+      BarVal =  BarCodeX(oDCO)
+      Writelog("   Found Barcode: " & BarVal)
+	  
+      RetVal =  Pilot.GetProfileString("PageID_Barcode-PageType",BarVal,"*",SettingsFile)    	  
+
+	  if RetVal <> "*" then     'Found a registered barcode separator
+	     Writelog("   Separator page found: " & RetVal)
+		 bSepFound = TRUE
+		 oDCO.Type = RetVal
+		 LastPageType = RetVal
+	   else
+          Writelog("   No registered separator found")
+          if (bSepFound = FALSE) then		  
+             Writelog("   No separator has been found in this batch.  Assigning default page type: " & DefaultPageType)
+             oDco.Type = DefaultPageType
+		  else
+		     RetVal = Pilot.GetProfileString("PageID_LastType-ThisType",LastPageType,"*",SettingsFile)
+			 if RetVal <> "*" then
+			    Writelog("Entry found for following " & LastPageType & ": " & RetVal)
+				oDCO.Type = RetVal
+				LastPageType = RetVal
+			 else
+			    Writelog("   ERROR: There is no entry in the [PageID_LastType-ThisType] section for: " & LastPageType)
+             End if
+          End if		  
+        End if  			 
+   else
+       For i = 0 to oDCO.NumOfChildren - 1
+           Call ProcessBCSepBatch(oDCO.GetChild(i),SettingsFile,DefaultPageType,bSepFound,LastPageType)  
+       Next 'i
+   End if	   
+	  
+]]></g></f>
+
+<f name="ProcessSeqTypesBatch" access="private"> <p name="oDCO"/> <p name="TypeArray"/> <p name="Index"/> 
+<g><![CDATA[
+Dim i
+
+   if (oDCO.ObjectType = 2) then
+      Writelog("Processing page: " & oDCO.ID)
+
+	
+      if oDCO.Type <> "Other" then 'Page was previously identified
+	 Writelog("   Page was previously identified as: " & oDCO.Type)
+      else
+         oDCO.Type = TypeArray(Index)      
+      End if 		 
+      
+      Index = Index + 1
+      if Index > uBound(TypeArray) then
+         Index = 0
+      End if 
+      ProcessSeqTypesBatch = Index 			 
+   else
+       For i = 0 to oDCO.NumOfChildren - 1
+           Index = ProcessSeqTypesBatch(oDCO.GetChild(i),TypeArray,Index)
+       Next 'i
+   End if	   
+	  
+]]></g></f>
+
+<f name="ProcessVarChangeBatch" access="private"> <p name="oDCO"/> <p name="TypeArray"/> <p name="VarVal"/>
+<g><![CDATA[
+Dim i
+
+   if (oDCO.ObjectType = 2) then
+      Writelog("Processing page: " & oDCO.ID)
+
+      if oDCO.Variable(TypeArray(0)) = VarVal then
+         oDCO.Type = TypeArray(2)
+         Writelog("No variable value change detected.  Setting page type to: " & oDCO.Type)
+      else
+         oDCO.Type = TypeArray(1)
+         VarVal = oDCO.Variable(TypeArray(0))
+         Writelog("Different variable value detected.  Setting VarVal to: " & VarVal & " and page type to: " & oDCO.Type)
+      end if	
+		 
+   else
+       For i = 0 to oDCO.NumOfChildren - 1
+           Index = ProcessVarChangeBatch(oDCO.GetChild(i),TypeArray,VarVal)
+       Next 'i
+   End if	   
+	  
+]]></g></f>
+
+<af name="PageIDByBCSep" access="public" bInter="bInter" bDebug="bDebug" strParam="StrParam" qi="Separates pages using barcode separator sheets.">
+  <ap>
+    Two comma separated input parameters:<br/><br/>
+    1. The path and location of the settings file.  Smart Parameters are supported.<br/>
+    2. The barcode page type to locate.  Smart Parameters are supported.
+  </ap>
+  <h>
+    This action processes all pages with a type of "Other", looking for barcodes that match the
+    input page type, indicating the start of a document.  The settings file is
+    required to have a "PageID_LastType-ThisType" Section.
+    <e>
+      <b>PageIDByBCSep("@APPPATH(dco_APT)+\settings.ini,Main_Page")</b><br/><br/>
+
+      The following is a sample Settings.INI file entry:<br/>
+      [PageID_LastType-ThisType]<br/>
+      Document_Separator=Main_Page<br/>
+      Attachment_Separator=Attachment<br/>
+      Main_Page=Trailing_Page<br/>
+      Trailing_Page=Trailing_Page<br/>
+      Attachment=Attachment
+    </e>
+  </h>
+  <lvl>
+    Batch level.
+  </lvl>
+  <ret>
+    Always <b>True.</b>
+  </ret>
+<g><![CDATA[
+Dim ParamAr
+Dim oFS
+Dim SettingsFile
+Dim DefaultPageType
+
+   PageIDByBCSep = TRUE
+   ParamAr = SPLIT(strParam,",")
+   if uBound(ParamAr) <> 1 then
+      Writelog("Wrong number of parameters.  Expecting (INIFileName,DefaultPageType).  Exiting")
+	  Exit Function
+   else
+      SettingsFile = MetaWord(Trim(ParamAr(0)))
+      DefaultPageType = MetaWord(Trim(ParamAr(1)))
+   End if
+
+   Set oFS = CreateObject("Scripting.FileSystemObject")
+   if Not oFS.FileExists(SettingsFile) then
+      Writelog("Settings file: " & SettingsFile & " , was not found.  Exiting")
+      Exit Function
+	else
+       Writelog("Settings file found: " & SettingsFile)	
+   End if
+   
+   Call ProcessBCSepBatch(DCO,SettingsFile,DefaultPageType,false,"None")
+   
+]]></g></af>
+
+
+<af name="PageIDBySeqTypes" access="public" bInter="bInter" bDebug="bDebug" strParam="StrParam" qi="">
+  <ap>
+    The serial list of page types to assign to the batch.
+  </ap>
+  <h>
+    This action processes all pages with a type of "Other", assigning them page types
+    as specified by the input parameter list.
+    <e>
+      <b>PageIDBySeqTypes("Front,Back")</b><br/>
+      The action will set the page types of the batch to Front, Back, Front, Back, Front, etc.     
+    </e>
+  </h>
+  <lvl>
+    Batch level.
+  </lvl>
+  <ret>
+    Always <b>True.</b>
+  </ret>
+<g><![CDATA[
+Dim ParamAr
+Dim oFS
+Dim SettingsFile
+Dim DefaultPageType
+
+   PageIDBySeqTypes = TRUE
+   ParamAr = Split(StrParam,",")
+   Call ProcessSeqTypesBatch(DCO,ParamAr,0)
+   
+]]></g></af>
+
+<af name="PageIDByVariableChange" access="public" bInter="bInter" bDebug="bDebug" strParam="StrParam" qi="">
+  <ap>
+    Three comma separated variables:<br/>
+    1. The variable that will change when a new document starts<br/>
+    2. The page type of the first page of the new document.<br/>
+    3. The page type that will be assigned to any trailing page in the document.<br/>
+  </ap>
+  <h>
+    This action processes all pages with a type set according to the input parameters.  
+    When pages are for PageID, a variable can be "watched" so that when it changes 
+    a new page type will be triggered.  This method is popular in restoring document structure from 
+    multi-page TIFFs or PDFs that went through a VScan process and have 
+    been split into single images.
+    <e>
+      <b>PageIDByVariableChange("ScanSrcPath,Main_Page,Trailing_Page")</b>
+          <br/>
+     These variables will watch the variable containing the source image set by vScan.  When the variable changes, 
+     the first page will be set to Main_Page, and any 
+     other pages that have the same value in ScanSrcPath that immediately follow will be set to Trailing_Page.
+    </e>
+  </h>
+  <lvl>
+    Batch level.
+  </lvl>
+  <ret>
+    Always <b>True.</b>
+  </ret>
+<g><![CDATA[
+Dim ParamAr
+Dim oFS
+Dim SettingsFile
+Dim DefaultPageType
+
+   PageIDByVariableChange = TRUE
+   ParamAr = Split(StrParam,",")
+   if uBound(ParamAr) <> 2 then
+      Writelog("Wrong number of parameters.  Expecting (PageLevelVarName,MainPageType,TrailingPageType)")
+      ' TOM SHOULD THERE BE AN EXIT FUNCTION HERE?
+   end if
+   Call ProcessVarChangeBatch(DCO,ParamAr,"")
+   
+]]></g></af>
+
+</rrx>

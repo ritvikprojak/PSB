@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="37" name="Get Accountnumber, CBS version" ver="20" modder="admin.1185" qi="" dt="04/18/23 16:09:40.787 ">
+	<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+		<func name="Get values from custom column" qi="">
+			<a ns="Lookup" name="OpenConnection" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+			</a>
+			<a ns="Lookup" name="SmartSQLEx" qi="">
+				<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+				<p name="sPopulate" type="bool" v="True"/>
+				<p name="sTarget" v=""/>
+			</a>
+			<a name="CloseConnection" ns="Lookup.dll">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+		<func name="Function1">
+			<a ns="Lookup" name="PopulateWithResult">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="1,FALSE" name="StrParam"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="@F"/>
+				<p name="Target" type="string" v="@B.bAccountNumber"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Populate CBSource Value" id="3">
+		<func name="Function2">
+			<a ns="Lookup" name="PopulateWithResult">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="2,FALSE" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+		<func name="Function3" qi="">
+			<a ns="Lookup" name="PopulateWithResult">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="3,FALSE" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

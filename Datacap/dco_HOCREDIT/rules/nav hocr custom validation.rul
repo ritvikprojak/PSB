@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="63" name="NAV HOCR Custom Validation" ver="20" modder="admin.1" qi="" dt="07/21/23 17:40:42.795 ">
+  <rule name="Page Level Parent Rule" id="1" dcomap.open="P" qi="">
+    <func name="Function1">
+      <a name="Status_Preserve_OFF" ns="rrunner">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+      </a>
+      <a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+      </a>
+    </func>
+  </rule>
+  <rule name="-------------------------------------Appraisal notes-----------------------------------" id="2" qi="" />
+  <rule name="RESOLUTION NO" id="3" qi="" dcomap.open="F=RESOLUTION_NUMBER">
+    <func name="Function1">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+        <p name="AllowOperatorOverride" type="string" v="False" />
+      </a>
+      <a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+        <p name="Target" type="string" v="@F" />
+        <p name="Length" type="string" v="1" />
+        <p name="ComparisonOperator" type="string" v="&gt;=" />
+      </a>
+      <a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+        <p name="Target" type="string" v="@F" />
+        <p name="Length" type="string" v="50" />
+        <p name="ComparisonOperator" type="string" v="&lt;=" />
+      </a>
+    </func>
+    <func name="Function2">
+      <a ns="Invoice" name="AddToErrorMsg">
+        <p type="bInter" />
+        <p type="bDebug" />
+        <p type="strParam" v="Resolution No is Mandatory and must be less than or equal to 50-digits !" />
+      </a>
+    </func>
+  </rule>
+  <rule name="Date" id="4" qi="" dcomap.open="F=DATE">
+    <func name="Function1">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable" qi="">
+        <p name="AllowOperatorOverride" type="string" v="False" />
+      </a>
+      <a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" qi="">
+        <p name="Target" type="string" v="@F" />
+        <p name="Length" type="string" v="1" />
+        <p name="ComparisonOperator" type="string" v="&gt;=" />
+      </a>
+    </func>
+    <func name="Function2">
+      <a ns="Invoice" name="AddToErrorMsg">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+        <p type="strParam" v="Date is mandatory !" name="StrParam" />
+      </a>
+    </func>
+  </rule>
+  <rule name="TITLE" id="5" qi="" dcomap.open="F">
+    <func name="Function1">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+        <p name="AllowOperatorOverride" type="string" v="False" />
+      </a>
+      <a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+        <p name="Target" type="string" v="@F" />
+        <p name="Length" type="string" v="1" />
+        <p name="ComparisonOperator" type="string" v="&gt;=" />
+      </a>
+      <a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+        <p name="Target" type="string" v="@F" />
+        <p name="Length" type="string" v="100" />
+        <p name="ComparisonOperator" type="string" v="&lt;=" />
+      </a>
+    </func>
+    <func name="Function2">
+      <a ns="Invoice" name="AddToErrorMsg" qi="">
+        <p type="bInter" />
+        <p type="bDebug" />
+        <p type="strParam" v="Title is mandatory and must be within 100 characters!" />
+      </a>
+    </func>
+  </rule>
+  <rule name="SANCTIONING AUTHORITY" id="6" qi="" dcomap.open="F=SANCTIONING_AUTHORITY">
+    <func name="Function1">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+        <p name="AllowOperatorOverride" type="string" v="False" />
+      </a>
+      <a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+        <p name="Target" type="string" v="@F" />
+        <p name="Length" type="string" v="1" />
+        <p name="ComparisonOperator" type="string" v="&gt;=" />
+      </a>
+    </func>
+    <func name="Function2">
+      <a ns="Invoice" name="AddToErrorMsg">
+        <p type="bInter" />
+        <p type="bDebug" />
+        <p type="strParam" v="Sanctioning Authority is mandatory!" />
+      </a>
+    </func>
+  </rule>
+  <rule name="TYPE" id="68" qi="" dcomap.open="F=TYPE">
+    <func name="Function1">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+        <p name="AllowOperatorOverride" type="string" v="False" />
+      </a>
+      <a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+        <p name="Target" type="string" v="@F" />
+        <p name="Length" type="string" v="1" />
+        <p name="ComparisonOperator" type="string" v="&gt;=" />
+      </a>
+    </func>
+    <func name="Function2">
+      <a ns="Invoice" name="AddToErrorMsg" qi="">
+        <p type="bInter" />
+        <p type="bDebug" />
+        <p type="strParam" v="TYPE is mandatory!" />
+      </a>
+    </func>
+  </rule>
+  <rule name="--------------------------------------Departmental notes------------------------------------" id="69" qi="" />
+  <rule name="PERIODICITY" id="9" qi="" dcomap.open="F=PERIODICITY">
+    <func name="Function1">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+        <p name="AllowOperatorOverride" type="string" v="False" />
+      </a>
+      <a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" qi="">
+        <p name="Target" type="string" v="@F" />
+        <p name="Length" type="string" v="1" />
+        <p name="ComparisonOperator" type="string" v="&gt;=" />
+      </a>
+    </func>
+    <func name="Function2">
+      <a ns="Invoice" name="AddToErrorMsg">
+        <p type="bInter" />
+        <p type="bDebug" />
+        <p type="strParam" v="Periodicity is mandatory" />
+      </a>
+    </func>
+  </rule>
+  <rule name="AUTHORITY" id="70" qi="" dcomap.open="F">
+    <func name="Function1">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+        <p name="AllowOperatorOverride" type="string" v="False" />
+      </a>
+      <a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" qi="">
+        <p name="Target" type="string" v="@F" />
+        <p name="Length" type="string" v="1" />
+        <p name="ComparisonOperator" type="string" v="&gt;=" />
+      </a>
+    </func>
+    <func name="Function2">
+      <a ns="Invoice" name="AddToErrorMsg" qi="">
+        <p type="bInter" />
+        <p type="bDebug" />
+        <p type="strParam" v="Authority is mandatory!" />
+      </a>
+    </func>
+  </rule>
+  <rule name="-------------------------------------Statutaory returns----------------------------------" id="79" qi="" />
+  <rule name="NUMBER" id="80" qi="" dcomap.open="F">
+    <func name="Function1">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+        <p name="AllowOperatorOverride" type="string" v="False" />
+      </a>
+      <a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+        <p name="Target" type="string" v="@F" />
+        <p name="Length" type="string" v="1" />
+        <p name="ComparisonOperator" type="string" v="&gt;=" />
+      </a>
+      <a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+        <p name="Target" type="string" v="@F" />
+        <p name="Length" type="string" v="50" />
+        <p name="ComparisonOperator" type="string" v="&lt;=" />
+      </a>
+    </func>
+    <func name="Function2">
+      <a ns="Invoice" name="AddToErrorMsg">
+        <p type="bInter" />
+        <p type="bDebug" />
+        <p type="strParam" v="Number should be within 50 characters and is mandatory!" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

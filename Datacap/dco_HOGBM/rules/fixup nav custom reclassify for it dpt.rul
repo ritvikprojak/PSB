@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="109" name="FIXUP NAV Custom ReClassify for IT DPT" ver="1" modder="dmstest10.1" qi="">
+	<rule name="Setup trailing pages" id="1" qi="" dcomap.open="P=TrailPage">
+		<func name="Function43: Last Page Type SSA KYC" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType" qi="">
+				<p name="PreviousTypeToMatch" v="SSA KYC"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="SSA KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function 44: SSA KYC" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SSA KYC_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="SSA KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function1: Last Page Type APY Enrollment Form1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="APY Enrollment Form"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="APY Enrollment Form_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function2: Last Page Type APY Enrollment Form_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="APY Enrollment Form_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="APY Enrollment Form_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function3: Last Page Type PMSBY Enrollment Form1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMSBY Enrollment Form"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PMSBY Enrollment Form_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function4: Last Page Type PMSBY Enrollment Form_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMSBY Enrollment Form_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PMSBY Enrollment Form_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function 43: Last Page Type PMJJBY Enrollment Form1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMJJBY Enrollment Form"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PMJJBY Enrollment Form_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function44: Last Page Type PMJJBY Enrollment Form_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMJJBY Enrollment Form_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="PMJJBY Enrollment Form_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function5: Last Page Type NOTES1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="NOTES"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="NOTES_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function6: Last Page Type NOTES_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="NOTES_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="NOTES_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function7: Last Page Type APY Death Claim Form1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="APY Death Claim Form"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="APY Death Claim Form_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function8: Last Page Type APY Death Claim Form_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="APY Death Claim Form_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="APY Death Claim Form_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function9: Last Page Type APY KYC1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="APY KYC"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="APY KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function10: Last Page Type APY KYC_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="APY KYC_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="APY KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function11: Last Page Type APY SUPPORTING DOCUMENT1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="APY SUPPORTING DOCUMENT"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="APY SUPPORTING DOCUMENT_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function12: Last Page APY SUPPORTING DOCUMENT_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="APY SUPPORTING DOCUMENT_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="APY SUPPORTING DOCUMENT_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function13: Last Page Type PMSBY Death Claim form1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMSBY Death Claim form"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PMSBY Death Claim form_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function14: Last Page Type PMSBY Death Claim form_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMSBY Death Claim form_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="PMSBY Death Claim form_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function15: Last Page Type PMSBY KYC1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMSBY KYC"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PMSBY KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function16: Last Page Type PMSBY KYC_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMSBY KYC_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="PMSBY KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function17: Last Page Type PMSBY SUPPORTING DOCUMENTS1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMSBY SUPPORTING DOCUMENTS"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PMSBY SUPPORTING DOCUMENTS_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function18: Last Page Type PMSBY SUPPORTING DOCUMENTS_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMSBY SUPPORTING DOCUMENTS_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PMSBY SUPPORTING DOCUMENTS_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function19: Last Page Type PMJJBY DEATH CLAIM FORM1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMJJBY DEATH CLAIM FORM"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PMJJBY DEATH CLAIM FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function20: Last Page Type PMJJBY DEATH CLAIM FORM_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMJJBY DEATH CLAIM FORM_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PMJJBY DEATH CLAIM FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function21: Last Page Type PMJJBY KYC1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMJJBY KYC"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PMJJBY KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function22: Last Page Type PMJJBY KYC_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMJJBY KYC_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="PMJJBY KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function23: Last Page Type PMJJBY SUPPORTING DOCUMENTS1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMJJBY SUPPORTING DOCUMENTS"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PMJJBY SUPPORTING DOCUMENTS_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function24: Last Page Type PMJJBY SUPPORTING DOCUMENTS_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PMJJBY SUPPORTING DOCUMENTS_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PMJJBY SUPPORTING DOCUMENTS_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function25: Last Page Type PPF KYC1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PPF KYC"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PPF KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function26: Last Page Type PPF KYC_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PPF KYC_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="PPF KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function 45: Last Page Type PPF ACCOUNT OPENING FORM1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PPF ACCOUNT OPENING FORM"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PPF ACCOUNT OPENING FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function 46: Last Page Type PPF ACCOUNT OPENING FORM_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PPF ACCOUNT OPENING FORM_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PPF ACCOUNT OPENING FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function27: Last Page Type SSA ACCOUNT OPENING FORM1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SSA ACCOUNT OPENING FORM"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="SSA ACCOUNT OPENING FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function28: Last Page Type SSA ACCOUNT OPENING FORM_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SSA ACCOUNT OPENING FORM"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="SSA ACCOUNT OPENING FORM"/>
+			</a>
+		</func>
+		<func name="Function29: Last Page Type SCSS KYC1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SCSS KYC"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="SCSS KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function30: Last Page Type SCSS KYC_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SCSS KYC_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="SCSS KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function31: Last Page Type PPF DEATH CLAIM FORM1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PPF DEATH CLAIM FORM"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PPF DEATH CLAIM FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function32: Last Page Type PPF DEATH CLAIM FORM_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PPF DEATH CLAIM FORM_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PPF DEATH CLAIM FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function33: Last Page Type PPF SUPPORTING DOCUMENTS1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PPF SUPPORTING DOCUMENTS"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PPF SUPPORTING DOCUMENTS_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function34: Last Page Type PPF SUPPORTING DOCUMENTS_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="PPF SUPPORTING DOCUMENTS_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="PPF SUPPORTING DOCUMENTS_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function35: Last Page Type SSA DEATH CLAIM FORM1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SSA DEATH CLAIM FORM"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="SSA DEATH CLAIM FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function36: Last Page Type SSA DEATH CLAIM FORM_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SSA DEATH CLAIM FORM_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="SSA DEATH CLAIM FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function37: Last Page Type SSA SUPPORTING DOCUMENT1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SSA SUPPORTING DOCUMENT"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="SSA SUPPORTING DOCUMENT_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function38: Last Page Type SSA SUPPORTING DOCUMENT_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SSA SUPPORTING DOCUMENT_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="SSA SUPPORTING DOCUMENT_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function39: Last Page Type SCSS DEATH CLAIM FORM1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SCSS DEATH CLAIM FORM"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="SCSS DEATH CLAIM FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function40: Last Page Type SCSS DEATH CLAIM FORM_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SCSS DEATH CLAIM FORM_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="SCSS DEATH CLAIM FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function41: Last Page Type SCSS SUPPORTING DOCUMENT1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SCSS SUPPORTING DOCUMENT"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="SCSS SUPPORTING DOCUMENT_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function42: Last Page Type SCSS SUPPORTING DOCUMENT_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SCSS SUPPORTING DOCUMENT_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="SCSS SUPPORTING DOCUMENT_TrailingPage"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

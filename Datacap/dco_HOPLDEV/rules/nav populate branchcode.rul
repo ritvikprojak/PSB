@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="72" name="NAV POPULATE BRANCHCODE" ver="3" modder="dmstest10.1" qi="" dt="06/28/23 19:46:02.417 ">
+	<rule name="Rule1" id="1" dcomap.open="F=BRANCH CODE" qi="">
+		<func name="FUNCTION for branch code" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@B.BranchCode"/>
+				<p name="Target" type="string" v="@F"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

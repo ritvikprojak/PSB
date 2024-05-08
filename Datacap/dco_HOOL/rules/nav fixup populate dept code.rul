@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="114" name="NAV FIXUP Populate DEPT Code" modder="dmstest10.1" dt="12/27/23 15:22:32.722 " ver="1" qi="">
+	<rule name="Copy ofNAV POPULATE DEPT CODE" id="1" dcomap.open="F=HO DEPARTMENT CODE" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@B.DeptName"/>
+				<p name="Target" type="string" v="@F"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

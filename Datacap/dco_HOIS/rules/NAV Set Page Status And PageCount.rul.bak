@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="27" name="NAV Set Page Status And PageCount" ver="1" modder="admin.1">
+		<rule name="Delete Trailing Pages Fields Rule1" id="2" dcomap.open="P=RFP DETAILS_TrailingPage;P=RFP DOCUMENTS_TrailingPage;P=ADDENDUM_TrailingPage;P=ANNEXURE_TrailingPage;P=SUPPORTING-DOCUMENTS_TrailingPage" qi="">
+			<func name="Function1">
+				<a name="DeleteDCOChildren" ns="com:Datacap.Libraries.ApplicationObjects.Actions"/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="27" name="NAV Set Page Status And PageCount" ver="2" modder="admin.1" dt="01/27/23 22:44:08.220 ">
+		<rule name="Delete Trailing Pages Fields Rule1" id="2" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS" qi="">
+			<func name="Function1">
+				<a name="DeleteDCOChildren" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="y"/>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="27" name="NAV Set Page Status And PageCount" ver="3" modder="admin.1" dt="01/27/23 23:01:03.763 " qi="">
+		<rule name="Delete Trailing Pages Fields Rule1" id="2" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS" qi="">
+			<func name="Function1">
+				<a name="DeleteDCOChildren" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="y"/>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Delete Traling Object" id="1" dcomap.open="P=RFP DETAILS_TrailingPage;P=RFP DOCUMENTS_TrailingPage;P=ADDENDUM_TrailingPage;P=ANNEXURE_TrailingPage;P=SUPPORTING-DOCUMENTS_TrailingPage" qi="">
+			<func name="Function1">
+				<a name="DeleteDCOChildrenAndVariables" ns="com:Datacap.Libraries.ApplicationObjects.Actions"/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="27" name="NAV Set Page Status And PageCount" ver="4" modder="admin.1" dt="01/27/23 23:19:21.548 " qi="">
+		<rule name="Delete Trailing Pages Fields Rule1" id="2" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS" qi="">
+			<func name="Function1">
+				<a name="DeleteDCOChildren" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="y"/>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Delete Traling Object" id="1" dcomap.open="P=RFP DETAILS_TrailingPage;P=RFP DOCUMENTS_TrailingPage;P=ADDENDUM_TrailingPage;P=ANNEXURE_TrailingPage;P=SUPPORTING-DOCUMENTS_TrailingPage" qi="">
+			<func name="Function1" disabled="y">
+				<a name="DeleteDCOChildrenAndVariables" ns="com:Datacap.Libraries.ApplicationObjects.Actions"/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="27" name="NAV Set Page Status And PageCount" ver="5" modder="admin.1" dt="01/27/23 23:29:55.895 " qi="">
+		<rule name="Delete Trailing Pages Fields Rule1" id="2" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS" qi="">
+			<func name="Function1">
+				<a name="DeleteDCOChildren" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="y"/>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Delete Traling Object" id="1" dcomap.open="P=RFP DETAILS_TrailingPage;P=RFP DOCUMENTS_TrailingPage;P=ADDENDUM_TrailingPage;P=ANNEXURE_TrailingPage;P=SUPPORTING-DOCUMENTS_TrailingPage" qi="">
+			<func name="Function1">
+				<a name="DeleteDCOChildrenAndVariables" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="y"/>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="@P.TYPE"/>
+					<p name="SearchInValue" type="string" v="_TrailingPage"/>
+					<p name="CaseSensitive" type="string" v="False"/>
+				</a>
+				<a ns="com:Datacap.Libraries.FileIO.Actions" name="DeleteFile">
+					<p name="filename" type="string" v="@APPPATH(runtime)+\+@BATCHID+\+@P.DATAFILE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="27" name="NAV Set Page Status And PageCount" ver="6" modder="admin.1" dt="01/27/23 23:38:25.769 " qi="">
+		<rule name="Set page status rule1" id="2" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS" qi="">
+			<func name="Function1">
+				<a name="DeleteDCOChildren" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="y"/>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="27" name="NAV Set Page Status And PageCount" ver="7" modder="admin.1" dt="01/28/23 15:30:55.391 " qi="">
+		<rule name="Set page status rule1" id="2" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS" qi="">
+			<func name="Function1">
+				<a name="DeleteDCOChildren" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="y"/>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Pages Count" id="1" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="27" name="NAV Set Page Status And PageCount" ver="8" modder="admin.1" dt="01/28/23 16:22:46.22 " qi="">
+		<rule name="Set page status rule1" id="2" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS;P=IT Strategy Committee Notes and ATRs;P=IT Steering Committee Notes and ATRs;P=OFFICE_NOTE;P=STRATEGY COMMITEE;P=STEERING COMMITEE;P=REGULATORY LETTERS;P=AUDIT;P=RTI_APPEAL_CIC;P=IEM MINUTES;P=ITAB MINUTES;P=SAVING ACCOUNT OPENING FORM;P=SAVING ATM APPLICATION;P=SAVING CHEQUE BOOK APPLICATION;P=SAVING KYC DOCUMENT;P=SAVING NOMINATION FORM;P=CURRENT ACCOUNT OPENING FORM;P=CURRENT ATM_APPLICATION;P=CURRENT CHEQUE_BOOK_APPLICATION;P=CURRENT KYC_DOCUMENT;P=CURRENT NOMINATION-FORM;P=FD ACCOUNT OPENING FORM;P=FD NOMINATION_FORM;P=FD 15G_15H" qi="">
+			<func name="Function1">
+				<a name="DeleteDCOChildren" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="y"/>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Pages Count" id="1" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="27" name="NAV Set Page Status And PageCount" ver="10" modder="admin.1" dt="02/21/23 15:33:26.494 " qi="">
+		<rule name="Set page status rule1" id="2" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS;P=IT Strategy Committee Notes and ATRs;P=IT Steering Committee Notes and ATRs;P=OFFICE_NOTE;P=STRATEGY COMMITEE;P=STEERING COMMITEE;P=REGULATORY LETTERS;P=AUDIT;P=RTI_APPEAL_CIC;P=IEM MINUTES;P=ITAB MINUTES" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Pages Count" id="1" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="27" name="NAV Set Page Status And PageCount" ver="11" modder="admin.1" dt="03/28/23 10:39:20.279 " qi="">
+		<rule name="NAV Set page status rule1" id="2" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS;P=IT Strategy Committee Notes and ATRs;P=IT Steering Committee Notes and ATRs;P=OFFICE_NOTE;P=STRATEGY COMMITEE;P=STEERING COMMITEE;P=REGULATORY LETTERS;P=AUDIT;P=RTI_APPEAL_CIC;P=IEM MINUTES;P=ITAB MINUTES" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Pages Count" id="1" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Set Page Status And PageCount" ver="1" modder="admin.1" qi="">
+		<rule name="Set page status rule1" id="1" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS;P=IT Strategy Committee Notes and ATRs;P=IT Steering Committee Notes and ATRs;P=OFFICE_NOTE;P=STRATEGY COMMITEE;P=STEERING COMMITEE;P=REGULATORY LETTERS;P=AUDIT;P=RTI_APPEAL_CIC;P=IEM MINUTES;P=ITAB MINUTES" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Pages Count" id="2" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Set Page Status And PageCount" ver="2" modder="admin.1" qi="" dt="06/27/23 12:33:42.42 ">
+		<rule name="Set page status rule1" id="1" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS;P=IT Strategy Committee Notes and ATRs;P=IT Steering Committee Notes and ATRs;P=OFFICE_NOTE;P=STRATEGY COMMITEE;P=STEERING COMMITEE;P=REGULATORY LETTERS;P=AUDIT;P=RTI_APPEAL_CIC;P=IEM MINUTES;P=ITAB MINUTES" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Pages Count" id="2" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Copy ofSet page status rule1" id="3" dcomap.open="P=RFP DOCUMENTS_TrailingPage;P=ADDENDUM_TrailingPage;P=SUPPORTING-DOCUMENTS_TrailingPage;P=IT Strategy Committee Notes and ATRs;P=IT Steering Committee Notes and ATRs;P=OFFICE_NOTE;P=STRATEGY COMMITEE;P=STEERING COMMITEE;P=REGULATORY LETTERS;P=AUDIT;P=RTI_APPEAL_CIC;P=IEM MINUTES;P=ITAB MINUTES" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Set Page Status And PageCount" ver="3" modder="admin.1" qi="" dt="06/27/23 14:58:34.358 ">
+		<rule name="Set page status rule1" id="1" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS;P=IT Strategy Committee Notes and ATRs;P=IT Steering Committee Notes and ATRs;P=OFFICE_NOTE;P=STRATEGY COMMITEE;P=STEERING COMMITEE;P=REGULATORY LETTERS;P=AUDIT;P=RTI_APPEAL_CIC;P=IEM MINUTES;P=ITAB MINUTES" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set page status rule1 - TrailingPages" id="3" dcomap.open="P=RFP DETAILS_TrailingPage;P=RFP DOCUMENTS_TrailingPage;P=ADDENDUM_TrailingPage;P=ANNEXURE_TrailingPage;P=SUPPORTING-DOCUMENTS_TrailingPage;P=IT Strategy Committee Notes and ATRs_TrailingPage;P=IT Steering Committee Notes and ATRs_TrailingPage;P=ATR of IT Strategy  Committee_TrailingPage;P=ATR of IT Steering Committee_TrailingPage;P=OFFICE_NOTE_TrailingPage;P=REGULATORY LETTERS_TrailingPage;P=AUDIT_TrailingPage;P=RTI_APPEAL_CIC_TrailingPage;P=MINUTES_TrailingPage;P=MINUTES1_TrailingPage" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Pages Count" id="2" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Set Page Status And PageCount" ver="4" modder="admin.1" qi="" dt="06/27/23 16:21:17.887 ">
+		<rule name="Set page status rule1" id="1" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS;P=IT Strategy Committee Notes and ATRs;P=IT Steering Committee Notes and ATRs;P=OFFICE_NOTE;P=STRATEGY COMMITEE;P=STEERING COMMITEE;P=REGULATORY LETTERS;P=AUDIT;P=RTI_APPEAL_CIC;P=IEM MINUTES;P=ITAB MINUTES" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set page status rule1 - TrailingPages" id="3" dcomap.open="P=RFP DETAILS_TrailingPage;P=RFP DOCUMENTS_TrailingPage;P=ADDENDUM_TrailingPage;P=ANNEXURE_TrailingPage;P=SUPPORTING-DOCUMENTS_TrailingPage;P=IT Strategy Committee Notes and ATRs_TrailingPage;P=IT Steering Committee Notes and ATRs_TrailingPage;P=ATR of IT Strategy  Committee_TrailingPage;P=ATR of IT Steering Committee_TrailingPage;P=OFFICE_NOTE_TrailingPage;P=REGULATORY LETTERS_TrailingPage;P=AUDIT_TrailingPage;P=RTI_APPEAL_CIC_TrailingPage;P=MINUTES_TrailingPage;P=MINUTES1_TrailingPage" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Pages Count" id="2" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Set Page Status And PageCount" ver="5" modder="admin.1" qi="" dt="07/28/23 15:42:46.352 ">
+		<rule name="Set page status rule1" id="1" dcomap.open="P=CREDIT AUDIT;P=CREDIT AUDIT_MISC;P=REFERENCE-DOCUMENTS;P=REFERENCE-DOCUMENTS_MISC;P=MISC AUDIT;P=MISC AUDIT_MISC;P=VIGILANCE REPORTS;P=VIGILANCE REPORTS_MISC;P=CONCURRENT AUDIT;P=CONCURRENT AUDIT_MISC;P=MANAGEMENT AUDIT CUM INSPECTION;P=MANAGEMENT AUDIT CUM INSPECTION_MISC;P=ANNUAL IS AUDIT REPORT FOR IT INFRA;P=OTHER AUDIT REPORT;P=BOARD_COMMITTEES RELATED IMPORTANT DOCUMENTS;P=ANNUAL IS AUDIT REPORT FOR BRANCH AUDIT;P=IS AUDIT REPORTS_MISC;P=RBIA_BRANCH REPORTS;P=RBIA_MISC;P=STAFF ACCOUNTABILITY CELL;P=STAFF ACCOUNTABILITY CELL_MISC" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set page status rule1 - TrailingPages" id="3" dcomap.open="P=CREDIT AUDIT_TrailingPage;P=CREDIT AUDIT_MISC_TrailingPage;P=REFERENCE-DOCUMENTS_TrailingPage;P=REFERENCE-DOCUMENTS_MISC_TrailingPage;P=MISC AUDIT_TrailingPage;P=MISC AUDIT_MISC_TrailingPage;P=VIGILANCE REPORTS _TrailingPage;P=VIGILANCE REPORTS_MISC_TrailingPage;P=CONCURRENT AUDIT_TrailingPage;P=CONCURRENT AUDIT_MISC_TrailingPage;P=MANAGEMENT AUDIT CUM INSPECTION_TrailingPage;P=MANAGEMENT AUDIT CUM INSPECTION_MISC_TrailingPage;P=ANNUAL IS AUDIT REPORT FOR IT INFRA_TrailingPage;P=OTHER AUDIT REPORT_TrailingPage;P=BOARD_COMMITTEES RELATED IMPORTANT DOCUMENTS_TrailingPage;P=ANNUAL IS AUDIT REPORT FOR BRANCH AUDIT_TrailingPage;P=IS AUDIT REPORTS_MISC_TrailingPage;P=RBIA_BRANCH REPORTS_TrailingPage;P=RBIA_MISC_TrailingPage;P=STAFF ACCOUNTABILITY CELL_TrailingPage;P=STAFF ACCOUNTABILITY CELL_MISC_TrailingPage" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Pages Count" id="2" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Set Page Status And PageCount" ver="6" modder="dmstest10.1" qi="" dt="01/30/24 17:17:26.153 ">
+		<rule name="Set page status rule1" id="1" dcomap.open="P=CREDIT AUDIT;P=CREDIT AUDIT_MISC;P=REFERENCE-DOCUMENTS;P=REFERENCE-DOCUMENTS_MISC;P=MISC AUDIT;P=MISC AUDIT_MISC;P=VIGILANCE REPORTS;P=VIGILANCE REPORTS_MISC;P=CONCURRENT AUDIT;P=CONCURRENT AUDIT_MISC;P=MANAGEMENT AUDIT CUM INSPECTION;P=MANAGEMENT AUDIT CUM INSPECTION_MISC;P=ANNUAL IS AUDIT REPORT FOR IT INFRA;P=OTHER AUDIT REPORT;P=BOARD_COMMITTEES RELATED IMPORTANT DOCUMENTS;P=ANNUAL IS AUDIT REPORT FOR BRANCH AUDIT;P=IS AUDIT REPORTS_MISC;P=RBIA_BRANCH REPORTS;P=RBIA_MISC;P=STAFF ACCOUNTABILITY CELL;P=STAFF ACCOUNTABILITY CELL_MISC" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set page status rule1 - TrailingPages" id="3" dcomap.open="P=CREDIT AUDIT_TrailingPage;P=CREDIT AUDIT_MISC_TrailingPage;P=REFERENCE-DOCUMENTS_TrailingPage;P=REFERENCE-DOCUMENTS_MISC_TrailingPage;P=MISC AUDIT_TrailingPage;P=MISC AUDIT_MISC_TrailingPage;P=VIGILANCE REPORTS _TrailingPage;P=VIGILANCE REPORTS_MISC_TrailingPage;P=CONCURRENT AUDIT_TrailingPage;P=CONCURRENT AUDIT_MISC_TrailingPage;P=MANAGEMENT AUDIT CUM INSPECTION_TrailingPage;P=MANAGEMENT AUDIT CUM INSPECTION_MISC_TrailingPage;P=ANNUAL IS AUDIT REPORT FOR IT INFRA_TrailingPage;P=OTHER AUDIT REPORT_TrailingPage;P=BOARD_COMMITTEES RELATED IMPORTANT DOCUMENTS_TrailingPage;P=ANNUAL IS AUDIT REPORT FOR BRANCH AUDIT_TrailingPage;P=IS AUDIT REPORTS_MISC_TrailingPage;P=RBIA_BRANCH REPORTS_TrailingPage;P=RBIA_MISC_TrailingPage;P=STAFF ACCOUNTABILITY CELL_TrailingPage;P=STAFF ACCOUNTABILITY CELL_MISC_TrailingPage" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Pages Count" id="2" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Set Page Status And PageCount" ver="7" modder="dmstest10.1" qi="" dt="01/31/24 11:50:56.790 ">
+		<rule name="Set page status rule1" id="1" dcomap.open="P=CREDIT AUDIT;P=CREDIT AUDIT_MISC;P=REFERENCE-DOCUMENTS;P=REFERENCE-DOCUMENTS_MISC;P=MISC AUDIT;P=MISC AUDIT_MISC;P=VIGILANCE REPORTS;P=VIGILANCE REPORTS_MISC;P=CONCURRENT AUDIT;P=CONCURRENT AUDIT_MISC;P=MANAGEMENT AUDIT CUM INSPECTION;P=MANAGEMENT AUDIT CUM INSPECTION_MISC;P=ANNUAL IS AUDIT REPORT FOR IT INFRA;P=OTHER AUDIT REPORT;P=BOARD_COMMITTEES RELATED IMPORTANT DOCUMENTS;P=ANNUAL IS AUDIT REPORT FOR BRANCH AUDIT;P=IS AUDIT REPORTS_MISC;P=RBIA_BRANCH REPORTS;P=RBIA_MISC;P=STAFF ACCOUNTABILITY CELL;P=STAFF ACCOUNTABILITY CELL_MISC" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set page status rule1 - TrailingPages" id="3" dcomap.open="P=CREDIT AUDIT_TrailingPage;P=CREDIT AUDIT_MISC_TrailingPage;P=REFERENCE-DOCUMENTS_TrailingPage;P=REFERENCE-DOCUMENTS_MISC_TrailingPage;P=MISC AUDIT_TrailingPage;P=MISC AUDIT_MISC_TrailingPage;P=VIGILANCE REPORTS_TrailingPage;P=VIGILANCE REPORTS_MISC_TrailingPage;P=CONCURRENT AUDIT_TrailingPage;P=CONCURRENT AUDIT_MISC_TrailingPage;P=MANAGEMENT AUDIT CUM INSPECTION_TrailingPage;P=MANAGEMENT AUDIT CUM INSPECTION_MISC_TrailingPage;P=ANNUAL IS AUDIT REPORT FOR IT INFRA_TrailingPage;P=OTHER AUDIT REPORT_TrailingPage;P=BOARD_COMMITTEES RELATED IMPORTANT DOCUMENTS_TrailingPage;P=ANNUAL IS AUDIT REPORT FOR BRANCH AUDIT_TrailingPage;P=IS AUDIT REPORTS_MISC_TrailingPage;P=RBIA_BRANCH REPORTS_TrailingPage;P=RBIA_MISC_TrailingPage;P=STAFF ACCOUNTABILITY CELL_TrailingPage;P=STAFF ACCOUNTABILITY CELL_MISC_TrailingPage" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Pages Count" id="2" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="59" name="NAV Set Page Status And PageCount" ver="12" modder="dmstest10.1" qi="" dt="01/31/24 13:19:59.255 ">
+	<rule name="Set page status rule1" id="1" dcomap.open="P=GENERAL INSURANCE_COMMON PROPOSAL FORM;P=GENERAL INSURANCE_KYC;P=LIFE INSURANCE_COMMON PROPOSAL FORM;P=LIFE INSURANCE_KYC;P=NOTE_GUIDELINES_NOTES;P=SOVEREIGN GOLD BOND_APPLICATION FORM;P=SOVEREIGN GOLD BOND_KYC;P=SOVEREIGN GOLD BOND_NOMINATION FORM" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Set page status rule1 - TrailingPages" id="3" dcomap.open="P=LIFE INSURANCE_COMMON PROPOSAL FORM_TrailingPage;P=LIFE INSURANCE_KYC_TrailingPage;P=GENERAL INSURANCE_COMMON PROPOSAL FORM_TrailingPage;P=GENERAL INSURANCE_KYC_TrailingPage;P=SOVEREIGN GOLD BOND_APPLICATION FORM_TrailingPage;P=SOVEREIGN GOLD BOND_NOMINATION FORM_TrailingPage;P=NOTE_GUIDELINES_NOTES_TrailingPage;P=SOVEREIGN GOLD BOND_KYC_TrailingPage" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Pages Count" id="2" dcomap.open="B">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+				<p name="Target" type="string" v="@B.PagesCount"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

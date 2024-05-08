@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="25" name="NAV FIXUP Assign Doc Type" ver="1" modder="admin.1">
+		<rule name="Assign Doc Type Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="25" name="NAV FIXUP Assign Doc Type" ver="2" modder="admin.1" dt="03/28/23 10:37:44.477 " qi="">
+		<rule name="NAV Assign Doc Type Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="55" name="NAV FIXUP Assign Doc Type" ver="1" modder="admin.1" qi="">
+		<rule name="Assign Doc Type Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="55" name="NAV FIXUP Assign Doc Type" ver="2" modder="admin.1" qi="" dt="04/08/23 11:38:31.448 ">
+		<rule name="Assign Doc Type Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@B.MainPage"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Assign Trail Page Doc Type Rule" id="2" dcomap.open="P=Page" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.MainPage"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="55" name="NAV FIXUP Assign Doc Type" ver="3" modder="admin.1" qi="" dt="04/08/23 11:43:52.159 ">
+		<rule name="Assign Doc Type Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@B.MainPage"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Assign Trail Page Doc Type Rule" id="2" dcomap.open="P=TrailPage" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.MainPage"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="55" name="NAV FIXUP Assign Doc Type" ver="4" modder="admin.1" qi="" dt="04/08/23 11:48:42.471 ">
+		<rule name="Assign Doc Type Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@B.MainPage"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Assign Trail Page Doc Type Rule" id="2" dcomap.open="P=TrailPage" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.MainPage"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="55" name="NAV FIXUP Assign Doc Type" ver="5" modder="dmstest10.1" qi="" dt="05/23/23 16:14:25.63 ">
+		<rule name="Assign Doc Type Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@B.MainPage"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Assign Trail Page Doc Type Rule" id="2" qi="">
+			<func name="Function1" qi="" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.MainPage"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

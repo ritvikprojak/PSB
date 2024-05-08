@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="34" name="Call REST API" ver="1" modder="admin.1">
+		<rule name="REST API Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="GetEmployeeDetails" ns="net:PSBCustomLibrary.SampleAction"/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="34" name="Call REST API" ver="2" modder="admin.1" dt="02/08/23 16:27:22.234 ">
+		<rule name="REST API Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="JsonParseGetEmployee" ns="net:PSBCustomLibrary.SampleAction"/>
+				<a name="GetEmployeeDetails" ns="net:PSBCustomLibrary.SampleAction" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="34" name="Call REST API" ver="3" modder="admin.1" dt="02/08/23 16:27:54.455 ">
+		<rule name="REST API Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a name="GetEmployeeDetails" ns="net:PSBCustomLibrary.SampleAction" qi=""/>
+				<a name="JsonParseGetEmployee" ns="net:PSBCustomLibrary.SampleAction"/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="34" name="Call REST API" ver="4" modder="admin.1" dt="02/08/23 18:08:08.815 ">
+		<rule name="REST API Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a name="GetEmployeeDetails" ns="net:PSBCustomLibrary.SampleAction" qi=""/>
+				<a name="JsonParseGetEmployee" ns="net:PSBCustomLibrary.SampleAction" disabled="y"/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="34" name="Call REST API" ver="5" modder="admin.1" dt="02/08/23 18:12:06.634 ">
+		<rule name="REST API Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a name="GetEmployeeDetails" ns="net:PSBCustomLibrary.SampleAction" qi=""/>
+				<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi=""/>
+			</func>
+			<func name="Function2">
+				<a name="JsonParseGetEmployee" ns="net:PSBCustomLibrary.SampleAction" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="34" name="Call REST API" ver="6" modder="admin.1" dt="02/08/23 22:58:25.37 ">
+		<rule name="REST API Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a name="GetEmployeeDetails" ns="net:PSBCustomLibrary.SampleAction" qi=""/>
+			</func>
+			<func name="Function2" disabled="y">
+				<a name="JsonParseGetEmployee" ns="net:PSBCustomLibrary.SampleAction" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="34" name="Call REST API" ver="7" modder="admin.1" dt="02/22/23 12:54:17.531 " qi="">
+		<rule name="REST API Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetEmployeeDetails">
+					<p name="LoginId" type="string" qi="Provide the LoginID." v="951891"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="34" name="Call REST API" ver="8" modder="admin.1" dt="04/27/23 16:11:24.500 " qi="">
+		<rule name="REST API Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="34" name="Call REST API" ver="9" modder="dmstest10.1" dt="05/11/23 10:44:39.943 " qi="">
+		<rule name="REST API Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="951891"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="34" name="Call REST API" ver="10" modder="dmstest10.1" dt="05/29/23 14:27:39.558 " qi="">
+		<rule name="REST API Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetEmployeeDetails">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@OPERATOR"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

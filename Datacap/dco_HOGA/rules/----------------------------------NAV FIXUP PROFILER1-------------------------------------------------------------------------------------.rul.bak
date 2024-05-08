@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="107" name="----------------------------------NAV FIXUP PROFILER1-------------------------------------------------------------------------------------" ver="1" modder="dmstest10.1" qi="">
+		<rule name="Rule1" id="1">
+			<func name="Function1"/>
+		</rule>
+	</ruleset>
+	<ruleset id="107" name="----------------------------------NAV FIXUP PROFILER1-------------------------------------------------------------------------------------" ver="2" modder="dmstest10.1" qi="" dt="12/28/23 15:31:36.183 "/>
+</archive>

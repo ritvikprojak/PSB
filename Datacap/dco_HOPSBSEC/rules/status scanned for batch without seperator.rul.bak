@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="116" name="Status scanned for batch without seperator" ver="1" modder="dmstest10.1" qi="">
+		<rule name="Status scanned for batch without seperator" id="1">
+			<func name="Function1"/>
+		</rule>
+	</ruleset>
+</archive>

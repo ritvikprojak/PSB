@@ -1,0 +1,34 @@
+{
+	
+	// fields (includes batch-level fields)
+	"field.ZONECODE":"ZONE CODE",
+	"field.BRANCHNAME":"BRANCH NAME",
+	"field.BRANCHCODE":"BRANCH CODE",
+	"field.LOANACNO":"LOAN ACCOUNT NUMBER",
+	"field.CUSTID":"CUSTOMER ID",
+	"field.APP_NO":"APPLICATION NUMBER",
+	"field.CUSTNAME":"CUSTOMER NAME",
+	"field.GUARANTNAME":"GUARANTOR NAME",
+	"field.SCHEMETYPE":"SCHEME TYPE",
+	"field.DOCTYPE":"DOCUMENT TYPE",
+	"field.SUBTYPEPRESANCTION":"SUBTYPE PEPRESANCTION",
+	"field.SUBTYPEPOSTSANCTION":"SUBTYPE POSTSANCTION",
+	"field.ZONENAME":"ZONE NAME",
+	
+	// shortcuts
+	"shortcut.NAVVScan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyPS":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVScan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyPS":"Classify Document",
+	"task.NAVMaker":"Document Details",								
+	"task.NAVChecker":"Checker",
+	"task.NAVExport":"Export"
+}

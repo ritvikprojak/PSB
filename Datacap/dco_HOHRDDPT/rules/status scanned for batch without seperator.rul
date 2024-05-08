@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="99" name="Status scanned for batch without seperator" ver="2" modder="dmstest10.1" qi="" dt="02/06/24 13:39:26.128 ">
+	<rule name="Status scanned for batch without seperator" id="1" qi="" dcomap.open="P=TrailPage">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="49"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="58" name="NAV Custom ReClassify for IT DPT" ver="7" modder="admin.1" qi="" dt="01/30/24 10:13:56.992 ">
+	<rule name="Setup trailing pages" id="1" qi="" dcomap.open="P=TrailPage">
+		<func name="Function1: Last Page Type QPR1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="QPR"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="QPR_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function2: Last Page Type QPR_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="QPR_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="QPR_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function3: Last Page Type QUARTERLY PROGRESSIVE REPORT 1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="QUARTERLY PROGRESSIVE REPORT "/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="QUARTERLY PROGRESSIVE REPORT _TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function4: Last Page Type QUARTERLY PROGRESSIVE REPORT _TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="QUARTERLY PROGRESSIVE REPORT _TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="QUARTERLY PROGRESSIVE REPORT _TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function5: Last Page Type QUARTERLY MEETING1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="QUARTERLY MEETING"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="QUARTERLY MEETING_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function6: Last Page Type QUARTERLY MEETING_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="QUARTERLY MEETING_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="QUARTERLY MEETING_TrailingPage"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

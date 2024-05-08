@@ -1,0 +1,130 @@
+<?xml-stylesheet type="text/xsl" href="..\..\ProgramSet\set.xsl"?><S>
+  <P n="BatchProcessing" tip="General Batch Processing Settings" title="Batch Processing">
+    <V label="Specify server communication request timeout with virtual viewer" n="ServerCommunicationRequestTimeout" tip="Specify server communication request timeout in milliseonds with virtual viewer" type="text">120000</V>
+    <!--
+		<V n="CreateDoc" label="Create Document Node" tip="Specifies to create doc node for the scan task" type="checkbox">0</V>
+		<V n="CreateDir" label="Create Batch Directory" tip="Specifies to assume batch creation mode and create batch directory" type="checkbox">1</V> -->
+    <V label="Output DCO File" n="TaskDCOFile" tip="Specifies name for the output dco file for the task" type="text">taskname.xml</V>
+    <V label="Allow Hold" n="Hold" tip="Allows placing batches on hold to continue later" type="checkbox">1</V>
+    <V label="Allow Cancel" n="Cancel" tip="Group name allowed to cancel a batch. blank: Allows all groups to cancel a batch, none: Do not allow any groups to cancel a batch, group names: Only users in this group are allowed to cancel a batch. LDAP groups are not supported." type="text"/>
+    <P n="Navigation" tip="Settings that determine batch navigation" title="Navigation">
+      <V label="Validation Statuses" n="DOF" tip="Comma-separated list of Done,Override,Fail statuses assigned after validation, according to results." type="text">0,2,1</V>
+    </P>
+  </P>
+  <P n="Rulerunner" tip="Settings that enable RRS rules execution" title="Rulerunner Service">
+    <V label="Show Start Batch Panel" n="StartPanel" tip="Enables start batch panel with data validations" type="checkbox">0</V>
+    <V label="Main Task Profile(s)" n="TProfile" tip="Main task profile to run on Submit" type="text"/>
+    <V label="Alternative Task Profile(s)" n="AltTProfile" tip="Alternative task profile setting creates extra buttons for special data handling cases" type="text"/>
+    <V label="Preparation Task Profile" n="PreTProfile" tip="Task profile to prepare date before display" type="text"/>
+    <V label="Local Service Base URL" n="LocalServiceBaseUrl" tip="The base url of the local service" type="text">http://127.0.0.1:51224/service/</V>
+    <V label="Post Scan Task Profile" n="PostScanTProfile" tip="Task profile to run once scanning completes" type="text"/>
+    <V label="In Scan Task Profile" n="InScanTProfile" tip="Task profile to run once a page is scanned and saved in the local file system" type="text"/>
+    <V label="Suppress Local Service Not Available Error" n="SuppressLocalServiceUnavailableError" tip="Do not show error dialog when Local Service is not available. This is useful when Local Service has not been deployed to all clients machines" type="checkbox">0</V>
+  </P>
+  <P n="StaticWebSet" tip="Settings for static task panels" title="Custom Web Panels">
+    <V label="Enable Custom Panels" n="Static" tip="Setting to use pre-made custom data entry panels" type="checkbox">0</V>
+    <G n="Web-Panels" tip="Key-Value pairs to associate DCO Type to Panel class" title="Bind Panel to DCO Type">
+<V label="" n="webPage_TYPE" tip="Association of DCO Type to Panel class name" type="text">Panel.ascx</V>
+</G>
+  </P>
+  <P n="Scan" tip="Setting for scan process" title="Scan">
+    <!--<V n="ScanDir" label="Local Scan Directory" tip="Temporary scan directory to place images into + \batchid\" type="text">c:\datacap\scan</V>-->
+    <!--<V n="LocalProc" label="Local Processing" tip="Enables uploadless process, to place IMAGEFILEs into ScanDir=RootBatchDir" type="checkbox">0</V>-->
+    <V label="Upload Immediately" n="Upload" tip="Combines Scan+Upload tasks in one, - when enabled initiates upload when Done is pressed" type="checkbox">1</V>
+    <V label="Async Upload" n="AsyncUpload" tip="Uploads pages in an async mode" type="checkbox">0</V>
+    <!--<V n="PageID" label="Enable Page ID" tip="Allows to ID images based on Setup DCO types" type="checkbox">0</V>-->
+    <V label="File Extension" n="FileExt" tip="Specify file extension - which files to filter and grab from source folder during vscan process" type="text">tif,pdf</V>
+    <V label="Show Single Page" n="ShowSinglePage" tip="Show singe page in the virtual image viewer." type="checkbox">0</V>
+    <V label="Use Local Rendering Service" n="useLocalRenderingService" tip="Use local service to render images duing scan" type="checkbox">0</V>
+    <V label="Magnetic Ink Character Recognition" n="MICR" tip="Magnetic Ink Character Recognition Support. Only works for scanners that have MICR support." type="checkbox">0</V>
+    <V label="Allows To Import Files From Directory" n="ShowImportFromDirectory" tip="Group name allowed to import files from directory to the batch. blank: All groups are allowed to import files from directory to the batch, none: No groups are allowed to import files from directory to the batch, group names: Only users in this group are allowed to import files from directory to the batch. LDAP groups are not supported." type="text"/>
+    <!--<V n="FileType" label="File Compression" tip="Specify file compression (Snowbound Lib. constant) how to write image file after rotate/change operation on the image" type="text">10</V>-->
+    <V label="Set Data Source to File Transfer Mode" n="dataSourceFileMode" tip="Sets the scanner transfer mode to DISK FILE mode, thus files are scanned to disk directly." type="checkbox">0</V>
+    <V label="Max Size to Display PDF/Office document" n="MaxSizetoShowPDFOfficeInVViewer" tip="Specify the max size to display PDF/Office document in virtual viewer, and the unit is KB. 0 means no restriction on file size. Once the file size exceeds the specified size, the file is shown as a PDF icon." type="text">0</V>
+    <P n="ScannerSet" tip="Basic scanner settings for the task" title="Scanner Setup">
+      <V label="Allow Show Manufacturer Scanner Properties" n="AllowShowScannerUI" tip="Control if allow end user to show manufacturer scanner properties" type="checkbox">0</V>
+      <V label="Enable Autofeeder" n="Autofeed" tip="Controls scanner source - manual vs. autofeeder option" type="checkbox">1</V>
+      <V label="Use Duplex Mode" n="Duplex" tip="When enabled - scans both sides of the image - duplex mode" type="checkbox">1</V>
+      <V label="Pixel Type" n="PixelType" tip="Specify pixel type for scanning (0-BnW, 1-Grayscale, 2-Color)" type="text">0</V>
+      <V label="Bit Depth" n="Bits" tip="Specify bitdepth for above image type (1-BnW, 8-Grayscale, 24-Color), values set should match pixel type setting." type="text">1</V>
+      <V label="Image Resolution DPI" n="Resolution" tip="Specify image resolution (X and Y resolution assumed the same) DPI" type="text">200</V>
+      <V label="Paper Size" n="PaperSize" tip="Specify paper size for scanning (0-none, 1-A4, 2-JISB5)" type="text">0</V>
+      <V label="Image format" n="Extension" tip="Specify extension for the scanned images: tif, jpeg, bmp, png" type="text">tif</V>
+      <V label="Skip Blank Pages" n="SkipBlankPages" tip="Specify whether to discard blank pages, default is do not discard. For some scanners, duplex must be unchecked for this to be enabled." type="checkbox">1</V>
+      <G n="customized-scanner-settings" tip="Define scanner settings for specifc physical scanner.For example: If specify the following settings string for scanner 'FUJITSU fi-6130Zdj'-'1,0,0,1,300,1,tif', it means 'enable Auto feeder', 'disable dupex mode', 'set pixel type to black and white', 'set bit depth to 1', 'set resolution to 300', 'set paper size to A4', 'The scanned image format is tif'." title="Customized Scanner Settings">
+<V hotkey="" label="Scanner Name" n="ScannerName" tip="" type="text"/>
+</G>
+      <V label="Enable Imprinting" n="EnableImprinting" tip="Enable Imprinting" type="checkbox">0</V>
+      <P n="ImprintingCapabilities" tip="Imprinting capabilities" title="Imprinting Capabilities">
+        <V label="Printer Values" n="CapPrinterValues" tip="Set the printer capabilities, enum values are: 0,1,2,3,4,5,6,7. TWPR_IMPRINTERTOPBEFORE: 0, TWPR_IMPRINTERTOPAFTER: 1, TWPR_IMPRINTERBOTTOMBEFORE: 2, TWPR_IMPRINTERBOTTOMAFTER: 3, TWPR_ENDORSERTOPBEFORE: 4, TWPR_ENDORSERTOPAFTER: 5, TWPR_ENDORSERBOTTOMBEFORE: 6, TWPR_ENDORSERBOTTOMAFTER: 7" type="text"/>
+        <V label="Printer Mode" n="CapPrinterMode" tip="Set the printer mode, enum values are: 0,1,2. TWPM_SINGLESTRING: 0 (Specifies that the printed text will consist of a single string), TWPM_MULTISTRING: 1 (Specifies that the printed text will consist of an enumerated list of strings to be printed in order), TWPM_COMPOUNDSTRING: 2 (Specifies that the printed string will consist of a compound of a String followed by a value followed by a suffix string)" type="text"/>
+        <V label="Printer Content Variable Separator" n="VariableSeparator" tip="Available separators are: '.', '_', '-','/','\\'" type="text">-</V>
+        <G n="ImprintingContent" title="Printer Content Variables">
+<V label="Variable" n="UserId" tip="set the variable like AppName, UserId, Date, PageSequenceNo etc." type="text"/>
+<V label="Variable" n="StationId" tip="set the variable like AppName, UserId, Date, PageSequenceNo etc." type="text"/>
+<V label="Variable" n="Date" tip="set the variable like AppName, UserId, Date, PageSequenceNo etc." type="text">YY-MM-DD</V>
+<V label="Variable" n="PageSequenceNo" tip="set the variable like AppName, UserId, Date, PageSequenceNo etc." type="text"/>
+</G>
+      </P>
+    </P>
+    <P n="EditableScannerCapabilities" tip="Editable scanner capabilities" title="Editable scanner capabilities">
+      <V label="Edit Scan Properties Group" n="EditAllCap" tip="Group name allowed to edit any or all scan UI properties. blank: Allows all groups to edit scan UI properties, none: Do not allow any groups to edit scan UI properties, group names: Only users in this group are allowed to edit scan UI properties." type="text"/>
+      <V label="Show Manufacturer Scanner Properties" n="ShowScannerUICap" tip="When enabled user may change control if allow end user to show manufacturer scanner properties" type="checkbox">0</V>
+      <V label="Enable Autofeeder" n="AutofeedCap" tip="When enabled user may change scanner source - manual vs. autofeeder option" type="checkbox">0</V>
+      <V label="Duplex Mode" n="DuplexCap" tip="When enabled user may change duplex mode" type="checkbox">1</V>
+      <V label="Pixel Type" n="PixelTypeCap" tip="When enabled user may change pixel type" type="checkbox">0</V>
+      <V label="Bit Depth" n="BitsCap" tip="When enabled user may change bitdepth" type="checkbox">0</V>
+      <V label="Image Resolution DPI" n="ResolutionCap" tip="When enabled user may change image resolution DPI" type="checkbox">0</V>
+      <V label="Paper Size" n="PaperSizeCap" tip="When enabled user may change paper size" type="checkbox">0</V>
+      <V label="Image format" n="ExtensionCap" tip="When enabled user may change extension for the scanned images" type="checkbox">0</V>
+    </P>
+    <P n="VisibilityScannerCapabilities" tip="Visibility of scanner capabilities" title="Visibility of scanner capabilities">
+      <V label="Show scanner capabilities" n="showScannerCapabilities" tip="Setting to allow showing scanner capabilities" type="checkbox">1</V>
+      <P n="CapabilityVisibility" tip="Visibility of scanner capabilities" title="Scanner capabilities">
+        <V label="Show Manufacturer Scanner Properties" n="ShowScannerUIVisible" tip="When checked, user will see this propperty in the scan UI" type="checkbox">1</V>
+        <V label="Enable Autofeeder" n="AutofeedVisible" tip="When checked, user will see this property in scan UI" type="checkbox">1</V>
+        <V label="Duplex Mode" n="DuplexVisible" tip="When checked, user will see this property in scan UI" type="checkbox">1</V>
+        <V label="Pixel Type" n="PixelTypeVisible" tip="When checked, user will see this property in scan UI" type="checkbox">1</V>
+        <V label="Bit Depth" n="BitsVisible" tip="When checked, user will see this property in scan UI" type="checkbox">1</V>
+        <V label="Image Resolution DPI" n="ResolutionVisible" tip="When checked, user will see this property in scan UI" type="checkbox">1</V>
+        <V label="Paper Size" n="PaperSizeVisible" tip="When checked, user will see this property in scan UI" type="checkbox">1</V>
+        <V label="Image format" n="ExtensionVisible" tip="When checked, user will see this property in scan UI" type="checkbox">1</V>
+        <V label="Use Scanner Profile" n="useScannerProfile" tip="Save or load scanner settings to or from scanner profile" type="checkbox">1</V>
+        <V label="Save Scanner Profile to Local Disk" n="isLocalScannerProfile" tip="Save or load scanner profiles to or from local disk when Use Scanner Profile is selected" type="checkbox">1</V>
+        <V label="Local Scanner Profile Folder" n="localScannerProfileDir" tip="The full path of folder to save or load scanner profiles when Save Scanner Profile to Local Disk is selected, for example: C:\temp\LocalScannerProfiles" type="text">C:\datacap\scan\MDSECTTDPT</V>
+      </P>
+    </P>
+    <P n="OutImages" tip="Target image file parameters" title="Output Images">
+      <V label="B/W Compression" n="Compression" tip="Specify compression (only!) for B/W images (0-uncompressed, 1-CCITT RLE, 2-CCITT Group 3 fax, 3-CCITT Group 3-2D fax, 4-CCITT Group 4 fax)" type="text">4</V>
+      <!-- 
+			<V n="ResaveType" label="Resave File Type" tip="If grayscale or color image has to be compressed using other than JPEG file format - specify file type here: -1 - no recompression; 40 - TIFF JPEG; refer to snowbound manulal for other possible values" type="text">-1</V>
+			<V n="ResaveExt" label="Resave File Extension" tip="Specify extension for images, compressed with ResaveType from above if ResaveType is not -1" type="text">-1</V>
+			 -->
+    </P>
+    <P n="TreeWebSet" tip="Settings for BatchView in web tasks" title="DCO Tree View">
+      <V label="Read Only View" n="TreeReadOnly" tip="Setting to allow modification to batch structure" type="checkbox">0</V>
+      <P n="OperationEnabled" tip="Setting to allow operation to batch structure." title="Actions">
+        <V label="Split Document" n="split" tip="Split documents in batch structure" type="checkbox">0</V>
+        <V label="Join Document" n="join" tip="Join documents in batch structure" type="checkbox">0</V>
+        <V label="Copy Page" n="copy" tip="Copy page in batch structure" type="checkbox">0</V>
+        <V label="Mark for Deleted Status" n="markForDeleted" tip="Mark page or document for deleted status in batch structure" type="checkbox">0</V>
+        <V label="Mark for Rescan Status" n="markForRescan" tip="Mark page for rescan status in batch structure" type="checkbox">1</V>
+        <V label="Mark for Review Status" n="markForReview" tip="Mark page or document for review status in batch structure" type="checkbox">1</V>
+        <V label="Remove Page" n="removePage" tip="Remove pages in batch structure" type="checkbox">1</V>
+        <V label="Move" n="move" tip="Move up or down pages or documents in batch structure" type="checkbox">1</V>
+        <V label="Disassemble Documents" n="disassembleDocs" tip="Disassemble all documents in batch structure" type="checkbox">0</V>
+        <V label="Check Integrity" n="checkIntegrity" tip="Run rule to check integrity" type="checkbox">0</V>
+        <V label="Undo" n="undo" tip="Undo the batch structure actions" type="checkbox">1</V>
+        <V label="Drag and Drop" n="dragAndDrop" tip="Drag and Drop pages or documents in batch structure" type="checkbox">1</V>
+        <V label="Comment" n="comment" tip="Enable comment on page" type="checkbox">1</V>
+      </P>
+      <V label="Highlighted Types" n="HiTypes" tip="Comma-separated list of page types to highlight for better visual separation" type="text"/>
+      <G n="TreeVars" tip="Key-Value pairs to determine what to show in DCO View" title="Display Variables">
+<V label="Props for var" n="TYPE" tip="Comma-separated AllowEdit,VarDropDown" type="text">0</V>
+</G>
+    </P>
+  </P>
+  <P n="NCLayout" tip="Defines run-time layout." title="Navigator Layout">
+    <V label="Layout" n="Layout" tip="Defines the run-time layout" type="text"/>
+  </P>
+</S>

@@ -1,0 +1,35 @@
+{
+	
+	// fields (includes batch-level fields)
+	"field.ATR DATE_STRATEGY":"ATR DATE",
+	"field.PURPOSE CODE_SC":"PURPOSE CODE",
+	"field.ATR DATE_STEERING":"ATR DATE",
+	"field.REFERENCE NUMBER_ON":"REFERENCE NUMBER",
+	"field.SR NO_ON":"SR NO",
+	"field.PURPOSE CODE_ON":"PURPOSE CODE",
+	"field.DOCUMENT TYPE_RTI":"DOCUMENT TYPE",
+	"field.SR NO_MIN":"SR NO",
+	"field.AGENDA ITEMS_MIN":"AGENDA ITEMS",
+	"field.OTHER NOTES":"MISC NOTES",
+	"field.SUBJECT_RTI":"SUBJECT",
+	"field.REFERENCE NUMBER_RL":"REFERENCE NUMBER",
+	"field.PURPOSE_ATR":"PURPOSE",
+	"field.dateofreciept":"DATE OF RECEIPT",
+	
+	// shortcuts
+	"shortcut.NAVVScan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyCOMP":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVScan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyCOMP":"Classify Document",
+	"task.NAVMaker":"Document Details",								
+	"task.NAVChecker":"Checker",
+	"task.NAVExport":"Export"
+}

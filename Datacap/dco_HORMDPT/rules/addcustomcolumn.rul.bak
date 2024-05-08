@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="12" name="AddCustomColumn" ver="3" modder="bhiward1.1" dt="02/20/20 08:35:23.898 ">
+		<rule name="AddCustomColumn Rule1" id="1">
+			<func name="Function1" qi="">
+				<a ns="InsertCustomColumn" name="InsertCustomColumn" qi="">
+					<p name="ColumnName" v="PB_FILENAME"/>
+					<p name="ColumnValue" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="AddCustomColumn" ver="4" modder="admin.1" dt="02/05/23 13:06:36.575 ">
+		<rule name="AddCustomColumn Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a ns="InsertCustomColumn" name="InsertCustomColumn" qi="">
+					<p name="ColumnName" v="PB_FILENAME"/>
+					<p name="ColumnValue" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="AddCustomColumn" ver="5" modder="admin.1" dt="02/07/23 17:54:40.264 ">
+		<rule name="AddCustomColumn Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="" disabled="y">
+				<a ns="InsertCustomColumn" name="InsertCustomColumn" qi="">
+					<p name="ColumnName" v="PB_FILENAME"/>
+					<p name="ColumnValue" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

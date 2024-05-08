@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="36" name="Cropping Ruleset" ver="1" modder="admin.1" qi="">
+		<rule name="Photograph" id="1">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ImageUtilities.Actions" name="ClipFieldToNewImage">
+					<p name="NewImagePageType" type="string" v="@P.TYPE"/>
+					<p name="NewImageStatus" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Signature" id="2">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ImageUtilities.Actions" name="ClipFieldToNewImage">
+					<p name="NewImagePageType" type="string" v="@P.TYPE"/>
+					<p name="NewImageStatus" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="36" name="Cropping Ruleset" ver="2" modder="admin.1" qi="" dt="04/10/23 13:24:51.505 ">
+		<rule name="Photograph" id="1" dcomap.open="F=Photograph_SA;F=Photograph_CA;F=Photograph_FD" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ImageUtilities.Actions" name="ClipFieldToNewImage">
+					<p name="NewImagePageType" type="string" v="@P.TYPE"/>
+					<p name="NewImageStatus" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Signature" id="2" dcomap.open="F=Signature_SA;F=Signature_CA;F=Signature_FD" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ImageUtilities.Actions" name="ClipFieldToNewImage">
+					<p name="NewImagePageType" type="string" v="@P.TYPE"/>
+					<p name="NewImageStatus" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="36" name="Cropping Ruleset" ver="3" modder="admin.1" qi="" dt="04/19/23 13:01:45.954 ">
+		<rule name="Photograph" id="1" dcomap.open="F=Photograph_SA;F=Photograph_CA;F=Photograph_FD" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ImageUtilities.Actions" name="ClipFieldToNewImage">
+					<p name="NewImagePageType" type="string" v="@P.TYPE"/>
+					<p name="NewImageStatus" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Signature" id="2" dcomap.open="F=Signature_SA;F=Signature_CA;F=Signature_FD" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ImageUtilities.Actions" name="ClipFieldToNewImage" qi="">
+					<p name="NewImagePageType" type="string" v="SAVING ACCOUNT OPENING FORM_TrailingPage"/>
+					<p name="NewImageStatus" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="36" name="Cropping Ruleset" ver="4" modder="admin.1" qi="" dt="04/19/23 13:07:16.451 ">
+		<rule name="Photograph" id="1" dcomap.open="F=Photograph_SA;F=Photograph_CA;F=Photograph_FD" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ImageUtilities.Actions" name="ClipFieldToNewImage">
+					<p name="NewImagePageType" type="string" v="@P.TYPE"/>
+					<p name="NewImageStatus" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Signature" id="2" dcomap.open="F=Signature_SA;F=Signature_CA;F=Signature_FD" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ImageUtilities.Actions" name="ClipFieldToNewImage" qi="">
+					<p name="NewImagePageType" type="string" v="@P.TYPE"/>
+					<p name="NewImageStatus" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="36" name="Cropping Ruleset" ver="5" modder="admin.1" qi="" dt="04/19/23 13:51:44.576 ">
+		<rule name="Photograph" id="1" dcomap.open="F=Photograph_SA;F=Photograph_CA;F=Photograph_FD" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ImageUtilities.Actions" name="ClipFieldToNewImage">
+					<p name="NewImagePageType" type="string" v="Photograph"/>
+					<p name="NewImageStatus" type="string" v="1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Signature" id="2" dcomap.open="F=Signature_SA;F=Signature_CA;F=Signature_FD" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ImageUtilities.Actions" name="ClipFieldToNewImage" qi="">
+					<p name="NewImagePageType" type="string" v="Signature"/>
+					<p name="NewImageStatus" type="string" v="1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="36" name="Cropping Ruleset" ver="6" modder="admin.1" qi="" dt="04/19/23 13:55:37.742 ">
+		<rule name="Photograph" id="1" qi="" dcomap.open="F">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ImageUtilities.Actions" name="ClipFieldToNewImage">
+					<p name="NewImagePageType" type="string" v="Photograph"/>
+					<p name="NewImageStatus" type="string" v="1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Signature" id="2" dcomap.open="F=Signature_SA;F=Signature_CA;F=Signature_FD" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ImageUtilities.Actions" name="ClipFieldToNewImage" qi="">
+					<p name="NewImagePageType" type="string" v="Signature"/>
+					<p name="NewImageStatus" type="string" v="1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

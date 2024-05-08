@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset name="NAV FingerprintAdd" id="8" ver="2" modder="admin.2" dt="10/06/14 08:17:17.836 ">
+		<rule name="FingerprintAdd" id="1" dcomap.open="P=Other" qi="">
+			<func name="FingeprintAdd: Other Function 1">
+				<a name="AnalyzeImage" ns="net:SharedRecognitionTools.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="NAV FingerprintAdd" id="8" ver="3" modder="admin.1" dt="03/28/23 12:09:33.546 " qi="">
+		<rule name="NAV FingerprintAdd" id="1" dcomap.open="P=Other" qi="">
+			<func name="FingeprintAdd: Other Function 1">
+				<a name="AnalyzeImage" ns="net:SharedRecognitionTools.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

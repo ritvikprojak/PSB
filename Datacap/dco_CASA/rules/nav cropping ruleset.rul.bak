@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="69" name="NAV Cropping Ruleset" ver="1" modder="admin.1" qi="">
+		<rule name="NAV Photograph" id="1" qi="" dcomap.open="F=Photograph1;F=Photograph2">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ImageUtilities.Actions" name="ClipFieldToNewImage">
+					<p name="NewImagePageType" type="string" v="Photograph"/>
+					<p name="NewImageStatus" type="string" v="1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Signature" id="2" dcomap.open="F=Signature1;F=Signature2" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ImageUtilities.Actions" name="ClipFieldToNewImage" qi="">
+					<p name="NewImagePageType" type="string" v="Signature"/>
+					<p name="NewImageStatus" type="string" v="1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

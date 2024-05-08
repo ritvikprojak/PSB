@@ -1,0 +1,13 @@
+<?xml-stylesheet type="text/xsl" href="..\..\ProgramSet\set.xsl"?>
+<S>
+  <P n="BatchProcessing" tip="General Batch Processing Settings" title="Batch Processing">
+    <V label="Create Batch Directory" n="CreateDir" tip="Specifies to assume batch creation mode and create batch directory" type="checkbox">0</V>
+    <V label="Output DCO File" n="TaskDCOFile" tip="Specifies name for the output dco file for the task" type="text">taskname.xml</V>
+    <V label="Allow Hold" n="Hold" tip="Allows placing batches on hold to continue later" type="checkbox">1</V>
+  </P>
+  <P n="UpSet" tip="Settings for upload process" title="Upload">
+    <V label="Upload Pause" n="Delay" tip="Delay between uploading images or groups of images for UI refresh purpose" type="text">100</V>
+    <V label="Max Upload Size" n="MaxUploadSizeKb" tip="Combine images into groups of max size for upload speed-up" type="text">0</V>
+    <V label="Hide Viewer" n="HideViewer" tip="Hide viewer with upload process" type="checkbox">1</V>
+  </P>
+</S>

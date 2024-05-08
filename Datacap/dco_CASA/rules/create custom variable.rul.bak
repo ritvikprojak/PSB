@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="24" name="Create Custom Variable" ver="1" modder="admin.1" qi="">
+		<rule name="rCreate Variable" id="2" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="24" name="Create Custom Variable" ver="2" modder="admin.1" qi="" dt="02/04/23 09:59:58.490 ">
+		<rule name="rCreate Variable" id="2" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="24" name="Create Custom Variable" ver="3" modder="admin.1" qi="" dt="02/04/23 10:20:16.340 ">
+		<rule name="rCreate Variable" id="2" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" disabled="y">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Page rule" id="1" dcomap.open="P=Page">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="24" name="Create Custom Variable" ver="4" modder="admin.1" qi="" dt="02/04/23 10:31:15.857 ">
+		<rule name="rCreate Variable" id="2" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" disabled="y">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Page rule" id="1">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="24" name="Create Custom Variable" ver="5" modder="admin.1" qi="" dt="03/01/23 19:38:15.678 ">
+		<rule name="rCreate Variable" id="2" qi="" dcomap.open="F=Document_Type">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="24" name="Create Custom Variable" ver="6" modder="admin.1" qi="" dt="04/14/23 17:04:50.858 ">
+		<rule name="rCreate Variable" id="2" qi="" dcomap.open="F=Document_Type">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="CustName batchvar" id="1" dcomap.open="F=CUSTOMER NAME">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bCUSTOMERNAME"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="CIF batchvar" id="3" dcomap.open="F=CIF">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bCIF"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="DOB batchvar" id="4" dcomap.open="F=DOB">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bDOB"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Mobile batchvar" id="5" dcomap.open="F=MOBILE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bMOBILE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

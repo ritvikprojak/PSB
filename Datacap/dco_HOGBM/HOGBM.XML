@@ -1,0 +1,1593 @@
+<?xml-stylesheet type="text/xsl" href="..\..\dco.xsl"?>
+<S>
+	<B type="HOGBM">
+		<V n="ID">0</V>
+		<V n="TYPE">Batch</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Other" pos="0" min="0" max="0"/>
+		<D type="Document" pos="0" min="0" max="0"/>
+		<D type="APY Enrollment Form DOC" pos="0" min="0" max="0"/>
+		<D type="PMSBY Enrollment Form DOC" pos="0" min="0" max="0"/>
+		<D type="PMJJBY Enrollment Form DOC" pos="0" min="0" max="0"/>
+		<D type="NOTES DOC" pos="0" min="0" max="0"/>
+		<D type="APY Death Claim Form DOC" pos="0" min="0" max="0"/>
+		<D type="APY KYC DOC" pos="0" min="0" max="0"/>
+		<D type="APY SUPPORTING DOCUMENT DOC" pos="0" min="0" max="0"/>
+		<D type="PMSBY Death Claim form DOC" pos="0" min="0" max="0"/>
+		<D type="PMSBY KYC DOC" pos="0" min="0" max="0"/>
+		<D type="PMSBY SUPPORTING DOCUMENTS DOC" pos="0" min="0" max="0"/>
+		<D type="PMJJBY DEATH CLAIM FORM DOC" pos="0" min="0" max="0"/>
+		<D type="PMJJBY KYC DOC" pos="0" min="0" max="0"/>
+		<D type="PMJJBY SUPPORTING DOCUMENTS DOC" pos="0" min="0" max="0"/>
+		<D type="PPF ACCOUNT OPENING FORM DOC" pos="0" min="0" max="0"/>
+		<D type="PPF KYC DOC" pos="0" min="0" max="0"/>
+		<D type="SSA ACCOUNT OPENING FORM DOC" pos="0" min="0" max="0"/>
+		<D type="SSA KYC DOC" pos="0" min="0" max="0"/>
+		<D type="SCSS ACCOUNT OPENING FORM" pos="0" min="0" max="0"/>
+		<D type="SCSS KYC DOC" pos="0" min="0" max="0"/>
+		<D type="PPF DEATH CLAIM FORM DOC" pos="0" min="0" max="0"/>
+		<D type="PPF SUPPORTING DOCUMENTS DOC" pos="0" min="0" max="0"/>
+		<D type="SSA DEATH CLAIM FORM" pos="0" min="0" max="0"/>
+		<D type="SSA SUPPORTING DOCUMENT DOC" pos="0" min="0" max="0"/>
+		<D type="SCSS DEATH CLAIM FORM DOC" pos="0" min="0" max="0"/>
+		<D type="SCSS SUPPORTING DOCUMENT DOC" pos="0" min="0" max="0"/>
+	</B>
+	<D type="Document">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Page" pos="1" min="1" max="0"/>
+		<P type="TrailPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="APY Enrollment Form DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="APY Enrollment Form" pos="0" min="0" max="0"/>
+		<P type="APY Enrollment Form_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="PMSBY Enrollment Form DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="PMSBY Enrollment Form" pos="0" min="0" max="0"/>
+		<P type="PMSBY Enrollment Form_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="NOTES DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="NOTES" pos="0" min="0" max="0"/>
+		<P type="NOTES_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="APY Death Claim Form DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="APY Death Claim Form" pos="0" min="0" max="0"/>
+		<P type="APY Death Claim Form_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="APY KYC DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="APY KYC" pos="0" min="0" max="0"/>
+		<P type="APY KYC_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="APY SUPPORTING DOCUMENT DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="APY SUPPORTING DOCUMENT" pos="0" min="0" max="0"/>
+		<P type="APY SUPPORTING DOCUMENT_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="PMSBY Death Claim form DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="PMSBY Death Claim form" pos="0" min="0" max="0"/>
+		<P type="PMSBY Death Claim form_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="PMSBY KYC DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="PMSBY KYC" pos="0" min="0" max="0"/>
+		<P type="PMSBY KYC_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="PMSBY SUPPORTING DOCUMENTS DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="PMSBY SUPPORTING DOCUMENTS" pos="0" min="0" max="0"/>
+		<P type="PMSBY SUPPORTING DOCUMENTS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="PMJJBY DEATH CLAIM FORM DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="PMJJBY DEATH CLAIM FORM" pos="0" min="0" max="0"/>
+		<P type="PMJJBY DEATH CLAIM FORM_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="PMJJBY KYC DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="PMJJBY KYC" pos="0" min="0" max="0"/>
+		<P type="PMJJBY KYC_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="PMJJBY SUPPORTING DOCUMENTS DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="PMJJBY SUPPORTING DOCUMENTS" pos="0" min="0" max="0"/>
+		<P type="PMJJBY SUPPORTING DOCUMENTS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="PPF ACCOUNT OPENING FORM DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="PPF ACCOUNT OPENING FORM" pos="0" min="0" max="0"/>
+		<P type="PPF ACCOUNT OPENING FORM_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="PPF KYC DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="PPF KYC" pos="0" min="0" max="0"/>
+		<P type="PPF KYC_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SSA ACCOUNT OPENING FORM DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SSA ACCOUNT OPENING FORM" pos="0" min="0" max="0"/>
+		<P type="SSA ACCOUNT OPENING FORM_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SSA KYC DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SSA KYC" pos="0" min="0" max="0"/>
+		<P type="SSA KYC_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SCSS ACCOUNT OPENING FORM">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SCSS ACCOUNT OPENING FORM" pos="0" min="0" max="0"/>
+		<P type="SCSS ACCOUNT OPENING FORM_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SCSS KYC DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SCSS KYC" pos="0" min="0" max="0"/>
+		<P type="SCSS KYC_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="PPF DEATH CLAIM FORM DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="PPF DEATH CLAIM FORM" pos="0" min="0" max="0"/>
+		<P type="PPF DEATH CLAIM FORM_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="PPF SUPPORTING DOCUMENTS DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="PPF SUPPORTING DOCUMENTS" pos="0" min="0" max="0"/>
+		<P type="PPF SUPPORTING DOCUMENTS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SSA SUPPORTING DOCUMENT DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SSA SUPPORTING DOCUMENT" pos="0" min="0" max="0"/>
+		<P type="SSA SUPPORTING DOCUMENT_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SCSS DEATH CLAIM FORM DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SCSS DEATH CLAIM FORM" pos="0" min="0" max="0"/>
+		<P type="SCSS DEATH CLAIM FORM_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SCSS SUPPORTING DOCUMENT DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SCSS SUPPORTING DOCUMENT" pos="0" min="0" max="0"/>
+		<P type="SCSS SUPPORTING DOCUMENT_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="PMJJBY Enrollment Form DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="PMJJBY Enrollment Form" pos="0" min="0" max="0"/>
+		<P type="PMJJBY Enrollment Form_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SSA DEATH CLAIM FORM">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SSA DEATH CLAIM FORM" pos="0" min="0" max="0"/>
+		<P type="SSA DEATH CLAIM FORM_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<P type="Other">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="Page">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Document_Type" pos="0" min="0" max="0"/>
+	</P>
+	<P type="APY Enrollment Form">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT OPEN DATE" pos="0" min="0" max="0"/>
+		<F type="SOL ID" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+		<F type="PRAN" pos="0" min="0" max="0"/>
+	</P>
+	<P type="APY Enrollment Form_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="PMSBY Enrollment Form">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT OPEN DATE" pos="0" min="0" max="0"/>
+		<F type="SOL ID" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="PMSBY Enrollment Form_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="NOTES">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="NOTE TYPE_N" pos="0" min="0" max="0"/>
+		<F type="REFERENCE NUMBER" pos="0" min="0" max="0"/>
+		<F type="SUBJECT" pos="0" min="0" max="0"/>
+	</P>
+	<P type="NOTES_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="APY Death Claim Form">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="DECEASED NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="PRAN" pos="0" min="0" max="0"/>
+		<F type="APY CLAIM NO" pos="0" min="0" max="0"/>
+		<F type="SOL ID" pos="0" min="0" max="0"/>
+		<F type="NOMINEE NAME" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="APY Death Claim Form_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="APY KYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DOCUMENT TYPE_AKYC" pos="0" min="0" max="0"/>
+	</P>
+	<P type="APY KYC_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="APY SUPPORTING DOCUMENT">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DOCUMENT TYPE_ASD" pos="0" min="0" max="0"/>
+	</P>
+	<P type="APY SUPPORTING DOCUMENT_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="PMSBY Death Claim form">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="DECEASED NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="PMSBY CLAIM NO" pos="0" min="0" max="0"/>
+		<F type="SOL ID" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+		<F type="NOMINEE NAME" pos="0" min="0" max="0"/>
+	</P>
+	<P type="PMSBY Death Claim form_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="PMSBY KYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DOCUMENT TYPE_PMSKYC" pos="0" min="0" max="0"/>
+	</P>
+	<P type="PMSBY KYC_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="PMSBY SUPPORTING DOCUMENTS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DOCUMENT TYPE_PMSSD" pos="0" min="0" max="0"/>
+	</P>
+	<P type="PMSBY SUPPORTING DOCUMENTS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="PMJJBY DEATH CLAIM FORM">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="DECEASED NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="PMJJBY CLAIM NO" pos="0" min="0" max="0"/>
+		<F type="SOL ID" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+		<F type="NOMINEE NAME" pos="0" min="0" max="0"/>
+	</P>
+	<P type="PMJJBY DEATH CLAIM FORM_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="PMJJBY KYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DOCUMENT TYPE_PMJKYC" pos="0" min="0" max="0"/>
+	</P>
+	<P type="PMJJBY KYC_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="PMJJBY SUPPORTING DOCUMENTS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DOCUMENT TYPE_PMJSD" pos="0" min="0" max="0"/>
+	</P>
+	<P type="PMJJBY SUPPORTING DOCUMENTS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="PPF ACCOUNT OPENING FORM">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+		<F type="PAN NO" pos="0" min="0" max="0"/>
+	</P>
+	<P type="PPF ACCOUNT OPENING FORM_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="PPF KYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Pan" pos="0" min="0" max="0"/>
+		<F type="Adhar" pos="0" min="0" max="0"/>
+	</P>
+	<P type="PPF KYC_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SSA ACCOUNT OPENING FORM">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="GIRL CHILD NAME" pos="0" min="0" max="0"/>
+		<F type="PARENT/ GAURDIAN NAME" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+		<F type="PAN NO" pos="0" min="0" max="0"/>
+		<F type="DOB OF GIRL CHILD" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SSA ACCOUNT OPENING FORM_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SSA KYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Pan" pos="0" min="0" max="0"/>
+		<F type="Adhar" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SSA KYC_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SCSS ACCOUNT OPENING FORM">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="JOIN HOLDER NAME_SCAOF" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER ID" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+		<F type="PAN NO" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SCSS ACCOUNT OPENING FORM_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SCSS KYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Pan" pos="0" min="0" max="0"/>
+		<F type="Adhar" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SCSS KYC_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="PPF DEATH CLAIM FORM">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NAME_PDC" pos="0" min="0" max="0"/>
+		<F type="SOL ID" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+		<F type="NOMINEE NAME" pos="0" min="0" max="0"/>
+	</P>
+	<P type="PPF DEATH CLAIM FORM_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="PPF SUPPORTING DOCUMENTS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Document Type_PPFSD" pos="0" min="0" max="0"/>
+	</P>
+	<P type="PPF SUPPORTING DOCUMENTS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SSA SUPPORTING DOCUMENT">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Document Type_SSD" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SSA SUPPORTING DOCUMENT_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SCSS DEATH CLAIM FORM">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="SCSS ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT HOLDER NAME" pos="0" min="0" max="0"/>
+		<F type="SOL ID" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+		<F type="NOMINEE ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="NOMINEE NAME" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SCSS DEATH CLAIM FORM_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SCSS SUPPORTING DOCUMENT">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Document Type_SCSD" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SCSS SUPPORTING DOCUMENT_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="PMJJBY Enrollment Form">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT OPEN DATE" pos="0" min="0" max="0"/>
+		<F type="SOL ID" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="PMJJBY Enrollment Form_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SSA DEATH CLAIM FORM">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="SSA ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="PARENT/ GAURDIAN NAME" pos="0" min="0" max="0"/>
+		<F type="SOL ID" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+		<F type="NOMINEEAC" pos="0" min="0" max="0"/>
+		<F type="NOMINNAME" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SSA DEATH CLAIM FORM_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="TrailPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<F type="Frequency_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="RecogType">4</V>
+		<F type="Frequency_OMR1_OMR1" pos="0" min="0" max="0"/>
+	</F>
+	<F type="Signature_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Frequency_OMR1_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="SSA ACCOUNT NO_SDCF">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Field11">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document Type_PSD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document_Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NUMBER">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CIF">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT OPEN DATE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DatePattern">dd/MM/yyyy</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="DataType">3</V>
+	</F>
+	<F type="SOL ID">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="MOBILE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="PRAN">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOTE TYPE_N">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:NOTE TYPE_N</V>
+	</F>
+	<F type="REFERENCE NUMBER">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="SUBJECT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DECEASED NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="APY CLAIM NO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOMINEE NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT TYPE_AKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_AKYC</V>
+	</F>
+	<F type="DOCUMENT TYPE_ASD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:DOCUMENT TYPE_ASD</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="PMSBY CLAIM NO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT TYPE_PMSKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_PMSKYC</V>
+	</F>
+	<F type="DOCUMENT TYPE_PMSSD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_PMSSD</V>
+	</F>
+	<F type="PMJJBY CLAIM NO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT TYPE_PMJKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:DOCUMENT TYPE_PMJKYC</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT TYPE_PMJSD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_PMJSD</V>
+	</F>
+	<F type="PAN NO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="PARENT/ GAURDIAN NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOB OF GIRL CHILD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="DataType">3</V>
+		<V n="DatePattern">dd/MM/yyyy</V>
+	</F>
+	<F type="JOIN HOLDER NAME_SCAOF">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER ID">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NAME_PDC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document Type_PPFSD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:Document Type_PPFSD</V>
+	</F>
+	<F type="GIRL CHILD NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document Type_SSD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:Document Type_SSD</V>
+	</F>
+	<F type="SCSS ACCOUNT NO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT HOLDER NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOMINEE ACCOUNT NUMBER">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document Type_SCSD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:Document Type_SCSD</V>
+	</F>
+	<F type="Field1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+	</F>
+	<F type="SSA ACCOUNT NO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOMINNAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOMINEEAC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Pan">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Adhar">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<DICT n="P:NOTE TYPE_N">
+		<W v="NOTE/GUIDELINE">NOTE/GUIDELINE</W>
+		<W v="SOP">SOP</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_AKYC">
+		<W v="Aaadhar">Aaadhar</W>
+		<W v="PAN">PAN</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_ASD">
+		<W v="Death Certificate">Death Certificate</W>
+		<W v="value">Cancelled Cheque</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_PMSKYC">
+		<W v="Aaadhar">Aaadhar</W>
+		<W v="PAN">PAN</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_PMSSD">
+		<W v="Death Certificate">Death Certificate</W>
+		<W v="Cancelled Cheque">Cancelled Cheque</W>
+		<W v="Post mortum Report/Medical Report">Post mortum Report/Medical Report</W>
+		<W v="FIR Copy">FIR Copy</W>
+		<W v="Affidavit">Affidavit</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_PMJKYC">
+		<W v="Aaadhar">Aaadhar</W>
+		<W v="PAN">PAN</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_PMJSD">
+		<W v="Death Certificate">Death Certificate</W>
+		<W v="Cancelled Cheque">Cancelled Cheque</W>
+		<W v="Post mortem Report">Post mortem Report</W>
+		<W v="Medical Report">Medical Report</W>
+		<W v="FIR Copy">FIR Copy</W>
+		<W v="value">Affidavit</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_PKYC">
+		<W v="Aaadhar">Aaadhar</W>
+		<W v="PAN">PAN</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_SKYC">
+		<W v="Aaadhar">Aaadhar</W>
+		<W v="PAN NO">PAN</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_SCKYC">
+		<W v="AADHAR NO">AADHAR NO</W>
+		<W v="PAN NO">PAN NO</W>
+	</DICT>
+	<DICT n="P:Document Type_PPFSD">
+		<W v="Death Certificate">Death Certificate</W>
+		<W v="Adhaar">Adhaar</W>
+		<W v="PAN">PAN</W>
+	</DICT>
+	<DICT n="P:Document Type_SSD">
+		<W v="Death Certificate">Death Certificate</W>
+		<W v="Adhaar">Adhaar</W>
+		<W v="PAN">PAN</W>
+	</DICT>
+	<DICT n="P:Document Type_SCSD">
+		<W v="Death Certificate">Death Certificate</W>
+		<W v="Adhaar">Adhaar</W>
+		<W v="PAN">PAN</W>
+	</DICT>
+</S>

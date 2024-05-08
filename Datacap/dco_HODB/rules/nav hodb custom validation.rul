@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="63" name="NAV HODB Custom Validation" ver="25" modder="dmstest10.1" qi="" dt="10/20/23 18:01:20.255 ">
+	<rule name="Page Level Parent Rule" id="1" dcomap.open="P">
+		<func name="Function1">
+			<a name="Status_Preserve_OFF" ns="rrunner">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+			<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="--------------------------------------Reports------------------------------------" id="2" qi=""/>
+	<rule name="Report Name" id="3" qi="" dcomap.open="F=REPORT_NAME">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="100"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Report Name is Mandatory and must be less than or equal to 100-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Reporting Date" id="4" qi="" dcomap.open="F=REPORTING_DATE">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable" qi="">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Reporting Date is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="--------------------------------------Office Note-----------------------------------" id="5" qi=""/>
+	<rule name="Office Note Name" id="6" qi="" dcomap.open="F=OFFICE_NOTE_NAME">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="100"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Office Note Name is Mandatory and must be less than or equal to 100-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Office Note Number" id="8" qi="" dcomap.open="F=OFFICE_NOTE_NUMBER">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="20"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Office Note Number is Mandatory and must be less than or equal to 20-digits !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Note Date" id="23" qi="" dcomap.open="F=NOTE_DATE">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable" qi="">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Note Date is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Remark" id="24" qi="" dcomap.open="F=REMARK">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" disabled="y">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="100"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Remark is mandatory and must be less than or equal to 100-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="-------------------------------------SOP------------------------------------" id="25" qi=""/>
+	<rule name="SOP Name" id="26" qi="" dcomap.open="F=SOP_NAME">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="100"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SOP Name is mandatory and must be less than or equal to 100-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="SOP Number" id="27" qi="" dcomap.open="F=SOP_NUMBER">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="20"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SOP Number is mandatory and must be less than or equal to 20-digits !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="-------------------------------------Miscellaneous------------------------------------" id="53" qi=""/>
+	<rule name="Received From" id="54" qi="" dcomap.open="F=RECEIVED_FROM">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="100"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Received From is Mandatory and must be less than or equal to 100-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Date" id="55" qi="" dcomap.open="F=DATE">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable" qi="">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Date is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Reference Number" id="56" qi="" dcomap.open="F=REFERENCE_NUMBER">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="20"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Reference Number is mandatory and must be less than or equal to 20-digits !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Subject" id="57" qi="" dcomap.open="F=SUBJECT">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="500"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Subject is mandatory and must be less than or equal to 500-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="--------------------------------------RFP Documents------------------------------------" id="69" qi=""/>
+	<rule name="Tender Number" id="58" qi="" dcomap.open="F=TENDER_NO">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="50"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Tender No is mandatory and must be less than or equal to 50-digits !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="HO Department Code" id="59" qi="" dcomap.open="F=HO_DEPARTMENT_CODE">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="5"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="HO Department code is mandatory and must be less than or equal to 5-digits !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="In principal for floating RFP" id="9" qi="" dcomap.open="F=IN_PRINCIPAL_NOTE_FOR_FLOATING_RFP">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="10"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="In principal note for floating RFP is mandatory and must be less than or equal to 10-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Note for floating RFP" id="70" qi="" dcomap.open="F=NOTE_FOR_FLOATING_RFP">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" disabled="y">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="500"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Note for floating RFP must be less than or equal to 500-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Pre Bid queries &amp; Response" id="71" qi="" dcomap.open="F=PRE_BID_QUERIUES_RESPONSE_FROM_BIDDER">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" disabled="y">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="500"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Pre Bid queriues_response must be less than or equal to 500-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Bid documents" id="72" qi="" dcomap.open="F=BID_DOCUMENTS">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" disabled="y">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="500"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Bid documents must be less than or equal to 500-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Note for Technical Evaluation" id="73" qi="" dcomap.open="F=NOTE_FOR_TECHNICAL_EVALUATION">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" disabled="y">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="500"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Note for Technical Evaluation must be less than or equal to 500-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Note for Commercial Evaluation" id="74" qi="" dcomap.open="F=NOTE_FOR_COMMERCIAL_EVALUATION">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" disabled="y">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="500"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Note for Commercial Evaluation must be less than or equal to 500-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Note for Reverse Auction" id="75" qi="" dcomap.open="F=NOTE_FOR_REVERSE_AUCTION">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" disabled="y">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="500"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Note for Reverse Auction must be less than or equal to 500-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Note for declaring L_1 Bidder" id="76" qi="" dcomap.open="F=NOTE_FOR_DECLARING_L_1_BIDDER">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" disabled="y">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="500"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Note for declaring L_1 Bidder must be less than or equal to 500-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Financial approval for final TCO" id="77" qi="" dcomap.open="F=FINANCIAL_APPORVAL_FOR_FINAL_TCO">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" disabled="y">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="500"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Financial approval for final TCO must be less than or equal to 500-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Misc Notes" id="78" qi="" dcomap.open="F=MISC_NOTES_REGRADING_TENDER">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" disabled="y">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="500"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Misc Notes must be less than or equal to 500-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="-------------------------------------Addendum------------------------------------" id="79" qi=""/>
+	<rule name="Note for floating Addendum" id="80" qi="" dcomap.open="F=NOTE_FOR_FLOATING_ADDENDUM">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" disabled="y">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="500"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Note for floating Addendum must be less than or equal to 500-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Addendum NO" id="10" qi="" dcomap.open="F=ADDEDUM_NO">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="10"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Addendum no is mandatory and must be less than or equal to 10-digits !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Addendum Date" id="11" qi="" dcomap.open="F=ADDENDUM_DATED">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable" qi="">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" qi="">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Addendum Dated is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Addendum Subject" id="81" qi="" dcomap.open="F=ADDENDUM_SUBJECT">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" disabled="y">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="500"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Addendum Subject must be less than or equal to 500-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Addendum Queries_Response" id="82" qi="" dcomap.open="F=ADDENDUM_RELATED_QUERIES_RESPONSE">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" disabled="y">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="500"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Addendum Queries_Response must be less than or equal to 500-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="-------------------------------------Annexure------------------------------------" id="83" qi=""/>
+	<rule name="Annexure NO" id="12" qi="" dcomap.open="F=ANNEXURES_NO">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="500"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Annexure no is mandatory and must be less than or equal to 500-digits !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Annexure Subject" id="84" qi="" dcomap.open="F=ANNEXURES_SUBJECT">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" disabled="y">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="500"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Annexure Subject must be less than or equal to 500-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="-------------------------------------Application form------------------------------------" id="17" qi=""/>
+	<rule name="Merchant Id" id="18" qi="" dcomap.open="F=MERCHANT_ID">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="50"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Merchant ID is mandatory and must be less than or equal to 50-digits !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="-------------------------------------KYC------------------------------------" id="16" qi=""/>
+	<rule name="Account Number" id="19" qi="" dcomap.open="F=ACCOUNT_NUMBER">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="20"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Account Number is mandatory and must be less than or equal to 20-digits !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="-------------------------------------Business proof------------------------------------" id="15" qi=""/>
+	<rule name="Terminal ID" id="20" qi="" dcomap.open="F=TERMINAL_ID">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="50"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Terminal ID is mandatory and must be less than or equal to 50-digits !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="-------------------------------------Account statements------------------------------------" id="14" qi=""/>
+	<rule name="Party name" id="21" qi="" dcomap.open="F=PARTY_NAME">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="100"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Party Name is mandatory and must be less than or equal to 100-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="------------------------------------Purchase order------------------------------------" id="13" qi=""/>
+	<rule name="Installation Date" id="22" qi="" dcomap.open="F=INSTALLATION_DATE">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable" qi="">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" qi="">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Installation Date is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Branch code" id="28" qi="" dcomap.open="F=BRANCH_CODE">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="10"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="Branch code is mandatory and must be less than or equal to 10-digits !"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Zone" id="29" qi="" dcomap.open="F=ZONE">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="50"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone is mandatory and must be less than or equal to 50-characters !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="-------------------------------------Closure Documents------------------------------------" id="7" qi=""/>
+	<rule name="Deactivation Date" id="30" qi="" dcomap.open="F=DEACTIVATION_DATE">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable" qi="">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" qi="">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Deactivation Date is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="DropDown Validation" id="60" qi="" dcomap.open="F=REPORT_TYPE;F=NOTE_TYPE;F=TYPE;F=PRODUCT">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dropdown field is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

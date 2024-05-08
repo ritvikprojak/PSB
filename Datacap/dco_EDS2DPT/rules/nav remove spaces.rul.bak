@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="76" name="NAV Remove spaces" ver="2" modder="admin.1" qi="" dt="01/13/22 10:40:50.127 ">
+		<rule name="Rule1" id="1">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TrimSpaces" qi="">
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="76" name="NAV Remove spaces" ver="3" modder="admin.1" qi="" dt="03/28/23 12:12:53.634 ">
+		<rule name="NAV Rule1" id="1">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TrimSpaces" qi="">
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

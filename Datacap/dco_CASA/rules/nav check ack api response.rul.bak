@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="93" name="NAV Check ACK API Response" modder="dmstest10.1" dt="10/31/23 00:35:04.633 " ver="1" qi=""/>
+	<ruleset id="93" name="NAV Check ACK API Response" modder="dmstest10.1" dt="10/31/23 00:35:49.98 " ver="2" qi="">
+		<rule name="Rule1" id="1" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.ACKAPIResponse"/>
+					<p name="Text2" type="string" v="API Failure"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function2" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.ACKAPIResponse"/>
+					<p name="Text2" type="string" v="@EMPTY"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function3">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.ACKAPIResponse"/>
+					<p name="Text2" type="string" v="API Response Success"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="NAV Check ACK API Response" modder="dmstest10.1" dt="10/31/23 00:39:24.70 " ver="3" qi="">
+		<rule name="NAV Check ACK API Response Rule1" id="1" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.ACKAPIResponse"/>
+					<p name="Text2" type="string" v="API Failure"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function2" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.ACKAPIResponse"/>
+					<p name="Text2" type="string" v="@EMPTY"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function3">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.ACKAPIResponse"/>
+					<p name="Text2" type="string" v="API Response Success"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="NAV Check ACK API Response" modder="dmstest10.1" dt="11/01/23 14:24:55.833 " ver="4" qi="">
+		<rule name="NAV Check ACK API Response Rule1" id="1" dcomap.open="B">
+			<func name="Copy ofFunction1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+					<p name="Text1" type="string" v="@B.DOC_FLG"/>
+					<p name="Text2" type="string" v="N"/>
+				</a>
+			</func>
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.ACKAPIResponse"/>
+					<p name="Text2" type="string" v="API Failure"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function2" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.ACKAPIResponse"/>
+					<p name="Text2" type="string" v="@EMPTY"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function3">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.ACKAPIResponse"/>
+					<p name="Text2" type="string" v="API Response Success"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

@@ -1,0 +1,101 @@
+﻿<?xml version='1.0' ?>
+<rrx namespace="InsertCustomColumn" v="8.1.0.2"><i ref="rrunner"/><g>
+  <![CDATA[
+'-----------------------------------------------------------------------------
+' Licensed Materials - Property of IBM
+' “Restricted Materials of IBM”
+' 5725-C15 5725-C69
+'
+' © Copyright IBM Corp. 1994, 2013 All Rights Reserved
+'
+' US Government Users Restricted Rights - Use, duplication or
+' disclosure restricted by GSA ADP Schedule Contract with
+' IBM Corp.
+'
+'-----------------------------------------------------------------------------  
+  
+'*********************************
+'APT Custom Actions
+'APTCustom.rrx
+
+' Version
+'  8.0.0 - 04/5/2011   Tom Stuart
+'        - Adding actions to do calculations on machines that are localized.
+'
+'  8.0.2 - 02/16/2012   Tom Stuart
+'        - Added date conversion routines
+'
+'  8.1.0 - 02/16/2012   Tom Stuart
+'        - Added include for APT_Localization to fix Sticky Fingerprint issue.
+'
+'  8.1.0.1 - 06/05/2012
+'        - cleared the position of the main tax field.
+'
+'  8.1.0.2 - 02/12/2013 PHofle
+'        - Fixed unhandled errors when converting date value '10/22/201' to Date type.
+'          wk#36002
+'
+'*********************************
+
+]]></g>
+  
+
+<f name="InsertCustomColumn" access="public" bInter="bInter" bDebug="bDebug" strParam="StrParam" qi="Saves demo line item data to POLR demo database">
+<p name="ColumnName"/>  
+<p name="ColumnValue"/>
+<ap>
+   None<br/>
+  </ap>
+  <h>
+         Saves PO records to demo POLR  database.  Do not use for production.<br/>
+    <e>
+       
+    </e>
+  </h>
+  <lvl>
+      Lineitem field only.
+  </lvl>
+  <ret>
+    True. <br/>
+  </ret>
+  <see>
+ 
+  </see>
+  <g>
+  <![CDATA[
+	  Pilot.XtraBatchFieldValue(ColumnName) =  Metaword(ColumnValue)
+
+  ]]>
+  </g>
+</f>
+
+<f name="InsertOperator" access="public" bInter="bInter" bDebug="bDebug" strParam="StrParam" qi="Saves demo line item data to POLR demo database"> 
+<p name="OperatorName"/>
+<ap>
+   None<br/>
+  </ap>
+  <h>
+        Insert a new column.<br/>
+    <e>
+       
+    </e>
+  </h>
+  <lvl>
+      Lineitem field only.
+  </lvl>
+  <ret>
+    True. <br/>
+  </ret>
+  <see>
+ 
+  </see>
+  <g>
+  <![CDATA[
+	  Pilot.Operator =  Metaword(OperatorName)
+
+  ]]>
+  </g>
+</f>
+
+
+</rrx>

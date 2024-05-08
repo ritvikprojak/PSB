@@ -1,0 +1,882 @@
+<?xml-stylesheet type="text/xsl" href="..\..\dco.xsl"?>
+<S>
+	<B type="ZOLOS">
+		<V n="ID">0</V>
+		<V n="TYPE">Batch</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Other" pos="0" min="0" max="0"/>
+		<D type="Document" pos="0" min="0" max="0"/>
+		<D type="MSME DOC" pos="0" min="0" max="0"/>
+		<D type="AGRICULTURE and ALLIED ACTIVITIES DOC" pos="0" min="0" max="0"/>
+		<D type="OTHER PRIORITY SECTOR DOC" pos="0" min="0" max="0"/>
+		<D type="LOANS DOC" pos="0" min="0" max="0"/>
+		<D type="HOUSING LOAN DOC" pos="0" min="0" max="0"/>
+		<D type="VEHICLE LOAN DOC" pos="0" min="0" max="0"/>
+		<D type="FUND BASED DOC" pos="0" min="0" max="0"/>
+		<D type="NON FUND BASED DOC" pos="0" min="0" max="0"/>
+	</B>
+	<D type="Document">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Page" pos="1" min="1" max="0"/>
+		<P type="TrailPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="MSME DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="MSME" pos="1" min="1" max="1"/>
+		<P type="MSME_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="AGRICULTURE and ALLIED ACTIVITIES DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="AGRICULTURE and ALLIED ACTIVITIES" pos="1" min="1" max="1"/>
+		<P type="AGRICULTURE and ALLIED ACTIVITIES_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="OTHER PRIORITY SECTOR DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="OTHER PRIORITY SECTOR" pos="1" min="1" max="1"/>
+		<P type="OTHER PRIORITY SECTOR_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="LOANS DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="LOANS" pos="1" min="1" max="1"/>
+		<P type="LOANS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="HOUSING LOAN DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="HOUSING LOAN" pos="1" min="1" max="1"/>
+		<P type="HOUSING LOAN_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="VEHICLE LOAN DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="VEHICLE LOAN" pos="1" min="1" max="1"/>
+		<P type="VEHICLE LOAN_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="FUND BASED DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="FUND BASED" pos="1" min="1" max="1"/>
+		<P type="FUND BASED_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="NON FUND BASED DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="NON FUND BASED" pos="1" min="1" max="1"/>
+		<P type="NON FUND BASED_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<P type="Other">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="Page">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Document_Type" pos="0" min="0" max="0"/>
+	</P>
+	<P type="TrailPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="MSME">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ZONE_NAME" pos="0" min="0" max="0"/>
+		<F type="ZONE_CODE" pos="0" min="0" max="0"/>
+		<F type="BRANCH_NAME" pos="0" min="0" max="0"/>
+		<F type="BRANCH_CODE" pos="0" min="0" max="0"/>
+		<F type="LOAN_ACCOUNT_NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER_ID" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER_NAME" pos="0" min="0" max="0"/>
+		<F type="GUARANTOR_NAME" pos="0" min="0" max="0"/>
+		<F type="SCHEME_TYPE" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT_TYPE" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT_SUBTYPE_PRE-SANCTION" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT_SUBTYPE_POST-SANCTION" pos="0" min="0" max="0"/>
+	</P>
+	<P type="MSME_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="AGRICULTURE and ALLIED ACTIVITIES">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ZONE_NAME" pos="0" min="0" max="0"/>
+		<F type="ZONE_CODE" pos="0" min="0" max="0"/>
+		<F type="BRANCH_NAME" pos="0" min="0" max="0"/>
+		<F type="BRANCH_CODE" pos="0" min="0" max="0"/>
+		<F type="LOAN_ACCOUNT_NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER_ID" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER_NAME" pos="0" min="0" max="0"/>
+		<F type="GUARANTOR_NAME" pos="0" min="0" max="0"/>
+		<F type="SCHEME_TYPE" pos="0" min="0" max="0"/>
+		<F type="DOCTYPE1" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT_SUBTYPE1_PRE-SANCTION" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT_SUBTYPE_POST-SANCTION" pos="0" min="0" max="0"/>
+	</P>
+	<P type="AGRICULTURE and ALLIED ACTIVITIES_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="OTHER PRIORITY SECTOR">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ZONE_NAME" pos="0" min="0" max="0"/>
+		<F type="ZONE_CODE" pos="0" min="0" max="0"/>
+		<F type="BRANCH_NAME" pos="0" min="0" max="0"/>
+		<F type="BRANCH_CODE" pos="0" min="0" max="0"/>
+		<F type="LOAN_ACCOUNT_NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER_ID" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER_NAME" pos="0" min="0" max="0"/>
+		<F type="GUARANTOR_NAME" pos="0" min="0" max="0"/>
+		<F type="SCHEME_TYPE" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT_TYPE2" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT_SUBTYPE2_PRE-SANCTION" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT_SUBTYPE_POST-SANCTION" pos="0" min="0" max="0"/>
+	</P>
+	<P type="OTHER PRIORITY SECTOR_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="LOANS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="LOAN_ACCOUNT_NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER_ID" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER_NAME" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT_TYPE_LOANS" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT_SUBTYPE_LOANS" pos="0" min="0" max="0"/>
+		<F type="SCHEME_TYPE_LOANS" pos="0" min="0" max="0"/>
+		<F type="BRANCH_CODE" pos="0" min="0" max="0"/>
+		<F type="ZONE_CODE" pos="0" min="0" max="0"/>
+		<F type="BRANCH_NAME" pos="0" min="0" max="0"/>
+		<F type="ZONE_NAME" pos="0" min="0" max="0"/>
+	</P>
+	<P type="LOANS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="HOUSING LOAN">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="SCHEME_TYPE_HL" pos="0" min="0" max="0"/>
+		<F type="DOCUMENTS_HL" pos="0" min="0" max="0"/>
+	</P>
+	<P type="HOUSING LOAN_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="VEHICLE LOAN">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="SCHEME_TYPE_HL" pos="0" min="0" max="0"/>
+		<F type="DOCUMENTS_VL" pos="0" min="0" max="0"/>
+	</P>
+	<P type="VEHICLE LOAN_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="FUND BASED">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DOCUMENT_TYPE_FB" pos="0" min="0" max="0"/>
+	</P>
+	<P type="FUND BASED_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="NON FUND BASED">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DOCUMENT_TYPE_FB" pos="0" min="0" max="0"/>
+	</P>
+	<P type="NON FUND BASED_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<F type="Frequency_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="RecogType">4</V>
+		<F type="Frequency_OMR1_OMR1" pos="0" min="0" max="0"/>
+	</F>
+	<F type="Signature_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Frequency_OMR1_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Field11">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document_Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:NAV Document_Type</V>
+	</F>
+	<F type="ZONE_NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ZONE_CODE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="BRANCH_NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="BRANCH_CODE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="LOAN_ACCOUNT_NUMBER">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER_ID">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER_NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="GUARANTOR_NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="SCHEME_TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:SCHEME TYPE</V>
+	</F>
+	<F type="DOCUMENT_TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ZOPS_MSME_LOANDOCUMENTS_DOCUMENT TYPE</V>
+	</F>
+	<F type="DOCUMENT_SUBTYPE_PRE-SANCTION">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ZOPS_MSME_LOANDOCUMENTS_DOCUMENTSUBTYPE (1.PRESANCTIONDOCUMENTS)</V>
+	</F>
+	<F type="DOCUMENT_SUBTYPE_POST-SANCTION">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT_TYPE_LOANS">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ZORLD_LOANDOCUMENTS_DOCUMENT TYPE</V>
+	</F>
+	<F type="DOCUMENT_SUBTYPE_LOANS">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="SCHEME_TYPE_LOANS">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ZORLD_LOANDOCUMENTS_SCHEME TYPE</V>
+	</F>
+	<F type="SCHEME_TYPE_HL">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ZOCREDIT_StaffLoan_VehicleLoan_SCHEME TYPE</V>
+	</F>
+	<F type="DOCUMENTS_HL">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ZOCREDIT_StaffLoan_HousingLoan_Documents</V>
+	</F>
+	<F type="DOCUMENTS_VL">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ZOCREDIT_StaffLoan_VehicleLoan_Documents</V>
+	</F>
+	<F type="DOCUMENT_TYPE_FB">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ZOCREDIT_CorporateLoan_Nonfundbased_DOCUMENTTYPE</V>
+	</F>
+	<F type="DOCTYPE1">
+		<V n="ID">DICT</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ZOPS_AGRICULTUREALLIEDACTIVITIES_LOANDOCUMENTS_DOCUMENT TYPE</V>
+	</F>
+	<F type="DOCUMENT_SUBTYPE1_PRE-SANCTION">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:AGRICULTUREALLIEDACTIVITIES_LOANDOCUMENTS_DOCSUBTYPEPRESANCTION</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT_TYPE2">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:ZOPS_OTHERPRIORITYSECTOR_LOANDOCUMENTS_DOCUMENT TYPE</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT_SUBTYPE2_PRE-SANCTION">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:OTHERPRIORITYSECTOR_LOANDOCUMENTS_DOCSUBTYPEPRESANCTIONDOCUMENTS</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<DICT n="P:BID SYSTEM">
+		<W v="Single BID">Single BID</W>
+		<W v="Two BID">Two BID</W>
+		<W v="value">&lt;new word&gt;</W>
+	</DICT>
+	<DICT n="P:ZOPS_MSME_LOANDOCUMENTS_DOCUMENT TYPE">
+		<W v="PRE SANCTION DOCUMENTS">PRE SANCTION DOCUMENTS</W>
+		<W v="POST SANCTION DOCUMENTS">POST SANCTION DOCUMENTS</W>
+	</DICT>
+	<DICT n="P:ZOPS_MSME_LOANDOCUMENTS_DOCUMENTSUBTYPE (1.PRESANCTIONDOCUMENTS)">
+		<W v="VALUATION OF PROPERTY FROM EMPANEL VALUER">VALUATION OF PROPERTY FROM EMPANEL VALUER</W>
+	</DICT>
+	<DICT n="P:ZOPS_AGRICULTUREALLIEDACTIVITIES_LOANDOCUMENTS_DOCUMENT TYPE">
+		<W v="PRE SANCTION DOCUMENTS">PRE SANCTION DOCUMENTS</W>
+		<W v="POST SANCTION DOCUMENTS">POST SANCTION DOCUMENTS</W>
+	</DICT>
+	<DICT n="P:AGRICULTUREALLIEDACTIVITIES_LOANDOCUMENTS_DOCSUBTYPEPRESANCTION">
+		<W v="VALUATION OF PROPERTY FROM EMPANEL VALUER">VALUATION OF PROPERTY FROM EMPANEL VALUER</W>
+	</DICT>
+	<DICT n="P:ZOPS_OTHERPRIORITYSECTOR_LOANDOCUMENTS_DOCUMENT TYPE">
+		<W v="PRE SANCTION DOCUMENTS">PRE SANCTION DOCUMENTS</W>
+		<W v="POST SANCTION DOCUMENTS">POST SANCTION DOCUMENTS</W>
+	</DICT>
+	<DICT n="P:OTHERPRIORITYSECTOR_LOANDOCUMENTS_DOCSUBTYPEPRESANCTIONDOCUMENTS">
+		<W v="VALUATION OF PROPERTY FROM EMPANEL VALUER">VALUATION OF PROPERTY FROM EMPANEL VALUER</W>
+	</DICT>
+	<DICT n="P:ZORLD_LOANDOCUMENTS_DOCUMENT TYPE">
+		<W v="APPLICATION FORM">APPLICATION FORM</W>
+		<W v="LEGAL">LEGAL</W>
+		<W v="VALUATION">VALUATION</W>
+		<W v="DOCUMENTATION">DOCUMENTATION</W>
+		<W v="AGREEMENT">AGREEMENT</W>
+		<W v="KYC">KYC</W>
+	</DICT>
+	<DICT n="P:ZORLD_LOANDOCUMENTS_SCHEME TYPE">
+		<W v="HL (Housing Loan)">HL (Housing Loan)</W>
+		<W v="VL (Vehicle Loan)">VL (Vehicle Loan)</W>
+		<W v="PL (Personal Loan)">PL (Personal Loan)</W>
+		<W v="GOLD LOAN">GOLD LOAN</W>
+		<W v="EL (Education Loan)">EL (Education Loan)</W>
+		<W v="HLTOP (Housing Loan Top Up)">HLTOP (Housing Loan Top Up)</W>
+		<W v="TRPLO(Commercial Vehicle)">TRPLO(Commercial Vehicle)</W>
+		<W v="ML (Mortgage Loan)">ML (Mortgage Loan)</W>
+		<W v="RRCLO (Rent Receivable)">RRCLO (Rent Receivable)</W>
+	</DICT>
+	<DICT n="P:ZOCREDIT_StaffLoan_HousingLoan_SCHEME TYPE">
+		<W v="STAFF">STAFF</W>
+		<W v="PUBLIC">PUBLIC</W>
+	</DICT>
+	<DICT n="P:ZOCREDIT_StaffLoan_HousingLoan_Documents">
+		<W v="SANCTION LETTER">SANCTION LETTER</W>
+		<W v="UPDATATION CHARGES/MORTGAGE/MUTATION RECORDS/MCC ASSESSMENT REGISTER">UPDATATION CHARGES/MORTGAGE/MUTATION RECORDS/MCC ASSESSMENT REGISTER</W>
+	</DICT>
+	<DICT n="P:ZOCREDIT_StaffLoan_VehicleLoan_SCHEME TYPE">
+		<W v="STAFF">STAFF</W>
+		<W v="PUBLIC">PUBLIC</W>
+	</DICT>
+	<DICT n="P:ZOCREDIT_StaffLoan_VehicleLoan_Documents">
+		<W v="SANCTION LETTER">SANCTION LETTER</W>
+		<W v="HYPOTHECATION IN RTO">HYPOTHECATION IN RTO</W>
+	</DICT>
+	<DICT n="P:ZOCREDIT_CorporateLoan_FundBased_DOCUMENTTYPE">
+		<W v="SANCTION LETTER">SANCTION LETTER</W>
+		<W v="UPDATATION CHARGES/MORTGAGE/MUTATION RECORDS/MCC ASSESSMENT REGISTER">UPDATATION CHARGES/MORTGAGE/MUTATION RECORDS/MCC ASSESSMENT REGISTER</W>
+	</DICT>
+	<DICT n="P:ZOCREDIT_CorporateLoan_Nonfundbased_DOCUMENTTYPE">
+		<W v="SANCTION LETTER">SANCTION LETTER</W>
+		<W v="UPDATATION CHARGES/MORTGAGE/MUTATION RECORDS/MCC ASSESSMENT REGISTER">UPDATATION CHARGES/MORTGAGE/MUTATION RECORDS/MCC ASSESSMENT REGISTER</W>
+	</DICT>
+	<DICT n="P:SCHEME TYPE">
+		<W v="Venture Capital Fund Scheme for Dairy / Poultry Sectors">Venture Capital Fund Scheme for Dairy / Poultry Sectors</W>
+		<W v="Implementation of Swarna Jayanti Shahari Rozgar Yojana (SJSRY)">Implementation of Swarna Jayanti Shahari Rozgar Yojana (SJSRY)</W>
+		<W v="Joint liability Group JLG">Joint liability Group JLG</W>
+		<W v="MNRE&apos;s Scheme for Establishment of Akshya Urja Shops">MNRE&apos;s Scheme for Establishment of Akshya Urja Shops</W>
+		<W v="Scheme for Advanced Dairy Farming (Financing Commercial Dairy)">Scheme for Advanced Dairy Farming (Financing Commercial Dairy)</W>
+		<W v="Scheme for Financing Micro Finance Institutions MFIs">Scheme for Financing Micro Finance Institutions MFIs</W>
+		<W v="Scheme for Extending Financial Assistance to Sugar Undertakings, 2007">Scheme for Extending Financial Assistance to Sugar Undertakings, 2007</W>
+		<W v="DIFFERENTIAL RATE OF INTEREST (DRI) SCHEME">DIFFERENTIAL RATE OF INTEREST (DRI) SCHEME</W>
+		<W v="Debt Swap Scheme for farmers Indebted to moneylenders">Debt Swap Scheme for farmers Indebted to moneylenders</W>
+		<W v="Special Scheme for Loan Against Rent Receivable">Special Scheme for Loan Against Rent Receivable</W>
+		<W v="Scheme for Financing Small Dairy Units">Scheme for Financing Small Dairy Units</W>
+		<W v="Bank’s Policy for Financing Rice Shellers">Bank’s Policy for Financing Rice Shellers</W>
+		<W v="Central Sector Scheme on “Pig Development">Central Sector Scheme on “Pig Development</W>
+		<W v="Scheme for Construction of Godowns for FCI – for Storage of Food Grain">Scheme for Construction of Godowns for FCI – for Storage of Food Grain</W>
+		<W v="Dairy Entrepreneurship Development Scheme (DEDS)">Dairy Entrepreneurship Development Scheme (DEDS)</W>
+		<W v="Scheme for Financing  against Pledge of Warehouse Receipts issued by Warehouses managed by National Bulk">Scheme for Financing  against Pledge of Warehouse Receipts issued by Warehouses managed by National Bulk</W>
+		<W v="National Livestock Mission - EDEG Component - Year 2020-21  1- Amendment in the operational Guidelines 2- Allocation of additional funds">National Livestock Mission - EDEG Component - Year 2020-21  1- Amendment in the operational Guidelines 2- Allocation of additional funds</W>
+		<W v="NABARD AGRI-CLINICS AND AGRI-BUSINESS CENTRES (ACABC) SCHEME">NABARD AGRI-CLINICS AND AGRI-BUSINESS CENTRES (ACABC) SCHEME</W>
+		<W v="Revised Central Sector Scheme -- Capital Investment Subsidy for Construction/Renovation of Rural Godowns for remaining period of 11th Plan">Revised Central Sector Scheme -- Capital Investment Subsidy for Construction/Renovation of Rural Godowns for remaining period of 11th Plan</W>
+		<W v="FINANCING AUTOMATED TELLER MACHINES (ATMS) /CASH DISPENSERS (CDS).">FINANCING AUTOMATED TELLER MACHINES (ATMS) /CASH DISPENSERS (CDS).</W>
+		<W v="Scheme for Financing against Pledge of Warehouse Receipts">Scheme for Financing against Pledge of Warehouse Receipts</W>
+		<W v="Six schemes to meet the credit requirements of farmers (Purchase of Agri Land Estate Purchase Loan against Gold &amp; Silver Tatkal Renewable Energy pump set)">Six schemes to meet the credit requirements of farmers (Purchase of Agri Land Estate Purchase Loan against Gold &amp; Silver Tatkal Renewable Energy pump set)</W>
+		<W v="PSB NEW SCHEME FOR FINANCING TRACTORS">PSB NEW SCHEME FOR FINANCING TRACTORS</W>
+		<W v="General Purpose Credit Card (GCC) Scheme">General Purpose Credit Card (GCC) Scheme</W>
+		<W v="Rajiv Rinn Yojana(RRY)">Rajiv Rinn Yojana(RRY)</W>
+		<W v="PSB Scheme on Financing Agri - Seed Processing Units">PSB Scheme on Financing Agri - Seed Processing Units</W>
+		<W v="Scheme for Financing of Agriculture Inputs (Fertilisers/Pesticides/Certified Seed etc) Dealers/ Distributors/Stockist against Stock and Book Debts">Scheme for Financing of Agriculture Inputs (Fertilisers/Pesticides/Certified Seed etc) Dealers/ Distributors/Stockist against Stock and Book Debts</W>
+		<W v="E-Tracking of Loan Application under Prime Minister Employment Generation Programme">E-Tracking of Loan Application under Prime Minister Employment Generation Programme</W>
+		<W v="Farmers Produce Organisation FPO">Farmers Produce Organisation FPO</W>
+		<W v="Agriculture Marketing Infrastructure (AMI)- Operational Guidelines">Agriculture Marketing Infrastructure (AMI)- Operational Guidelines</W>
+		<W v="PSB Kisan Suvidha Scheme">PSB Kisan Suvidha Scheme</W>
+		<W v="Financing of Joint Farming Groups of ‘Bhoomi Heen Kisan’">Financing of Joint Farming Groups of ‘Bhoomi Heen Kisan’</W>
+		<W v="The Scheme of Ministry of New and Renewable Energy, GoI for promoting Solar Photovolatc water pumping systems for irrigation purpose">The Scheme of Ministry of New and Renewable Energy, GoI for promoting Solar Photovolatc water pumping systems for irrigation purpose</W>
+		<W v="PSB Scheme For Boosting Farm Mechanization">PSB Scheme For Boosting Farm Mechanization</W>
+		<W v="PSB Scheme of financing two-wheeler /Jeep/Car/SUV for farmers">PSB Scheme of financing two-wheeler /Jeep/Car/SUV for farmers</W>
+		<W v="PSB Eco-Ride Scheme for Financing of E-Rickshaws">PSB Eco-Ride Scheme for Financing of E-Rickshaws</W>
+		<W v="MNRE Lighting Scheme 2016- Capital Subsidy Scheme for installation of Solar Photovoltaic Lighting Systems">MNRE Lighting Scheme 2016- Capital Subsidy Scheme for installation of Solar Photovoltaic Lighting Systems</W>
+		<W v="Stand –Up India Scheme for financing SC/ST and/or Women Entrepreneurs">Stand –Up India Scheme for financing SC/ST and/or Women Entrepreneurs</W>
+		<W v="Dairy Entrepreneurship Development Scheme (DEDS) – Continuation of the Scheme for the FY 2016-17">Dairy Entrepreneurship Development Scheme (DEDS) – Continuation of the Scheme for the FY 2016-17</W>
+		<W v="Deendayal Antyodaya Yojana – National Urban Livelihoods Mission (DAY-NULM)">Deendayal Antyodaya Yojana – National Urban Livelihoods Mission (DAY-NULM)</W>
+		<W v="Credit Facilities to Scheduled Castes (SCs) &amp; Scheduled Tribes (STs)">Credit Facilities to Scheduled Castes (SCs) &amp; Scheduled Tribes (STs)</W>
+		<W v="SHG-Bank Linkage Programme">SHG-Bank Linkage Programme</W>
+		<W v="Credit Facilities to Minority Communities">Credit Facilities to Minority Communities</W>
+		<W v="Prime Minister Employment Generation Programme (PMEGP)">Prime Minister Employment Generation Programme (PMEGP)</W>
+		<W v="PSB Scheme on Lending Against Gold Jewellery/Gold Coins">PSB Scheme on Lending Against Gold Jewellery/Gold Coins</W>
+		<W v="Deendayal Antyodaya Yojana – National Rural Livelihoods Mission (DAY-NRLM)">Deendayal Antyodaya Yojana – National Rural Livelihoods Mission (DAY-NRLM)</W>
+		<W v="Finance under Pradhan Mantri Mudra Yojana">Finance under Pradhan Mantri Mudra Yojana</W>
+		<W v="Bank&apos;s Participation on Trade Receivables Electronic RXIL Platform Discountine System (TReDS) throush">Bank&apos;s Participation on Trade Receivables Electronic RXIL Platform Discountine System (TReDS) throush</W>
+		<W v="PSB Scheme for Financing of Seed Potato growers">PSB Scheme for Financing of Seed Potato growers</W>
+		<W v="Kisan Credit Card - Crop Loan">Kisan Credit Card - Crop Loan</W>
+		<W v="New Agricultural Marketing Infrastructure AMI Sub Scheme of ISAM">New Agricultural Marketing Infrastructure AMI Sub Scheme of ISAM</W>
+		<W v="PSB Agriclinic and Agribusiness Centres Scheme - Revised Guidelines (ACABC)">PSB Agriclinic and Agribusiness Centres Scheme - Revised Guidelines (ACABC)</W>
+		<W v="PSB Krishak Mitra - for financing commission agent (Arthias) / Agriculture Input Dealers/ Distributors of Agriculture Inputs">PSB Krishak Mitra - for financing commission agent (Arthias) / Agriculture Input Dealers/ Distributors of Agriculture Inputs</W>
+		<W v="PSB MSME Standby Line of Credit">PSB MSME Standby Line of Credit</W>
+		<W v="PSB Khadyan Suraksha Scheme - Scheme for Financing against electronic negotiable warehouse Receipt- consolidated guidelines">PSB Khadyan Suraksha Scheme - Scheme for Financing against electronic negotiable warehouse Receipt- consolidated guidelines</W>
+		<W v="PSB SHG Tatkal Rin- Financial Assistance to SHG members to meet emergent needs in the wake of COVID-19 outbreak">PSB SHG Tatkal Rin- Financial Assistance to SHG members to meet emergent needs in the wake of COVID-19 outbreak</W>
+		<W v="PSB Krishi Rakshak Rin- Financial Assistance to Farmers to meet emergent needs in the wake of COVID-19 outbreak">PSB Krishi Rakshak Rin- Financial Assistance to Farmers to meet emergent needs in the wake of COVID-19 outbreak</W>
+		<W v="PSB Guaranteed Emergency Credit Line 1.0 (PSB-GECL) for Business Enterprises/MSMEs">PSB Guaranteed Emergency Credit Line 1.0 (PSB-GECL) for Business Enterprises/MSMEs</W>
+		<W v="Kisan Credit Card (KCC) Scheme - Working Capital for Animal Husbandry and Fisheries">Kisan Credit Card (KCC) Scheme - Working Capital for Animal Husbandry and Fisheries</W>
+		<W v="PSB Udyan Scheme for financing development of Horticulture (Fruites, Flowers &amp; Vegetables) and plantation Crops">PSB Udyan Scheme for financing development of Horticulture (Fruites, Flowers &amp; Vegetables) and plantation Crops</W>
+		<W v="PSB scheme on Financing Food and Agro Processing Units">PSB scheme on Financing Food and Agro Processing Units</W>
+		<W v="PM Formalization of Micro food Processing Enterpries Scheme (PM FME Scheme)">PM Formalization of Micro food Processing Enterpries Scheme (PM FME Scheme)</W>
+		<W v="PSB Scheme for Animal Husbandry Infrastructure Development (PSB-AHID)">PSB Scheme for Animal Husbandry Infrastructure Development (PSB-AHID)</W>
+		<W v="PSB Agriculture Infrastructure Fund (PSB-AIF)">PSB Agriculture Infrastructure Fund (PSB-AIF)</W>
+		<W v="PSB Krishi Swarn Kanti - Agri Gold Loan Scheme">PSB Krishi Swarn Kanti - Agri Gold Loan Scheme</W>
+		<W v="PSB GST EASE A MSME PRODUCT">PSB GST EASE A MSME PRODUCT</W>
+		<W v="PSB Professional assist a MSME Loan Product">PSB Professional assist a MSME Loan Product</W>
+		<W v="PSB Scheme for Financing Poultry Farming (PSB Poultry)">PSB Scheme for Financing Poultry Farming (PSB Poultry)</W>
+		<W v="PSB Scheme On Financing Piggery Units (Psb Pigfery)">PSB Scheme On Financing Piggery Units (Psb Pigfery)</W>
+		<W v="PSB Scheme on Financing Apiculture / Bee Keeping (PSB Apiculture)">PSB Scheme on Financing Apiculture / Bee Keeping (PSB Apiculture)</W>
+		<W v="Swranjayanti Gram Swarozgar Yojana (SGSY)">Swranjayanti Gram Swarozgar Yojana (SGSY)</W>
+		<W v="National Horticulture Board (NHB)’s Scheme “Development of Commercial Horticulture through Production and Post-Harvest Management”">National Horticulture Board (NHB)’s Scheme “Development of Commercial Horticulture through Production and Post-Harvest Management”</W>
+		<W v="Special Scheme for financing Dairy Units to members of Kaira District Co-operative Milk Producers Union Ltd in Kheda &amp; Anand Districts of Gujarat">Special Scheme for financing Dairy Units to members of Kaira District Co-operative Milk Producers Union Ltd in Kheda &amp; Anand Districts of Gujarat</W>
+		<W v="PSB PM KUSUM">PSB PM KUSUM</W>
+		<W v="PSB Minor Irrigation">PSB Minor Irrigation</W>
+		<W v="PSB Sanjeevani">PSB Sanjeevani</W>
+		<W v="PSB Aarogyam">PSB Aarogyam</W>
+		<W v="PSB Scheme for financing Fisheries Development">PSB Scheme for financing Fisheries Development</W>
+		<W v="PSB Scheme for Ethanol Production">PSB Scheme for Ethanol Production</W>
+		<W v="Scheme for Financing MFIs backed by CGSMFI">Scheme for Financing MFIs backed by CGSMFI</W>
+		<W v="Scheme for Financing Covid affected Sectors backed by LGSCAS">Scheme for Financing Covid affected Sectors backed by LGSCAS</W>
+		<W v="PSB PM KUSUM Component A">PSB PM KUSUM Component A</W>
+		<W v="Scheme for Financing Covid affected Tourism Service Sectors backed by LGSCATSS">Scheme for Financing Covid affected Tourism Service Sectors backed by LGSCATSS</W>
+		<W v="PSB Scheme for Financing storage Infrastructure">PSB Scheme for Financing storage Infrastructure</W>
+		<W v="Indira Gandhi Urban Credit Card (IGUCC) Scheme - For the state of Rajasthan">Indira Gandhi Urban Credit Card (IGUCC) Scheme - For the state of Rajasthan</W>
+		<W v="Mukhyamatri Udyam Kranti Yojana (MMUKY) for the state of Madhya Pradesh">Mukhyamatri Udyam Kranti Yojana (MMUKY) for the state of Madhya Pradesh</W>
+	</DICT>
+</S>

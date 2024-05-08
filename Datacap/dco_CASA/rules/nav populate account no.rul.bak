@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="108" name="NAV Populate Account No" ver="1" modder="dmstest10.1" qi="">
+		<rule name="Copy ofPopulate Account No if Missing" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1" qi="">
+				<a ns="rrunner" name="rrCompare">
+					<p name="object1" v="@P\ACCOUNT NUMBER"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="108" name="NAV Populate Account No" ver="2" modder="dmstest10.1" qi="" dt="10/27/23 16:30:44.884 ">
+		<rule name="NAV Populate Account No if Missing" id="1" dcomap.open="P=CURRENT ACCOUNT OPENING FORM;P=CURRENT ATM_APPLICATION;P=CURRENT CHEQUE_BOOK_APPLICATION;P=CURRENT KYC_DOCUMENT;P=CURRENT NOMINATION-FORM;P=FD 15G_15H;P=FD ACCOUNT OPENING FORM;P=FD NOMINATION_FORM;P=SAVING ACCOUNT OPENING FORM;P=SAVING ATM APPLICATION;P=SAVING CHEQUE BOOK APPLICATION;P=SAVING KYC DOCUMENT;P=SAVING NOMINATION FORM" qi="">
+			<func name="Function1" qi="">
+				<a ns="rrunner" name="rrCompare">
+					<p name="object1" v="@P\ACCOUNT NUMBER"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="108" name="NAV Populate Account No" ver="3" modder="dmstest10.1" qi="" dt="10/27/23 16:45:38.131 ">
+		<rule name="NAV Populate Account No if Missing" id="1" dcomap.open="P=CURRENT ACCOUNT OPENING FORM;P=CURRENT ATM_APPLICATION;P=CURRENT CHEQUE_BOOK_APPLICATION;P=CURRENT KYC_DOCUMENT;P=CURRENT NOMINATION-FORM;P=FD 15G_15H;P=FD ACCOUNT OPENING FORM;P=FD NOMINATION_FORM;P=SAVING ACCOUNT OPENING FORM;P=SAVING ATM APPLICATION;P=SAVING CHEQUE BOOK APPLICATION;P=SAVING KYC DOCUMENT;P=SAVING NOMINATION FORM" qi="">
+			<func name="Function1" qi="" disabled="y">
+				<a ns="rrunner" name="rrCompare">
+					<p name="object1" v="@P\ACCOUNT NUMBER"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

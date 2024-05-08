@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="39" name="Populate field values" ver="1" modder="admin.1" qi="">
+		<rule name="Populate" id="1">
+			<func name="Function1" qi=""/>
+		</rule>
+	</ruleset>
+	<ruleset id="39" name="Populate field values" ver="2" modder="admin.1" qi="" dt="04/12/23 12:10:00.247 ">
+		<rule name="Populate" id="1" dcomap.open="F=ACCOUNT NUMBER_SA;F=ACCOUNT NUMBER_SAATM;F=ACCOUNT NUMBER_SACH;F=ACCOUNT NUMBER_SAKYC;F=ACCOUNT NUMBER_SANOM;F=ACCOUNT NUMBER_CA;F=ACCOUNT NUMBER_CAATM;F=ACCOUNT NUMBER_CACH;F=ACCOUNT NUMBER_CAKYC;F=ACCOUNT NUMBER_CANOM;F=ACCOUNT NUMBER_FD;F=ACCOUNT NUMBER_FD15;F=ACCOUNT NUMBER_FDNOM" qi="">
+			<func name="Populate Account number" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="39" name="Populate field values" ver="3" modder="admin.1" qi="" dt="04/12/23 12:18:48.214 ">
+		<rule name="Populate Account Number" id="1" dcomap.open="F=ACCOUNT NUMBER_SA;F=ACCOUNT NUMBER_SAATM;F=ACCOUNT NUMBER_SACH;F=ACCOUNT NUMBER_SAKYC;F=ACCOUNT NUMBER_SANOM;F=ACCOUNT NUMBER_CA;F=ACCOUNT NUMBER_CAATM;F=ACCOUNT NUMBER_CACH;F=ACCOUNT NUMBER_CAKYC;F=ACCOUNT NUMBER_CANOM;F=ACCOUNT NUMBER_FD;F=ACCOUNT NUMBER_FD15;F=ACCOUNT NUMBER_FDNOM" qi="">
+			<func name="Populate Account number" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate CIF" id="2">
+			<func name="Function1"/>
+		</rule>
+		<rule name="Populate DOB" id="3">
+			<func name="Function1"/>
+		</rule>
+		<rule name="Populate Mobile number" id="4">
+			<func name="Function1"/>
+		</rule>
+		<rule name="Populate SOLID" id="5">
+			<func name="Function1"/>
+		</rule>
+		<rule name="Populate Account Opening Date" id="6" qi="">
+			<func name="Function1"/>
+		</rule>
+	</ruleset>
+	<ruleset id="39" name="Populate field values" ver="4" modder="admin.1" qi="" dt="04/12/23 13:53:30.879 ">
+		<rule name="Populate Account Number" id="1" dcomap.open="F=ACCOUNT NUMBER_SA;F=ACCOUNT NUMBER_SAATM;F=ACCOUNT NUMBER_SACH;F=ACCOUNT NUMBER_SAKYC;F=ACCOUNT NUMBER_SANOM;F=ACCOUNT NUMBER_CA;F=ACCOUNT NUMBER_CAATM;F=ACCOUNT NUMBER_CACH;F=ACCOUNT NUMBER_CAKYC;F=ACCOUNT NUMBER_CANOM;F=ACCOUNT NUMBER_FD;F=ACCOUNT NUMBER_FD15;F=ACCOUNT NUMBER_FDNOM" qi="">
+			<func name="Populate Account number" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Customer Name" id="7" dcomap.open="F=CUSTOMER NAME_SA;F=CUSTOMER NAME_SAATM;F=CUSTOMER NAME_SACH;F=CUSTOMER NAME_SAKYC;F=CUSTOMER NAME_SANOM;F=CUSTOMER NAME_CA;F=CUSTOMER NAME_CAATM;F=CUSTOMER NAME_CACH;F=CUSTOMER NAME_CAKYC;F=CUSTOMER NAME_CANOM;F=CUSTOMER NAME_FD;F=CUSTOMER NAME_SA;F=CUSTOMER NAME_FDNOM" qi="">
+			<func name="Populate Customer Name" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCUSTOMERNAME"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate CIF" id="2" dcomap.open="F=CIF_SA;F=CIF_SAKYC;F=CIF_SANOM;F=CIF_SACH;F=CIF_SAATM;F=CIF_CA;F=CIF_CAKYC;F=CIF_CANOM;F=CIF_CACH;F=CIF_CAATM;F=CIF_FD;F=CIF_FD15;F=CIF_FDNOM" qi="">
+			<func name="Populate CIF">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate DOB" id="3" dcomap.open="F=DOB_SA;F=DOB_CA;F=DOB_FD" qi="">
+			<func name="Populate DOB">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bDOB"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Mobile number" id="4" dcomap.open="F=MOBILE_SA;F=MOBILE_CA;F=MOBILE_FD" qi="">
+			<func name="Populate Mobile number">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bMobile"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate SOLID" id="5" dcomap.open="F=SOL ID_SA;F=SOL ID_CA;F=SOL ID_FD" qi="">
+			<func name="Populate SOLID">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bACCTSOLID"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account Opening Date" id="6" qi="" dcomap.open="F=ACCOUNT OPEN DATE_SA;F=ACCOUNT OPEN DATE_CA;F=ACCOUNT OPEN DATE_FD">
+			<func name="Populate Account Opening Date">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bACCTOPENDATE"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="39" name="Populate field values" ver="5" modder="admin.1" qi="" dt="04/12/23 14:08:12.337 ">
+		<rule name="Populate Account Number" id="1" dcomap.open="F=ACCOUNT NUMBER_SA;F=ACCOUNT NUMBER_SAATM;F=ACCOUNT NUMBER_SACH;F=ACCOUNT NUMBER_SAKYC;F=ACCOUNT NUMBER_SANOM;F=ACCOUNT NUMBER_CA;F=ACCOUNT NUMBER_CAATM;F=ACCOUNT NUMBER_CACH;F=ACCOUNT NUMBER_CAKYC;F=ACCOUNT NUMBER_CANOM;F=ACCOUNT NUMBER_FD;F=ACCOUNT NUMBER_FD15;F=ACCOUNT NUMBER_FDNOM" qi="">
+			<func name="Populate Account number" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Customer Name" id="7" dcomap.open="F=CUSTOMER NAME_SA;F=CUSTOMER NAME_SAATM;F=CUSTOMER NAME_SACH;F=CUSTOMER NAME_SAKYC;F=CUSTOMER NAME_SANOM;F=CUSTOMER NAME_CA;F=CUSTOMER NAME_CAATM;F=CUSTOMER NAME_CACH;F=CUSTOMER NAME_CAKYC;F=CUSTOMER NAME_CANOM;F=CUSTOMER NAME_FD15;F=CUSTOMER NAME_SA;F=CUSTOMER NAME_FDNOM" qi="">
+			<func name="Populate Customer Name" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCUSTOMERNAME"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate CIF" id="2" dcomap.open="F=CIF_SA;F=CIF_SAKYC;F=CIF_SANOM;F=CIF_SACH;F=CIF_SAATM;F=CIF_CA;F=CIF_CAKYC;F=CIF_CANOM;F=CIF_CACH;F=CIF_CAATM;F=CIF_FD;F=CIF_FD15;F=CIF_FDNOM" qi="">
+			<func name="Populate CIF">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate DOB" id="3" dcomap.open="F=DOB_SA;F=DOB_CA;F=DOB_FD" qi="">
+			<func name="Populate DOB">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bDOB"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Mobile number" id="4" dcomap.open="F=MOBILE_SA;F=MOBILE_CA;F=MOBILE_FD" qi="">
+			<func name="Populate Mobile number">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bMobile"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate SOLID" id="5" dcomap.open="F=SOL ID_SA;F=SOL ID_CA;F=SOL ID_FD" qi="">
+			<func name="Populate SOLID">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bACCTSOLID"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account Opening Date" id="6" qi="" dcomap.open="F=ACCOUNT OPEN DATE_SA;F=ACCOUNT OPEN DATE_CA;F=ACCOUNT OPEN DATE_FD">
+			<func name="Populate Account Opening Date">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bACCTOPENDATE"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="39" name="Populate field values" ver="6" modder="admin.1" qi="" dt="04/12/23 14:20:00.706 ">
+		<rule name="Populate Account Number" id="1" dcomap.open="F=ACCOUNT NUMBER_SA;F=ACCOUNT NUMBER_SAATM;F=ACCOUNT NUMBER_SACH;F=ACCOUNT NUMBER_SAKYC;F=ACCOUNT NUMBER_SANOM;F=ACCOUNT NUMBER_CA;F=ACCOUNT NUMBER_CAATM;F=ACCOUNT NUMBER_CACH;F=ACCOUNT NUMBER_CAKYC;F=ACCOUNT NUMBER_CANOM;F=ACCOUNT NUMBER_FD;F=ACCOUNT NUMBER_FD15;F=ACCOUNT NUMBER_FDNOM" qi="">
+			<func name="Populate Account number" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Customer Name" id="7" dcomap.open="F=CUSTOMER NAME_SA;F=CUSTOMER NAME_SAATM;F=CUSTOMER NAME_SACH;F=CUSTOMER NAME_SAKYC;F=CUSTOMER NAME_SANOM;F=CUSTOMER NAME_CA;F=CUSTOMER NAME_CAATM;F=CUSTOMER NAME_CACH;F=CUSTOMER NAME_CAKYC;F=CUSTOMER NAME_CANOM;F=CUSTOMER NAME_FD15;F=CUSTOMER NAME_FD;F=CUSTOMER NAME_FDNOM" qi="">
+			<func name="Populate Customer Name" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCUSTOMERNAME"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate CIF" id="2" dcomap.open="F=CIF_SA;F=CIF_SAKYC;F=CIF_SANOM;F=CIF_SACH;F=CIF_SAATM;F=CIF_CA;F=CIF_CAKYC;F=CIF_CANOM;F=CIF_CACH;F=CIF_CAATM;F=CIF_FD;F=CIF_FD15;F=CIF_FDNOM" qi="">
+			<func name="Populate CIF">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate DOB" id="3" dcomap.open="F=DOB_SA;F=DOB_CA;F=DOB_FD" qi="">
+			<func name="Populate DOB">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bDOB"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Mobile number" id="4" dcomap.open="F=MOBILE_SA;F=MOBILE_CA;F=MOBILE_FD" qi="">
+			<func name="Populate Mobile number">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bMobile"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate SOLID" id="5" dcomap.open="F=SOL ID_SA;F=SOL ID_CA;F=SOL ID_FD" qi="">
+			<func name="Populate SOLID">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bACCTSOLID"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account Opening Date" id="6" qi="" dcomap.open="F=ACCOUNT OPEN DATE_SA;F=ACCOUNT OPEN DATE_CA;F=ACCOUNT OPEN DATE_FD">
+			<func name="Populate Account Opening Date">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bACCTOPENDATE"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="39" name="Populate field values" ver="7" modder="admin.1" qi="" dt="04/13/23 12:14:19.156 ">
+		<rule name="Populate Account Number" id="1" dcomap.open="F=ACCOUNT NUMBER_SA;F=ACCOUNT NUMBER_SAATM;F=ACCOUNT NUMBER_SACH;F=ACCOUNT NUMBER_SAKYC;F=ACCOUNT NUMBER_SANOM;F=ACCOUNT NUMBER_CA;F=ACCOUNT NUMBER_CAATM;F=ACCOUNT NUMBER_CACH;F=ACCOUNT NUMBER_CAKYC;F=ACCOUNT NUMBER_CANOM;F=ACCOUNT NUMBER_FD;F=ACCOUNT NUMBER_FD15;F=ACCOUNT NUMBER_FDNOM" qi="">
+			<func name="Populate Account number" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Customer Name" id="7" dcomap.open="F=CUSTOMER NAME_SA;F=CUSTOMER NAME_SAATM;F=CUSTOMER NAME_SACH;F=CUSTOMER NAME_SAKYC;F=CUSTOMER NAME_SANOM;F=CUSTOMER NAME_CA;F=CUSTOMER NAME_CAATM;F=CUSTOMER NAME_CACH;F=CUSTOMER NAME_CAKYC;F=CUSTOMER NAME_CANOM;F=CUSTOMER NAME_FD15;F=CUSTOMER NAME_FD;F=CUSTOMER NAME_FDNOM" qi="">
+			<func name="Populate Customer Name" qi="" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCUSTOMERNAME"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate CIF" id="2" dcomap.open="F=CIF_SA;F=CIF_SAKYC;F=CIF_SANOM;F=CIF_SACH;F=CIF_SAATM;F=CIF_CA;F=CIF_CAKYC;F=CIF_CANOM;F=CIF_CACH;F=CIF_CAATM;F=CIF_FD;F=CIF_FD15;F=CIF_FDNOM" qi="">
+			<func name="Populate CIF" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate DOB" id="3" dcomap.open="F=DOB_SA;F=DOB_CA;F=DOB_FD" qi="">
+			<func name="Populate DOB" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bDOB"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Mobile number" id="4" dcomap.open="F=MOBILE_SA;F=MOBILE_CA;F=MOBILE_FD" qi="">
+			<func name="Populate Mobile number" disabled="y" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bMobile"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate SOLID" id="5" dcomap.open="F=SOL ID_SA;F=SOL ID_CA;F=SOL ID_FD" qi="">
+			<func name="Populate SOLID">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bACCTSOLID"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account Opening Date" id="6" qi="" dcomap.open="F=ACCOUNT OPEN DATE_SA;F=ACCOUNT OPEN DATE_CA;F=ACCOUNT OPEN DATE_FD">
+			<func name="Populate Account Opening Date">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bACCTOPENDATE"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="39" name="Populate field values" ver="8" modder="admin.1" qi="" dt="04/14/23 16:56:49.574 ">
+		<rule name="Populate Account Number" id="1" dcomap.open="F=ACCOUNT NUMBER_SA;F=ACCOUNT NUMBER_SAATM;F=ACCOUNT NUMBER_SACH;F=ACCOUNT NUMBER_SAKYC;F=ACCOUNT NUMBER_SANOM;F=ACCOUNT NUMBER_CA;F=ACCOUNT NUMBER_CAATM;F=ACCOUNT NUMBER_CACH;F=ACCOUNT NUMBER_CAKYC;F=ACCOUNT NUMBER_CANOM;F=ACCOUNT NUMBER_FD;F=ACCOUNT NUMBER_FD15;F=ACCOUNT NUMBER_FDNOM" qi="">
+			<func name="Populate Account number" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Customer Name" id="7" dcomap.open="F=CUSTOMER NAME_SA;F=CUSTOMER NAME_SAATM;F=CUSTOMER NAME_SACH;F=CUSTOMER NAME_SAKYC;F=CUSTOMER NAME_SANOM;F=CUSTOMER NAME_CA;F=CUSTOMER NAME_CAATM;F=CUSTOMER NAME_CACH;F=CUSTOMER NAME_CAKYC;F=CUSTOMER NAME_CANOM;F=CUSTOMER NAME_FD15;F=CUSTOMER NAME_FD;F=CUSTOMER NAME_FDNOM" qi="">
+			<func name="Populate Customer Name" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCUSTOMERNAME"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate CIF" id="2" dcomap.open="F=CIF_SA;F=CIF_SAKYC;F=CIF_SANOM;F=CIF_SACH;F=CIF_SAATM;F=CIF_CA;F=CIF_CAKYC;F=CIF_CANOM;F=CIF_CACH;F=CIF_CAATM;F=CIF_FD;F=CIF_FD15;F=CIF_FDNOM" qi="">
+			<func name="Populate CIF">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate DOB" id="3" dcomap.open="F=DOB_SA;F=DOB_CA;F=DOB_FD" qi="">
+			<func name="Populate DOB">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bDOB"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Mobile number" id="4" dcomap.open="F=MOBILE_SA;F=MOBILE_CA;F=MOBILE_FD" qi="">
+			<func name="Populate Mobile number" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bMobile"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate SOLID" id="5" dcomap.open="F=SOL ID_SA;F=SOL ID_CA;F=SOL ID_FD" qi="">
+			<func name="Populate SOLID">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bACCTSOLID"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account Opening Date" id="6" qi="" dcomap.open="F=ACCOUNT OPEN DATE_SA;F=ACCOUNT OPEN DATE_CA;F=ACCOUNT OPEN DATE_FD">
+			<func name="Populate Account Opening Date">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bACCTOPENDATE"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

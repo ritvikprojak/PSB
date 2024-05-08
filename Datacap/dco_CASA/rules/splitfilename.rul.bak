@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="9" name="SplitFileName" ver="4" modder="admin.1" qi="" dt="02/05/23 13:04:07.398 ">
+		<rule name="SplitFileName Rule1" id="1" dcomap.open="P=Other" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.FileIO.Actions" name="SplitFileName">
+					<p name="inputFilename" type="string" v="@P.ScanSrcPath"/>
+					<p name="rootPathVariable" type="string" v="@P.FROOT"/>
+					<p name="pathVariable" type="string" v="@P.FPATH"/>
+					<p name="fileVariable" type="string" v="@P.FFILENAME"/>
+					<p name="extVariable" type="string" v="@P.FEXT"/>
+				</a>
+				<a ns="rrunner" name="rrSet">
+					<p name="varSource" v="@P.FFILENAME"/>
+					<p name="varTarget" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="9" name="SplitFileName" ver="5" modder="admin.1" qi="" dt="02/08/23 11:01:46.659 ">
+		<rule name="SplitFileName Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.FileIO.Actions" name="SplitFileName">
+					<p name="inputFilename" type="string" v="@P.ScanSrcPath"/>
+					<p name="rootPathVariable" type="string" v="@P.FROOT"/>
+					<p name="pathVariable" type="string" v="@P.FPATH"/>
+					<p name="fileVariable" type="string" v="@P.FFILENAME"/>
+					<p name="extVariable" type="string" v="@P.FEXT"/>
+				</a>
+				<a ns="rrunner" name="rrSet">
+					<p name="varSource" v="@P.FFILENAME"/>
+					<p name="varTarget" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

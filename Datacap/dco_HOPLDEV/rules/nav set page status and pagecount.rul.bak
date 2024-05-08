@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="56" name="NAV Set Page Status And PageCount" ver="1" modder="admin.1" qi="">
+		<rule name="NAV Set page status rule1" id="1" dcomap.open="P=ADDENDUM;P=OFFICE NOTES;P=RFP DOCUMENTS;P=RTI;P=SUPPORTING DOCUMENTS;P=ANNEXURES;P=OPEINING/CLOSING/MERGING" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Pages Count" id="2" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="56" name="NAV Set Page Status And PageCount" ver="2" modder="dmstest10.1" qi="" dt="06/01/23 16:12:25.495 ">
+		<rule name="NAV Set page status rule1" id="1" dcomap.open="P=ADDENDUM;P=OFFICE NOTES;P=RFP DOCUMENTS;P=RTI;P=SUPPORTING DOCUMENTS;P=ANNEXURES;P=OPENING/CLOSING/MERGING" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Pages Count" id="2" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="56" name="NAV Set Page Status And PageCount" ver="3" modder="dmstest10.1" qi="" dt="06/28/23 19:28:29.610 ">
+		<rule name="NAV Set page status rule1" id="1" dcomap.open="P=ADDENDUM;P=OFFICE NOTES;P=RFP DOCUMENTS;P=RTI;P=SUPPORTING DOCUMENTS;P=ANNEXURES;P=OPENING/CLOSING/MERGING" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Set page status rule1" id="3" dcomap.open="P=ADDENDUM_TrailingPage;P=ANNEXURES_TrailingPage;P=OFFICE NOTES_TrailingPage;P=OPENING/CLOSING/MERGING_TrailingPage;P=RFP DOCUMENTS_TrailingPage;P=RTI_TrailingPage;P=SUPPORTING DOCUMENTS_TrailingPage" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Pages Count" id="2" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="56" name="NAV Set Page Status And PageCount" ver="4" modder="dmstest10.1" qi="" dt="07/28/23 17:41:50.584 ">
+		<rule name="NAV Set page status rule1" id="1" dcomap.open="P=ADDENDUM;P=OFFICE NOTES;P=RFP DOCUMENTS;P=RTI;P=SUPPORTING DOCUMENTS;P=ANNEXURES;P=OPENING/CLOSING/MERGING" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Set page status rule1" id="3" dcomap.open="P=ADDENDUM_TrailingPage;P=ANNEXURES_TrailingPage;P=OFFICE NOTES_TrailingPage;P=OPENING/CLOSING/MERGING_TrailingPage;P=RFP DOCUMENTS_TrailingPage;P=RTI_TrailingPage;P=SUPPORTING DOCUMENTS_TrailingPage" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Pages Count" id="2" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="56" name="NAV Set Page Status And PageCount" ver="5" modder="dmstest10.1" qi="" dt="07/28/23 17:45:24.632 ">
+		<rule name="NAV Set page status rule1" id="1" dcomap.open="P=ADDENDUM;P=OFFICE NOTES;P=RFP DOCUMENTS;P=RTI;P=SUPPORTING DOCUMENTS;P=ANNEXURES;P=OPENING/CLOSING/MERGING" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Set page status rule1" id="3" dcomap.open="P=ADDENDUM_TrailingPage;P=ANNEXURES_TrailingPage;P=OFFICE NOTES_TrailingPage;P=OPENING/CLOSING/MERGING_TrailingPage;P=RFP DOCUMENTS_TrailingPage;P=RTI_TrailingPage;P=SUPPORTING DOCUMENTS_TrailingPage;P=TrailPage" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Pages Count" id="2" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="56" name="NAV Set Page Status And PageCount" ver="6" modder="dmstest10.1" qi="" dt="07/28/23 17:50:30.696 ">
+		<rule name="NAV Set page status rule1" id="1" dcomap.open="P=ADDENDUM;P=OFFICE NOTES;P=RFP DOCUMENTS;P=RTI;P=SUPPORTING DOCUMENTS;P=ANNEXURES;P=OPENING/CLOSING/MERGING" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Set page status rule1" id="3" dcomap.open="P=ADDENDUM_TrailingPage;P=ANNEXURES_TrailingPage;P=OFFICE NOTES_TrailingPage;P=OPENING/CLOSING/MERGING_TrailingPage;P=RFP DOCUMENTS_TrailingPage;P=RTI_TrailingPage;P=SUPPORTING DOCUMENTS_TrailingPage;P=TrailPage" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Pages Count" id="2" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

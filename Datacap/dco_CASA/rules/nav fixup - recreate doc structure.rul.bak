@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="104" name="NAV Fixup - ReCreate Doc Structure" ver="1" modder="dmstest10.1" qi="">
+		<rule name="Rule1 - ReCreateStructure" id="1" qi="" dcomap.open="B;P">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions"/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="104" name="NAV Fixup - ReCreate Doc Structure" ver="2" modder="dmstest10.1" qi="" dt="10/23/23 08:29:21.714 ">
+		<rule name="Rule1 - ReCreateStructure" id="1" qi="" dcomap.open="B;P">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions"/>
+			</func>
+		</rule>
+		<rule name="Copy ofRule1 - Auto populate Value Acc No" id="2" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="104" name="NAV Fixup - ReCreate Doc Structure" ver="3" modder="dmstest10.1" qi="" dt="10/23/23 08:53:17.713 ">
+		<rule name="Rule1 - ReCreateStructure" id="1" qi="" dcomap.open="B;P">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions"/>
+			</func>
+		</rule>
+		<rule name="Copy ofRule1 - Auto populate Value Acc No" id="2" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="104" name="NAV Fixup - ReCreate Doc Structure" ver="4" modder="dmstest10.1" qi="" dt="10/23/23 14:16:03.186 ">
+		<rule name="Rule1 - ReCreateStructure" id="1" qi="" dcomap.open="B;P">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions"/>
+			</func>
+		</rule>
+		<rule name="Rule1 - Auto populate Value Acc No" id="2" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="104" name="NAV Fixup - ReCreate Doc Structure" ver="5" modder="dmstest10.1" qi="" dt="10/27/23 11:34:31.857 ">
+		<rule name="Rule1 - ReCreateStructure" id="1" qi="" dcomap.open="B;P">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="y"/>
+			</func>
+		</rule>
+		<rule name="Rule1 - Auto populate Value Acc No" id="2" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="104" name="NAV Fixup - ReCreate Doc Structure" ver="6" modder="dmstest10.1" qi="" dt="10/27/23 14:59:28.370 ">
+		<rule name="Rule1 - ReCreateStructure" id="1" qi="" dcomap.open="B;P">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="y"/>
+			</func>
+		</rule>
+		<rule name="Rule1 - Auto populate Value Acc No" id="2" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="104" name="NAV Fixup - ReCreate Doc Structure" ver="7" modder="dmstest10.1" qi="" dt="11/06/23 10:56:42.957 ">
+		<rule name="Rule1 - ReCreateStructure" id="1" qi="" dcomap.open="B;P">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="y"/>
+			</func>
+		</rule>
+		<rule name="Rule1 - Auto populate Value Acc No" id="2" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Rule2 - Auto populate Value Batch Type" id="3" qi="" dcomap.open="F=BATCHTYPE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.BATCHTYPE"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Rule3 - Auto populate Value SOLID" id="4" qi="" dcomap.open="F=SOL ID">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.BranchCode"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="104" name="NAV Fixup - ReCreate Doc Structure" ver="8" modder="dmstest10.1" qi="" dt="11/06/23 11:01:15.960 ">
+		<rule name="Rule1 - ReCreateStructure" id="1" qi="" dcomap.open="B;P">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="y"/>
+			</func>
+		</rule>
+		<rule name="Rule1 - Auto populate Value Acc No" id="2" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Rule2 - Auto populate Value Batch Type" id="3" qi="" dcomap.open="F=BATCHTYPE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.BATCHTYPE"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Rule3 - Auto populate Value SOLID" id="4" qi="" dcomap.open="F=SOL ID;F=SOL ID_CA;F=SOL ID_FD;F=SOL ID_SA">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.BranchCode"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="104" name="NAV Fixup - ReCreate Doc Structure" ver="9" modder="dmstest10.1" qi="" dt="11/06/23 11:04:23.729 ">
+		<rule name="Rule1 - ReCreateStructure" id="1" qi="" dcomap.open="B;P">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="y"/>
+			</func>
+		</rule>
+		<rule name="Rule1 - Auto populate Value Acc No" id="2" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Rule2 - Auto populate Value Batch Type" id="3" qi="" dcomap.open="F=BATCHTYPE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.BATCHTYPE"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Rule3 - Auto populate Value SOLID" id="4" qi="" dcomap.open="F=SOL ID;F=SOL ID_CA;F=SOL ID_FD;F=SOL ID_SA">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.BranchCode"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Rule4 - Auto populate Value DOCFLG" id="5" qi="" dcomap.open="F=DOCFLG">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.DOC_FLG"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

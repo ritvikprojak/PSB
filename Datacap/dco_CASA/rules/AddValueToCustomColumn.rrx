@@ -1,0 +1,94 @@
+<?xml version='1.0' ?>
+<rrx namespace="AddValueToCustomColumn" v="8.0.2"><i ref="rrunner"/><g>
+  <![CDATA[
+'-----------------------------------------------------------------------------
+' Licensed Materials - Property of IBM
+' “Restricted Materials of IBM”
+' 5725-C15 5725-C69
+'
+' © Copyright IBM Corp. 1994, 2012 All Rights Reserved
+'
+' US Government Users Restricted Rights - Use, duplication or
+' disclosure restricted by GSA ADP Schedule Contract with
+' IBM Corp.
+'
+'-----------------------------------------------------------------------------  
+  
+'*********************************
+
+' Version
+'  8.0.2 - 04/1/2011   Tom Stuart
+'        - Adding routines to handle commas used as decimal characters.
+'  8.1.1 - 02/15/2012   Tom Stuart
+'        - Fixed small issue with ConvertToLocal
+Version = "8.1.1.2"
+'          Updated 11/09/2013 RFerin Workitem 69384
+'          Deprecated CheckAndFixLocalDecimal - Action functionality unchanged.
+'          Fixed runtime error in IsOriginalEuroFormat if variables are not already initialized.
+'          Added help text to actions.
+'
+'*************************************************
+' LOG VERSION:
+Writelog("AddValueToCustomColumn " & Version)
+'*************************************************
+
+]]></g>
+
+<f name="AddValueToCustomColumn" access="public" qi="adds the value from varSource into the custom column (varTarget).">
+   <p name="varSource"/>
+   <p name="varTarget"/>
+  
+   <ap>
+    <br/>
+   </ap>
+   <h>
+          AddValueToCustomColumn adds the value from varSource into the custom column (varTarget).  <br/>
+          
+     <e>
+         
+     </e>
+   </h>
+   <lvl>
+       <b></b>
+   </lvl>
+   <ret>
+      <br/>
+     Returns <b>TRUE</b>
+   </ret>
+   <see>
+     <br/>
+     <scr></scr>
+   </see>
+   <g>
+   <![CDATA[
+   'Your VBScript code goes here.
+ 
+   Writelog("Beginning AddValueToCustomColumn.")
+     Dim sSource
+     Dim sDestination
+     Dim sValue
+     Dim sReturn
+    Dim sDest
+     
+     
+     AddValueToCustomColumn = False
+         
+     sSource = Trim(varSource)
+     sDestination = Trim(varTarget)
+     
+     
+    sValue = MetaWord(sSource)
+    sDest = MetaWord(sDestination)
+     
+     Writelog("The varSource value is :" & sValue)
+	  Writelog("The varTarget value is :" & sDest)
+ 
+     pilot.XtraBatchFieldValue(sDest) = sValue 
+ 
+      Writelog("Completed AddValueToCustomColumn.")
+	  
+     AddValueToCustomColumn = TRUE       'Actions must always return a TRUE or FALSE.
+ 
+ ]]></g></f>
+
+</rrx>

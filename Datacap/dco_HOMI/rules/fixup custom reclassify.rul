@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="111" name="FIXUP Custom reclassify" ver="1" modder="dmstest10.1" qi="">
+	<rule name="Setup trailing pages" id="1" qi="" dcomap.open="P=TrailPage">
+		<func name="Function1: Last Page Type LIFE INSURANCE_COMMON PROPOSAL FORM1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="LIFE INSURANCE_COMMON PROPOSAL FORM"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="LIFE INSURANCE_COMMON PROPOSAL FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function2: Last Page Type LIFE INSURANCE_COMMON PROPOSAL FORM_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="LIFE INSURANCE_COMMON PROPOSAL FORM_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="LIFE INSURANCE_COMMON PROPOSAL FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function3: Last Page Type LIFE INSURANCE_KYC1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="LIFE INSURANCE_KYC"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="LIFE INSURANCE_KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function4: Last Page Type LIFE INSURANCE_KYC_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="LIFE INSURANCE_KYC_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="LIFE INSURANCE_KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function5: Last Page Type GENERAL INSURANCE_COMMON PROPOSAL FORM1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="GENERAL INSURANCE_COMMON PROPOSAL FORM"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="GENERAL INSURANCE_COMMON PROPOSAL FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function6: Last Page Type GENERAL INSURANCE_COMMON PROPOSAL FORM_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="GENERAL INSURANCE_COMMON PROPOSAL FORM_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="GENERAL INSURANCE_COMMON PROPOSAL FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function7: Last Page Type GENERAL INSURANCE_KYC1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="GENERAL INSURANCE_KYC"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="GENERAL INSURANCE_KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function8: Last Page Type GENERAL INSURANCE_KYC_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="GENERAL INSURANCE_KYC_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="GENERAL INSURANCE_KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function9: Last Page Type SOVEREIGN GOLD BOND_APPLICATION FORM1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SOVEREIGN GOLD BOND_APPLICATION FORM"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="SOVEREIGN GOLD BOND_APPLICATION FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function10: Last Page Type SOVEREIGN GOLD BOND_APPLICATION FORM_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SOVEREIGN GOLD BOND_APPLICATION FORM_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="SOVEREIGN GOLD BOND_APPLICATION FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function11: Last Page Type SOVEREIGN GOLD BOND_NOMINATION FORM1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SOVEREIGN GOLD BOND_NOMINATION FORM"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="SOVEREIGN GOLD BOND_NOMINATION FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function12: Last Page Type SOVEREIGN GOLD BOND_NOMINATION FORM_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SOVEREIGN GOLD BOND_NOMINATION FORM_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="SOVEREIGN GOLD BOND_NOMINATION FORM_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function13: Last Page Type SOVEREIGN GOLD BOND_KYC1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SOVEREIGN GOLD BOND_KYC"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="SOVEREIGN GOLD BOND_KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function14: Last Page Type SOVEREIGN GOLD BOND_KYC_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SOVEREIGN GOLD BOND_KYC"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="SOVEREIGN GOLD BOND_KYC_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function15: Last Page Type NOTE_GUIDELINES_NOTES1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="NOTE_GUIDELINES_NOTES"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="NOTE_GUIDELINES_NOTES_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function16: Last Page Type NOTE_GUIDELINES_NOTES_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="NOTE_GUIDELINES_NOTES_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="NOTE_GUIDELINES_NOTES_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function23: Last Page Type AUDIT1" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType" qi="">
+				<p name="PreviousTypeToMatch" v="AUDIT"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="AUDIT_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function24: Last Page Type AUDIT_TrailingPage1" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType" qi="">
+				<p name="PreviousTypeToMatch" v="AUDIT_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="AUDIT_TrailingPage"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="107" name="(P) Blank Page Detection" ver="1" modder="dmstest10.1" qi="">
+		<rule name="Blank Page Delete" id="2" qi="" dcomap.open="B">
+			<func name="Function1">
+				<a ns="autodoc" name="BlankPagesIDBySize">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5000,Blank,0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="107" name="(P) Blank Page Detection" ver="2" modder="dmstest10.1" qi="" dt="10/26/23 14:20:12.456 ">
+		<rule name="Blank Page Delete" id="2" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.Barcode.Actions" name="GetAllBarcodes">
+					<p name="BarcodeSeparator" type="string" v=","/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="autodoc" name="BlankPagesIDBySize">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5000,Blank,0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="107" name="(P) Blank Page Detection" ver="3" modder="dmstest10.1" qi="" dt="10/26/23 14:22:14.29 ">
+		<rule name="Blank Page Delete" id="2" qi="" dcomap.open="P">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.Barcode.Actions" name="GetAllBarcodes">
+					<p name="BarcodeSeparator" type="string" v=","/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="autodoc" name="BlankPagesIDBySize">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5000,Blank,0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="107" name="(P) Blank Page Detection" ver="4" modder="dmstest10.1" qi="" dt="10/26/23 14:33:12.822 ">
+		<rule name="Blank Page Delete" id="2" qi="" dcomap.open="P">
+			<func name="Function1" qi="">
+				<a ns="barcode_p" name="MatchBarcodeBP">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Document_Separator"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5000,Blank,0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="107" name="(P) Blank Page Detection" ver="5" modder="dmstest10.1" qi="" dt="10/26/23 15:03:40.924 ">
+		<rule name="Blank Page Delete" id="2" qi="" dcomap.open="P">
+			<func name="Function1" qi="">
+				<a ns="barcode_p" name="MatchBarcodeBP" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="ENDDOC"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5000,Blank,0" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

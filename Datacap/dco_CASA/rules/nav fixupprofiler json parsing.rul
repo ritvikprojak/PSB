@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="120" name="NAV FixUpProfiler Json Parsing" ver="1" modder="dmstest10.1" qi="">
+	<rule name="NAV Json Parsing Rule1" id="1" dcomap.open="B" qi="">
+		<func name="Function2" qi="">
+			<a name="JsonParseGetEmployee" ns="net:CASAPSBCustomLibrary.SampleAction" qi=""/>
+		</func>
+	</rule>
+</ruleset>

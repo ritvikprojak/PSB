@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="57" name="(B) Navigator Page Delete Seperator" ver="1" modder="dmstest10.1" qi="">
+		<rule name="(B) Navigator Page Delete Separator Rule DC" id="1" qi="" dcomap.open="B">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="(P) Navigator Page Set when if no seperator" id="2" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+					<p name="PreviousTypeToMatch" v="Page"/>
+					<p name="LevelToCheck" v="2"/>
+					<p name="IgnoreTypes" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+					<p name="Type" type="string" v="TrailPage"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="57" name="(B) Navigator Page Delete Seperator" ver="2" modder="dmstest10.1" qi="" dt="06/21/23 19:24:07.181 ">
+		<rule name="(B) Navigator Page Delete Separator Rule DC" id="1" qi="" dcomap.open="B">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="(P) Navigator Page Set when if no seperator" id="2" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+					<p name="PreviousTypeToMatch" v="Page"/>
+					<p name="LevelToCheck" v="2"/>
+					<p name="IgnoreTypes" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+					<p name="Type" type="string" v="TrailPage"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="57" name="(B) Navigator Page Delete Seperator" ver="3" modder="dmstest10.1" qi="" dt="06/21/23 19:34:21.219 ">
+		<rule name="(B) Navigator Page Delete Separator Rule DC" id="1" qi="" dcomap.open="B">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="(P) Navigator Page Set when if no seperator" id="2" dcomap.open="P=Page" qi="">
+			<func name="Function1" disabled="y" qi="">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+					<p name="PreviousTypeToMatch" v="Page"/>
+					<p name="LevelToCheck" v="2"/>
+					<p name="IgnoreTypes" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+					<p name="Type" type="string" v="TrailPage"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

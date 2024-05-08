@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="50" name="NAV HO TREASURY DPT Set Page Status after maker" ver="2" modder="admin.1" dt="02/21/23 22:09:04.261 " qi="">
+		<rule name="Set page status rule" id="2" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS;P=IT Strategy Committee Notes and ATRs;P=IT Steering Committee Notes and ATRs;P=OFFICE_NOTE;P=STRATEGY COMMITEE;P=STEERING COMMITEE;P=REGULATORY LETTERS;P=AUDIT;P=RTI_APPEAL_CIC;P=IEM MINUTES;P=ITAB MINUTES" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="50" name="NAV HO TREASURY DPT Set Page Status after maker" ver="3" modder="admin.1" dt="02/22/23 12:53:15.629 " qi="">
+		<rule name="Set page status rule" id="2" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS;P=IT Strategy Committee Notes and ATRs;P=IT Steering Committee Notes and ATRs;P=OFFICE_NOTE;P=STRATEGY COMMITEE;P=STEERING COMMITEE;P=REGULATORY LETTERS;P=AUDIT;P=RTI_APPEAL_CIC;P=IEM MINUTES;P=ITAB MINUTES" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="ReFormat Date" id="1">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat">
+					<p name="NewDateFormat" type="string" v="yyyy/mm/dd"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="50" name="NAV HO TREASURY DPT Set Page Status after maker" ver="4" modder="admin.1" dt="02/23/23 18:07:30.626 " qi="">
+		<rule name="Set page status rule" id="2" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS;P=IT Strategy Committee Notes and ATRs;P=IT Steering Committee Notes and ATRs;P=OFFICE_NOTE;P=STRATEGY COMMITEE;P=STEERING COMMITEE;P=REGULATORY LETTERS;P=AUDIT;P=RTI_APPEAL_CIC;P=IEM MINUTES;P=ITAB MINUTES" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="ReFormat Date" id="1" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="en-IN"/>
+					<p name="Target" type="string" v="@F.hr_locale"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat">
+					<p name="NewDateFormat" type="string" v="yyyy/mm/dd"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="50" name="NAV HO TREASURY DPT Set Page Status after maker" ver="5" modder="admin.1" dt="03/02/23 13:22:30.351 " qi="">
+		<rule name="Set page status rule" id="2" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS;P=IT Strategy Committee Notes and ATRs;P=IT Steering Committee Notes and ATRs;P=OFFICE_NOTE;P=STRATEGY COMMITEE;P=STEERING COMMITEE;P=REGULATORY LETTERS;P=AUDIT;P=RTI_APPEAL_CIC;P=IEM MINUTES;P=ITAB MINUTES" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="ReFormat Date" id="1" qi="" dcomap.open="F=DATE;F=DATE_1;F=DATE_2;F=ADDENDUM DATE;F=DATE_3;F=DATE_4;F=MEETING DATE;F=MEETING DATE_1;F=MEETING DATE_2;F=ATR DATE;F=MEETING DATE_3;F=ATR DATE_2;F=NOTE DATE;F=DATE OF RECEIPT;F=DATE OF SUBMISSION;F=AUDIT DATE;F=DATE OF RECEIPT_1;F=DATE OF RTI APPLICATION;F=DATE OF DISPOSAL;F=MEETING DATE_4;F=MEETING DATE_5">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="en-IN"/>
+					<p name="Target" type="string" v="@F.hr_locale"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat">
+					<p name="NewDateFormat" type="string" v="yyyy/mm/dd"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="50" name="NAV HO TREASURY DPT Set Page Status after maker" ver="6" modder="admin.1" dt="03/28/23 10:48:05.685 " qi="">
+		<rule name="NAV Set page status rule" id="2" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS;P=IT Strategy Committee Notes and ATRs;P=IT Steering Committee Notes and ATRs;P=OFFICE_NOTE;P=STRATEGY COMMITEE;P=STEERING COMMITEE;P=REGULATORY LETTERS;P=AUDIT;P=RTI_APPEAL_CIC;P=IEM MINUTES;P=ITAB MINUTES" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV ReFormat Date" id="1" qi="" dcomap.open="F=DATE;F=DATE_1;F=DATE_2;F=ADDENDUM DATE;F=DATE_3;F=DATE_4;F=MEETING DATE;F=MEETING DATE_1;F=MEETING DATE_2;F=ATR DATE;F=MEETING DATE_3;F=ATR DATE_2;F=NOTE DATE;F=DATE OF RECEIPT;F=DATE OF SUBMISSION;F=AUDIT DATE;F=DATE OF RECEIPT_1;F=DATE OF RTI APPLICATION;F=DATE OF DISPOSAL;F=MEETING DATE_4;F=MEETING DATE_5">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="en-IN"/>
+					<p name="Target" type="string" v="@F.hr_locale"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat">
+					<p name="NewDateFormat" type="string" v="yyyy/mm/dd"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="65" name="NAV HO TREASURY DPT Set Page Status after maker" ver="1" modder="admin.1" qi="">
+		<rule name="Set page status rule" id="1" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS;P=IT Strategy Committee Notes and ATRs;P=IT Steering Committee Notes and ATRs;P=OFFICE_NOTE;P=STRATEGY COMMITEE;P=STEERING COMMITEE;P=REGULATORY LETTERS;P=AUDIT;P=RTI_APPEAL_CIC;P=IEM MINUTES;P=ITAB MINUTES" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="ReFormat Date" id="2" qi="" dcomap.open="F=DATE;F=DATE_1;F=DATE_2;F=ADDENDUM DATE;F=DATE_3;F=DATE_4;F=MEETING DATE;F=MEETING DATE_1;F=MEETING DATE_2;F=ATR DATE;F=MEETING DATE_3;F=ATR DATE_2;F=NOTE DATE;F=DATE OF RECEIPT;F=DATE OF SUBMISSION;F=AUDIT DATE;F=DATE OF RECEIPT_1;F=DATE OF RTI APPLICATION;F=DATE OF DISPOSAL;F=MEETING DATE_4;F=MEETING DATE_5">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="en-IN"/>
+					<p name="Target" type="string" v="@F.hr_locale"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat">
+					<p name="NewDateFormat" type="string" v="yyyy/mm/dd"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="65" name="NAV HO TREASURY DPT Set Page Status after maker" ver="2" modder="admin.1" qi="" dt="05/06/23 12:33:56.525 ">
+		<rule name="Set page status rule" id="1" dcomap.open="P=RFP DETAILS;P=RFP DOCUMENTS;P=ADDENDUM;P=ANNEXURE;P=SUPPORTING-DOCUMENTS;P=IT Strategy Committee Notes and ATRs;P=IT Steering Committee Notes and ATRs;P=OFFICE_NOTE;P=STRATEGY COMMITEE;P=STEERING COMMITEE;P=REGULATORY LETTERS;P=AUDIT;P=RTI_APPEAL_CIC;P=IEM MINUTES;P=ITAB MINUTES" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="ReFormat Date" id="2" qi="" dcomap.open="F=ADDENDUM DATE;F=AUDIT DATE;F=DATE;F=DATE OF DISPOSAL;F=DATE OF RECEIPT;F=DATE OF RTI APPLICATION;F=DATE OF SUBMISSION;F=MEETING DATE;F=NOTE DATE;F=ATR DATE_STEERING;F=ATR DATE_STRATEGY">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="en-IN"/>
+					<p name="Target" type="string" v="@F.hr_locale"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat">
+					<p name="NewDateFormat" type="string" v="yyyy/mm/dd"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="65" name="NAV HO TREASURY DPT Set Page Status after maker" ver="3" modder="admin.1" qi="" dt="07/28/23 09:09:53.768 ">
+		<rule name="Set page status rule" id="1" dcomap.open="P=FRONT OFFICE NOTES;P=BACK OFFICE NOTES;P=FRONT OFFICE REPORTING;P=BACK OFFICE REPORTING;P=AUDIT;P=DATA;P=NPI" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="ReFormat Date" id="2" qi="" dcomap.open="F=REPORTING DATE;F=LAST DATE FOR REPORTING;F=REVISED DATA RECEIVING DATE_DATA;F=NOTE DATE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="en-IN"/>
+					<p name="Target" type="string" v="@F.hr_locale"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat">
+					<p name="NewDateFormat" type="string" v="yyyy/mm/dd"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="93" name="Sort for HOATM DPT" ver="4" modder="admin.1" qi="" dt="03/17/23 16:06:27.94 ">
+		<rule name="Sort Unorder Pages Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="SortPages" name="SortPages" qi="">
+					<p name="OrderString" v="OFFICE_NOTES,OFFICE_NOTES_TrailingPage,OPEINING_CLOSING_MERGING,OPEINING_CLOSING_MERGING_TrailingPage,RTI,RTI_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURE,ANNEXURE_TrailingPage,SUPPORTING-DOCUMENTS,SUPPORTING-DOCUMENTS_TrailingPage,"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="Sort for HOATM DPT" ver="5" modder="admin.1" qi="" dt="03/20/23 10:21:31.219 ">
+		<rule name="Sort Unorder Pages Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="SortPages" name="SortPages" qi="">
+					<p name="OrderString" v="OFFICE NOTES,OFFICE NOTES_TrailingPage,OPEINING_CLOSING_MERGING,OPEINING_CLOSING_MERGING_TrailingPage,RTI,RTI_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURE,ANNEXURE_TrailingPage,SUPPORTING DOCUMENTS,SUPPORTING DOCUMENTS_TrailingPage,"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="Sort for HOATM DPT" ver="6" modder="admin.1" qi="" dt="03/20/23 15:09:02.816 ">
+		<rule name="Sort Unorder Pages Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="SortPages" name="SortPages" qi="">
+					<p name="OrderString" v="OFFICE NOTES,OFFICE NOTES_TrailingPage,OPEINING_CLOSING_MERGING,OPEINING_CLOSING_MERGING_TrailingPage,RTI,RTI_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURE,ANNEXURE_TrailingPage,SUPPORTING DOCUMENTS,SUPPORTING DOCUMENTS_TrailingPage,"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="Sort for HOATM DPT" ver="7" modder="admin.1" qi="" dt="03/20/23 16:53:10.323 ">
+		<rule name="Sort Unorder Pages Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="SortPages" name="SortPages" qi="">
+					<p name="OrderString" v="OFFICE NOTES,OFFICE NOTES_TrailingPage,OPEINING_CLOSING_MERGING,OPEINING_CLOSING_MERGING_TrailingPage,RTI,RTI_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURES,ANNEXURES_TrailingPage,SUPPORTING DOCUMENTS,SUPPORTING DOCUMENTS_TrailingPage,"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="Sort for HOATM DPT" ver="8" modder="admin.1" qi="" dt="03/20/23 16:59:50.48 ">
+		<rule name="Sort Unorder Pages Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="SortPages" name="SortPages" qi="">
+					<p name="OrderString" v="OFFICE NOTES,OFFICE NOTES_TrailingPage,OPEINING_CLOSING_MERGING,OPEINING_CLOSING_MERGING_TrailingPage,RTI,RTI_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURES,ANNEXURES_TrailingPage,SUPPORTING DOCUMENTS,SUPPORTING DOCUMENTS_TrailingPage,"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="Sort for HOATM DPT" ver="9" modder="admin.1" qi="" dt="03/20/23 17:18:25.982 ">
+		<rule name="Sort Unorder Pages Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="SortPages" name="SortPages" qi="">
+					<p name="OrderString" v="OFFICE NOTES,OFFICE NOTES_TrailingPage,OPEINING_CLOSING_MERGING,OPEINING_CLOSING_MERGING_TrailingPage,RTI,RTITrailingPages,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURES,ANNEXURES_TrailingPage,SUPPORTING DOCUMENTS,SUPPORTING DOCUMENTS_TrailingPage,"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="Sort for HOATM DPT" ver="10" modder="admin.1" qi="" dt="03/20/23 17:24:08.141 ">
+		<rule name="Sort Unorder Pages Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="SortPages" name="SortPages" qi="">
+					<p name="OrderString" v="OFFICE NOTES,OFFICE NOTES_TrailingPage,OPEINING_CLOSING_MERGING,OPEINING_CLOSING_MERGING_TrailingPage,RTI,RTI_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURES,ANNEXURES_TrailingPage,SUPPORTING DOCUMENTS,SUPPORTING DOCUMENTS_TrailingPage,"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="Sort for HOATM DPT" ver="11" modder="admin.1" qi="" dt="03/22/23 15:03:14.685 ">
+		<rule name="Sort Unorder Pages Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="SortPages" name="SortPages" qi="">
+					<p name="OrderString" v="OFFICE NOTES,OFFICE NOTES_TrailingPage,OPEINING/CLOSING/MERGING,OPEINING/CLOSING/MERGING_TrailingPage,RTI,RTI_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURES,ANNEXURES_TrailingPage,SUPPORTING DOCUMENTS,SUPPORTING DOCUMENTS_TrailingPage,"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="Sort for HOATM DPT" ver="12" modder="admin.1" qi="" dt="03/22/23 15:21:32.398 ">
+		<rule name="Sort Unorder Pages Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="SortPages" name="SortPages" qi="">
+					<p name="OrderString" v="OFFICE NOTES,OFFICE NOTES_TrailingPage,OPEINING/CLOSING/MERGING,OPEINING/CLOSING/MERGING_TrailingPage,RTI,RTI_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURES,ANNEXURES_TrailingPage,SUPPORTING DOCUMENTS,SUPPORTING DOCUMENTS_TrailingPage,"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="Sort for HOATM DPT" ver="13" modder="admin.1" qi="" dt="04/14/23 15:48:45.250 ">
+		<rule name="Sort Unorder Pages Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="SortPages" name="SortPages" qi="">
+					<p name="OrderString" v="OFFICE NOTES,OFFICE NOTES_TrailingPage,LEGAL,LEGAL_TrailingPage,AUDIT,AUDIT_TrailingPage,CORRESPONDANCE,CORRESPONDANCE_TrailingPage,PAYMENTS,PAYMENTS_TrailingPage,SUBSIDYDOCUMENTS,SUBSIDYDOCUMENTS_TrailingPage"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="Sort for HOATM DPT" ver="14" modder="admin.1" qi="" dt="04/17/23 12:21:57.961 ">
+		<rule name="Sort Unorder Pages Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="SortPages" name="SortPages" qi="">
+					<p name="OrderString" v="OFFICE NOTE,OFFICE NOTE_TrailingPage,AUDIT,AUDIT_TrailingPage,REPORTING,REPORTING_TrailingPage,DATA,DATA_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURE,ANNEXURE_TrailingPage,SUPPORTING DOCUMENTS,SUPPORTING DOCUMENTS_TrailingPage"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

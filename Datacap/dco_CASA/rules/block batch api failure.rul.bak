@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="101" name="Block batch API Failure" ver="1" modder="dmstest10.1" qi="">
+		<rule name="Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function 1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.APIResponse"/>
+					<p name="Text2" type="string" v="API Failure"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetTaskStatus">
+					<p name="TaskStatus" type="string" v="0"/>
+				</a>
+			</func>
+			<func name="Function 2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.APIResponse"/>
+					<p name="Text2" type="string" v="API Response Received"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="AddCustomColumn">
+					<p name="ColumnName" type="string" qi="Enter Column name." v="pb_errdesc"/>
+					<p name="ColumnValue" type="string" qi="Provide Column value." v=""/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

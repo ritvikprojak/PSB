@@ -1,0 +1,43 @@
+{
+	
+	// fields (includes batch-level fields)
+	"field.ZONE_NAME":"ZONE NAME",
+	"field.ZONE_CODE":"ZONE CODE",
+	"field.BRANCH_NAME":"BRANCH NAME",
+	"field.BRANCH_CODE":"BRANCH CODE",
+	"field.LOAN_ACCOUNT_NUMBER":"LOAN ACCOUNT NUMBER",
+	"field.CUSTOMER_ID":"CUSTOMER ID",
+	"field.CUSTOMER_NAME":"CUSTOMER NAME",
+	"field.GUARANTOR_NAME":"GUARANTOR NAME",
+	"field.SCHEME_TYPE":"SCHEME TYPE",
+	"field.DOCUMENT_TYPE":"DOCUMENT TYPE",
+	"field.DOCUMENT_SUBTYPE_PRE-SANCTION":"DOCUMENT SUBTYPE PRE-SANCTION",
+	"field.DOCUMENT_SUBTYPE_POST-SANCTION":"DOCUMENT SUBTYPE POST-SANCTION",
+	"field.DOCUMENT_TYPE_LOANS":"DOCUMENT TYPE",
+	"field.DOCUMENT_SUBTYPE_LOANS":"DOCUMENT SUBTYPE",
+	"field.SCHEME_TYPE_LOANS":"SCHEME TYPE",
+	"field.SCHEME_TYPE_HL":"SCHEME TYPE",
+	"field.DOCUMENTS_HL":"DOCUMENTS",
+	"field.DOCUMENTS_VL":"DOCUMENTS",
+	"field.DOCUMENT_TYPE_FB":"DOCUMENT TYPE",
+	"field.DOCTYPE1":"DOCUMENT TYPE",
+	"field.DOCUMENT_SUBTYPE1_PRE-SANCTION":"DOCUMENT SUBTYPE PRE-SANCTION",
+	"field.DOCUMENT_TYPE2":"DOCUMENT TYPE",
+	"field.DOCUMENT_SUBTYPE2_PRE-SANCTION":"DOCUMENT SUBTYPE PRE-SANCTION",
+	// shortcuts
+	"shortcut.NAVVScan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyLOS":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVScan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyLOS":"Classify Document",
+	"task.NAVMaker":"Document Details",								
+	"task.NAVChecker":"Checker",
+	"task.NAVExport":"Export"
+}

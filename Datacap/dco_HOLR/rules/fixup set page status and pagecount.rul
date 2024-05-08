@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="110" name="FIXUP Set Page Status And PageCount" ver="1" modder="dmstest10.1" qi="">
+	<rule name="Set page status rule1" id="1" dcomap.open="P=DEFAULTDECLARATION WILFUL;P=DRT/ Civil Recovery Suit Action;P=LEGALCELL DOCUMENTS;P=NCLT action;P=NI ACT Proceeding;P=OTS DOCUMENTS;P=POLICY DOCUMENTS;P=POSESSIONNOTICE;P=SA/WP before DRT/High Court;P=SA/WP before DRT/High Court/RECALL NOTICE;P=SALENOTICE;P=SUITFILEPERMISSION ANNEXURE" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Set page status rule1 - TrailingPages" id="2" dcomap.open="P=DEFAULTDECLARATION WILFUL_TrailingPage;P=DRT/ Civil Recovery Suit Action_TrailingPage;P=LEGALCELL DOCUMENTS_TrailingPage;P=NCLT action_TrailingPage;P=NI ACT Proceeding_TrailingPage;P=OTS DOCUMENTS_TrailingPage;P=POLICY DOCUMENTS_TrailingPage;P=POLICY DOCUMENTS_TrailingPage;P=POSESSIONNOTICE_TrailingPage;P=SA/WP before DRT/High Court/RECALL NOTICE;P=SA/WP before DRT/High Court/RECALL NOTICE;P=SALENOTICE_TrailingPage;P=SUITFILEPERMISSION ANNEXURE_TrailingPage" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Pages Count" id="3" dcomap.open="B">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+				<p name="Target" type="string" v="@B.PagesCount"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

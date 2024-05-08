@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="77" name="NAV Check API Response" ver="4" modder="dmstest10.1" qi="" dt="11/17/23 12:48:57.587 ">
+	<rule name="NAV Check response" id="1" dcomap.open="B" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.APIResponse"/>
+				<p name="Text2" type="string" v="API Failure"/>
+			</a>
+			<a ns="net:CASAPSBCustomLibrary.SampleAction" name="AddCustomColumn" qi="">
+				<p name="ColumnName" type="string" qi="Enter Column name." v="pb_errdesc"/>
+				<p name="ColumnValue" type="string" qi="Provide Column value." v="API Failure"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.APIResponse"/>
+				<p name="Text2" type="string" v="@EMTPY"/>
+			</a>
+			<a ns="net:CASAPSBCustomLibrary.SampleAction" name="AddCustomColumn">
+				<p name="ColumnName" type="string" qi="Enter Column name." v="pb_errdesc"/>
+				<p name="ColumnValue" type="string" qi="Provide Column value." v="API Failure"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

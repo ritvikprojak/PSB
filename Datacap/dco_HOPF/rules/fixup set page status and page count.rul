@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="112" name="FIXUP Set page status and page count" ver="1" modder="dmstest10.1" qi="">
+	<rule name="Set page status rule1" id="1" dcomap.open="P=INCOME TAX NOTICE;P=EMPLOYEE SIGNATURE CARD;P=MISC;P=TRUST AUDIT;P=STAFF FILES;P=TRUST DOCUMENTS;P=TRUSTEE MEETING;P=MINUTES;P=TRUST BALANCE SHEET;P=TRUST INCOME TAX RETURN;P=INCOME TAX NOTICE;P=INVESTMENT APPROVALS;P=INVESTMENT CERTIFICATES;P=NOTES;P=GUIDELINES;P=CASES;P=PF OPTEE;P=PRAN CARD GENERATION FORM;P=NOMINATION CHANGE FORM NPS;P=ADDRESS CHANGE FORM;P=NPS PARTIAL WITHDRAWAL;P=PENSION;P=PF WITHDRAWAL;P=NPS OPTEE;P=TERMINAL DUES;P=DEPARTMENT AUDIT" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Set page status rule1 - TrailingPages" id="2" dcomap.open="P=RFP DETAILS_TrailingPage;P=RFP DOCUMENTS_TrailingPage;P=ADDENDUM_TrailingPage;P=ANNEXURE_TrailingPage;P=SUPPORTING-DOCUMENTS_TrailingPage;P=IT Strategy Committee Notes and ATRs_TrailingPage;P=IT Steering Committee Notes and ATRs_TrailingPage;P=ATR of IT Strategy  Committee_TrailingPage;P=ATR of IT Steering Committee_TrailingPage;P=OFFICE_NOTE_TrailingPage;P=REGULATORY LETTERS_TrailingPage;P=AUDIT_TrailingPage;P=RTI_APPEAL_CIC_TrailingPage;P=MINUTES_TrailingPage;P=MINUTES1_TrailingPage" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Pages Count" id="3" dcomap.open="B">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+				<p name="Target" type="string" v="@B.PagesCount"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

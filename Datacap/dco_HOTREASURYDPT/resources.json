@@ -1,0 +1,32 @@
+{
+	
+	// fields (includes batch-level fields)
+	"field.COMPETENT AUTHORITY_NOTES":"COMPETENT AUTHORITY",
+	"field.COMPETENT AUTHORITY _REPORTING":"COMPETENT AUTHORITY",
+	"field.DATA RECEIVING_SUBMITTING DATE":"DATA RECEIVING / SUBMITTING DATE",
+	"field.REVISED DATA RECEIVING DATE_DATA":"REVISED DATA RECEIVING DATE",
+	"field.REVISED DATA DETAILS_DATA":"REVISED DATA DETAILS",
+	"field.DATA DETAILS_NPI":"DATA DETAILS",
+	"field.DATA COLLECTED FROM_SUBMITTED TO_NPI":"DATA COLLECTED FROM / SUBMITTED TO",
+	"field.DATA RECTIFICATION IF ANY_NPI":"DATA RECTIFICATION, IF ANY",
+	"field.REVISED DATA RECEIVING DATE_NPI":"REVISED DATA RECEIVING DATE",
+	"field.REVISED DATA DETAILS_NPI":"REVISED DATA DETAILS",
+	
+	
+	// shortcuts
+	"shortcut.NAVVScan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyTREASURY":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVScan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyTREASURY":"Classify Document",
+	"task.NAVMaker":"Document Details",								
+	"task.NAVChecker":"Checker",
+	"task.NAVExport":"Export"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="102" name="NAV Return - Maker to Classify" ver="3" modder="dmstest10.1" qi="" dt="11/16/23 17:49:48.536 ">
+	<rule name="(P) Rule - Return to Classify" id="1" dcomap.open="P" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="true"/>
+				<p name="Target" type="string" v="@B.ReturnBatch"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="16" name="Page Status" ver="14" modder="dmstest10.1" dt="07/07/23 15:19:36.338 " qi="">
+	<rule name="Page Status Rule" id="1" qi="" dcomap.open="P=Page">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageStatus" disabled="y">
+				<p name="Type" type="string" v="1"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

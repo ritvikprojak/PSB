@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="38" name="Batch level activities" ver="1" modder="admin.1" qi="">
+		<rule name="Get Account Inquiry" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetAccountInquiry" qi="">
+					<p name="accountNumber" type="string" qi="This action takes Account number as Input parameter" v="@B.accountNumber"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="38" name="Batch level activities" ver="2" modder="admin.1" qi="" dt="04/05/23 12:58:17.325 ">
+		<rule name="Get Account Inquiry" id="1" qi="">
+			<func name="Function1" qi="" disabled="y">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetAccountInquiry" qi="">
+					<p name="accountNumber" type="string" qi="This action takes Account number as Input parameter" v="@B.accountNumber"/>
+				</a>
+			</func>
+			<func name="Set field value">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.accountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="38" name="Batch level activities" ver="3" modder="admin.1" qi="" dt="04/05/23 13:33:17.516 ">
+		<rule name="CreateFields" id="2" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Get Account Inquiry" id="1" qi="">
+			<func name="Function1" qi="" disabled="y">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetAccountInquiry" qi="">
+					<p name="accountNumber" type="string" qi="This action takes Account number as Input parameter" v="@B.accountNumber"/>
+				</a>
+			</func>
+			<func name="Set field value">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.accountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="38" name="Batch level activities" ver="4" modder="admin.1" qi="" dt="04/10/23 13:35:17.622 ">
+		<rule name="CreateFields" id="2" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Get Account Inquiry" id="1" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1" qi="" disabled="y">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetAccountInquiry" qi="">
+					<p name="accountNumber" type="string" qi="This action takes Account number as Input parameter" v="@B.accountNumber"/>
+				</a>
+			</func>
+			<func name="Set field value">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.accountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="38" name="Batch level activities" ver="5" modder="admin.1" qi="" dt="04/10/23 13:37:16.64 ">
+		<rule name="CreateFields" id="2" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Set account number to field" id="1" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1" qi="" disabled="y">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetAccountInquiry" qi="">
+					<p name="accountNumber" type="string" qi="This action takes Account number as Input parameter" v="@B.accountNumber"/>
+				</a>
+			</func>
+			<func name="Set field value">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.accountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create empty batch parameters" id="3" dcomap.open="B">
+			<func name="Function1">
+				<a name="rrSet" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions">
+					<p name="Source" type="string"/>
+					<p name="Target" type="string"/>
+				</a>
+				<a name="rrSet" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions">
+					<p name="Source" type="string"/>
+					<p name="Target" type="string"/>
+				</a>
+				<a name="rrSet" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions">
+					<p name="Source" type="string"/>
+					<p name="Target" type="string"/>
+				</a>
+				<a name="rrSet" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions">
+					<p name="Source" type="string"/>
+					<p name="Target" type="string"/>
+				</a>
+				<a name="rrSet" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions">
+					<p name="Source" type="string"/>
+					<p name="Target" type="string"/>
+				</a>
+				<a name="rrSet" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions">
+					<p name="Source" type="string"/>
+					<p name="Target" type="string"/>
+				</a>
+				<a name="rrSet" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions">
+					<p name="Source" type="string"/>
+					<p name="Target" type="string"/>
+				</a>
+				<a name="rrSet" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions">
+					<p name="Source" type="string"/>
+					<p name="Target" type="string"/>
+				</a>
+				<a name="rrSet" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions">
+					<p name="Source" type="string"/>
+					<p name="Target" type="string"/>
+				</a>
+				<a name="rrSet" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions">
+					<p name="Source" type="string"/>
+					<p name="Target" type="string"/>
+				</a>
+				<a name="rrSet" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions">
+					<p name="Source" type="string"/>
+					<p name="Target" type="string"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="38" name="Batch level activities" ver="6" modder="admin.1" qi="" dt="04/10/23 13:40:19.235 ">
+		<rule name="CreateFields" id="2" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Set account number to field" id="1" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1" qi="" disabled="y">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetAccountInquiry" qi="">
+					<p name="accountNumber" type="string" qi="This action takes Account number as Input parameter" v="@B.accountNumber"/>
+				</a>
+			</func>
+			<func name="Set field value">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.accountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create batch parameters" id="3" dcomap.open="B">
+			<func name="Create empty batch variables" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeCode"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeDesc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTSOLID"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTOPENDATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bOPERATORSOLID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="38" name="Batch level activities" ver="7" modder="admin.1" qi="" dt="04/10/23 15:28:52.707 ">
+		<rule name="CreateFields" id="2" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Set account number to field" id="1" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1" qi="" disabled="y">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetAccountInquiry" qi="">
+					<p name="accountNumber" type="string" qi="This action takes Account number as Input parameter" v="@B.accountNumber"/>
+				</a>
+			</func>
+			<func name="Set field value">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.accountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create batch parameters" id="3" dcomap.open="B">
+			<func name="Create empty batch variables" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.SchemeCode"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.SchemeDesc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.ACCTSOLID"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.ACCTOPENDATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.OPERATORSOLID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="38" name="Batch level activities" ver="8" modder="admin.1" qi="" dt="04/10/23 15:34:11.36 ">
+		<rule name="CreateFields" id="2" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Set account number to field" id="1" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1" qi="" disabled="y">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetAccountInquiry" qi="">
+					<p name="accountNumber" type="string" qi="This action takes Account number as Input parameter" v="@B.accountNumber"/>
+				</a>
+			</func>
+			<func name="Set field value">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create batch parameters" id="3" dcomap.open="B">
+			<func name="Create empty batch variables" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeCode"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeDesc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTSOLID"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTOPENDATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bOPERATORSOLID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="38" name="Batch level activities" ver="9" modder="admin.1" qi="" dt="04/12/23 12:24:13.509 ">
+		<rule name="CreateFields" id="2" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Set account number to field" id="1" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1" qi="" disabled="y">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetAccountInquiry" qi="">
+					<p name="accountNumber" type="string" qi="This action takes Account number as Input parameter" v="@B.accountNumber"/>
+				</a>
+			</func>
+			<func name="Set field value">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create batch parameters" id="3" dcomap.open="B">
+			<func name="Create empty batch variables" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeCode"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeDesc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTSOLID"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTOPENDATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bOPERATORSOLID"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bCUSTOMERNAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bCIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bDOB"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bMOBILE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="38" name="Batch level activities" ver="10" modder="admin.1" qi="" dt="04/14/23 13:22:12.270 ">
+		<rule name="CreateFields" id="2" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Set account number to field" id="1" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Set field value">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create batch parameters" id="3" dcomap.open="B">
+			<func name="Create empty batch variables" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeCode"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeDesc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTSOLID"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTOPENDATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bOPERATORSOLID"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bCUSTOMERNAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bCIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bDOB"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bMOBILE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="38" name="Batch level activities" ver="11" modder="admin.1" qi="" dt="04/14/23 17:14:39.262 ">
+		<rule name="CreateFields" id="2" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Set account number to field" id="1" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Set field value">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create batch parameters" id="3" dcomap.open="B">
+			<func name="Create empty batch variables" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeCode"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeDesc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTSOLID"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTOPENDATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bOPERATORSOLID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="38" name="Batch level activities" ver="12" modder="admin.1185" qi="" dt="04/18/23 15:53:12.522 ">
+		<rule name="CreateFields" id="2" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Set account number to field" id="1" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Set field value" disabled="y" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create batch parameters" id="3" dcomap.open="B">
+			<func name="Create empty batch variables" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeCode"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeDesc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTSOLID"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTOPENDATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bOPERATORSOLID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="38" name="Batch level activities" ver="13" modder="admin.1185" qi="" dt="04/18/23 16:08:30.253 ">
+		<rule name="CreateFields" id="2" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Set account number to field" id="1" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Set field value" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create batch parameters" id="3" dcomap.open="B">
+			<func name="Create empty batch variables" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeCode"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeDesc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTSOLID"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTOPENDATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bOPERATORSOLID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="38" name="Batch level activities" ver="14" modder="admin.1" qi="" dt="06/14/23 13:47:40.919 ">
+		<rule name="CreateFields" id="2" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Set account number to field" id="1" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Set field value" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create batch parameters" id="3" dcomap.open="B">
+			<func name="Create empty batch variables" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeCode"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeDesc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTSOLID"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTOPENDATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bOPERATORSOLID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="38" name="Batch level activities" ver="15" modder="admin.1" qi="" dt="06/14/23 13:55:23.160 ">
+		<rule name="CreateFields" id="2" qi="" dcomap.open="P=Page;P=Signature;P=Photograph">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Set account number to field" id="1" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Set field value" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create batch parameters" id="3" dcomap.open="B">
+			<func name="Create empty batch variables" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeCode"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bSchemeDesc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTSOLID"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bACCTOPENDATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@B.bOPERATORSOLID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="103" name="NAV Classify Return" ver="2" modder="dmstest10.1" qi="" dt="09/26/23 14:18:00.54 ">
+		<rule name="Rule" id="1" qi="" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.ReturnBatch"/>
+					<p name="Text2" type="string" v="true"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="false"/>
+					<p name="Target" type="string" v="@B.ReturnBatch"/>
+				</a>
+				<a ns="rrunner" name="Task_NumberOfSplits">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="1"/>
+				</a>
+				<a ns="rrunner" name="Task_RaiseCondition" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="0,0"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="85" name="NAV Acknowledgement" ver="3" modder="dmstest10.1" qi="" dt="11/01/23 14:22:30.757 ">
+	<rule name="NAV ACK Rule" id="1" dcomap.open="B" qi="">
+		<func name="ACK Func">
+			<a ns="rrunner" name="rrCompare">
+				<p name="object1" v="@B.DOC_FLG"/>
+				<p name="object2" v="N"/>
+			</a>
+			<a name="AcknowledgementAPI" ns="net:CASAPSBCustomLibrary.SampleAction" qi=""/>
+		</func>
+	</rule>
+</ruleset>

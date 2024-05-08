@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="108" name="NAV FIXUP Sort for HO IT DPT" ver="1" modder="dmstest10.1" qi="">
+	<rule name="Sort Unorder Pages" id="1" dcomap.open="B">
+		<func name="Function1" qi="">
+			<a ns="SortPages" name="SortPages" disabled="y" qi="">
+				<p name="OrderString" v="RFP DETAILS,RFP DETAILS_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURE,ANNEXURE_TrailingPage,SUPPORTING-DOCUMENTS,SUPPORTING-DOCUMENTS_TrailingPage,IT Strategy Committee Notes and ATRs,IT Strategy Committee Notes and ATRs_TrailingPage,IT Steering Committee Notes and ATRs,IT Steering Committee Notes and ATRs_TrailingPage,OFFICE_NOTE,OFFICE_NOTE_TrailingPage,STRATEGY COMMITEE,STRATEGY COMMITEE_TrailingPage,STEERING COMMITEE,STEERING COMMITEE_TrailingPage,REGULATORY LETTERS,REGULATORY LETTERS_TrailingPage,AUDIT,AUDIT_TrailingPage,RTI_APPEAL_CIC,RTI_APPEAL_CIC_TrailingPage,ITAB MINUTES,MINUTES_TrailingPage,IEM MINUTES,MINUTES1_TrailingPage"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

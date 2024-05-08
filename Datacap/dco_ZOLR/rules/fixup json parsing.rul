@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="111" name="FIXUP Json Parsing" ver="1" modder="dmstest10.1" qi="">
+	<rule name="Json Parsing Rule1" id="1" dcomap.open="B" qi="">
+		<func name="Function2">
+			<a name="JsonParseGetEmployee" ns="net:PSBCustomLibrary.SampleAction" qi=""/>
+		</func>
+	</rule>
+</ruleset>

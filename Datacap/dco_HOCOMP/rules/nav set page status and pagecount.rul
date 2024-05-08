@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="59" name="NAV Set Page Status And PageCount" ver="9" modder="dmstest10.1" qi="" dt="01/24/24 13:29:08.240 ">
+	<rule name="Set page status rule1" id="1" dcomap.open="P=OFFICE NOTE;P=SOP;P=RBI letter in the name of MD and CEO;P=DOWNLOADING;P=RAR;P=RMP;P=Regulatory Letters and Mails and other important  Correspondence;P=MD_CEO DAK;P=Vetting Of Credit Proposal;P=Feedback On New Product;P=Information on Parliament Visits;P=Write up note for various meetings attended by MD_CEO and EDs;P=Parliamentary Questions" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Set page status rule1 - TrailingPages" id="3" dcomap.open="P=OFFICE NOTE_TrailingPage;P=SOP_TrailingPage;P=RBI letter in the name of MD and CEO_TrailingPage;P=DOWNLOADING_TrailingPage;P=RAR_TrailingPage;P=RMP_TrailingPage;P=Regulatory Letters and Mails and other important  Correspondence_TrailingPage;P=MD_CEO DAK_TrailingPage;P=Vetting Of Credit Proposal_TrailingPage;P=Feedback On New Product_TrailingPage;P=Information on Parliament Visits_TrailingPage;P=Write up note for various meetings attended by MD_CEO and EDs_TrailingPage;P=Parliamentary Questions_TrailingPage" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Pages Count" id="2" dcomap.open="B">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+				<p name="Target" type="string" v="@B.PagesCount"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

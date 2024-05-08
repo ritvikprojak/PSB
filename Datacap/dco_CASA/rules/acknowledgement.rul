@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="45" name="Acknowledgement" ver="4" modder="admin.1" qi="" dt="05/29/23 17:03:47.559 ">
+	<rule name="ACK Rule" id="1" dcomap.open="B" qi="">
+		<func name="ACK Func">
+			<a name="AcknowledgementAPI" ns="net:CASAPSBCustomLibrary.SampleAction" qi=""/>
+		</func>
+	</rule>
+</ruleset>

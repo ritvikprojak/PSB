@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="24" name="Create Custom Variable" ver="1" modder="admin.1" qi="">
+		<rule name="rCreate Variable" id="2" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="24" name="Create Custom Variable" ver="2" modder="admin.1" qi="" dt="02/04/23 14:03:54.328 ">
+		<rule name="rCreate Variable" id="2" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

@@ -1,0 +1,2007 @@
+<?xml-stylesheet type="text/xsl" href="..\..\dco.xsl"?>
+<S>
+	<B type="MDSECTT">
+		<V n="ID">0</V>
+		<V n="TYPE">Batch</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Other" pos="0" min="0" max="0"/>
+		<D type="Document" pos="0" min="0" max="0"/>
+		<D type="NOTES DOC" pos="0" min="0" max="0"/>
+		<D type="LETTERS SENT DOC" pos="0" min="0" max="0"/>
+		<D type="LETTERS RECEIVED DOC" pos="0" min="0" max="0"/>
+		<D type="OFFICE DOCUMENTS DOC" pos="0" min="0" max="0"/>
+	</B>
+	<D type="Document">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Page" pos="1" min="1" max="0"/>
+		<P type="TrailPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="RFP DOCUMENTS DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="RFP DOCUMENTS" pos="0" min="0" max="0"/>
+		<P type="RFP DOCUMENTS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="ADDENDUM DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="ADDENDUM" pos="0" min="0" max="0"/>
+		<P type="ADDENDUM_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="ANNEXURE DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="ANNEXURE" pos="0" min="0" max="0"/>
+		<P type="ANNEXURE_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SUPPORTING-DOCUMENTS DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SUPPORTING-DOCUMENTS" pos="0" min="0" max="0"/>
+		<P type="SUPPORTING-DOCUMENTS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="IT Strategy Committee Notes and ATRs DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="IT Strategy Committee Notes and ATRs" pos="0" min="0" max="0"/>
+		<P type="IT Strategy Committee Notes and ATRs_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="IT Steering Committee Notes and ATRs DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="IT Steering Committee Notes and ATRs" pos="0" min="0" max="0"/>
+		<P type="IT Steering Committee Notes and ATRs_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="OFFICE_NOTE DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="OFFICE_NOTE" pos="0" min="0" max="0"/>
+		<P type="OFFICE_NOTE_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="ATR of IT Strategy  Committee DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="ATR of IT Strategy  Committee" pos="0" min="0" max="0"/>
+		<P type="ATR of IT Strategy  Committee_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="ATR of IT Steering Committee DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="ATR of IT Steering Committee" pos="0" min="0" max="0"/>
+		<P type="ATR of IT Steering Committee_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="REGULATORY LETTERS DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="REGULATORY LETTERS" pos="0" min="0" max="0"/>
+		<P type="REGULATORY LETTERS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="AUDIT DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="AUDIT" pos="0" min="0" max="0"/>
+		<P type="AUDIT_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="RTI_APPEAL_CIC DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="RTI_APPEAL_CIC" pos="0" min="0" max="0"/>
+		<P type="RTI_APPEAL_CIC_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="ITAB MINUTES DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="ITAB MINUTES" pos="0" min="0" max="0"/>
+		<P type="MINUTES_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="IEM MINUTES DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="IEM MINUTES" pos="0" min="0" max="0"/>
+		<P type="MINUTES1_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="NOTES DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="NOTES" pos="1" min="1" max="1"/>
+		<P type="NOTES_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="OFFICE DOCUMENTS DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="OFFICE DOCUMENTS" pos="1" min="1" max="1"/>
+		<P type="OFFICE DOCUMENTS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="LETTERS SENT DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="LETTERS SENT" pos="1" min="1" max="1"/>
+		<P type="LETTERS SENT_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="LETTERS RECEIVED DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="LETTERS RECEIVED" pos="1" min="1" max="1"/>
+		<P type="LETTERS RECEIVED_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<P type="Other">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="Page">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Document_Type" pos="0" min="0" max="0"/>
+	</P>
+	<P type="RFP DOCUMENTS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="IN PRINCIPAL NOTE FOR FLOATING RFP" pos="0" min="0" max="0"/>
+		<F type="NOTE FOR FLOATING RFP" pos="0" min="0" max="0"/>
+		<F type="PRE BID QUERIUES_RESPONSE" pos="0" min="0" max="0"/>
+		<F type="BID DOCUMENTS" pos="0" min="0" max="0"/>
+		<F type="NOTE FOR TECHNICAL EVALUATION" pos="0" min="0" max="0"/>
+		<F type="NOTE FOR COMMERCIAL EVALUATION" pos="0" min="0" max="0"/>
+		<F type="NOTE FOR REVERSE AUCTION" pos="0" min="0" max="0"/>
+		<F type="NOTE FOR DECLARING L_1 BIDDER" pos="0" min="0" max="0"/>
+		<F type="FINANCIAL APPORVAL FOR FINAL TCO" pos="0" min="0" max="0"/>
+		<F type="OTHER NOTES" pos="0" min="0" max="0"/>
+	</P>
+	<P type="ADDENDUM">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="NOTE FOR FLOATING ADDENDUM" pos="0" min="0" max="0"/>
+		<F type="ADDEDUM NO" pos="0" min="0" max="0"/>
+		<F type="ADDENDUM DATE" pos="0" min="0" max="0"/>
+		<F type="ADDENDUM SUBJECT" pos="0" min="0" max="0"/>
+		<F type="ADDENDUM QUERIES_RESPONSE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="ANNEXURE">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ANNEXURE NO" pos="0" min="0" max="0"/>
+		<F type="ANNEXURE SUBJECT" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SUPPORTING-DOCUMENTS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DOCUMENT TYPE" pos="0" min="0" max="0"/>
+		<F type="REMARK" pos="0" min="0" max="0"/>
+	</P>
+	<P type="IT Strategy Committee Notes and ATRs">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="MEETING FOR THE MONTH OF" pos="0" min="0" max="0"/>
+		<F type="MEETING DATE" pos="0" min="0" max="0"/>
+		<F type="SR NO" pos="0" min="0" max="0"/>
+		<F type="AGENDA ITEMS" pos="0" min="0" max="0"/>
+		<F type="PURPOSE CODE" pos="0" min="0" max="0"/>
+		<F type="PURPOSE" pos="0" min="0" max="0"/>
+		<F type="REFERENCE NUMBER" pos="0" min="0" max="0"/>
+	</P>
+	<P type="IT Steering Committee Notes and ATRs">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="MEETING FOR THE MONTH OF" pos="0" min="0" max="0"/>
+		<F type="MEETING DATE" pos="0" min="0" max="0"/>
+		<F type="SR NO" pos="0" min="0" max="0"/>
+		<F type="AGENDA ITEMS" pos="0" min="0" max="0"/>
+		<F type="PURPOSE CODE" pos="0" min="0" max="0"/>
+		<F type="PURPOSE" pos="0" min="0" max="0"/>
+		<F type="REFERENCE NUMBER" pos="0" min="0" max="0"/>
+	</P>
+	<P type="ATR of IT Strategy  Committee">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="AGENDA ITEM NO" pos="0" min="0" max="0"/>
+		<F type="MEETING DATE" pos="0" min="0" max="0"/>
+		<F type="ATR DATE_STRATEGY" pos="0" min="0" max="0"/>
+		<F type="SR NO" pos="0" min="0" max="0"/>
+		<F type="AGENDA ITEMS" pos="0" min="0" max="0"/>
+		<F type="PURPOSE CODE_SC" pos="0" min="0" max="0"/>
+		<F type="PURPOSE_ATR" pos="0" min="0" max="0"/>
+		<F type="ACTION TAKEN REPORT" pos="0" min="0" max="0"/>
+		<F type="REFERENCE NUMBER" pos="0" min="0" max="0"/>
+	</P>
+	<P type="ATR of IT Steering Committee">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="AGENDA ITEM NO" pos="0" min="0" max="0"/>
+		<F type="MEETING DATE" pos="0" min="0" max="0"/>
+		<F type="ATR DATE_STEERING" pos="0" min="0" max="0"/>
+		<F type="SR NO" pos="0" min="0" max="0"/>
+		<F type="AGENDA ITEMS" pos="0" min="0" max="0"/>
+		<F type="PURPOSE CODE_SC" pos="0" min="0" max="0"/>
+		<F type="PURPOSE_ATR" pos="0" min="0" max="0"/>
+		<F type="ACTION TAKEN REPORT" pos="0" min="0" max="0"/>
+		<F type="REFERENCE NUMBER" pos="0" min="0" max="0"/>
+	</P>
+	<P type="OFFICE_NOTE">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="NOTE DATE" pos="0" min="0" max="0"/>
+		<F type="REFERENCE NUMBER_ON" pos="0" min="0" max="0"/>
+		<F type="SR NO_ON" pos="0" min="0" max="0"/>
+		<F type="AGENDA ITEMS" pos="0" min="0" max="0"/>
+		<F type="PURPOSE CODE_ON" pos="0" min="0" max="0"/>
+		<F type="PURPOSE" pos="0" min="0" max="0"/>
+		<F type="MINUTES OF MEETING" pos="0" min="0" max="0"/>
+		<F type="NOTE TYPE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="REGULATORY LETTERS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DATE OF RECEIPT" pos="0" min="0" max="0"/>
+		<F type="TYPE" pos="0" min="0" max="0"/>
+		<F type="SUBJECT" pos="0" min="0" max="0"/>
+		<F type="FROM" pos="0" min="0" max="0"/>
+		<F type="REFERENCE NUMBER_RL" pos="0" min="0" max="0"/>
+		<F type="DATE OF SUBMISSION" pos="0" min="0" max="0"/>
+		<F type="TO" pos="0" min="0" max="0"/>
+	</P>
+	<P type="AUDIT">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="FINANCIAL YEAR" pos="0" min="0" max="0"/>
+		<F type="FREQUENCY" pos="0" min="0" max="0"/>
+		<F type="AUDIT TYPE" pos="0" min="0" max="0"/>
+		<F type="AUDIT DATE" pos="0" min="0" max="0"/>
+		<F type="SUBJECT" pos="0" min="0" max="0"/>
+		<F type="AUDIT COPY REF NO" pos="0" min="0" max="0"/>
+		<F type="AUDITOR NAME" pos="0" min="0" max="0"/>
+	</P>
+	<P type="RTI_APPEAL_CIC">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="YEAR" pos="0" min="0" max="0"/>
+		<F type="DATE OF RECEIPT" pos="0" min="0" max="0"/>
+		<F type="RECEIVED FROM" pos="0" min="0" max="0"/>
+		<F type="DATE OF RTI APPLICATION" pos="0" min="0" max="0"/>
+		<F type="NAME OF APPLICANT" pos="0" min="0" max="0"/>
+		<F type="SUBJECT_RTI" pos="0" min="0" max="0"/>
+		<F type="SENT TO" pos="0" min="0" max="0"/>
+		<F type="DATE OF DISPOSAL" pos="0" min="0" max="0"/>
+		<F type="REMARKS" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT TYPE_RTI" pos="0" min="0" max="0"/>
+	</P>
+	<P type="ITAB MINUTES">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="MEETING NO" pos="0" min="0" max="0"/>
+		<F type="MEETING DATE" pos="0" min="0" max="0"/>
+		<F type="SR NO_MIN" pos="0" min="0" max="0"/>
+		<F type="AGENDA ITEMS_MIN" pos="0" min="0" max="0"/>
+		<F type="PURPOSE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="IEM MINUTES">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="MEETING NO" pos="0" min="0" max="0"/>
+		<F type="MEETING DATE" pos="0" min="0" max="0"/>
+		<F type="SR NO_MIN" pos="0" min="0" max="0"/>
+		<F type="AGENDA ITEMS_MIN" pos="0" min="0" max="0"/>
+		<F type="PURPOSE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="RFP DOCUMENTS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="ADDENDUM_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="ANNEXURE_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SUPPORTING-DOCUMENTS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="IT Strategy Committee Notes and ATRs_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="IT Steering Committee Notes and ATRs_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="OFFICE_NOTE_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="ATR of IT Strategy  Committee_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="ATR of IT Steering Committee_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="REGULATORY LETTERS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="AUDIT_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="RTI_APPEAL_CIC_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="MINUTES_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="MINUTES1_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="TrailPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="NOTES">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="SUBJECT_NOTES" pos="0" min="0" max="0"/>
+		<F type="NOTE DATE_NOTES" pos="0" min="0" max="0"/>
+		<F type="MOM DATE" pos="0" min="0" max="0"/>
+		<F type="DEPARTMENT" pos="0" min="0" max="0"/>
+		<F type="DATE IN" pos="0" min="0" max="0"/>
+		<F type="DATE OUT" pos="0" min="0" max="0"/>
+		<F type="RECEIVED NOTE TYPE" pos="0" min="0" max="0"/>
+		<F type="SENT NOTE TYPE" pos="0" min="0" max="0"/>
+		<F type="APPROVING AUTHORITY" pos="0" min="0" max="0"/>
+		<F type="REMARKS_NOTES" pos="0" min="0" max="0"/>
+		<F type="NOTE TYPE_NOTES" pos="0" min="0" max="0"/>
+		<F type="DIARY_NUM" pos="0" min="0" max="0"/>
+		<F type="Note Number" pos="0" min="0" max="0"/>
+		<F type="MOM No" pos="0" min="0" max="0"/>
+	</P>
+	<P type="NOTES_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="OFFICE DOCUMENTS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="SUBJECT_NOTES" pos="0" min="0" max="0"/>
+		<F type="DEPARTMENT" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT DATE" pos="0" min="0" max="0"/>
+		<F type="REMARKS_NOTES" pos="0" min="0" max="0"/>
+	</P>
+	<P type="OFFICE DOCUMENTS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="LETTERS SENT">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="SUBJECT_NOTES" pos="0" min="0" max="0"/>
+		<F type="SENT LETTER TYPE" pos="0" min="0" max="0"/>
+		<F type="REMARKS_NOTES" pos="0" min="0" max="0"/>
+		<F type="DATE_LETTERS" pos="0" min="0" max="0"/>
+		<F type="DIARY_NUMBER" pos="0" min="0" max="0"/>
+	</P>
+	<P type="LETTERS SENT_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="LETTERS RECEIVED">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DIARY_NUMBER" pos="0" min="0" max="0"/>
+		<F type="REMARKS_NOTES" pos="0" min="0" max="0"/>
+		<F type="RECEIVED LETTER TYPE" pos="0" min="0" max="0"/>
+		<F type="SUBJECT_NOTES" pos="0" min="0" max="0"/>
+		<F type="DATE_LETTERS" pos="0" min="0" max="0"/>
+	</P>
+	<P type="LETTERS RECEIVED_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<F type="Frequency_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="RecogType">4</V>
+		<F type="Frequency_OMR1_OMR1" pos="0" min="0" max="0"/>
+	</F>
+	<F type="Signature_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Frequency_OMR1_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="IN PRINCIPAL NOTE FOR FLOATING RFP">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOTE FOR FLOATING RFP">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="PRE BID QUERIUES_RESPONSE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="BID DOCUMENTS">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOTE FOR TECHNICAL EVALUATION">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOTE FOR COMMERCIAL EVALUATION">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOTE FOR REVERSE AUCTION">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOTE FOR DECLARING L_1 BIDDER">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="FINANCIAL APPORVAL FOR FINAL TCO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="OTHER NOTES">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOTE FOR FLOATING ADDENDUM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ADDEDUM NO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ADDENDUM DATE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DataType">3</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+	</F>
+	<F type="ADDENDUM SUBJECT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ADDENDUM QUERIES_RESPONSE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ANNEXURE NO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ANNEXURE SUBJECT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:DOCUMENT TYPE</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="REMARK">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="MEETING FOR THE MONTH OF">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="MEETING DATE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DataType">3</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+	</F>
+	<F type="SR NO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="AGENDA ITEMS">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="PURPOSE CODE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:PURPOSE CODE_IT</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="PURPOSE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="REFERENCE NUMBER">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="AGENDA ITEM NO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="PURPOSE CODE_SC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:PURPOSE CODE_SC</V>
+	</F>
+	<F type="NOTE DATE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DataType">3</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+	</F>
+	<F type="REFERENCE NUMBER_ON">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="SR NO_ON">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="PURPOSE CODE_ON">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:PURPOSE CODE_ON</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="MINUTES OF MEETING">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOTE TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:NOTE TYPE</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DATE OF RECEIPT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DataType">3</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+	</F>
+	<F type="TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:TYPE_1</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="SUBJECT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="FROM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DATE OF SUBMISSION">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DataType">3</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+	</F>
+	<F type="TO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="FINANCIAL YEAR">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="Date pattern">yyyy</V>
+		<V n="PictureString">yyyy</V>
+		<V n="Nullable">1</V>
+		<V n="Hint">YYYY</V>
+	</F>
+	<F type="FREQUENCY">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:FREQUENCY</V>
+	</F>
+	<F type="AUDIT TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:AUDIT</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="AUDIT DATE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DataType">3</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+	</F>
+	<F type="AUDIT COPY REF NO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="AUDITOR NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="YEAR">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="Date pattern">yyyy</V>
+		<V n="PictureString">yyyy</V>
+		<V n="Nullable">1</V>
+		<V n="Hint">YYYY</V>
+	</F>
+	<F type="RECEIVED FROM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DATE OF RTI APPLICATION">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DataType">3</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+	</F>
+	<F type="NAME OF APPLICANT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="SENT TO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DATE OF DISPOSAL">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DataType">3</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+	</F>
+	<F type="REMARKS">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT TYPE_RTI">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:DOCUMENT TYPE_1</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="MEETING NO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="SR NO_MIN">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="AGENDA ITEMS_MIN">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Field11">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACTION TAKEN REPORT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document_Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:NAV Document_Type</V>
+	</F>
+	<F type="ATR DATE_STRATEGY">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DataType">3</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+	</F>
+	<F type="ATR DATE_STEERING">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DataType">3</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+	</F>
+	<F type="REFERENCE NUMBER_RL">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="SUBJECT_RTI">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="PURPOSE_ATR">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="SUBJECT_NOTES">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOTE DATE_NOTES">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="DataType">3</V>
+	</F>
+	<F type="MOM DATE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="DataType">3</V>
+	</F>
+	<F type="DEPARTMENT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DEPARTMENT</V>
+	</F>
+	<F type="DATE IN">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="DataType">3</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+	</F>
+	<F type="DATE OUT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="DataType">3</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+	</F>
+	<F type="RECEIVED NOTE TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DEPARTMENT</V>
+	</F>
+	<F type="SENT NOTE TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DEPARTMENT</V>
+	</F>
+	<F type="APPROVING AUTHORITY">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:APROVE</V>
+	</F>
+	<F type="REMARKS_NOTES">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOTE TYPE_NOTES">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:NOTETYPE</V>
+	</F>
+	<F type="DOCUMENT DATE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="DataType">3</V>
+	</F>
+	<F type="SENT LETTER TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:SEntlt</V>
+	</F>
+	<F type="RECEIVED LETTER TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:RECEIVEDlt</V>
+	</F>
+	<F type="DATE_LETTERS">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DataType">3</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+	</F>
+	<F type="DIARY_NUMBER">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DIARY_NUM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Note Number">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="MOM No">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<DICT n="P:APPROVING AUTHORITY">
+		<W v="Executive Director(ED)">Executive Director(ED)</W>
+		<W v="Managing Director(MD)">Managing Director(MD)</W>
+		<W v="Board">Board</W>
+		<W v="CACB">CACB</W>
+		<W v="IT Strategy">IT Strategy</W>
+		<W v="HR Committee">HR Committee</W>
+		<W v="Committee for Monitoring of Large value frauds">Committee for Monitoring of Large value frauds</W>
+		<W v="Recovery committee">Recovery committee</W>
+		<W v="ACB">ACB</W>
+		<W v="MCB">MCB</W>
+		<W v="HLCC-ED">HLCC-ED</W>
+		<W v="EDS&apos; Committee">EDS&apos; Committee</W>
+		<W v="Others">Others</W>
+	</DICT>
+	<DICT n="P:NOTETYPE">
+		<W v="Internal Note">Internal Note</W>
+		<W v="Board Note">Board Note</W>
+		<W v="Office Note">Office Note</W>
+		<W v="Minutes of Meeting">Minutes of Meeting</W>
+		<W v="Others">Others</W>
+	</DICT>
+	<DICT n="P:RECEIVEDlt">
+		<W v="DFS">DFS</W>
+		<W v="RBI">RBI</W>
+		<W v="IBA">IBA</W>
+		<W v="GOI Other Ministry">GOI Other Ministry</W>
+		<W v="BUSINESS PROCESS RE-ENGINEERING DEPTT.">BUSINESS PROCESS RE-ENGINEERING DEPTT.</W>
+		<W v="CBS CELL">CBS CELL</W>
+		<W v="CERSAI CELL">CERSAI CELL</W>
+		<W v="ED SECTT 2 DPT">ED SECTT 2 DPT</W>
+		<W v="ED SECTT1 DPT">ED SECTT1 DPT</W>
+		<W v="FRAUD MONITORING DEPTT">FRAUD MONITORING DEPTT</W>
+		<W v="HO ACCOUNTS &amp; AUDIT DPT">HO ACCOUNTS &amp; AUDIT DPT</W>
+		<W v="HO ATM CELL DPT">HO ATM CELL DPT</W>
+		<W v="HO BOARD DPT">HO BOARD DPT</W>
+		<W v="HO CENMARG">HO CENMARG</W>
+		<W v="HO CENTRAL ACCOUNTS DPT (RECONCILIATION)">HO CENTRAL ACCOUNTS DPT (RECONCILIATION)</W>
+		<W v="HO CISO CELL">HO CISO CELL</W>
+		<W v="HO CO-LENDING CELL">HO CO-LENDING CELL</W>
+		<W v="HO COMPLIANCE DPT">HO COMPLIANCE DPT</W>
+		<W v="HO CPPC DPT">HO CPPC DPT</W>
+		<W v="HO CREDIT DPT">HO CREDIT DPT</W>
+		<W v="HO CREDIT MONITORING">HO CREDIT MONITORING</W>
+		<W v="HO DIGITAL BANKING DPT">HO DIGITAL BANKING DPT</W>
+		<W v="HO FINANCIAL INCLUSION DPT">HO FINANCIAL INCLUSION DPT</W>
+		<W v="HO FOREX DPT">HO FOREX DPT</W>
+		<W v="HO GBM DPT">HO GBM DPT</W>
+		<W v="HO GENERAL ADMINISTRATION DPT (PREMISES)">HO GENERAL ADMINISTRATION DPT (PREMISES)</W>
+		<W v="HO HUMAN RESOURCE DEVELOPMENT DPT .">HO HUMAN RESOURCE DEVELOPMENT DPT .</W>
+		<W v="HO INSPECTION DPT">HO INSPECTION DPT</W>
+		<W v="HO KYC AML">HO KYC AML</W>
+		<W v="HO LAW &amp; RECOVERY">HO LAW &amp; RECOVERY</W>
+		<W v="HO LOS CELL">HO LOS CELL</W>
+		<W v="HO MARKETING &amp; INSURANCE DPT">HO MARKETING &amp; INSURANCE DPT</W>
+		<W v="HO OFFICIAL LANGUAGE DPT">HO OFFICIAL LANGUAGE DPT</W>
+		<W v="HO PF DPT">HO PF DPT</W>
+		<W v="HO PRIORITY SECTOR ADVANCES DPT">HO PRIORITY SECTOR ADVANCES DPT</W>
+		<W v="HO PSB SECURITY DPT">HO PSB SECURITY DPT</W>
+		<W v="HO RBI CELL">HO RBI CELL</W>
+		<W v="HO RETAIL LENDING DPT">HO RETAIL LENDING DPT</W>
+		<W v="HO RISK MANAGEMENT DPT">HO RISK MANAGEMENT DPT</W>
+		<W v="HO STATIONARY DPT">HO STATIONARY DPT</W>
+		<W v="HO TREASURY DPT">HO TREASURY DPT</W>
+		<W v="HO VIGILANCE DPT">HO VIGILANCE DPT</W>
+		<W v="MD SECTT DPT">MD SECTT DPT</W>
+		<W v="MIS CELL">MIS CELL</W>
+		<W v="PUBLIC RELATIONS">PUBLIC RELATIONS</W>
+		<W v="REAL TIME TRANSACTION SYSTEM CELL (RTTS)">REAL TIME TRANSACTION SYSTEM CELL (RTTS)</W>
+		<W v="SAM VERTICAL">SAM VERTICAL</W>
+		<W v="STAFF ACCOUNTABILITY CELL">STAFF ACCOUNTABILITY CELL</W>
+		<W v="STAFF TRAINING COLLEGE">STAFF TRAINING COLLEGE</W>
+		<W v="Others">Others</W>
+		<W v="Testing">Testing</W>
+	</DICT>
+	<DICT n="P:SEntlt">
+		<W v="BUSINESS PROCESS RE-ENGINEERING DEPTT.">BUSINESS PROCESS RE-ENGINEERING DEPTT.</W>
+		<W v="CBS CELL">CBS CELL</W>
+		<W v="CERSAI CELL">CERSAI CELL</W>
+		<W v="ED SECTT 2 DPT">ED SECTT 2 DPT</W>
+		<W v="ED SECTT1 DPT">ED SECTT1 DPT</W>
+		<W v="FRAUD MONITORING DEPTT">FRAUD MONITORING DEPTT</W>
+		<W v="HO ACCOUNTS &amp; AUDIT DPT">HO ACCOUNTS &amp; AUDIT DPT</W>
+		<W v="HO ATM CELL DPT">HO ATM CELL DPT</W>
+		<W v="HO BOARD DPT">HO BOARD DPT</W>
+		<W v="HO CENMARG">HO CENMARG</W>
+		<W v="HO CENTRAL ACCOUNTS DPT (RECONCILIATION)">HO CENTRAL ACCOUNTS DPT (RECONCILIATION)</W>
+		<W v="HO CISO CELL">HO CISO CELL</W>
+		<W v="HO CO-LENDING CELL">HO CO-LENDING CELL</W>
+		<W v="HO COMPLIANCE DPT">HO COMPLIANCE DPT</W>
+		<W v="HO CPPC DPT">HO CPPC DPT</W>
+		<W v="HO CREDIT DPT">HO CREDIT DPT</W>
+		<W v="HO CREDIT MONITORING">HO CREDIT MONITORING</W>
+		<W v="HO DIGITAL BANKING DPT">HO DIGITAL BANKING DPT</W>
+		<W v="HO FINANCIAL INCLUSION DPT">HO FINANCIAL INCLUSION DPT</W>
+		<W v="HO FOREX DPT">HO FOREX DPT</W>
+		<W v="HO GBM DPT">HO GBM DPT</W>
+		<W v="HO GENERAL ADMINISTRATION DPT (PREMISES)">HO GENERAL ADMINISTRATION DPT (PREMISES)</W>
+		<W v="HO HUMAN RESOURCE DEVELOPMENT DPT .">HO HUMAN RESOURCE DEVELOPMENT DPT .</W>
+		<W v="HO INSPECTION DPT">HO INSPECTION DPT</W>
+		<W v="HO KYC AML">HO KYC AML</W>
+		<W v="HO LAW &amp; RECOVERY">HO LAW &amp; RECOVERY</W>
+		<W v="HO LOS CELL">HO LOS CELL</W>
+		<W v="HO MARKETING &amp; INSURANCE DPT">HO MARKETING &amp; INSURANCE DPT</W>
+		<W v="HO OFFICIAL LANGUAGE DPT">HO OFFICIAL LANGUAGE DPT</W>
+		<W v="HO PF DPT">HO PF DPT</W>
+		<W v="HO PRIORITY SECTOR ADVANCES DPT">HO PRIORITY SECTOR ADVANCES DPT</W>
+		<W v="HO PSB SECURITY DPT">HO PSB SECURITY DPT</W>
+		<W v="HO RBI CELL">HO RBI CELL</W>
+		<W v="HO RETAIL LENDING DPT">HO RETAIL LENDING DPT</W>
+		<W v="HO RISK MANAGEMENT DPT">HO RISK MANAGEMENT DPT</W>
+		<W v="HO STATIONARY DPT">HO STATIONARY DPT</W>
+		<W v="HO TREASURY DPT">HO TREASURY DPT</W>
+		<W v="HO VIGILANCE DPT">HO VIGILANCE DPT</W>
+		<W v="MD SECTT DPT">MD SECTT DPT</W>
+		<W v="MIS CELL">MIS CELL</W>
+		<W v="PUBLIC RELATIONS">PUBLIC RELATIONS</W>
+		<W v="REAL TIME TRANSACTION SYSTEM CELL (RTTS)">REAL TIME TRANSACTION SYSTEM CELL (RTTS)</W>
+		<W v="SAM VERTICAL">SAM VERTICAL</W>
+		<W v="STAFF ACCOUNTABILITY CELL">STAFF ACCOUNTABILITY CELL</W>
+		<W v="STAFF TRAINING COLLEGE">STAFF TRAINING COLLEGE</W>
+		<W v="External">External</W>
+		<W v="Others">Others</W>
+	</DICT>
+	<DICT n="P:NOTESDIARY">
+		<W v="Note Number">Note Number</W>
+		<W v="MOM No">MOM No</W>
+	</DICT>
+	<DICT n="P:DEPARTMENT">
+		<W v="BUSINESS PROCESS RE-ENGINEERING DEPTT.">BUSINESS PROCESS RE-ENGINEERING DEPTT.</W>
+		<W v="CBS CELL">CBS CELL</W>
+		<W v="CERSAI CELL">CERSAI CELL</W>
+		<W v="ED SECTT 2 DPT">ED SECTT 2 DPT</W>
+		<W v="ED SECTT1 DPT">ED SECTT1 DPT</W>
+		<W v="FRAUD MONITORING DEPTT">FRAUD MONITORING DEPTT</W>
+		<W v="HO ACCOUNTS &amp; AUDIT DPT">HO ACCOUNTS &amp; AUDIT DPT</W>
+		<W v="HO ATM CELL DPT">HO ATM CELL DPT</W>
+		<W v="HO BOARD DPT">HO BOARD DPT</W>
+		<W v="HO CENMARG">HO CENMARG</W>
+		<W v="HO CENTRAL ACCOUNTS DPT (RECONCILIATION)">HO CENTRAL ACCOUNTS DPT (RECONCILIATION)</W>
+		<W v="HO CISO CELL">HO CISO CELL</W>
+		<W v="HO CO-LENDING CELL">HO CO-LENDING CELL</W>
+		<W v="HO COMPLIANCE DPT">HO COMPLIANCE DPT</W>
+		<W v="HO CPPC DPT">HO CPPC DPT</W>
+		<W v="HO CREDIT DPT">HO CREDIT DPT</W>
+		<W v="HO CREDIT MONITORING">HO CREDIT MONITORING</W>
+		<W v="HO DIGITAL BANKING DPT">HO DIGITAL BANKING DPT</W>
+		<W v="HO FINANCIAL INCLUSION DPT">HO FINANCIAL INCLUSION DPT</W>
+		<W v="HO FOREX DPT">HO FOREX DPT</W>
+		<W v="HO GBM DPT">HO GBM DPT</W>
+		<W v="HO GENERAL ADMINISTRATION DPT (PREMISES)">HO GENERAL ADMINISTRATION DPT (PREMISES)</W>
+		<W v="HO HUMAN RESOURCE DEVELOPMENT DPT .">HO HUMAN RESOURCE DEVELOPMENT DPT .</W>
+		<W v="HO INSPECTION DPT">HO INSPECTION DPT</W>
+		<W v="HO KYC AML">HO KYC AML</W>
+		<W v="HO LAW &amp; RECOVERY">HO LAW &amp; RECOVERY</W>
+		<W v="HO LOS CELL">HO LOS CELL</W>
+		<W v="HO MARKETING &amp; INSURANCE DPT">HO MARKETING &amp; INSURANCE DPT</W>
+		<W v="HO OFFICIAL LANGUAGE DPT">HO OFFICIAL LANGUAGE DPT</W>
+		<W v="HO PF DPT">HO PF DPT</W>
+		<W v="HO PRIORITY SECTOR ADVANCES DPT">HO PRIORITY SECTOR ADVANCES DPT</W>
+		<W v="HO PSB SECURITY DPT">HO PSB SECURITY DPT</W>
+		<W v="HO RBI CELL">HO RBI CELL</W>
+		<W v="HO RETAIL LENDING DPT">HO RETAIL LENDING DPT</W>
+		<W v="HO RISK MANAGEMENT DPT">HO RISK MANAGEMENT DPT</W>
+		<W v="HO STATIONARY DPT">HO STATIONARY DPT</W>
+		<W v="HO TREASURY DPT">HO TREASURY DPT</W>
+		<W v="HO VIGILANCE DPT">HO VIGILANCE DPT</W>
+		<W v="MD SECTT DPT">MD SECTT DPT</W>
+		<W v="MIS CELL">MIS CELL</W>
+		<W v="PUBLIC RELATIONS">PUBLIC RELATIONS</W>
+		<W v="REAL TIME TRANSACTION SYSTEM CELL (RTTS)">REAL TIME TRANSACTION SYSTEM CELL (RTTS)</W>
+		<W v="SAM VERTICAL">SAM VERTICAL</W>
+		<W v="STAFF ACCOUNTABILITY CELL">STAFF ACCOUNTABILITY CELL</W>
+		<W v="STAFF TRAINING COLLEGE">STAFF TRAINING COLLEGE</W>
+	</DICT>
+	<DICT n="P:APROVE">
+		<W v="Executive Director(ED)">Executive Director(ED)</W>
+		<W v="Managing Director(MD)">Managing Director(MD)</W>
+	</DICT>
+</S>

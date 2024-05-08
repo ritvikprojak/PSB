@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="85" name="NAV Create PDF DOc" ver="1" modder="admin.1" qi="">
+  <rule name="Create PDF Doc Rule" id="1" qi="" dcomap.open="D">
+    <func name="Function1" disabled="y">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+        <p name="Source" type="string" v="75" />
+        <p name="Target" type="string" v="@P.statusToExclude" />
+      </a>
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+        <p name="Source" type="string" v="Blank" />
+        <p name="Target" type="string" v="@P.typesToExclude" />
+      </a>
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+        <p name="Source" type="string" v="1" />
+        <p name="Target" type="string" v="@X.y_pdfExportScenario" />
+      </a>
+      <a name="RecognizeToPDFOCR_A" ns="net:RecognitionOCRA.OCRAActions" />
+    </func>
+    <func name="For all docs" qi="">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" disabled="y">
+        <p name="Text1" type="string" v="@EMPTY" />
+        <p name="Text2" type="string" v="@B.D.P\TENDER NO" />
+      </a>
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" disabled="y">
+        <p name="Source" type="string" v="75" />
+        <p name="Target" type="string" v="@P.statusToExclude" />
+      </a>
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" disabled="y">
+        <p name="Source" type="string" v="Blank" />
+        <p name="Target" type="string" v="@P.typesToExclude" />
+      </a>
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" disabled="y">
+        <p name="Source" type="string" v="1" />
+        <p name="Target" type="string" v="@X.y_pdfExportScenario" />
+      </a>
+      <a ns="dcpdf" name="dcpdf_MakePDFDoc" disabled="y">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+        <p type="strParam" v="True,RFP DETAILS,RFP DETAILS_TrailingPage" name="strParam" />
+      </a>
+      <a name="RecognizeToPDFOCR_A" ns="net:RecognitionOCRA.OCRAActions" qi="" />
+    </func>
+  </rule>
+</ruleset>

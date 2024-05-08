@@ -1,0 +1,2096 @@
+<?xml-stylesheet type="text/xsl" href="..\..\dco.xsl"?>
+<S>
+	<B type="CASA">
+		<V n="ID">0</V>
+		<V n="TYPE">Batch</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Other" pos="0" min="0" max="0"/>
+		<D type="Document" pos="0" min="0" max="0"/>
+		<D type="SAVING ACCOUNT OPENING FORM DOC" pos="0" min="0" max="0"/>
+		<D type="SAVING KYC DOCUMENT DOC" pos="0" min="0" max="0"/>
+		<D type="SAVING NOMINATION FORM DOC" pos="0" min="0" max="0"/>
+		<D type="SAVING CHEQUE BOOK APPLICATION DOC" pos="0" min="0" max="0"/>
+		<D type="SAVING ATM APPLICATION DOC" pos="0" min="0" max="0"/>
+		<D type="CURRENT ACCOUNT OPENING FORM DOC" pos="0" min="0" max="0"/>
+		<D type="CURRENT KYC_DOCUMENT DOC" pos="0" min="0" max="0"/>
+		<D type="CURRENT NOMINATION-FORM DOC" pos="0" min="0" max="0"/>
+		<D type="CURRENT CHEQUE_BOOK_APPLICATION DOC" pos="0" min="0" max="0"/>
+		<D type="CURRENT ATM_APPLICATION DOC" pos="0" min="0" max="0"/>
+		<D type="FD ACCOUNT OPENING FORM DOC" pos="0" min="0" max="0"/>
+		<D type="FD KYC DOCUMENT DOC" pos="0" min="0" max="0"/>
+		<D type="FD NOMINATION_FORM DOC" pos="0" min="0" max="0"/>
+		<D type="FD 15G_15H DOC" pos="0" min="0" max="0"/>
+		<D type="SignatureNPhotograph" pos="0" min="0" max="0"/>
+		<D type="OTHER LETTERS DOC" pos="0" min="0" max="0"/>
+	</B>
+	<D type="Document">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Page" pos="1" min="1" max="0"/>
+		<P type="TrailPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SAVING ACCOUNT OPENING FORM DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SAVING ACCOUNT OPENING FORM" pos="1" min="1" max="1"/>
+		<P type="SAVING ACCOUNT OPENING FORM_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SAVING KYC DOCUMENT DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SAVING KYC DOCUMENT" pos="1" min="1" max="1"/>
+		<P type="SAVING KYC_DOCUMENT_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SAVING NOMINATION FORM DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SAVING NOMINATION FORM" pos="1" min="1" max="1"/>
+		<P type="SAVING NOMINATION_FORM_1_TralingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SAVING CHEQUE BOOK APPLICATION DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SAVING CHEQUE BOOK APPLICATION" pos="1" min="1" max="1"/>
+		<P type="SAVING CHEQUE_BOOK_APPLICATION_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SAVING ATM APPLICATION DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SAVING ATM APPLICATION" pos="1" min="1" max="1"/>
+		<P type="SAVING ATM_APPLICATION_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="CURRENT ACCOUNT OPENING FORM DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="CURRENT ACCOUNT OPENING FORM" pos="1" min="1" max="1"/>
+		<P type="CURRENT ACCOUNT OPENING FORM_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="CURRENT KYC_DOCUMENT DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="CURRENT KYC_DOCUMENT" pos="1" min="1" max="1"/>
+		<P type="CURRENT KYC_DOCUMENT_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="CURRENT NOMINATION-FORM DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="CURRENT NOMINATION-FORM" pos="1" min="1" max="1"/>
+		<P type="CURRENT NOMINATION-FORM_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="CURRENT CHEQUE_BOOK_APPLICATION DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="CURRENT CHEQUE_BOOK_APPLICATION" pos="1" min="1" max="1"/>
+		<P type="CURRENT CHEQUE_BOOK_APPLICATION_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="CURRENT ATM_APPLICATION DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="CURRENT ATM_APPLICATION" pos="1" min="1" max="1"/>
+		<P type="CURRENT ATM_APPLICATION_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="FD ACCOUNT OPENING FORM DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="FD ACCOUNT OPENING FORM" pos="1" min="1" max="1"/>
+		<P type="FD ACCOUNT OPENING FORM_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="FD KYC DOCUMENT DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="FD KYC DOCUMENT" pos="1" min="1" max="1"/>
+		<P type="FD KYC_DOCUMENT_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="FD NOMINATION_FORM DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="FD NOMINATION_FORM" pos="1" min="1" max="1"/>
+		<P type="FD NOMINATION_FORM_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="FD 15G_15H DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="FD 15G_15H" pos="1" min="1" max="1"/>
+		<P type="FD 15G_15H_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SignatureNPhotograph">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Signature" pos="0" min="0" max="1"/>
+		<P type="Photograph" pos="0" min="0" max="1"/>
+	</D>
+	<D type="OTHER LETTERS DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="OTHER LETTERS" pos="0" min="0" max="0"/>
+		<P type="OTHER LETTERS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<P type="Other">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="Page">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Document_Type" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER_TYPE" pos="0" min="0" max="0"/>
+		<F type="DOC TYPE_SAKYC" pos="0" min="0" max="0"/>
+		<F type="DOC TYPE_CAKYC" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="DOB" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+		<F type="SOL ID" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT OPEN DATE" pos="0" min="0" max="0"/>
+		<F type="DOCFLG" pos="0" min="0" max="0"/>
+		<F type="BATCHTYPE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SAVING ACCOUNT OPENING FORM">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT OPEN DATE" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT TYPE_SA" pos="0" min="0" max="0"/>
+		<F type="SOL ID" pos="0" min="0" max="0"/>
+		<F type="DOB" pos="0" min="0" max="0"/>
+		<F type="STAFF EMPLOYEE NO_SA" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+		<F type="EMAIL ID_SA" pos="0" min="0" max="0"/>
+		<F type="Signature1" pos="0" min="0" max="0"/>
+		<F type="Photograph1" pos="0" min="0" max="0"/>
+		<F type="Signature2" pos="0" min="0" max="0"/>
+		<F type="Photograph2" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SAVING KYC DOCUMENT">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="DOC TYPE_SAKYC" pos="0" min="0" max="0"/>
+		<F type="ID PROOF DOCUMENTS_SAKYC" pos="0" min="0" max="0"/>
+		<F type="ADDRESS PROOF DOCUMENTS_SAKYC" pos="0" min="0" max="0"/>
+		<F type="PHOTO IDENTITY_SAKYC" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SAVING NOMINATION FORM">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="NOMINATION REG NUMBER_SANOM" pos="0" min="0" max="0"/>
+		<F type="NOMINATION TYPE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SAVING CHEQUE BOOK APPLICATION">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SAVING ATM APPLICATION">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="ATM CARD NUMBER_SAATM" pos="0" min="0" max="0"/>
+	</P>
+	<P type="CURRENT ACCOUNT OPENING FORM">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT OPEN DATE" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT TYPE_CA" pos="0" min="0" max="0"/>
+		<F type="SOL ID" pos="0" min="0" max="0"/>
+		<F type="DOB" pos="0" min="0" max="0"/>
+		<F type="KYC_CA" pos="0" min="0" max="0"/>
+		<F type="STAFF EMPLOYEE NO_CA" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+		<F type="EMAIL ID_CA" pos="0" min="0" max="0"/>
+		<F type="Signature1" pos="0" min="0" max="0"/>
+		<F type="Photograph1" pos="0" min="0" max="0"/>
+		<F type="Signature2" pos="0" min="0" max="0"/>
+		<F type="Photograph2" pos="0" min="0" max="0"/>
+	</P>
+	<P type="CURRENT KYC_DOCUMENT">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="DOC TYPE_CAKYC" pos="0" min="0" max="0"/>
+		<F type="IDENTITY PROOF OF_CAKYC" pos="0" min="0" max="0"/>
+		<F type="IDENTY PROOF OF FIRM_CAKYC" pos="0" min="0" max="0"/>
+		<F type="ID PROOF OF  AUTHORIZED SIGNATORY_CAKYC" pos="0" min="0" max="0"/>
+		<F type="ADDRESS PROOF OF_CAKYC" pos="0" min="0" max="0"/>
+		<F type="ADDRESS PROOF OF FIRM_CAKYC" pos="0" min="0" max="0"/>
+		<F type="ADDRESS PROOF OF AUTORISED SIGNATURE_CAKYC" pos="0" min="0" max="0"/>
+		<F type="PHOTO IDENTITY_CAKYC" pos="0" min="0" max="0"/>
+	</P>
+	<P type="CURRENT NOMINATION-FORM">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="NOMINATION-REG-NUMBER_CANOM" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="NOMINATION TYPE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="CURRENT CHEQUE_BOOK_APPLICATION">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+	</P>
+	<P type="CURRENT ATM_APPLICATION">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="ATM CARD NUMBER_CAATM" pos="0" min="0" max="0"/>
+	</P>
+	<P type="FD ACCOUNT OPENING FORM">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT OPEN DATE" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT TYPE_FD" pos="0" min="0" max="0"/>
+		<F type="SOL ID" pos="0" min="0" max="0"/>
+		<F type="DOB" pos="0" min="0" max="0"/>
+		<F type="KYC_FD" pos="0" min="0" max="0"/>
+		<F type="STAFF EMPLOYEE NO_FD" pos="0" min="0" max="0"/>
+		<F type="MOBILE" pos="0" min="0" max="0"/>
+		<F type="EMAIL ID_FD" pos="0" min="0" max="0"/>
+		<F type="Photograph1" pos="0" min="0" max="0"/>
+		<F type="Signature1" pos="0" min="0" max="0"/>
+		<F type="Photograph2" pos="0" min="0" max="0"/>
+		<F type="Signature2" pos="0" min="0" max="0"/>
+	</P>
+	<P type="FD KYC DOCUMENT">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="DOC TYPE_SAKYC" pos="0" min="0" max="0"/>
+		<F type="ID PROOF DOCUMENTS_SAKYC" pos="0" min="0" max="0"/>
+		<F type="ADDRESS PROOF DOCUMENTS_SAKYC" pos="0" min="0" max="0"/>
+		<F type="PHOTO IDENTITY_SAKYC" pos="0" min="0" max="0"/>
+	</P>
+	<P type="FD NOMINATION_FORM">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="NOMINATION REG NUMBER_FDNOM" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="NOMINATION TYPE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="FD 15G_15H">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SAVING ACCOUNT OPENING FORM_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SAVING KYC_DOCUMENT_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SAVING NOMINATION_FORM_1_TralingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SAVING CHEQUE_BOOK_APPLICATION_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SAVING ATM_APPLICATION_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="CURRENT ACCOUNT OPENING FORM_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="CURRENT KYC_DOCUMENT_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="CURRENT NOMINATION-FORM_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="CURRENT CHEQUE_BOOK_APPLICATION_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="CURRENT ATM_APPLICATION_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="FD ACCOUNT OPENING FORM_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="FD KYC_DOCUMENT_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="FD NOMINATION_FORM_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="FD 15G_15H_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="TrailPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="Signature">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Document_Type" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+	</P>
+	<P type="Photograph">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Document_Type" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+	</P>
+	<P type="OTHER LETTERS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NUMBER" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="CIF" pos="0" min="0" max="0"/>
+		<F type="LETTER TYPE" pos="0" min="0" max="0"/>
+		<F type="REMARKS" pos="0" min="0" max="0"/>
+	</P>
+	<P type="OTHER LETTERS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<F type="Frequency_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="RecogType">4</V>
+		<F type="Frequency_OMR1_OMR1" pos="0" min="0" max="0"/>
+	</F>
+	<F type="Signature_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Frequency_OMR1_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NUMBER_SA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER NAME_SA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CIF_SA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT OPEN DATE_SA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT TYPE_SA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ACCOUNT TYPE</V>
+	</F>
+	<F type="SOL ID_SA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOB_SA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="STAFF EMPLOYEE NO_SA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="MOBILE_SA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="EMAIL ID_SA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NUMBER_SAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CIF_SAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOC TYPE_SAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOC TYPE_1</V>
+	</F>
+	<F type="ID PROOF DOCUMENTS_SAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ID PROOF DOCUMENTS</V>
+	</F>
+	<F type="ADDRESS PROOF DOCUMENTS_SAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ADDRESS PROOF DOCUMENTS</V>
+	</F>
+	<F type="PHOTO IDENTITY_SAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:PHOTO IDENTITY</V>
+	</F>
+	<F type="ACCOUNT NUMBER_SANOM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER NAME_SANOM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOMINATION REG NUMBER_SANOM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NUMBER_SACH">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER NAME_SACH">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NUMBER_SAATM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER NAME_SAATM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ATM CARD NUMBER_SAATM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NUMBER_CA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER NAME_CA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CIF_CA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT OPEN DATE_CA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT TYPE_CA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ACCOUNT TYPE_1</V>
+	</F>
+	<F type="SOL ID_CA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOB_CA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="KYC_CA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:KYC_1</V>
+	</F>
+	<F type="STAFF EMPLOYEE NO_CA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="MOBILE_CA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="EMAIL ID_CA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NUMBER_CAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CIF_CAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOC TYPE_CAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOC TYPE CURRENT KYC</V>
+	</F>
+	<F type="IDENTITY PROOF OF_CAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:IDENTITY PROOF OF</V>
+	</F>
+	<F type="IDENTY PROOF OF FIRM_CAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:IDENTY PROOF OF FIRM</V>
+	</F>
+	<F type="ID PROOF OF  AUTHORIZED SIGNATORY_CAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ID PROOF OF  AUTHORIZED SIGNATORY</V>
+	</F>
+	<F type="ADDRESS PROOF OF_CAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ADDRESS PROOF OF</V>
+	</F>
+	<F type="ADDRESS PROOF OF FIRM_CAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ADDRESS PROOF OF FIRM</V>
+	</F>
+	<F type="ADDRESS PROOF OF AUTORISED SIGNATURE_CAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ADDRESS PROOF OF AUTORISED SIGNATURE</V>
+	</F>
+	<F type="PHOTO IDENTITY_CAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:PHOTO IDENTITY_1</V>
+	</F>
+	<F type="CUSTOMER NAME_CACH">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NUMBER_CACH">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER NAME_CAATM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ATM CARD NUMBER_CAATM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Field11">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NUMBER_FD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER NAME_FD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CIF_FD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT OPEN DATE_FD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT TYPE_FD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:ACCOUNT TYPE_2</V>
+	</F>
+	<F type="SOL ID_FD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOB_FD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="KYC_FD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:KYC_2</V>
+	</F>
+	<F type="STAFF EMPLOYEE NO_FD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="MOBILE_FD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="EMAIL ID_FD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NUMBER_FDNOM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER NAME_FDNOM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOMINATION REG NUMBER_FDNOM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CIF_FD15">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NUMBER_CANOM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER NAME_CANOM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOMINATION-REG-NUMBER_CANOM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document_Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Photograph1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Signature1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER NAME_SAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CIF_SANOM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CIF_SACH">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CIF_SAATM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER NAME_CAKYC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CIF_CANOM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CIF_CACH">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CIF_CAATM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NUMBER_CAATM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CIF_FDNOM">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NUMBER_FD15">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER NAME_FD15">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NUMBER">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="ReadOnly">0</V>
+	</F>
+	<F type="CIF">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="ReadOnly">1</V>
+	</F>
+	<F type="DOB">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="hr_locale">en-GB</V>
+	</F>
+	<F type="MOBILE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="SOL ID">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT OPEN DATE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="hr_locale">en-GB</V>
+	</F>
+	<F type="Photograph_FD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Signature_FD">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Photograph2">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Signature2">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCFLG">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="BATCHTYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="NOMINATION TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:NOMINATION TYPE</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="LETTER TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:LETTER TYPE</V>
+	</F>
+	<F type="REMARKS">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER_TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<DICT n="P:ACCOUNT TYPE">
+		<W v="SAVINGS BANK A/CS">SAVINGS BANK A/CS</W>
+		<W v="SAVING DEP (CPTL GAINS PART A)">SAVING DEP (CPTL GAINS PART A)</W>
+		<W v="SAVINGS BANK PBLC SCTR INSTT">SAVINGS BANK PBLC SCTR INSTT</W>
+		<W v="SARAL SAVINGS SCHEME">SARAL SAVINGS SCHEME</W>
+		<W v="SAVING FINANCIAL INCLUSION">SAVING FINANCIAL INCLUSION</W>
+		<W v="SB DIRECT CASH TRF ACCOUNT">SB DIRECT CASH TRF ACCOUNT</W>
+		<W v="PSB-PREMIER SB-BANK A/C">PSB-PREMIER SB-BANK A/C</W>
+		<W v="NRO SAVING BANK A/CS">NRO Saving Bank A/C</W>
+		<W v="NRE SAVING A/C">NRE SAVING A/C</W>
+		<W v="SB SALARY CORP/GOVT">SB SALARY CORP/GOVT</W>
+		<W v="Basic Saving Bank Deposit Account">Basic Saving Bank Deposit Account</W>
+		<W v="Saving Bank Kid Account">Saving Bank Kid Account</W>
+		<W v="Saving Bank Capital Gain Account">Saving Bank Capital Gain Account</W>
+		<W v="Saving Bank Pension Account">Saving Bank Pension Account</W>
+	</DICT>
+	<DICT n="P:DOC TYPE">
+		<W v="IDENTITY">IDENTITY</W>
+		<W v="ADDRESS">ADDRESS</W>
+		<W v="PHOTOGRAPH">PHOTOGRAPH/W&gt;</W>
+	</DICT>
+	<DICT n="P:ID PROOF DOCUMENTS">
+		<W v="Passport">Passport</W>
+		<W v="Voter card">Voter card</W>
+		<W v="Pan card">Pan card</W>
+		<W v="Driving Licence">Driving Licence</W>
+		<W v="Aadhar letter issued by UIDAI">Aadhar letter issued by UIDAI</W>
+		<W v="Govt./ PSU Issued photo ID card">Govt./ PSU Issued photo ID card</W>
+		<W v="NREGA Job card duly signed by state govt official">NREGA Job card duly signed by state govt official</W>
+		<W v="E-KYC">E-KYC</W>
+		<W v="National Population Registration Number">National Population Registration Number</W>
+		<W v="HUF Pan Card">HUF Pan Card</W>
+		<W v="Birth Certificate">Birth Certificate</W>
+		<W v="School Bonafide Certificate with Photograph">School Bonafide Certificate with Photograph</W>
+		<W v="Police Verification Letter with Photograph">Police Verification Letter with Photograph</W>
+	</DICT>
+	<DICT n="P:ADDRESS PROOF DOCUMENTS">
+		<W v="Passport">Passport</W>
+		<W v="Voter card">Voter card</W>
+		<W v="Driving License">Driving License</W>
+		<W v="AADHAR letter issued by UIDAI">AADHAR letter issued by UIDAI</W>
+		<W v="Electricity Bill">Electricity Bill</W>
+		<W v="Water Bill">Water Bill</W>
+		<W v="Mobile Bill">Mobile Bill</W>
+		<W v="Employer Certified Address letter">Employer Certified Address letter</W>
+		<W v="Last 3 Month Bank Passbook/statement">Last 3 Month Bank Passbook/statement</W>
+		<W v="3 Months Credit Card Statement">3 Months Credit Card Statement</W>
+		<W v="Income Tax/Wealth Tax Assessment Order">Income Tax/Wealth Tax Assessment Order</W>
+		<W v="Life/Medical Insurence policy">Life/Medical Insurence policy</W>
+		<W v="Physical verification Letter">Physical verification Letter</W>
+		<W v="Muncipal/House Tax receipt">Muncipal/House Tax receipt</W>
+		<W v="PAN Intimation Letter">PAN Intimation Letter</W>
+		<W v="NREGA job card duly signed by state govt official">NREGA job card duly signed by state govt official</W>
+		<W v="E-KYC">E-KYC</W>
+		<W v="National Population Registration Number">National Population Registration Number</W>
+		<W v="Rent/Lease Agreement">Rent/Lease Agreement</W>
+		<W v="Gram Panchayat Registration/ Authority Letter">Gram Panchayat Registration/ Authority Letter</W>
+		<W v="School Bonafide Certificate with Address">School Bonafide Certificate with Address</W>
+		<W v="Police verification Letter with Address">Police verification Letter with Address</W>
+	</DICT>
+	<DICT n="P:PHOTO IDENTITY">
+		<W v="SELF">SELF</W>
+		<W v="PHOTO OF GUARDIAN OR RELATED PERSON">PHOTO OF GUARDIAN OR RELATED PERSON</W>
+	</DICT>
+	<DICT n="P:ACCOUNT TYPE_1">
+		<W v="CURRENT DEPOSIT -GENERAL">CURRENT DEPOSIT -GENERAL</W>
+		<W v="PSB-PREMIER CURR A/C">PSB-PREMIER CURR A/C</W>
+		<W v="NRE CURRENT A/C">NRE CURRENT A/C</W>
+		<W v="NRO CURRENT  A/C">NRO CURRENT  A/C</W>
+	</DICT>
+	<DICT n="P:KYC_1">
+		<W v="PAN CARD">PAN CARD</W>
+		<W v="AADHAR NO">AADHAR NO</W>
+		<W v="PASSPORT">PASSPORT</W>
+		<W v="DRIVING LICENCE">DRIVING LICENCE</W>
+	</DICT>
+	<DICT n="P:DOC TYPE_1">
+		<W v="IDENTITY">IDENTITY</W>
+		<W v="ADDRESS">ADDRESS</W>
+		<W v="PHOTOGRAPH">PHOTOGRAPH</W>
+	</DICT>
+	<DICT n="P:IDENTITY PROOF OF">
+		<W v="Firm">Firm</W>
+		<W v="Authorized Signatory">Authorized Signatory</W>
+	</DICT>
+	<DICT n="P:IDENTY PROOF OF FIRM">
+		<W v="PAN CARD">PAN CARD</W>
+		<W v="PARTNERSHIP DEED">PARTNERSHIP DEED</W>
+		<W v="REGISTRATION CERTIFICATE (IN CASE OF REGD CONCERN)">REGISTRATION CERTIFICATE (IN CASE OF REGD CONCERN)</W>
+		<W v="CERTIFICATE OF INCORPORATION">CERTIFICATE OF INCORPORATION</W>
+		<W v="MEMORANDUM AND ARTICLES OF ASSOCIATION">MEMORANDUM AND ARTICLES OF ASSOCIATION</W>
+		<W v="REGN/LICENSE DOCUMENT ISSUED BY CENTRAL/STATE GOVT">REGN/LICENSE DOCUMENT ISSUED BY CENTRAL/STATE GOVT</W>
+		<W v="RESOLUTION OF BOARD">RESOLUTION OF BOARD</W>
+		<W v="POA GRANTED TO TRARNSACT ON ITS BEHALF">POA GRANTED TO TRARNSACT ON ITS BEHALF</W>
+		<W v="ACTIVITY PROOF-1(IN CASE OF PROPRIETOR)">ACTIVITY PROOF-1(IN CASE OF PROPRIETOR)</W>
+		<W v="ACTIVITY PROOF-2(IN CASE OF PROPRIETOR)">ACTIVITY PROOF-2(IN CASE OF PROPRIETOR)</W>
+		<W v="TRUST DEED">TRUST DEED</W>
+		<W v="GST REGISTRATION LETTER">GST REGISTRATION LETTER</W>
+		<W v="MISCELLANEOUS">MISCELLANEOUS</W>
+		<W v="Gram Panchayat Registration/ Authority Letter">Gram Panchayat Registration/ Authority Letter</W>
+	</DICT>
+	<DICT n="P:ID PROOF OF  AUTHORIZED SIGNATORY">
+		<W v="PASSPORT">PASSPORT</W>
+		<W v="VOTER CARD">VOTER CARD</W>
+		<W v="PAN CARD">PAN CARD</W>
+		<W v="DRIVING LICENSE">DRIVING LICENSE</W>
+		<W v="AADHAR LETTER ISSUED BY UIDAI">AADHAR LETTER ISSUED BY UIDAI</W>
+	</DICT>
+	<DICT n="P:ADDRESS PROOF OF">
+		<W v="Firm">Firm</W>
+		<W v="Authorized Signatory">Authorized Signatory</W>
+	</DICT>
+	<DICT n="P:ADDRESS PROOF OF FIRM">
+		<W v="REGISTRATION CERTIFICATE (IN CASE OF REGD CONCERN)">REGISTRATION CERTIFICATE (IN CASE OF REGD CONCERN)</W>
+		<W v="CERTIFICATE/LICENSE ISSUED BY MUNICIPAL CORP.">CERTIFICATE/LICENSE ISSUED BY MUNICIPAL CORP.</W>
+		<W v="SALES TAX RETURN (IN CASE OF NON-INDIVIDUAL)">SALES TAX RETURN (IN CASE OF NON-INDIVIDUAL)</W>
+		<W v="PARTNERSHIP DEED (IN CASE OF PARTNERSHIP)">PARTNERSHIP DEED (IN CASE OF PARTNERSHIP)</W>
+		<W v="CST/VAT CERTIFICATE">CST/VAT CERTIFICATE</W>
+		<W v="LICENSE BY REGISTERING AUTH - ICAI, ICWA, ICSI ETC">LICENSE BY REGISTERING AUTH - ICAI, ICWA, ICSI ETC</W>
+		<W v="CERTIFICATE OF COMMENCEMENT (IN CASE OF CORPORATE)">CERTIFICATE OF COMMENCEMENT (IN CASE OF CORPORATE)</W>
+		<W v="CERTIFICATE OF INCORPORATION(IN CASE OF CORPORATE)">CERTIFICATE OF INCORPORATION(IN CASE OF CORPORATE)</W>
+		<W v="MEMORANDUM AND ARTICLES OF ASSOCIATION">MEMORANDUM AND ARTICLES OF ASSOCIATION</W>
+		<W v="RESOLUTION OF BOD FOR OPENING A/C &amp; AUTH SIGNATORY">RESOLUTION OF BOD FOR OPENING A/C &amp; AUTH SIGNATORY</W>
+		<W v="REGN/LICENSE DOCUMENT ISSUED BY CENTRAL/STATE GOVT">REGN/LICENSE DOCUMENT ISSUED BY CENTRAL/STATE GOVT</W>
+		<W v="GST REGISTRATION LETTER">GST REGISTRATION LETTER</W>
+		<W v="MISCELLANEOUS">MISCELLANEOUS</W>
+		<W v="Gram Panchayat Registration/ Authority Letter">Gram Panchayat Registration/ Authority Letter</W>
+		<W v="Rent/ Lease Agreement">Rent/ Lease Agreement</W>
+	</DICT>
+	<DICT n="P:ADDRESS PROOF OF AUTORISED SIGNATURE">
+		<W v="PASSPORT">PASSPORT</W>
+		<W v="VOTER CARD">VOTER CARD</W>
+		<W v="DRIVING LICENSE">DRIVING LICENSE</W>
+		<W v="AADHAR LETTER ISSUED BY UIDAI">AADHAR LETTER ISSUED BY UIDAI</W>
+		<W v="PAN INTIMATION LETTER">PAN INTIMATION LETTER</W>
+		<W v="NREGA JOB CARD DULY SINGED BY STATE GOVT OFFICIAL">NREGA JOB CARD DULY SINGED BY STATE GOVT OFFICIAL</W>
+	</DICT>
+	<DICT n="P:PHOTO IDENTITY_1">
+		<W v="Self">SELF</W>
+		<W v="Photo Of Guardian Or Related Person">PHOTO OF GUARDIAN OR RELATED PERSON</W>
+	</DICT>
+	<DICT n="P:ACCOUNT TYPE_2">
+		<W v="FXD DEP FRM OTH(GNRL PBLC)">FXD DEP FRM OTH(GNRL PBLC)</W>
+		<W v="FD ORDNRY-DIFFL RATE">FD ORDNRY-DIFFL RATE</W>
+		<W v="DEP UNDER MULTIPURPOSE SCH">DEP UNDER MULTIPURPOSE SCH</W>
+		<W v="FD SCH-DIFFL RATE">FD SCH-DIFFL RATE</W>
+		<W v="RECURRING DEP">RECURRING DEP</W>
+		<W v="CASH CERTFICATE">CASH CERTFICATE</W>
+		<W v="CERT OF DEP SCHEME">CERT OF DEP SCHEME</W>
+		<W v="CPTL GAINS SCH PART B-ORDNRY">CPTL GAINS SCH PART B-ORDNRY/W&gt;</W>
+		<W v="CPTL GAINS SCH PART B-SCHEME">CPTL GAINS SCH PART B-SCHEME</W>
+		<W v="DEPOSIT UNDER FLOAT ROI">DEPOSIT UNDER FLOAT ROI</W>
+		<W v="PSBFD TAX SAVER SCH-ORDNRY">PSBFD TAX SAVER SCH-ORDNRY</W>
+		<W v="PSBFD TAX SAVER SCH-SCHS">PSBFD TAX SAVER SCH-SCHS</W>
+		<W v="PSB VVS YOJANA ( ORDINARY)">PSB VVS YOJANA ( ORDINARY)</W>
+		<W v="PSB VVS YOJANA  ( SCHEME)">PSB VVS YOJANA  ( SCHEME)</W>
+		<W v="NON RES EXT A/C-ORDNRY">NON RES EXT A/C-ORDNRY</W>
+		<W v="NON RES EXT A/C-SCHS">NON RES EXT A/C-SCHS</W>
+		<W v="NRO A/C FIXED DEP-ORDNRY">NRO A/C FIXED DEP-ORDNRY</W>
+		<W v="NRO A/C FIXED DEP-SCHS">NRO A/C FIXED DEP-SCHS</W>
+		<W v="FRGN CRNCY NON RES A/C">FRGN CRNCY NON RES A/C</W>
+		<W v="RFC FIXED DEP">RFC FIXED DEP</W>
+	</DICT>
+	<DICT n="P:KYC_2">
+		<W v="PAN Card">PAN Card</W>
+		<W v="Aadhar No">Aadhar No</W>
+		<W v="Passport">Passport</W>
+		<W v="Driving License">Driving License</W>
+	</DICT>
+	<DICT n="P:DocType">
+		<W v="RFP DETAILS">RFP DETAILS</W>
+		<W v="RFP DOCUMENTS">RFP DOCUMENTS</W>
+		<W v="ADDENDUM">ADDENDUM</W>
+		<W v="ANNEXURE">ANNEXURE</W>
+		<W v="SUPPORTING-DOCUMENTS">SUPPORTING-DOCUMENTS</W>
+	</DICT>
+	<DICT n="P:DOC TYPE CURRENT KYC">
+		<W v="IDENTITY">IDENTITY</W>
+		<W v="ADDRESS">ADDRESS</W>
+		<W v="PHOTOGRAPH">PHOTOGRAPH</W>
+	</DICT>
+	<DICT n="P:NOMINATION TYPE">
+		<W v="DA1 NOMINATION FORM">DA1 NOMINATION FORM</W>
+		<W v="DA2 NOMINATION FORM">DA2 NOMINATION FORM</W>
+		<W v="DA3 NOMINATION FORM">DA3 NOMINATION FORM</W>
+	</DICT>
+	<DICT n="P:LETTER TYPE">
+		<W v="APPLICATION LETTERS">APPLICATION LETTERS</W>
+		<W v="MISCELLANEOUS LETTERS">MISCELLANEOUS LETTERS</W>
+		<W v="OTHERS">OTHERS</W>
+	</DICT>
+</S>

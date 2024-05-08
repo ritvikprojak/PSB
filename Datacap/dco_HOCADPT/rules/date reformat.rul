@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="81" name="date reformat" ver="3" modder="dmstest10.1" qi="" dt="08/11/23 09:29:50.577 ">
+  <rule name="NAV ReFormat Date" id="2" qi="" dcomap.open="F=NOTE DATE">
+    <func name="Function1">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="" disabled="y">
+        <p name="Source" type="string" v="en-IN" />
+        <p name="Target" type="string" v="@F.hr_locale" />
+      </a>
+      <a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat" qi="">
+        <p name="NewDateFormat" type="string" v="dd/mm/yyyy" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

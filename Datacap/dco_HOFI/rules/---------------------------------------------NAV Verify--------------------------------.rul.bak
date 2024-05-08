@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="9" name="---------------------------------------------NAV Verify--------------------------------" ver="1" modder="admin.1" qi=""/>
+	<ruleset id="9" name="---------------------------------------------NAV Verify--------------------------------" ver="2" modder="admin.1" qi="" dt="01/11/23 13:34:27.187 ">
+		<rule name="Rule1" id="1">
+			<func name="Function1"/>
+		</rule>
+	</ruleset>
+	<ruleset id="9" name="---------------------------------------------NAV Verify--------------------------------" ver="3" modder="admin.1" qi="" dt="01/11/23 13:36:24.216 ">
+		<rule name="Rule1" id="1">
+			<func name="Function1"/>
+		</rule>
+	</ruleset>
+	<ruleset id="9" name="---------------------------------------------NAV Verify--------------------------------" ver="4" modder="admin.1" qi="" dt="03/28/23 12:13:18.953 ">
+		<rule name="Rule1" id="1">
+			<func name="Function1"/>
+		</rule>
+	</ruleset>
+	<ruleset id="91" name="---------------------------------------------NAV Verify--------------------------------" ver="1" modder="admin.1" qi="">
+		<rule name="Rule1" id="1">
+			<func name="Function1"/>
+		</rule>
+	</ruleset>
+</archive>

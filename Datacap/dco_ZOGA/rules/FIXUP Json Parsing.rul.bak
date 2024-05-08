@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="57" name="FIXUP Json Parsing" ver="1" modder="admin.1" qi="">
+		<rule name="NAV Json Parsing Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function2">
+				<a name="JsonParseGetEmployee" ns="net:PSBCustomLibrary.SampleAction" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="90" name="FIXUP Json Parsing" ver="1" modder="dmstest10.1" qi="">
+		<rule name="NAV Json Parsing Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function2">
+				<a name="JsonParseGetEmployee" ns="net:PSBCustomLibrary.SampleAction" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

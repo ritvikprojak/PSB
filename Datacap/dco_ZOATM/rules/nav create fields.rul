@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="99" name="NAV create fields" ver="3" modder="dmstest10.1" qi="" dt="10/30/23 11:35:53.482 ">
+	<rule name="CreateDocuments" id="1" dcomap.open="B" dcomap.close="" qi="">
+		<func name="Remove Any Existing Structure" disabled="True">
+			<a name="RemoveDocumentStructure" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled=""/>
+			<a name="SetReturnValue" ns="rrunner.dll" qi="Run the next function.&#xA;">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="False" name="StrParam"/>
+			</a>
+		</func>
+		<func name="Stop If Documents Exist" disabled="y" qi="This check prevents documents from being created twice, as may happen if a batch is rolled back.">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="IsDocumentCountMoreThan" disabled="" qi="Do not create documents again if they already exist.">
+				<p name="Count" v="1"/>
+				<p name="ReturnTrueIfMore" v="True"/>
+			</a>
+		</func>
+		<func name="Create Document Objects" disabled="y" qi="This function creates the documents.">
+			<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="False"/>
+			<a name="SetReturnValue" ns="rrunner.dll" qi="Run the next function.&#xA;">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="False" name="StrParam"/>
+			</a>
+		</func>
+		<func name="CreateFields Batch Level" disabled="True">
+			<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="True" qi="If any batch level fields exist, create them now."/>
+		</func>
+		<func name="Pass Ruleset" disabled="y" qi="">
+			<a name="SetReturnValue" ns="rrunner.dll" qi="Fields may not exist for creation, so ignore the error by returning true.&#xA;">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="True" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Create Fields" id="2" dcomap.open="P=Page" dcomap.close="" qi="">
+		<func name="CreateFields 1" disabled="False">
+			<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="" qi=""/>
+		</func>
+	</rule>
+</ruleset>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="100" name="NAV Return - Maker to Classify" ver="1" modder="dmstest10.1" qi="">
+		<rule name="Rule1" id="1">
+			<func name="Function1"/>
+		</rule>
+	</ruleset>
+	<ruleset id="100" name="NAV Return - Maker to Classify" ver="2" modder="dmstest10.1" qi="" dt="11/18/23 09:48:03.250 ">
+		<rule name="Rule1" id="1">
+			<func name="Function1"/>
+		</rule>
+	</ruleset>
+</archive>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="64" name="NAV POPULATE DEPT CODE" ver="2" modder="dmstest10.1" qi="" dt="06/01/23 15:58:46.127 ">
+		<rule name="Rule1" id="1" dcomap.open="F=HO DEPARTMENT CODE" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.DeptName"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="64" name="NAV POPULATE DEPT CODE" modder="dmstest10.1" dt="06/28/23 19:43:14.486 " ver="1" qi="">
+		<rule name="Rule1" id="1">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.DeptName"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="64" name="NAV POPULATE DEPT CODE" modder="dmstest10.1" dt="06/28/23 19:45:38.210 " ver="2" qi="">
+		<rule name="Rule1" id="1" dcomap.open="F=HO DEPARTMENT CODE" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.DeptName"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="64" name="NAV POPULATE DEPT CODE" modder="admin.1" dt="10/03/23 11:13:35.279 " ver="3" qi="">
+		<rule name="Rule1" id="1" dcomap.open="F=HO Department Code" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.DeptName"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

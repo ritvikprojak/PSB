@@ -1,0 +1,57 @@
+{
+	
+	// fields (includes batch-level fields)
+	"field.DATEOFMEETING":"DATE OF MEETING",
+	"field.RESOLUTION_NUMBER":"RESOLUTION NUMBER",
+	"field.TYPEOFMEETING":"TYPE OF MEETING",
+	"field.DOCUMENTTYPE":"DOCUMENT TYPE",
+	"field.DATEOFMEET":"DATE OF MEETING",
+	"field.NAMEOFMEETING":"NAME OF MEETING",
+	"field.DIRECTORNAME":"DIRECTOR NAME",
+	"field.DATEOFAPPOINT":"DATE OF APPOINTMENT",
+	"field.DIRECTORNAME":"DIRECTOR NAME",
+	"field.FINANCIALYEAR":"FINANCIAL YEAR",
+	"field.PAYMENTTYPE":"PAYMENT TYPE",
+	"field.PAYMENTDATE":"PAYMENT DATE",
+	"field.NAMEOFCOMMITEE":"NAME OF COMMITEE",
+	"field.DATERECONSTITUTION":"DATE RECONSTITUTION",
+	"field.NOTESUBJECT":"NOTE SUBJECT",
+	"field.FY":"FINANCIAL YEAR",
+	"field.HODPTCODE":"HO DEPARTMENT CODE",
+	"field.INPRINCIPAL":"IN PRINCIPAL NOTE FOR FLOATING OF RFP",
+	"field.PREBIDQUERIES":"PRE BID QUERIES/RESPONSE",
+	"field.BIDDOC":"BID DOCUMENTS",
+	"field.NOTEFORTECHNICAL":"NOTE FOR TECHNICAL EVALUATION",
+	"field.NOTEFORCOMM":"NOTE FOR COMMERCIAL EVALUATION",
+	"field.REVERSEACTION":"NOTE FOR REVERSE ACTION",
+	"field.L1BIDDER":"NOTE FOR DECLARING L1 BIDDER",
+	"field.APPFORFINALTCO":"FINANCIAL APPROVAL FOR FINAL TCO",
+	"field.MISC":"MISC NOTES REGARDING TENDER",
+	"field.TENDERNO":"TENDER NO",
+	"field.NOTESFORADD":"NOTES FOR FLOATING ADDENDUM",
+	"field.ADDNO":"ADDENDUM NUMBER",
+	"field.ADDDATED":"ADDENDUM DATED",
+	"field.ADDSUBJECT":"ADDENDUM SUBJECT",
+	"field.RELATEDQURIES":"ADDENDUM RELATED QUERIES/RESPONSE",
+	"field.ANNO":"ANNEXURES NUMBER",
+	"field.ANSUBJECT":"ANNEXURES SUBJECT",
+	"field.DOCTYPE":"DOCUMENTS TYPE",
+	"field.NOTEFORRFP":"NOTE FOR RFP",
+	
+	// shortcuts
+	"shortcut.NAVVScan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyBD":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVScan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyBD":"Classify Document",
+	"task.NAVMaker":"Document Details",								
+	"task.NAVChecker":"Checker",
+	"task.NAVExport":"Export"
+}

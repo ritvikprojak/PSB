@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="115" name="NAV FixUpProfiler Check mandatory doctype rule" ver="4" modder="dmstest10.1" qi="" dt="11/14/23 16:55:32.176 ">
+	<rule name="NAV Check mandatory doctype" id="1" dcomap.open="B" qi="">
+		<func name="Mandatory doctype 1 set" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.BATCHTYPE"/>
+				<p name="Text2" type="string" v="SAVING"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.FormDocPresent"/>
+				<p name="Text2" type="string" v="NO"/>
+			</a>
+			<a name="SetTaskAbortBatch" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi=""/>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" disabled="y">
+				<p name="Source" type="string" v="Mandatory Document Form and KYC are Missing"/>
+				<p name="Target" type="string" v="@B.D.P.ErrorMessage"/>
+			</a>
+			<a ns="rrunner" name="Task_NumberOfSplits" disabled="y">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="1" name="nNumOfSplits"/>
+			</a>
+			<a ns="rrunner" name="Task_RaiseCondition" qi="" disabled="y">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="0,0" name="strParam"/>
+			</a>
+		</func>
+		<func name="Mandatory doctype kyc1 C1 set">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.BATCHTYPE"/>
+				<p name="Text2" type="string" v="SAVING"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.C1KYCDoc1Present"/>
+				<p name="Text2" type="string" v="NO"/>
+			</a>
+			<a name="SetTaskAbortBatch" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi=""/>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="" disabled="y">
+				<p name="Source" type="string" v="Mandatory Document Form and KYC are Missing"/>
+				<p name="Target" type="string" v="@B.D.P.ErrorMessage"/>
+			</a>
+			<a ns="rrunner" name="Task_NumberOfSplits" disabled="y">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="1" name="nNumOfSplits"/>
+			</a>
+			<a ns="rrunner" name="Task_RaiseCondition" qi="" disabled="y">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="0,0" name="strParam"/>
+			</a>
+		</func>
+		<func name="Mandatory doctype kyc2 C1 set">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.BATCHTYPE"/>
+				<p name="Text2" type="string" v="SAVING"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.C1KYCDoc2Present"/>
+				<p name="Text2" type="string" v="NO"/>
+			</a>
+			<a name="SetTaskAbortBatch" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi=""/>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="" disabled="y">
+				<p name="Source" type="string" v="Mandatory Document Form and KYC are Missing"/>
+				<p name="Target" type="string" v="@B.D.P.ErrorMessage"/>
+			</a>
+			<a ns="rrunner" name="Task_NumberOfSplits" disabled="y">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="1" name="nNumOfSplits"/>
+			</a>
+			<a ns="rrunner" name="Task_RaiseCondition" qi="" disabled="y">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="0,0" name="strParam"/>
+			</a>
+		</func>
+		<func name="Mandatory doctype kyc1 C2 set">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.BATCHTYPE"/>
+				<p name="Text2" type="string" v="SAVING"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.CUSTOMER_TYPE"/>
+				<p name="Text2" type="string" v="JOINT"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.C2KYCDoc1Present"/>
+				<p name="Text2" type="string" v="NO"/>
+			</a>
+			<a name="SetTaskAbortBatch" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi=""/>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="" disabled="y">
+				<p name="Source" type="string" v="Mandatory Document Form and KYC are Missing"/>
+				<p name="Target" type="string" v="@B.D.P.ErrorMessage"/>
+			</a>
+			<a ns="rrunner" name="Task_NumberOfSplits" disabled="y">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="1" name="nNumOfSplits"/>
+			</a>
+			<a ns="rrunner" name="Task_RaiseCondition" qi="" disabled="y">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="0,0" name="strParam"/>
+			</a>
+		</func>
+		<func name="Mandatory doctype kyc2 C2 set">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.BATCHTYPE"/>
+				<p name="Text2" type="string" v="SAVING"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.CUSTOMER_TYPE"/>
+				<p name="Text2" type="string" v="JOINT"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.C2KYCDoc2Present"/>
+				<p name="Text2" type="string" v="NO"/>
+			</a>
+			<a name="SetTaskAbortBatch" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi=""/>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="" disabled="y">
+				<p name="Source" type="string" v="Mandatory Document Form and KYC are Missing"/>
+				<p name="Target" type="string" v="@B.D.P.ErrorMessage"/>
+			</a>
+			<a ns="rrunner" name="Task_NumberOfSplits" disabled="y">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="1" name="nNumOfSplits"/>
+			</a>
+			<a ns="rrunner" name="Task_RaiseCondition" qi="" disabled="y">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="0,0" name="strParam"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

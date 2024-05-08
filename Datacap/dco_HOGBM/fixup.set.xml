@@ -1,0 +1,74 @@
+<?xml-stylesheet type="text/xsl" href="..\..\ProgramSet\set.xsl"?>
+<S lang="en-US">
+  <P n="ScannerSettings" tip="Basic scanner settings for the task" title="Scanner Setup">
+    <V label="Autofeed" n="Autofeed" tip="Select this check box when you want the pages to be fed into the scanner using the scanner's autofeeder." type="checkbox">1</V>
+    <V label="Use Duplex mode" n="Duplex" tip="When Duplex mode is enabled - both sides of an image are scanned." type="checkbox">0</V>
+    <V label="Pixel type" n="PixelType" tip="Enter one of the following number for the images that are created by the scanner:&#xA;0 - B/W&#xA;1 - grayscale&#xA;2 - color" type="text">0</V>
+    <V label="Image resolution" n="Resolution" tip="Enter the resolution (dots per inch) of the images that are created by the scanner. &#xA;The resolution for both height and width is the same." type="text">300</V>
+    <V label="Paper Size" n="PaperSize" tip="Specify pager size" type="text">0</V>
+  </P>
+  <P n="BatchProcessing" tip="" title="Batch processing">
+    <V label="Page file" n="TaskDCOFile" tip="Enter the name of the page file that will be created during this task. &#xA;Use taskname.xml to automatically assign the name of the task to the page file." type="text">taskname.xml</V>
+    <V label="Allow hold" n="Hold" tip="Select this check box to display the Hold button on the web page. &#xA;When the Hold button is visible, users can place a batch on hold before processing is complete." type="checkbox">1</V>
+    <V label="Allow Rescan" n="Rescan" tip="Allows replacing pages with rescan status" type="checkbox">1</V>
+    <P n="Navigation" tip="" title="Navigation">
+      <V label="Done Page Status" n="DPS" tip="Enter the different status values that the application can assign to a page after it was&#xA;successfully validated in a comma-separated list. If all pages have one of the Done status values, &#xA;the batch can be released. &#xA;By convention:&#xA;- The first value is assigned to pages needing review.&#xA;- The second value is assigned to pages that should be rescanned.&#xA;- The third valus is assigned for pages that are valid.&#xA;Additional values are possible." type="text">0,2</V>
+      <V label="Ignored pages status" n="IPS" tip="Enter the status values of pages that the application can ignore (such as attachment pages that are not &#xA;processed), in a comma-separated list. " type="text">128,75,72,74,49</V>
+      <V label="Validation status" n="DOF" tip="Enter the three different status values that the application assigns to the current page after validation in a comma-separated list:&#xA;- The first value is assigned when validation passes (Done). &#xA;- The second value is assigned when the operator overrides a validation error (Override). &#xA;- The third value is assigned when validation fails and override is not used (Fail).&#xA;For example, 0,2,1 specifies Done status = 0; Override status = 2; Fail status = 1." type="text">0,2,1</V>
+    </P>
+    <P n="DocumentStartup" tip="" title="Document startup">
+      <V label="Load all data files" n="LoadDoc" tip="Select this option when an application can perform validations across multiple pages and all data files must be loaded and available during validations.  1 - load data files for the current document, 2 - load all data files for the entire batch." type="text">0</V>
+    </P>
+  </P>
+  <P n="PageProcessing" tip="" title="Page Processing">
+    <V label="Display field zones" n="ShowFields" tip="Select this check box to always display the outline of field zones on the document image." type="checkbox">0</V>
+    <P n="PageNavDisplay" tip="Settings that determine page navigation, field display" title="Navigation and Display">
+      <V label="Done Field Status" n="DFS" tip="Enter the different status values that the application can assign to a field to indicate the field was successfully processed (Done) in a comma-separated list. These status values are used to determine which field gets focus next when advancing to the next problem field, or when only problem fields are displayed." type="text">0</V>
+      <V label="Ignored field status" n="IFS" tip="Enter the status values of fields that should be ignored (such as status values that indicate anchors) and that should not be displayed during indexing or verification, in a comma-separated list. " type="text">-1</V>
+      <V label="Read-only field status" n="RFS" tip="Makes field read-only when it has specified status" type="text">-2</V>
+    </P>
+    <P n="BackColors" tip="Specify the background colors to use for fields as literal word colors (blue, magenta, etc.)." title="Background field colors">
+      <V label="Low confidence fields" n="LC" tip="Specify the background color used to display fields containing low confidence values. " type="text">yellow</V>
+      <V label="Invalid fields" n="PC" tip="Define the background color for fields that failed validation." type="text">lightpink</V>
+      <V label="Other fields" n="DC" tip="Specify the background color for all other fields." type="text">white</V>
+    </P>
+  </P>
+  <P n="AltTexts" tip="Specify the alternative field texts or double-blind data entry features." title="Alternative or blind texts">
+    <V label="DCO field alt text index" n="AltText" tip="Specify the DCO field alternate text index." type="text">0</V>
+    <V label="Blind confirm index" n="AltCompare" tip="Enables automatic double-blind checking that requires matching another alternate value (specified index) or retyping the same value twice." type="text">-1</V>
+  </P>
+  <P n="Rulerunner" tip="" title="Rulerunner settings">
+    <V label="Main task profile" n="TProfile" tip="Enter the name of the task profile to run when users click the Submit button." type="text">Verify</V>
+    <V label="Additional task profiles" n="AltTProfile" tip="Enter the names of one or more task profiles that can be run from the verify interface &#xA;in a comma-separated list. Instead of the default Verify button, &#xA;the interface displays a button for each task profile that is listed." type="text">RecreateDocStructure</V>
+    <V label="Data preparation task profile" n="PreTProfile" tip="Enter the name of the task profile that the application runs to modify, convert, prepare, &#xA;copy, or move data before the data and page are displayed by the main task." type="text" />
+  </P>
+  <P n="StaticWebSet" tip="" title="Custom web panels">
+    <V label="Use custom web panels" n="Static" tip="Select this check box when you want a custom data entry panel to be displayed for this task." type="checkbox">0</V>
+    <G n="Web-Panels" tip="Key-value pairs to associate DCO or Page TYPE to ascx panel file." title="Bind TYPE to ascx panel">
+      <V label="Panel for" n="webPage_TYPE" tip="Association of DCO type to panel file name" type="text">Panel.ascx</V>
+    </G>
+  </P>
+  <P n="TreeWebSet" tip="Settings for BatchView in web tasks" title="DCO tree view">
+    <V label="Read-only view" n="TreeReadOnly" tip="Check to disable modification to batch structure." type="checkbox">0</V>
+    <P n="OperationEnabled" tip="Setting to allow operation to batch structure." title="Actions">
+      <V label="Split Document" n="split" tip="Split documents in batch structure" type="checkbox">1</V>
+      <V label="Join Document" n="join" tip="Join documents in batch structure" type="checkbox">1</V>
+      <V label="Copy Page" n="copy" tip="Copy page in batch structure" type="checkbox">1</V>
+      <V label="Mark for Deleted Status" n="markForDeleted" tip="Mark page or document for deleted status in batch structure" type="checkbox">1</V>
+      <V label="Remove Page" n="removePage" tip="Remove pages in batch structure" type="checkbox">1</V>
+      <V label="Move" n="move" tip="Move up or down pages or documents in batch structure" type="checkbox">1</V>
+      <V label="Disassemble Documents" n="disassembleDocs" tip="Disassemble all documents in batch structure" type="checkbox">1</V>
+      <V label="Check Integrity" n="checkIntegrity" tip="Run rule to check integrity" type="checkbox">1</V>
+      <V label="Undo" n="undo" tip="Undo the batch structure actions" type="checkbox">1</V>
+      <V label="Drag and Drop" n="dragAndDrop" tip="Drag and Drop pages or documents in batch structure" type="checkbox">1</V>
+    </P>
+    <V label="Highlighted types" n="HiTypes" tip="Enter the page types to highlight for better visual separation (like Start Doc) in a comma-separated list." type="text">Other</V>
+    <G n="TreeVars" tip="Key-value pairs to determine what to show in the DCO view" title="Display variables">
+      <V client="ICN" label="Props for var" n="TYPE" tip="Comma-separated AllowEdit,VarDropDown" type="text">1</V>
+      <V client="ICN" label="Props for var" n="STATUS" tip="Comma-separated AllowEdit,VarDropDown" type="text">0</V>
+    </G>
+  </P>
+  <P n="NCLayout" tip="Defines run-time layout." title="Navigator Layout">
+    <V label="Layout" n="Layout" tip="Defines the run-time layout" type="text" />
+  </P>
+</S>

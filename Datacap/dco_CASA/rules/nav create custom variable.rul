@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="65" name="NAV Create Custom Variable" ver="2" modder="dmstest10.1" qi="" dt="07/04/23 19:08:08.197 ">
+	<rule name="NAV rCreate Variable" id="1" qi="" dcomap.open="F=Document_Type">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="@F"/>
+				<p name="Target" type="string" v="@P.CustomPageType"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV CustName batchvar" id="2">
+		<func name="Function1" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@F"/>
+				<p name="Target" type="string" v="@B.bCUSTOMERNAME"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV CIF batchvar" id="3">
+		<func name="Function1" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@F"/>
+				<p name="Target" type="string" v="@B.bCIF"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV DOB batchvar" id="4">
+		<func name="Function1" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@F"/>
+				<p name="Target" type="string" v="@B.bDOB"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV Mobile batchvar" id="5">
+		<func name="Function1" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@F"/>
+				<p name="Target" type="string" v="@B.bMOBILE"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

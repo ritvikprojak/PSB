@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="57" name="(B) Navigator Page Delete Seperator" ver="4" modder="dmstest10.1" qi="" dt="06/22/23 19:53:35.433 ">
+	<rule name="(B) Navigator Page Delete Separator Rule DC" id="1" qi="" dcomap.open="B">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+				<p name="Type" v="Document_Separator"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="19" name="ReclassifyPages" ver="11" modder="admin.1" qi="" dt="01/24/23 23:55:06.456 ">
+  <rule name="PageID" id="1" qi="" dcomap.open="P=Page">
+    <func name="Set Page KYC/INCOME Trail Page" qi="" disabled="y">
+      <a ns="rrunner" name="rrContains">
+        <p name="SearchForValue" v="@P\Document_Type" />
+        <p name="SearchInValue" v="KYC_AadhaarCard,KYC_ID,KYC_Address,KYC_Both,Income" />
+        <p name="caseSensitive" v="False" />
+      </a>
+      <a ns="rrunner" name="rrCompareNot">
+        <p name="object1" v="@EMPTY" />
+        <p name="object2" v="@P\Document_Type" />
+      </a>
+      <a ns="rrunner" name="rrSet" qi="">
+        <p name="varSource" v="@P\Document_Type" />
+        <p name="varTarget" v="@P.PageType" />
+      </a>
+      <a ns="net:MathValidation.SampleAction" name="FindIndexofArray" qi="">
+        <p name="findobj" type="string" qi="This Parameter is object to be searched in array.  Smart parameters are supported." v="@P.PageTypeCIF" />
+        <p name="arrayObj" type="string" qi="This Parameter is array where objects are searched. Smart parameters are supported." v="@B.DocumentIndexArray" />
+      </a>
+      <a ns="DCO" name="SetPageType">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+        <p type="strParam" v="@P.Index" name="StrParam" />
+      </a>
+      <a ns="rrunner" name="rrSet">
+        <p name="varSource" v="False" />
+        <p name="varTarget" v="@P.STARTDOC" />
+      </a>
+    </func>
+    <func name="Set Page Trail Page" qi="">
+      <a ns="rrunner" name="rrCompareNot">
+        <p name="object1" v="@EMPTY" />
+        <p name="object2" v="@P\Document Type" />
+      </a>
+      <a ns="rrunner" name="rrSet">
+        <p name="varSource" v="@P\Document Type" />
+        <p name="varTarget" v="@P.PageType" />
+      </a>
+      <a ns="net:MathValidation.SampleAction" name="FindIndexofArray" qi="">
+        <p name="findobj" type="string" qi="This Parameter is object to be searched in array.  Smart parameters are supported." v="@P.PageType" />
+        <p name="arrayObj" type="string" qi="This Parameter is array where objects are searched. Smart parameters are supported." v="@B.DocumentIndexArray" />
+      </a>
+      <a ns="DCO" name="SetPageType">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+        <p type="strParam" v="@P.Index" name="StrParam" />
+      </a>
+      <a ns="rrunner" name="rrSet">
+        <p name="varSource" v="False" />
+        <p name="varTarget" v="@P.STARTDOC" />
+      </a>
+    </func>
+    <func name="Set Page Main Page" qi="">
+      <a ns="rrunner" name="rrCompareNot">
+        <p name="object1" v="@EMPTY" />
+        <p name="object2" v="@P\Document Type" />
+      </a>
+      <a ns="rrunner" name="rrSet">
+        <p name="varSource" v="@P\Document Type" />
+        <p name="varTarget" v="@P.PageType" />
+      </a>
+      <a ns="net:MathValidation.SampleAction" name="AddObjectinArray" qi="">
+        <p name="addobj" type="string" qi="This Parameter is object to be added in array.  Smart parameters are supported." v="@P.PageType" />
+        <p name="arrayObj" type="string" qi="This Parameter is array where objects are added. Smart parameters are supported." v="@B.DocumentIndexArray" />
+      </a>
+      <a ns="net:MathValidation.SampleAction" name="FindIndexofArray" qi="">
+        <p name="findobj" type="string" qi="This Parameter is object to be searched in array.  Smart parameters are supported." v="@P.PageType" />
+        <p name="arrayObj" type="string" qi="This Parameter is array where objects are searched. Smart parameters are supported." v="@B.DocumentIndexArray" />
+      </a>
+      <a ns="DCO" name="SetPageType" qi="">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+        <p type="strParam" v="@P.Index" name="StrParam" />
+      </a>
+      <a ns="rrunner" name="rrSet">
+        <p name="varSource" v="True" />
+        <p name="varTarget" v="@P.STARTDOC" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

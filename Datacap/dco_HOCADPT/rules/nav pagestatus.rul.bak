@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="66" name="NAV PageStatus" ver="1" modder="admin.1" qi="">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="66" name="NAV PageStatus" ver="2" modder="dmstest10.1" qi="" dt="05/05/23 13:18:09.983 ">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" disabled="y" qi="">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageStatus" qi="">
+					<p name="Type" type="string" v="1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="66" name="NAV PageStatus" ver="3" modder="dmstest10.1" qi="" dt="05/05/23 13:34:46.946 ">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageStatus" qi="" disabled="y">
+					<p name="Type" type="string" v="1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="66" name="NAV PageStatus" ver="4" modder="dmstest10.1" qi="" dt="06/28/23 19:27:44.847 ">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageStatus" qi="" disabled="y">
+					<p name="Type" type="string" v="1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="66" name="NAV PageStatus" ver="5" modder="dmstest10.1" qi="" dt="07/28/23 17:50:00.222 ">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageStatus" qi="" disabled="y">
+					<p name="Type" type="string" v="1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="page status for trailpage" id="2" qi="" dcomap.open="P=TrailPage">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="0"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageStatus" qi="" disabled="y">
+					<p name="Type" type="string" v="1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="66" name="NAV PageStatus" ver="6" modder="dmstest10.1" qi="" dt="07/28/23 17:54:45.598 ">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageStatus" qi="" disabled="y">
+					<p name="Type" type="string" v="1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="page status for trailpage" id="2" qi="" dcomap.open="P=TrailPage">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="49"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageStatus" qi="" disabled="y">
+					<p name="Type" type="string" v="1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

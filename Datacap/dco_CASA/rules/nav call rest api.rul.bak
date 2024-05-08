@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="59" name="NAV Call REST API" ver="1" modder="admin.1" qi="">
+		<rule name="REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetEmployeeDetails">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="2" modder="admin.1" qi="" dt="05/09/23 12:52:16.535 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetEmployeeDetails">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="3" modder="admin.1" qi="" dt="05/11/23 11:13:22.427 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="" disabled="y">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="GetEmployeeDetails">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="4" modder="admin.1" qi="" dt="05/29/23 17:13:19.876 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="" disabled="y">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="5" modder="admin.1" qi="" dt="06/05/23 19:39:57.746 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="6" modder="admin.1" qi="" dt="06/12/23 17:01:54.946 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@OPERATOR"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="7" modder="dmstest10.1" qi="" dt="06/19/23 20:47:06.558 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="9518911"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="8" modder="dmstest10.1" qi="" dt="06/19/23 20:50:51.920 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@OPERATOR"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="9" modder="dmstest10.1" qi="" dt="07/06/23 13:43:40.449 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@OPERATOR"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" disabled="y">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="10" modder="dmstest10.1" qi="" dt="07/07/23 08:22:13.852 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="12345"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" disabled="y">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="11" modder="dmstest10.1" qi="" dt="07/07/23 08:35:30.178 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@OPERATOR"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" disabled="y">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="12" modder="dmstest10.1" qi="" dt="07/07/23 08:36:47.197 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="12345"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" disabled="y">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="13" modder="dmstest10.1" qi="" dt="07/07/23 12:33:58.757 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@OPERATOR"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" disabled="y">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="14" modder="dmstest10.1" qi="" dt="07/07/23 12:36:04.414 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="" disabled="y">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@OPERATOR"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="15" modder="dmstest10.1" qi="" dt="07/11/23 08:35:44.793 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="dmstest55"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" disabled="y">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="16" modder="dmstest10.1" qi="" dt="07/11/23 08:37:40.606 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="" disabled="y">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="dmstest55"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="17" modder="dmstest10.1" qi="" dt="07/12/23 14:51:34.790 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="dmstest55"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="" disabled="y">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="18" modder="dmstest10.1" qi="" dt="07/12/23 14:54:37.801 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="" disabled="y">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="dmstest55"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="59" name="NAV Call REST API" ver="19" modder="dmstest10.1" qi="" dt="07/12/23 14:56:14.165 ">
+		<rule name="NAV REST API Rule1" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="dmstest55"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="" disabled="y">
+					<p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

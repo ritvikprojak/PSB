@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="12" name="sort" ver="18" modder="admin.1" dt="09/08/21 18:47:41.78 " qi="">
+	<rule name="NAV Sort for HO IT DPT" id="1">
+		<func name="Function1">
+			<a ns="SortPages" name="SortPages" qi="">
+				<p name="OrderString" v="MasterPage,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33"/>
+			</a>
+		</func>
+	</rule>
+	<ruleset id="20" name="NAV Sort for HO IT DPT" ver="18" modder="admin.1" dt="09/08/21 18:47:41.78 " qi="">
+		<rule name="Rule1" id="1">
+			<func name="Function1">
+				<a ns="SortPages" name="SortPages" qi="">
+					<p name="OrderString" v="Page,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="20" name="NAV Sort for HO IT DPT" ver="19" modder="admin.1" dt="01/25/23 00:16:12.591 " qi="">
+		<rule name="Rule1" id="1" dcomap.open="B">
+			<func name="Function1">
+				<a ns="SortPages" name="SortPages" qi="">
+					<p name="OrderString" v="Page,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="20" name="NAV Sort for HO IT DPT" ver="20" modder="admin.1" dt="01/27/23 20:28:41.544 " qi="">
+		<rule name="Rule1" id="1" dcomap.open="B">
+			<func name="Function1">
+				<a ns="SortPages" name="SortPages" qi="" disabled="y">
+					<p name="OrderString" v="Page,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33"/>
+				</a>
+				<a ns="SortPages" name="SortPages" qi="">
+					<p name="OrderString" v="RFP DETAILS,RFP DETAILS_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURE,ANNEXURE_TrailingPage,SUPPORTING-DOCUMENTS,SUPPORTING-DOCUMENTS_TrailingPage"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="20" name="NAV Sort for HO IT DPT" ver="21" modder="admin.1" dt="01/28/23 15:15:01.641 " qi="">
+		<rule name="Sort Unorder Pages" id="1" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="SortPages" name="SortPages">
+					<p name="OrderString" v="RFP DETAILS,RFP DETAILS_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURE,ANNEXURE_TrailingPage,SUPPORTING-DOCUMENTS,SUPPORTING-DOCUMENTS_TrailingPage,IT Strategy Committee Notes and ATRs,IT Strategy Committee Notes and ATRs_TrailingPage,IT Steering Committee Notes and ATRs,IT Steering Committee Notes and ATRs_TrailingPage,OFFICE_NOTE,OFFICE_NOTE_TrailingPage,STRATEGY COMMITEE,STRATEGY COMMITEE_TrailingPage,STEERING COMMITEE,STEERING COMMITEE_TrailingPage,REGULATORY LETTERS,REGULATORY LETTERS_TrailingPage,AUDIT,AUDIT_TrailingPage,RTI_APPEAL_CIC,RTI_APPEAL_CIC_TrailingPage,ITAB MINUTES,MINUTES_TrailingPage,IEM MINUTES,MINUTES1_TrailingPage"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="20" name="NAV Sort for HO IT DPT" ver="22" modder="admin.1" dt="03/28/23 10:38:09.331 " qi="">
+		<rule name="NAV Sort Unorder Pages" id="1" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="SortPages" name="SortPages">
+					<p name="OrderString" v="RFP DETAILS,RFP DETAILS_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURE,ANNEXURE_TrailingPage,SUPPORTING-DOCUMENTS,SUPPORTING-DOCUMENTS_TrailingPage,IT Strategy Committee Notes and ATRs,IT Strategy Committee Notes and ATRs_TrailingPage,IT Steering Committee Notes and ATRs,IT Steering Committee Notes and ATRs_TrailingPage,OFFICE_NOTE,OFFICE_NOTE_TrailingPage,STRATEGY COMMITEE,STRATEGY COMMITEE_TrailingPage,STEERING COMMITEE,STEERING COMMITEE_TrailingPage,REGULATORY LETTERS,REGULATORY LETTERS_TrailingPage,AUDIT,AUDIT_TrailingPage,RTI_APPEAL_CIC,RTI_APPEAL_CIC_TrailingPage,ITAB MINUTES,MINUTES_TrailingPage,IEM MINUTES,MINUTES1_TrailingPage"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="56" name="NAV Sort for HO IT DPT" ver="1" modder="admin.1" qi="">
+		<rule name="Sort Unorder Pages" id="1" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="SortPages" name="SortPages">
+					<p name="OrderString" v="RFP DETAILS,RFP DETAILS_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURE,ANNEXURE_TrailingPage,SUPPORTING-DOCUMENTS,SUPPORTING-DOCUMENTS_TrailingPage,IT Strategy Committee Notes and ATRs,IT Strategy Committee Notes and ATRs_TrailingPage,IT Steering Committee Notes and ATRs,IT Steering Committee Notes and ATRs_TrailingPage,OFFICE_NOTE,OFFICE_NOTE_TrailingPage,STRATEGY COMMITEE,STRATEGY COMMITEE_TrailingPage,STEERING COMMITEE,STEERING COMMITEE_TrailingPage,REGULATORY LETTERS,REGULATORY LETTERS_TrailingPage,AUDIT,AUDIT_TrailingPage,RTI_APPEAL_CIC,RTI_APPEAL_CIC_TrailingPage,ITAB MINUTES,MINUTES_TrailingPage,IEM MINUTES,MINUTES1_TrailingPage"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</ruleset>

@@ -1,0 +1,28 @@
+{
+	// fields (includes batch-level fields)
+	"field.DOC TYPE_SAKYC":"DOC TYPE_KYC",
+	"field.ID PROOF DOCUMENTS_SAKYC":"ID PROOF DOCUMENTS_KYC",
+	"field.ADDRESS PROOF DOCUMENTS_SAKYC":"ADDRESS PROOF DOCUMENTS_KYC",
+	"field.PHOTO IDENTITY_SAKYC":"PHOTO IDENTITY_KYC",
+	
+	
+	// shortcuts
+	"shortcut.NAVVScan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyCASA":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVScan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyCASA":"Classify Document",
+	"task.NAVProfiler1":"Profiler",
+	"task.NAVMaker":"Document Details",
+	"task.NAVPreChecker":"PreChecker",
+	"task.NAVChecker":"Checker",
+	"task.NAVAcknowledgement":"Acknowledgement",
+	"task.NAVExport":"Export"
+}

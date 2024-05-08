@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="85" name="NAV Acknowledgement" ver="1" modder="admin.1" qi="">
+		<rule name="NAV ACK Rule" id="1" dcomap.open="B" qi="">
+			<func name="ACK Func">
+				<a name="AcknowledgementAPI" ns="net:PSBCustomLibrary.SampleAction"/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="85" name="NAV Acknowledgement" ver="2" modder="admin.1" qi="" dt="05/29/23 17:16:19.98 ">
+		<rule name="NAV ACK Rule" id="1" dcomap.open="B" qi="">
+			<func name="ACK Func">
+				<a name="AcknowledgementAPI" ns="net:CASAPSBCustomLibrary.SampleAction" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="51" name="CASA Custom Validation" ver="86" modder="admin.1" dt="05/31/23 09:32:30.413 " qi="">
+	<rule name="Page Level Rule" id="7" dcomap.open="P" qi="">
+		<func name="Function1">
+			<a name="Status_Preserve_OFF" ns="rrunner">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+			<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving, Current, FD account number" id="1" dcomap.open="F=ACCOUNT NUMBER" qi="">
+		<func name="Function2" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="20"/>
+				<p name="ComparisonOperator" type="string" v="="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="Account number is mandatory &amp; Must have length of 20 !"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving, Current, FD Customer name" id="2" dcomap.open="F=CUSTOMER NAME" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" qi="">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Customer name is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving, Current, FD CIF" id="3" qi="" dcomap.open="F=CIF">
+		<func name="Function 3" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="9"/>
+				<p name="ComparisonOperator" type="string" v="="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="CIF allows only numeric value &amp; Must have length of 9"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving, Current, FD Account Open Date" id="4" dcomap.open="F=ACCOUNT OPEN DATE" qi="">
+		<func name="Function2" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateEqualOrBefore" qi="">
+				<p name="Date" type="string" v="@DATE(dd/mm/yyyy)"/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Account open date must be before current date OR  Incorrect format !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving, Current, FD Account Type" id="5" dcomap.open="F=ACCOUNT TYPE_SA;F=ACCOUNT TYPE_CA;F=ACCOUNT TYPE_FD" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Account type is mandatory" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving, Current, FD SOLID" id="6" qi="" dcomap.open="F=SOL ID">
+		<func name="Function2" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="5"/>
+				<p name="ComparisonOperator" type="string" v="="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="SOLID is mandatory &amp; Must have length of 5"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving, Current, FD DOB" id="24" dcomap.open="F=DOB" qi="">
+		<func name="Function2" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateEqualOrBefore" qi="">
+				<p name="Date" type="string" v="@DATE(dd/mm/yyyy)"/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="DOB must be before current date OR  Incorrect format !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving, Current, FD Staff emp no" id="8" qi="" dcomap.open="F=STAFF EMPLOYEE NO_SA;F=STAFF EMPLOYEE NO_CA;F=STAFF EMPLOYEE NO_FD">
+		<func name="Function2" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="10"/>
+				<p name="ComparisonOperator" type="string" v="="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="Emp No is mandatory &amp; Must have length of 10"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving, Current, FD Mobile" id="25" qi="" dcomap.open="F=MOBILE">
+		<func name="Function2" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="AllowOnlyCharacters">
+				<p name="Target" type="string" v="@F"/>
+				<p name="AllowedCharacters" type="string" v="0123456789"/>
+			</a>
+			<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi=""/>
+		</func>
+		<func name="Function 3" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable" qi="">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" qi="">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="13"/>
+				<p name="ComparisonOperator" type="string" v="&lt;="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Mobile number allows only numeric value &amp; Must have maximum length of 13" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving, Current, FD Email id" id="9" qi="" dcomap.open="F=EMAIL ID_SA;F=EMAIL ID_CA;F=EMAIL ID_FD">
+		<func name="Function2" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Email is mandatory &amp; Please enter correct email id" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving, Current, FD KYC account no" id="10" qi="" dcomap.open="F=ACCOUNT NUMBER">
+		<func name="Function2" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="20"/>
+				<p name="ComparisonOperator" type="string" v="="/>
+			</a>
+		</func>
+		<func name="Function3" qi="" disabled="y">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Account number is mandatory OR must have length of 20 !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving KYC CIF" id="11" dcomap.open="F=CIF_SAKYC" qi="">
+		<func name="Function2" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="AllowOnlyCharacters">
+				<p name="Target" type="string" v="@F"/>
+				<p name="AllowedCharacters" type="string" v="0123456789"/>
+			</a>
+			<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions"/>
+		</func>
+		<func name="Function 3" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="9"/>
+				<p name="ComparisonOperator" type="string" v="="/>
+			</a>
+		</func>
+		<func name="Function3" qi="" disabled="y">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF is mandatory &amp; Must have length of 9" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving KYC DOC TYPE" id="12" dcomap.open="F=DOC TYPE_SAKYC" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Doc Type is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving KYC ID proof docs" id="13" dcomap.open="F=ID PROOF DOCUMENTS_SAKYC" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="True"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="No"/>
+				<p name="Target" type="string" v="@F.IDProof"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.D.P\DOC TYPE"/>
+				<p name="Text2" type="string" v="IDENTITY PROOF"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="Yes"/>
+				<p name="Target" type="string" v="@F.IDProof"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="Yes"/>
+				<p name="Target" type="string" v="@P.IDProof"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" qi="">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompareNot" qi="" disabled="y">
+				<p name="Text1" type="string" v="@B.D.P\DOC TYPE"/>
+				<p name="Text2" type="string" v="IDENTITY PROOF"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" disabled="y">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" disabled="y"/>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="" disabled="y">
+				<p name="Text1" type="string" v="Available"/>
+				<p name="Text2" type="string" v="@F.IDProof1"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="Yes"/>
+				<p name="Text2" type="string" v="@F.IDProof"/>
+			</a>
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ID proof  is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving KYC Add proof docs" id="14" dcomap.open="F=ADDRESS PROOF DOCUMENTS_SAKYC" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="True"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="No"/>
+				<p name="Target" type="string" v="@F.AddID"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.D.P\DOC TYPE"/>
+				<p name="Text2" type="string" v="ADDRESS PROOF"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="Yes"/>
+				<p name="Target" type="string" v="@F.AddID"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="Yes"/>
+				<p name="Target" type="string" v="@P.AddID"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" qi="">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" disabled="y"/>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="Yes"/>
+				<p name="Text2" type="string" v="@F.AddID"/>
+			</a>
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Address proof  is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving KYC Photo identity " id="15" dcomap.open="F=PHOTO IDENTITY_SAKYC" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="True"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="No"/>
+				<p name="Target" type="string" v="@F.PhotoID"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.D.P\DOC TYPE"/>
+				<p name="Text2" type="string" v="PHOTOGRAPH"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="Yes"/>
+				<p name="Target" type="string" v="@F.PhotoID"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="Yes"/>
+				<p name="Target" type="string" v="@P.PhotoID"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" qi="">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi="" disabled="y"/>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="Yes"/>
+				<p name="Text2" type="string" v="@F.PhotoID"/>
+			</a>
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Photograph proof  is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving nomination account number" id="16" dcomap.open="F=ACCOUNT NUMBER_SANOM;F=ACCOUNT NUMBER_SACH;F=ACCOUNT NUMBER_FDNOM" qi="">
+		<func name="Function2" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="20"/>
+				<p name="ComparisonOperator" type="string" v="="/>
+			</a>
+		</func>
+		<func name="Function3" qi="" disabled="y">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Account number is mandatory &amp; must have length of 20 !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving Nomination Customer name" id="17" qi="" dcomap.open="F=CUSTOMER NAME_SANOM;F=CUSTOMER NAME_SACH;F=CUSTOMER NAME_FDNOM">
+		<func name="Function1" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function3" qi="" disabled="y">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Customer name is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving Nomination Reg No" id="18" qi="" dcomap.open="F=NOMINATION REG NUMBER_SANOM;F=NOMINATION-REG-NUMBER_CANOM;F=NOMINATION REG NUMBER_FDNOM">
+		<func name="Function 3" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" qi="">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="20"/>
+				<p name="ComparisonOperator" type="string" v="="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="Nomination Reg No is mandatory &amp; Must have length of 20"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving cheque  account number" id="19" dcomap.open="F=ACCOUNT NUMBER_SACH;F=ACCOUNT NUMBER_CACH" qi="">
+		<func name="Function2" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="20"/>
+				<p name="ComparisonOperator" type="string" v="="/>
+			</a>
+		</func>
+		<func name="Function3" qi="" disabled="y">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Account number is mandatory &amp;  must have length of 20 !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving Cheque Customer name" id="20" dcomap.open="F=CUSTOMER NAME_SACH" qi="">
+		<func name="Function1" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function3" qi="" disabled="y">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Customer name is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving ATM  account number" id="22" dcomap.open="F=ACCOUNT NUMBER_SAATM" qi="">
+		<func name="Function2" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="20"/>
+				<p name="ComparisonOperator" type="string" v="="/>
+			</a>
+		</func>
+		<func name="Function3" qi="" disabled="y">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Account number is mandatory &amp; must have length of 20 !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving ATM Customer name" id="21" dcomap.open="F=CUSTOMER NAME_SAATM;F=CUSTOMER NAME_CAATM" qi="">
+		<func name="Function1" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" qi="">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function3" qi="" disabled="y">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Customer name is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Saving ATM card No" id="23" dcomap.open="F=ATM CARD NUMBER_SAATM;F=ATM CARD NUMBER_CAATM" qi="">
+		<func name="Function2" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable" qi="">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="20"/>
+				<p name="ComparisonOperator" type="string" v="="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ATM card number is mandatory &amp; must have length of 20 !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Current Account Rules=====================================" id="26"/>
+	<rule name="Current a/c KYC" id="27" qi="" dcomap.open="F=ACCOUNT NUMBER_CAKYC">
+		<func name="Function 3" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable" qi="">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function3" qi="" disabled="y">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="KYC is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Current KYC DOC TYPE" id="28" qi="" dcomap.open="F=DOC TYPE_CAKYC">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Doc Type is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Current KYC identity proof docs" id="29" dcomap.open="F=IDENTITY PROOF OF_CAKYC" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="True"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="No"/>
+				<p name="Target" type="string" v="@F.AddID"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.D.P\DOC TYPE_1"/>
+				<p name="Text2" type="string" v="Identity Proof"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="Yes"/>
+				<p name="Target" type="string" v="@F.AddID"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" disabled="y">
+				<p name="Source" type="string" v="Yes"/>
+				<p name="Target" type="string" v="@P.AddID"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength" qi="">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" disabled="y"/>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="Yes"/>
+				<p name="Text2" type="string" v="@F.AddID"/>
+			</a>
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Identity proof  is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Current KYC Identity Proof of firm" id="30" dcomap.open="F=IDENTY PROOF OF FIRM_CAKYC" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="True"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="No"/>
+				<p name="Target" type="string" v="@F.AuSign"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.D.P\IDENTITY PROOF OF"/>
+				<p name="Text2" type="string" v="Firm"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="Yes"/>
+				<p name="Target" type="string" v="@F.AuSign"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" disabled="y"/>
+		</func>
+		<func name="Copy ofFunction3" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="Yes"/>
+				<p name="Text2" type="string" v="@F.AuSign"/>
+			</a>
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Identity proof of firm is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Current KYC Authorised sign" id="34" dcomap.open="F=ID PROOF OF  AUTHORIZED SIGNATORY_CAKYC" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="True"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="No"/>
+				<p name="Target" type="string" v="@F.AuSign"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.D.P\IDENTITY PROOF OF"/>
+				<p name="Text2" type="string" v="Authorized Signatory"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="Yes"/>
+				<p name="Target" type="string" v="@F.AuSign"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" disabled="y"/>
+		</func>
+		<func name="Copy ofFunction3" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="Yes"/>
+				<p name="Text2" type="string" v="@F.AuSign"/>
+			</a>
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Authorized Sign is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Current KYC Address proof of" id="31" qi="" dcomap.open="F=ADDRESS PROOF OF_CAKYC">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="True"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="No"/>
+				<p name="Target" type="string" v="@F.AddF"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.D.P\DOC TYPE_1"/>
+				<p name="Text2" type="string" v="Address Proof"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="Yes"/>
+				<p name="Target" type="string" v="@F.AddF"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+			<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi="" disabled="y"/>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="Yes"/>
+				<p name="Text2" type="string" v="@F.AddF"/>
+			</a>
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Address of firm is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Current KYC Address proof of firm" id="32" dcomap.open="F=ADDRESS PROOF OF FIRM_CAKYC" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="True"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="No"/>
+				<p name="Target" type="string" v="@F.AddFirm1"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.D.P\ADDRESS PROOF OF"/>
+				<p name="Text2" type="string" v="Firm"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="Yes"/>
+				<p name="Target" type="string" v="@F.AddFirm1"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="Yes"/>
+				<p name="Text2" type="string" v="@F.AddFirm1"/>
+			</a>
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Address proof of firm is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Current KYC Address proof of Authorized sign" id="35" qi="" dcomap.open="F=ADDRESS PROOF OF AUTORISED SIGNATURE_CAKYC">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="True"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="No"/>
+				<p name="Target" type="string" v="@F.AddFirm1"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.D.P\ADDRESS PROOF OF"/>
+				<p name="Text2" type="string" v="Authorized Signatory"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="Yes"/>
+				<p name="Target" type="string" v="@F.AddFirm1"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="Yes"/>
+				<p name="Text2" type="string" v="@F.AddFirm1"/>
+			</a>
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Address proof of authorized sign is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Current KYC Photo identity " id="33" dcomap.open="F=PHOTO IDENTITY_CAKYC" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable" qi="">
+				<p name="AllowOperatorOverride" type="string" v="True"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="No"/>
+				<p name="Target" type="string" v="@F.PhotoID"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.D.P\DOC TYPE_1"/>
+				<p name="Text2" type="string" v="Photograph"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="Yes"/>
+				<p name="Target" type="string" v="@F.PhotoID"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="Yes"/>
+				<p name="Text2" type="string" v="@F.PhotoID"/>
+			</a>
+			<a ns="Invoice" name="AddToErrorMsg" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Photograph proof  is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="FD Account Rules====================================" id="36"/>
+	<rule name="FD a/c KYC" id="37" qi="" dcomap.open="F=KYC_FD">
+		<func name="Function 3" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable" qi="">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="1"/>
+				<p name="ComparisonOperator" type="string" v="&gt;="/>
+			</a>
+		</func>
+		<func name="Function3" qi="">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="KYC is mandatory !" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="FD CIF" id="38" dcomap.open="F=CIF_FD;F=CIF_FD15" qi="">
+		<func name="Function2" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="AllowOnlyCharacters">
+				<p name="Target" type="string" v="@F"/>
+				<p name="AllowedCharacters" type="string" v="0123456789"/>
+			</a>
+			<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions"/>
+		</func>
+		<func name="Function 3" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetIsOverrideable">
+				<p name="AllowOperatorOverride" type="string" v="False"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsTextLength">
+				<p name="Target" type="string" v="@F"/>
+				<p name="Length" type="string" v="9"/>
+				<p name="ComparisonOperator" type="string" v="="/>
+			</a>
+		</func>
+		<func name="Function3" qi="" disabled="y">
+			<a ns="Invoice" name="AddToErrorMsg">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF is mandatory &amp; Must have length of 9" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

@@ -1,0 +1,785 @@
+<?xml-stylesheet type="text/xsl" href="..\..\dco.xsl"?>
+<S>
+	<B type="ZOLR">
+		<V n="ID">0</V>
+		<V n="TYPE">Batch</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Other" pos="0" min="0" max="0"/>
+		<D type="Document" pos="0" min="0" max="0"/>
+		<D type="MRP FIXATION DOC" pos="0" min="0" max="0"/>
+		<D type="OTS DOCUMENTS DOC" pos="0" min="0" max="0"/>
+		<D type="SUITFILE PERMISSION DOC" pos="0" min="0" max="0"/>
+		<D type="EMPANELMENT AND RENEWAL OF ADVOCATES DOC" pos="0" min="0" max="0"/>
+		<D type="EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT DOC" pos="0" min="0" max="0"/>
+		<D type="BILL PAYMENT OF ADVOCATES DOC" pos="0" min="0" max="0"/>
+		<D type="BILL PAYMENT OF ENFORCEMENT AGENT DOC" pos="0" min="0" max="0"/>
+		<D type="BILL PAYMENT OF PUBLICATION BILL DOC" pos="0" min="0" max="0"/>
+		<D type="APPOINTMENT OF AUTHORIZED OFFICER DOC" pos="0" min="0" max="0"/>
+	</B>
+	<D type="Document">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Page" pos="1" min="1" max="0"/>
+		<P type="TrailPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="MRP FIXATION DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="MRP FIXATION" pos="1" min="1" max="1"/>
+		<P type="MRP FIXATION_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="OTS DOCUMENTS DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="OTS DOCUMENTS" pos="1" min="1" max="1"/>
+		<P type="OTS DOCUMENTS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SUITFILE PERMISSION DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SUITFILE PERMISSION" pos="1" min="1" max="1"/>
+		<P type="SUITFILE PERMISSION_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="EMPANELMENT AND RENEWAL OF ADVOCATES DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="EMPANELMENT AND RENEWAL OF ADVOCATES" pos="1" min="1" max="1"/>
+		<P type="EMPANELMENT AND RENEWAL OF ADVOCATES_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT" pos="1" min="1" max="1"/>
+		<P type="EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="BILL PAYMENT OF ADVOCATES DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="BILL PAYMENT OF ADVOCATES" pos="1" min="1" max="1"/>
+		<P type="BILL PAYMENT OF ADVOCATES_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="BILL PAYMENT OF ENFORCEMENT AGENT DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="BILL PAYMENT OF ENFORCEMENT AGENT" pos="1" min="1" max="1"/>
+		<P type="BILL PAYMENT OF ENFORCEMENT AGENT_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="BILL PAYMENT OF PUBLICATION BILL DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="BILL PAYMENT OF PUBLICATION BILL" pos="1" min="1" max="1"/>
+		<P type="BILL PAYMENT OF PUBLICATION BILL_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="APPOINTMENT OF AUTHORIZED OFFICER DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="APPOINTMENT OF AUTHORIZED OFFICER" pos="1" min="1" max="1"/>
+		<P type="APPOINTMENT OF AUTHORIZED OFFICER_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<P type="Other">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="Page">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Document_Type" pos="0" min="0" max="0"/>
+	</P>
+	<P type="TrailPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="MRP FIXATION">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER ID" pos="0" min="0" max="0"/>
+		<F type="BORROWER NAME" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT TYPE_MRP FIXATION" pos="0" min="0" max="0"/>
+	</P>
+	<P type="MRP FIXATION_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="OTS DOCUMENTS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="DATE OF NPA" pos="0" min="0" max="0"/>
+		<F type="BRANCH CODE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="OTS DOCUMENTS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SUITFILE PERMISSION">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="BORROWER NAME" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER ID" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT TYPE_SUITFILE PERMISSION" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SUITFILE PERMISSION_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="EMPANELMENT AND RENEWAL OF ADVOCATES">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ADVOCATE NAME" pos="0" min="0" max="0"/>
+		<F type="REGION" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT TYPE_EMPANELMENT AND RENEWAL OF ADVOCATES" pos="0" min="0" max="0"/>
+	</P>
+	<P type="EMPANELMENT AND RENEWAL OF ADVOCATES_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ENF AGENT NAME" pos="0" min="0" max="0"/>
+		<F type="REGION" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT TYPE_EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT" pos="0" min="0" max="0"/>
+	</P>
+	<P type="EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="BILL PAYMENT OF ADVOCATES">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ADVOCATE NAME" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="BORROWER NAME" pos="0" min="0" max="0"/>
+		<F type="BILL DATE" pos="0" min="0" max="0"/>
+		<F type="BILL AMOUNT" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT TYPE_BILL PAYMENT OF ADVOCATES" pos="0" min="0" max="0"/>
+	</P>
+	<P type="BILL PAYMENT OF ADVOCATES_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="BILL PAYMENT OF ENFORCEMENT AGENT">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="BILL AMOUNT" pos="0" min="0" max="0"/>
+		<F type="ENFORCEMENT AGENT NAME" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="BORROWER NAME" pos="0" min="0" max="0"/>
+		<F type="BILL DATE" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT TYPE_BILL PAYMENT OF ENFORCEMENT AGENT" pos="0" min="0" max="0"/>
+	</P>
+	<P type="BILL PAYMENT OF ENFORCEMENT AGENT_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="BILL PAYMENT OF PUBLICATION BILL">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="BILL AMOUNT" pos="0" min="0" max="0"/>
+		<F type="PUBLISHER NAME" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="BORROWER NAME" pos="0" min="0" max="0"/>
+		<F type="BILL DATE" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT TYPE_BILL PAYMENT OF PUBLICATION BILL" pos="0" min="0" max="0"/>
+	</P>
+	<P type="BILL PAYMENT OF PUBLICATION BILL_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="APPOINTMENT OF AUTHORIZED OFFICER">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="BILL AMOUNT" pos="0" min="0" max="0"/>
+		<F type="NAME OF AUTHORIZED OFFICER" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="BRANCH NAME" pos="0" min="0" max="0"/>
+		<F type="BORROWER NAME" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT TYPE_APPOINTMENT OF AUTHORIZED OFFICER" pos="0" min="0" max="0"/>
+	</P>
+	<P type="APPOINTMENT OF AUTHORIZED OFFICER_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<F type="Frequency_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="RecogType">4</V>
+		<F type="Frequency_OMR1_OMR1" pos="0" min="0" max="0"/>
+	</F>
+	<F type="Signature_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Frequency_OMR1_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Field11">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document_Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:NAV Document_Type</V>
+	</F>
+	<F type="ACCOUNT NO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER ID">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="BORROWER NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT TYPE_MRP FIXATION">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_MRP FIXATION</V>
+	</F>
+	<F type="DATE OF NPA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="DataType">3</V>
+		<V n="Date Pattern">dd/MM/yyyy</V>
+	</F>
+	<F type="BRANCH CODE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT TYPE_SUITFILE PERMISSION">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_SUITFILE PERMISSION</V>
+	</F>
+	<F type="ADVOCATE NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="REGION">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT TYPE_EMPANELMENT AND RENEWAL OF ADVOCATES">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_EMPANELMENT AND RENEWAL OF ADVOCATES</V>
+	</F>
+	<F type="ENF AGENT NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT TYPE_EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT</V>
+	</F>
+	<F type="BILL DATE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="DataType">3</V>
+		<V n="Date pattern">dd/MM/yyyy</V>
+	</F>
+	<F type="BILL AMOUNT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT TYPE_BILL PAYMENT OF ADVOCATES">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_BILL PAYMENT OF ADVOCATES</V>
+	</F>
+	<F type="ENFORCEMENT AGENT NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT TYPE_BILL PAYMENT OF ENFORCEMENT AGENT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_BILL PAYMENT OF ENFORCEMENT AGENT</V>
+	</F>
+	<F type="PUBLISHER NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT TYPE_BILL PAYMENT OF PUBLICATION BILL">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_BILL PAYMENT OF PUBLICATION BILL</V>
+	</F>
+	<F type="NAME OF AUTHORIZED OFFICER">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="BRANCH NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT TYPE_APPOINTMENT OF AUTHORIZED OFFICER">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_APPOINTMENT OF AUTHORIZED OFFICER</V>
+	</F>
+	<DICT n="P:DOCUMENT TYPE_MRP FIXATION">
+		<W v="Copy of MRP Notes">Copy of MRP Notes</W>
+		<W v="Copy of Valuation of property">Copy of Valuation of property</W>
+		<W v="Copy of MRP Letters">Copy of MRP Letters</W>
+		<W v="Other Documents">Other Documents</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_SUITFILE PERMISSION">
+		<W v="Copy of Office Note of Suit filed permission">Copy of Office Note of Suit filed permission</W>
+		<W v="Copy of authorization letter">Copy of authorization letter</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_EMPANELMENT AND RENEWAL OF ADVOCATES">
+		<W v="Office Note">Office Note</W>
+		<W v="Letter to Advocate">Letter to Advocate</W>
+		<W v="Other Related Document">Other Related Document</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT">
+		<W v="Office Note">Office Note</W>
+		<W v="Letter to Enf. Agent">Letter to Enf. Agent</W>
+		<W v="Other Related Document">Other Related Document</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_BILL PAYMENT OF ADVOCATES">
+		<W v="BILL COPY">BILL COPY</W>
+		<W v="Reccomendation letter">Reccomendation letter</W>
+		<W v="Copy of plaint">Copy of plaint</W>
+		<W v="Office Note">Office Note</W>
+		<W v="Sanction Letter">Sanction Letter</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_BILL PAYMENT OF ENFORCEMENT AGENT">
+		<W v="BILL COPY">BILL COPY</W>
+		<W v="Reccomendation letter">Reccomendation letter</W>
+		<W v="Document of action taken by agent">Document of action taken by agent</W>
+		<W v="Office Note">Office Note</W>
+		<W v="Sanction Letter">Sanction Letter</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_BILL PAYMENT OF PUBLICATION BILL">
+		<W v="BILL COPY">BILL COPY</W>
+		<W v="Reccomendation letter">Reccomendation letter</W>
+		<W v="Proof of publication">Proof of publication</W>
+		<W v="Office Note">Office Note</W>
+		<W v="Sanction Letter">Sanction Letter</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_APPOINTMENT OF AUTHORIZED OFFICER">
+		<W v="BILL COPY">BILL COPY</W>
+		<W v="Reccomendation letter">Reccomendation letter</W>
+		<W v="Proof of publication">Proof of publication</W>
+		<W v="Office Note">Office Note</W>
+		<W v="Sanction Letter">Sanction Letter</W>
+	</DICT>
+</S>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="106" name="Rule for deletion of Blank Page" ver="2" modder="dmstest10.1" qi="" dt="10/17/23 20:08:12.144 ">
+	<rule name="Deleting Blank Page" id="1" dcomap.open="B">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+				<p name="Type" v="Blank"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

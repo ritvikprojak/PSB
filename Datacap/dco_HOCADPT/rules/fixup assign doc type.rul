@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="86" name="FIXUP Assign Doc Type" ver="1" modder="dmstest10.1" qi="">
+	<rule name="NAV Assign Doc Type Rule" id="1" dcomap.open="P=Page" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="@P.CustomPageType"/>
+				<p name="Target" type="string" v="@P.TYPE"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="@P.CustomPageType"/>
+				<p name="Target" type="string" v="@B.MainPage"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV Assign Trail Page Doc Type Rule" id="2" dcomap.open="P=TrailPage" qi="">
+		<func name="Function1" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="@B.MainPage"/>
+				<p name="Target" type="string" v="@P.TYPE"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

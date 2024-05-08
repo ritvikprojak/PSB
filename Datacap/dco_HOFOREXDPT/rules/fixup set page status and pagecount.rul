@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="111" name="FIXUP Set Page Status And PageCount" ver="1" modder="dmstest10.1" qi="">
+	<rule name="Set page status rule1" id="1" dcomap.open="P=SWIFT TENDER RFP;P=SWIFT TENDER AGGREMENT/SLA/BG;P=SWIFT NOTES;P=SWIFT AUDIT;P=SWIFT REPORTING;P=SWIFT DATA;P=SWIFT VENDOR RELATED DATA;P=SWIFT PAYMENT NOTE;P=COMPLIANCE MANUAL;P=COMPLIANCE NOTE;P=COMPLIANCE AUDIT;P=AB EXPORT NOTE;P=BACKUP REPORT;P=EDPMS NOTE;P=RECONCILIATION NOTE" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Set page status rule1 - TrailingPages" id="2" dcomap.open="P=SWIFT TENDER RFP_TrailingPage;P=SWIFT TENDER AGGREMENT/SLA/BG_TrailingPage;P=SWIFT NOTES_TrailingPage;P=SWIFT AUDIT_TrailingPage;P=SWIFT REPORTING_TrailingPage;P=SWIFT DATA_TrailingPage;P=SWIFT PAYMENT NOTE_TrailingPage;P=COMPLIANCE MANUAL_TrailingPage;P=COMPLIANCE NOTE_TrailingPage;P=COMPLIANCE AUDIT_TrailingPage;P=AB EXPORT NOTE_TrailingPage;P=BACKUP REPORT_TrailingPage;P=EDPMS NOTE_TrailingPage;P=RECONCILIATION NOTE_TrailingPage" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Pages Count" id="3" dcomap.open="B">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+				<p name="Target" type="string" v="@B.PagesCount"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

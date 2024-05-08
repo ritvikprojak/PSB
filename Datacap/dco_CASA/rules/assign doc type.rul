@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="25" name="Assign Doc Type" ver="1" modder="admin.1" qi="">
+  <rule name="Assign Doc Type Rule" id="1" dcomap.open="P=Page">
+    <func name="Function1">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+        <p name="Source" type="string" v="@P.CustomPageType" />
+        <p name="Target" type="string" v="@P.TYPE" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

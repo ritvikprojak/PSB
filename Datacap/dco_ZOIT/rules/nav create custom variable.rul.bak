@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="47" name="NAV Create Custom Variable" ver="1" modder="admin.1" qi="">
+		<rule name="rCreate Variable" id="1" qi="" dcomap.open="F=Document_Type">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="47" name="NAV Create Custom Variable" ver="2" modder="admin.1" qi="" dt="03/29/23 12:27:41.93 ">
+		<rule name="NAV rCreate Variable" id="1" qi="" dcomap.open="F=Document_Type">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="47" name="NAV Create Custom Variable" ver="3" modder="admin.1" qi="" dt="04/04/23 13:40:46.341 ">
+		<rule name="NAV rCreate Variable" id="1" qi="" dcomap.open="F=Document_Type">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.MainPage"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="47" name="NAV Create Custom Variable" ver="4" modder="admin.1" qi="" dt="04/04/23 13:45:54.959 ">
+		<rule name="NAV rCreate Variable" id="1" qi="" dcomap.open="F=Document_Type">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="47" name="NAV Create Custom Variable" ver="5" modder="admin.1" qi="" dt="04/12/23 18:22:42.870 ">
+		<rule name="NAV rCreate Variable" id="1" qi="" dcomap.open="F=Document_Type">
+			<func name="Function1" qi="">
+				<a ns="Validations" name="IsFieldPercentNumeric">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="100"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@DICT_VALUE(@F)"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="47" name="NAV Create Custom Variable" ver="6" modder="admin.1" qi="" dt="04/12/23 18:41:59.278 ">
+		<rule name="NAV rCreate Variable" id="1" qi="" dcomap.open="F=Document_Type">
+			<func name="Function1" qi="">
+				<a ns="Validations" name="IsFieldPercentNumeric">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="100" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@DICT_VALUE(P:DOCUMENT TYPE)"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="47" name="NAV Create Custom Variable" ver="7" modder="admin.1" qi="" dt="04/12/23 18:45:45.981 ">
+		<rule name="NAV rCreate Variable" id="1" qi="" dcomap.open="F=Document_Type">
+			<func name="Function1" qi="">
+				<a ns="Validations" name="IsFieldPercentNumeric">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="100" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@DICT_VALUE(..\P:DOCUMENT TYPE)"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="47" name="NAV Create Custom Variable" ver="8" modder="admin.1" qi="" dt="04/12/23 18:52:34.914 ">
+		<rule name="NAV rCreate Variable" id="1" qi="" dcomap.open="F=Document_Type">
+			<func name="Function1" qi="">
+				<a ns="Validations" name="IsFieldPercentNumeric">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="100" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@DICT_VALUE(@F.DICT)"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="47" name="NAV Create Custom Variable" ver="9" modder="admin.1" qi="" dt="04/12/23 19:13:11.443 ">
+		<rule name="NAV rCreate Variable" id="1" qi="" dcomap.open="F=Document_Type">
+			<func name="Function1" qi="">
+				<a ns="Validations" name="IsFieldPercentNumeric">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="100" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@DICT_WORD(@F.DICT)"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="47" name="NAV Create Custom Variable" ver="10" modder="admin.1" qi="" dt="04/26/23 10:49:34.271 ">
+		<rule name="NAV rCreate Variable" id="1" qi="" dcomap.open="F=Document_Type">
+			<func name="Function1" qi="">
+				<a ns="Validations" name="IsFieldPercentNumeric">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="100" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@DICT_VALUE(P:DOCUMENT TYPE)"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

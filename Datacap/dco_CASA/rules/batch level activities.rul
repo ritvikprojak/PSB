@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="38" name="Batch level activities" ver="16" modder="admin.1" qi="" dt="06/14/23 14:13:03.249 ">
+	<rule name="CreateFields" id="2" qi="" dcomap.open="P=Page">
+		<func name="Function1">
+			<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+		</func>
+	</rule>
+	<rule name="Set account number to field" id="1" qi="" dcomap.open="F=ACCOUNT NUMBER">
+		<func name="Set field value" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@B.bAccountNumber"/>
+				<p name="Target" type="string" v="@F"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Create batch parameters" id="3" dcomap.open="B">
+		<func name="Create empty batch variables" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v=""/>
+				<p name="Target" type="string" v="@B.bSchemeCode"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v=""/>
+				<p name="Target" type="string" v="@B.bSchemeDesc"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v=""/>
+				<p name="Target" type="string" v="@B.bACCTSOLID"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v=""/>
+				<p name="Target" type="string" v="@B.bACCTOPENDATE"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v=""/>
+				<p name="Target" type="string" v="@B.bOPERATORSOLID"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

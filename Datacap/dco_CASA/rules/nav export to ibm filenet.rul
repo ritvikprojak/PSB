@@ -1,0 +1,2045 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="109" name="NAV Export to IBM FileNet" ver="7" modder="dmstest10.1" qi="" dt="11/01/23 09:07:21.858 ">
+	<rule name="(B) OS Config" id="1" dcomap.open="B" qi="">
+		<func name="Function1" disabled="false" qi="">
+			<a name="FNP8_SetURL" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@APPVAR(values/gen/FileNetURL)" name="StrParam"/>
+			</a>
+			<a name="FNP8_Login" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@APPVAR(values/gen/FileNetUserID),@APPVAR(values/adv/FileNetPassword)" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetLocale" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="en_US" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetTargetClassID" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ObjectStore" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetTargetObjectID" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CASA" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetDestinationFolder" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="\CASAExport\" name="StrParam"/>
+			</a>
+			<a name="FNP8_CreateFolder" ns="FileNetP8.dll" disabled="True" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetRetry" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="2" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetTimeout" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="600000" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Open SAVING ACCOUNT OPENING FORM DOC" id="2" dcomap.open="D:SAVING ACCOUNT OPENING FORM DOC;D=SAVING ACCOUNT OPENING FORM DOC" qi="">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Open SAVING KYC DOCUMENT DOC" id="3" dcomap.open="D:SAVING KYC DOCUMENT DOC,D=SAVING KYC DOCUMENT DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Open SAVING NOMINATION FORM DOC" id="4" dcomap.open="D:SAVING NOMINATION FORM DOC;D=SAVING NOMINATION FORM DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Open SAVING CHEQUE BOOK APPLICATION DOC" id="5" dcomap.open="D:SAVING CHEQUE BOOK APPLICATION DOC;D=SAVING CHEQUE BOOK APPLICATION DOC" qi="">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Open SAVING ATM APPLICATION DOC" id="6" dcomap.open="D:SAVING ATM APPLICATION DOC;D=SAVING ATM APPLICATION DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Open CURRENT ACCOUNT OPENING FORM DOC" id="7" dcomap.open="D:CURRENT ACCOUNT OPENING FORM DOC;D=CURRENT ACCOUNT OPENING FORM DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Open CURRENT KYC_DOCUMENT DOC" id="8" dcomap.open="D:CURRENT KYC_DOCUMENT DOC;D=CURRENT KYC_DOCUMENT DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Open CURRENT NOMINATION-FORM DOC" id="9" dcomap.open="D:CURRENT NOMINATION-FORM DOC;D=CURRENT NOMINATION-FORM DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Open CURRENT CHEQUE_BOOK_APPLICATION DOC" id="10" dcomap.open="D:CURRENT CHEQUE_BOOK_APPLICATION DOC;D=CURRENT CHEQUE_BOOK_APPLICATION DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Open CURRENT ATM_APPLICATION DOC" id="11" dcomap.open="D:CURRENT ATM_APPLICATION DOC;D=CURRENT ATM_APPLICATION DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Open FD ACCOUNT OPENING FORM DOC" id="12" dcomap.open="D:FD ACCOUNT OPENING FORM DOC;D=FD ACCOUNT OPENING FORM DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Open FD NOMINATION_FORM DOC" id="13" dcomap.open="D:FD NOMINATION_FORM DOC;D=FD NOMINATION_FORM DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Open FD 15G_15H DOC" id="14" dcomap.open="D:FD 15G_15H DOC;D=FD 15G_15H DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document Close SAVING ACCOUNT OPENING FORM DOC" id="15" dcomap.close="D:SAVING NOMINATION FORM DOC,D=SAVING NOMINATION FORM DOC" qi="">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+		</func>
+		<func name="SAVING ACCOUNT OPENING FORM Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SavingAccountOpeningForm" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document close SAVING KYC DOCUMENT DOC" id="16" dcomap.close="D:SAVING KYC DOCUMENT DOC,D=SAVING KYC DOCUMENT DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="SAVING KYC DOCUMENT Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SavingAccountKYCDocument" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document close SAVING NOMINATION FORM DOC" id="17" dcomap.close="D:SAVING NOMINATION FORM DOC,D=SAVING NOMINATION FORM DOC" qi="">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="SAVING NOMINATION FORM Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SavingAccountNominationForm" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document close SAVING CHEQUE BOOK APPLICATION DOC" id="18" dcomap.close="D:SAVING CHEQUE BOOK APPLICATION DOC;D=SAVING CHEQUE BOOK APPLICATION DOC" qi="">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="SAVING CHEQUE BOOK APPLICATION Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SavingAccountChequeBookApplication" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document close SAVING ATM APPLICATION DOC" id="19" dcomap.close="D:SAVING ATM APPLICATION DOC;D=SAVING ATM APPLICATION DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="SAVING ATM APPLICATION Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="SavingAccountATMApplication" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document close CURRENT ACCOUNT OPENING FORM DOC" id="20" dcomap.close="D:CURRENT ACCOUNT OPENING FORM DOC;D=CURRENT ACCOUNT OPENING FORM DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="CURRENT ACCOUNT OPENING FORM  Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CurrentAccountOpeningForm" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document close CURRENT KYC_DOCUMENT DOC" id="21" dcomap.close="D:CURRENT KYC_DOCUMENT DOC;D=CURRENT KYC_DOCUMENT DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="CURRENT KYC_DOCUMENT DOC  Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CurrentAccountKYCDocument" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document close CURRENT NOMINATION-FORM DOC" id="22" dcomap.close="D:CURRENT NOMINATION-FORM DOC;D=CURRENT NOMINATION-FORM DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="CURRENT NOMINATION-FORM Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CurrentAccountNominationForm" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document close CURRENT CHEQUE_BOOK_APPLICATION DOC" id="23" dcomap.close="D:CURRENT CHEQUE_BOOK_APPLICATION DOC;D=CURRENT CHEQUE_BOOK_APPLICATION DOC" qi="">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="CURRENT CHEQUE_BOOK_APPLICATION Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CurrentAccountChequeBookApplication" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document close CURRENT ATM_APPLICATION DOC" id="24" dcomap.close="D:CURRENT ATM_APPLICATION DOC;D=CURRENT ATM_APPLICATION DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="CURRENT ATM_APPLICATION Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CurrentAccountATMApplication" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document close FD ACCOUNT OPENING FORM DOC" id="25" dcomap.close="D:FD ACCOUNT OPENING FORM DOC;D=FD ACCOUNT OPENING FORM DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="FD ACCOUNT OPENING Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="TermFDAccountOpeningForm" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document close FD NOMINATION_FORM DOC" id="26" dcomap.close="D:FD NOMINATION_FORM DOC;D=FD NOMINATION_FORM DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="FD NOMINATION_FORM Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="TermFDAccountNominationForm" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Document close FD 15G_15H DOC" id="27" dcomap.close="D:FD 15G_15H DOC;D=FD 15G_15H DOC">
+		<func name="Function1">
+			<a name="ChkDCOStatus" ns="DCO.dll" qi="If document deleted do not run on children nodes">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="128" name="StrParam"/>
+			</a>
+			<a name="SkipChildren" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="FD 15G_15H Rule 1" qi="">
+			<a ns="FileNetP8" name="FNP8_SetDocTitle">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@D.TYPE" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetDocClassId">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="TermFDAccount15G15H" name="StrParam"/>
+			</a>
+			<a name="FNP8_SetFileType" ns="FileNetP8.dll" disabled="False">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="pdf" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="FileName,@B.FNAME" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Name,@B.DeptCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Dept_Code,@B.DeptName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Name,@B.ZoneName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Zone_Code,@B.ZoneCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchName,@B.BranchName" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="BranchCode,@B.BranchCode" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Creator,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="Owner,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="LastModifier,@B.ScanOperator" name="StrParam"/>
+			</a>
+			<a name="FNP8_Upload" ns="FileNetP8.dll" disabled="false" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field ACCOUNT NUMBER" id="28" dcomap.open="F:ACCOUNT NUMBER,F=ACCOUNT NUMBER" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a name="FNP8_SetPropertyEx" ns="FileNetP8.dll" disabled="false">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountNumber,@F,String" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field CustomerName" id="29" dcomap.open="F:CUSTOMER NAME,F=CUSTOMER NAME" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a name="FNP8_SetPropertyEx" ns="FileNetP8.dll" disabled="false">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CustomerName,@F,String" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	
+	<rule name="Field ACCOUNT OPEN DATE" id="30" dcomap.open="F:ACCOUNT OPEN DATE;F=ACCOUNT OPEN DATE" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="AccountOpenDate,@F,DateTime"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field ACCOUNT TYPE_SA" id="31" dcomap.open="F:ACCOUNT TYPE_SA;F=ACCOUNT TYPE_SA" qi="">
+		<func name="Function1_ACCOUNTTYPE_SA">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2_ACCOUNTTYPE_SA" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3_ACCOUNTTYPE_SA">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="AccountType,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field SOL ID" id="32" dcomap.open="F:SOL ID;F=SOL ID" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="SOLID,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field DOB" id="33" dcomap.open="F:DOB;F=DOB" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="DOB,@F,DateTime"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field STAFF EMPLOYEE NO_SA" id="34" dcomap.open="F:STAFF EMPLOYEE NO_SA;F=STAFF EMPLOYEE NO_SA" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="StaffEmployeeNo,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field MOBILE" id="35" dcomap.open="F:MOBILE;F=MOBILE" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="Mobile,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field EMAIL ID_SA" id="36" dcomap.open="F:EMAIL ID_SA;F=EMAIL ID_SA" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="EMAILID,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field DOC TYPE_SAKYC" id="37" dcomap.open="F:DOC TYPE_SAKYC;F=DOC TYPE_SAKYC" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="DOCType,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field ID PROOF DOCUMENTS_SAKYC" id="38" dcomap.open="F:ID PROOF DOCUMENTS_SAKYC;F=ID PROOF DOCUMENTS_SAKYC" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="IDProofDocuments,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field ADDRESS PROOF DOCUMENTS_SAKYC" id="39" dcomap.open="F:ADDRESS PROOF DOCUMENTS_SAKYC;F=ADDRESS PROOF DOCUMENTS_SAKYC" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="AddressProofDocuments,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field PHOTO IDENTITY_SAKYC" id="40" dcomap.open="F:PHOTO IDENTITY_SAKYC;F=PHOTO IDENTITY_SAKYC" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="PhotoIdentity,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field NOMINATION REG NUMBER_SANOM" id="41" dcomap.open="F:NOMINATION REG NUMBER_SANOM;F=NOMINATION REG NUMBER_SANOM" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="NominationREGNumber,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field ATM CARD NUMBER_SAATM" id="42" dcomap.open="F:ATM CARD NUMBER_SAATM;F=ATM CARD NUMBER_SAATM" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="ATMCardNumber,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field ACCOUNT TYPE_CA" id="43" dcomap.open="F:ACCOUNT TYPE_CA;F=ACCOUNT TYPE_CA" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="AccountType,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field KYC_CA" id="44" dcomap.open="F:KYC_CA;F=KYC_CA" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="KYC,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field STAFF EMPLOYEE NO_CA" id="45" dcomap.open="F:STAFF EMPLOYEE NO_CA;F=STAFF EMPLOYEE NO_CA" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="StaffEmployeeNo,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field EMAIL ID_CA" id="46" dcomap.open="F:EMAIL ID_CA;F=EMAIL ID_CA" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="EMAILID,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field DOC TYPE_CAKYC" id="47" dcomap.open="F:DOC TYPE_CAKYC;F=DOC TYPE_CAKYC" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="DOCType,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field IDENTITY PROOF OF_CAKYC" id="48" dcomap.open="F:IDENTITY PROOF OF_CAKYC;F=IDENTITY PROOF OF_CAKYC" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="IdentityProofOf,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field IDENTY PROOF OF FIRM_CAKYC" id="49" dcomap.open="F:IDENTY PROOF OF FIRM_CAKYC;F=IDENTY PROOF OF FIRM_CAKYC" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="IdentityProofOfFirm,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field ID PROOF OF  AUTHORIZED SIGNATORY_CAKYC" id="50" dcomap.open="F:ID PROOF OF  AUTHORIZED SIGNATORY_CAKYC;F=ID PROOF OF  AUTHORIZED SIGNATORY_CAKYC" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="IDProofOfAuthorizedSignatory,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field ADDRESS PROOF OF_CAKYC" id="51" dcomap.open="F:ADDRESS PROOF OF_CAKYC;F=ADDRESS PROOF OF_CAKYC" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="AddressProofOf,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field ADDRESS PROOF OF FIRM_CAKYC" id="52" dcomap.open="F:ADDRESS PROOF OF FIRM_CAKYC;F=ADDRESS PROOF OF FIRM_CAKYC" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="AddressProofOfFirm,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field ADDRESS PROOF OF AUTORISED SIGNATURE_CAKYC" id="53" dcomap.open="F:ADDRESS PROOF OF AUTORISED SIGNATURE_CAKYC;F=ADDRESS PROOF OF AUTORISED SIGNATURE_CAKYC" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="AddressProofOfAuthorizedSignature,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field PHOTO IDENTITY_CAKYC" id="54" dcomap.open="F:PHOTO IDENTITY_CAKYC;F=PHOTO IDENTITY_CAKYC" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="PhotoIdentity,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field NOMINATION-REG-NUMBER_CANOM" id="55" dcomap.open="F:NOMINATION-REG-NUMBER_CANOM;F=NOMINATION-REG-NUMBER_CANOM" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="NominationREGNumber,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field ATM CARD NUMBER_CAATM" id="56" dcomap.open="F:ATM CARD NUMBER_CAATM;F=ATM CARD NUMBER_CAATM" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="ATMCardNumber,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field ACCOUNT TYPE_FD" id="57" dcomap.open="F:ACCOUNT TYPE_FD;F=ACCOUNT TYPE_FD" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="AccountType,@F,String" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field KYC_FD" id="58" dcomap.open="F:KYC_FD;F=KYC_FD" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="KYC,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field STAFF EMPLOYEE NO_FD" id="59" dcomap.open="F:STAFF EMPLOYEE NO_FD;F=STAFF EMPLOYEE NO_FD" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx" qi="">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="StaffEmployeeNo,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field EMAIL ID_FD" id="60" dcomap.open="F:EMAIL ID_FD;F=EMAIL ID_FD" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="EMAILID,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field NOMINATION REG NUMBER_FDNOM" id="61" dcomap.open="F:NOMINATION REG NUMBER_FDNOM;F=NOMINATION REG NUMBER_FDNOM" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="FileNetP8" name="FNP8_SetPropertyEx">
+				<p type="bInter"/>
+				<p type="bDebug"/>
+				<p type="strParam" v="NominationREGNumber,@F,String"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Field CIF" id="62" dcomap.open="F:CIF,F=CIF" qi="">
+		<func name="Function1">
+			<a name="rrCompare" ns="rrunner.dll" qi="If the page status is deleted, do not run other functions for this field.">
+				<p name="object1" v="75"/>
+				<p name="object2" v="@P.STATUS"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="rrunner" name="rrCompare" qi="">
+				<p name="object1" v="@EMPTY"/>
+				<p name="object2" v="@F"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a name="FNP8_SetPropertyEx" ns="FileNetP8.dll" disabled="false">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="CIF,@F,String" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

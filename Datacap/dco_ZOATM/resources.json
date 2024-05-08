@@ -1,0 +1,25 @@
+{
+	
+	// fields (includes batch-level fields)
+	"field.BRANCH_NAME":"BRANCH NAME",
+	"field.BRANCH_CODE":"BRANCH CODE",
+	"field.TRANSACTION_DATE":"TRANSACTION DATE",
+	"field.NOTE_TYPE":"NOTE TYPE",
+	
+	// shortcuts
+	"shortcut.NAVVScan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyATM":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVScan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyATM":"Classify Document",
+	"task.NAVMaker":"Document Details",								
+	"task.NAVChecker":"Checker",
+	"task.NAVExport":"Export"
+}

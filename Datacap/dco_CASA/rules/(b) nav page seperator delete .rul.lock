@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="57" name="(B) NAV Page Seperator Delete" ver="2" modder="dmstest10.1" qi="" dt="06/20/23 21:53:24.863 ">
+	<rule name="(B) NAV Page Delete Separator Rule" id="1" qi="" dcomap.open="B">
+		<func name="Function1">
+			<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+				<p name="Type" v="Document_Separator"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="(P) NAV Page Set for no seperator" id="2" dcomap.open="P=Page" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="Page"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="TrailPage"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

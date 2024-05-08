@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="21" name="NAV Vscan" ver="1" modder="admin.1" qi="">
+		<rule name="Scan" id="1" dcomap.open="B" dcomap.close="">
+			<func name="HO PL DEV DPT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@JOBNAME"/>
+					<p name="Text2" type="string" v="HO PL DEV DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder" qi="">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOPLDEVInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="1"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder" disabled="y">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPVAR(values/gen/ProcessedFolder)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="21" name="NAV Vscan" ver="2" modder="admin.1" qi="" dt="03/29/23 12:25:53.584 ">
+		<rule name="NAV Scan" id="1" dcomap.open="B" dcomap.close="" qi="">
+			<func name="HO PL DEV DPT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@JOBNAME"/>
+					<p name="Text2" type="string" v="HO PL DEV DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder" qi="">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOPLDEVInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="1"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder" disabled="y">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPVAR(values/gen/ProcessedFolder)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="21" name="NAV Vscan" ver="3" modder="admin.1" qi="" dt="03/29/23 17:04:13.986 ">
+		<rule name="NAV Scan" id="1" dcomap.open="B" dcomap.close="" qi="">
+			<func name="HO PL DEV DPT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+					<p name="Text1" type="string" v="@JOBNAME"/>
+					<p name="Text2" type="string" v="NAV HO PL DEV DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder" qi="">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOPLDEVInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="1"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder" disabled="y">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPVAR(values/gen/ProcessedFolder)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="21" name="NAV Vscan" ver="4" modder="admin.1" qi="" dt="04/03/23 12:07:23.828 ">
+		<rule name="NAV Scan" id="1" dcomap.open="B" dcomap.close="" qi="">
+			<func name="HO PL DEV DPT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+					<p name="Text1" type="string" v="@JOBNAME"/>
+					<p name="Text2" type="string" v="NAV HO PL DEV DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder" qi="">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOPLDEVInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs" qi="">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="10"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder" disabled="y">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPVAR(values/gen/ProcessedFolder)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="21" name="NAV Vscan" ver="5" modder="admin.1" qi="" dt="10/03/23 10:47:29.237 ">
+		<rule name="NAV Scan" id="1" dcomap.open="B" dcomap.close="" qi="">
+			<func name="HO CA DPT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@JOBNAME"/>
+					<p name="Text2" type="string" v="NAV HO CA DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder" qi="">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOPLDEVInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs" qi="">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="10"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder" disabled="y">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPVAR(values/gen/ProcessedFolder)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="21" name="NAV Vscan" ver="6" modder="admin.1" qi="" dt="10/03/23 10:49:38.967 ">
+		<rule name="NAV Scan" id="1" dcomap.open="B" dcomap.close="" qi="">
+			<func name="HO CA DPT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+					<p name="Text1" type="string" v="@JOBNAME"/>
+					<p name="Text2" type="string" v="NAV HO PL DEV DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder" qi="">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOPLDEVInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs" qi="">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="10"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder" disabled="y">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPVAR(values/gen/ProcessedFolder)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="21" name="NAV Vscan" ver="7" modder="admin.1" qi="" dt="10/03/23 21:16:26.603 ">
+		<rule name="NAV Scan" id="1" dcomap.open="B" dcomap.close="" qi="">
+			<func name="HO ZO IT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+					<p name="Text1" type="string" v="@JOBNAME"/>
+					<p name="Text2" type="string" v="NAV HO PL DEV DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder" qi="">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOPLDEVInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs" qi="">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="10"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder" disabled="y">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPVAR(values/gen/ProcessedFolder)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

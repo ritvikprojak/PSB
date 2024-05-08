@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="61" name="NAV Get Accountnumber, CBS version" ver="1" modder="admin.1" qi="">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="61" name="NAV Get Accountnumber, CBS version" ver="2" modder="admin.1" qi="" dt="05/09/23 12:53:08.104 ">
+		<rule name="NAV Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="61" name="NAV Get Accountnumber, CBS version" ver="3" modder="dmstest10.1" qi="" dt="10/20/23 19:36:19.692 ">
+		<rule name="NAV Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID,PB_DOC_FLG FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate DOCFLG Value" id="5" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="4,FALSE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.DOC_FLG"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="61" name="NAV Get Accountnumber, CBS version" ver="4" modder="dmstest10.1" qi="" dt="10/20/23 19:39:54.631 ">
+		<rule name="NAV Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID,PB_DOC_FLG FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate DOCFLG Value" id="5" qi="" dcomap.open="F=DOCFLG">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="4,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.DOC_FLG"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="61" name="NAV Get Accountnumber, CBS version" ver="5" modder="dmstest10.1" qi="" dt="10/27/23 13:26:38.232 ">
+		<rule name="NAV Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID,PB_DOCFLG FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate DOCFLG Value" id="5" qi="" dcomap.open="F=DOCFLG">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="4,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.DOC_FLG"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="61" name="NAV Get Accountnumber, CBS version" ver="6" modder="dmstest10.1" qi="" dt="10/30/23 23:39:41.778 ">
+		<rule name="NAV Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID,PB_DOCFLG,PB_BATCHTYPE FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate DOCFLG Value" id="5" qi="" dcomap.open="F=DOCFLG">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="4,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.DOC_FLG"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate BATCHTYPE Value" id="6" qi="" dcomap.open="F=BATCHTYPE">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="5,FALSE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="61" name="NAV Get Accountnumber, CBS version" ver="7" modder="dmstest10.1" qi="" dt="12/06/23 11:20:27.690 ">
+		<rule name="NAV Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID,PB_DOCFLG,PB_BATCHTYPE FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate DOCFLG Value" id="5" qi="" dcomap.open="F=DOCFLG">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="4,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.DOC_FLG"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="GetAccountNumber Trunc" id="7" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart" qi="">
+					<p name="Target" type="string" v="@P.bAccountNumber"/>
+					<p name="Length" type="string" v="4"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.AccNoBeforeTrunc"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate BATCHTYPE Value" id="6" qi="" dcomap.open="F=BATCHTYPE">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="61" name="NAV Get Accountnumber, CBS version" ver="8" modder="dmstest10.1" qi="" dt="12/06/23 11:34:24.94 ">
+		<rule name="NAV Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID,PB_DOCFLG,PB_BATCHTYPE FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate DOCFLG Value" id="5" qi="" dcomap.open="F=DOCFLG">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="4,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.DOC_FLG"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="GetAccountNumber Trunc" id="7" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart" qi="">
+					<p name="Target" type="string" v="@P.bAccountNumber"/>
+					<p name="Length" type="string" v="4"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.AccNoBeforeTrunc"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate BATCHTYPE Value" id="6" qi="" dcomap.open="F=BATCHTYPE">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="61" name="NAV Get Accountnumber, CBS version" ver="9" modder="dmstest10.1" qi="" dt="12/06/23 11:37:46.45 ">
+		<rule name="NAV Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID,PB_DOCFLG,PB_BATCHTYPE FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate DOCFLG Value" id="5" qi="" dcomap.open="F=DOCFLG">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="4,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.DOC_FLG"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="GetAccountNumber Trunc" id="7" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+					<p name="Length" type="string" v="4"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.AccNoBeforeTrunc"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate BATCHTYPE Value" id="6" qi="" dcomap.open="F=BATCHTYPE">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="61" name="NAV Get Accountnumber, CBS version" ver="10" modder="dmstest10.1" qi="" dt="12/06/23 11:42:03.575 ">
+		<rule name="NAV Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID,PB_DOCFLG,PB_BATCHTYPE FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate DOCFLG Value" id="5" qi="" dcomap.open="F=DOCFLG">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="4,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.DOC_FLG"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="GetAccountNumber Trunc" id="7" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart">
+					<p name="Target" type="string" v="@P.bAccountNumber"/>
+					<p name="Length" type="string" v="4"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.AccNoTrunc1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate BATCHTYPE Value" id="6" qi="" dcomap.open="F=BATCHTYPE">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="61" name="NAV Get Accountnumber, CBS version" ver="11" modder="dmstest10.1" qi="" dt="12/06/23 11:46:29.686 ">
+		<rule name="NAV Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID,PB_DOCFLG,PB_BATCHTYPE FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate DOCFLG Value" id="5" qi="" dcomap.open="F=DOCFLG">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="4,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.DOC_FLG"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="GetAccountNumber Trunc" id="7" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart" disabled="y" qi="">
+					<p name="Target" type="string" v="@P.bAccountNumber"/>
+					<p name="Length" type="string" v="4"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.AccNoTrunc1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate BATCHTYPE Value" id="6" qi="" dcomap.open="F=BATCHTYPE">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="61" name="NAV Get Accountnumber, CBS version" ver="12" modder="dmstest10.1" qi="" dt="12/06/23 11:50:17.518 ">
+		<rule name="NAV Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID,PB_DOCFLG,PB_BATCHTYPE FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate DOCFLG Value" id="5" qi="" dcomap.open="F=DOCFLG">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="4,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.DOC_FLG"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="GetAccountNumber Trunc" id="7" qi="">
+			<func name="Function1" disabled="y" qi="">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart" disabled="y" qi="">
+					<p name="Target" type="string" v="@P.bAccountNumber"/>
+					<p name="Length" type="string" v="4"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.AccNoTrunc1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate BATCHTYPE Value" id="6" qi="" dcomap.open="F=BATCHTYPE">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="61" name="NAV Get Accountnumber, CBS version" ver="13" modder="dmstest10.1" qi="" dt="12/06/23 11:51:56.548 ">
+		<rule name="NAV Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID,PB_DOCFLG,PB_BATCHTYPE FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate DOCFLG Value" id="5" qi="" dcomap.open="F=DOCFLG">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="4,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.DOC_FLG"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="GetAccountNumber Trunc" id="7" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart" qi="">
+					<p name="Target" type="string" v="@P.bAccountNumber"/>
+					<p name="Length" type="string" v="4"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.AccNoTrunc1"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate BATCHTYPE Value" id="6" qi="" dcomap.open="F=BATCHTYPE">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="61" name="NAV Get Accountnumber, CBS version" ver="14" modder="dmstest10.1" qi="" dt="12/06/23 11:56:13.596 ">
+		<rule name="NAV Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID,PB_DOCFLG,PB_BATCHTYPE FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate DOCFLG Value" id="5" qi="" dcomap.open="F=DOCFLG">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="4,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.DOC_FLG"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate BATCHTYPE Value" id="6" qi="" dcomap.open="F=BATCHTYPE">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="61" name="NAV Get Accountnumber, CBS version" ver="15" modder="dmstest10.1" qi="" dt="12/06/23 12:11:20.601 ">
+		<rule name="NAV Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID,PB_DOCFLG,PB_BATCHTYPE FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate DOCFLG Value" id="5" qi="" dcomap.open="F=DOCFLG">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="4,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.DOC_FLG"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Populate BATCHTYPE Value" id="6" qi="" dcomap.open="F=BATCHTYPE">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5,FALSE" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

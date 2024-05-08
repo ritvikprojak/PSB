@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="101" name="Block batch API Failure" ver="1" modder="dmstest10.1" qi=""/>
+	<ruleset id="101" name="Block batch API Failure" ver="2" modder="dmstest10.1" qi="" dt="10/31/23 13:43:07.418 ">
+		<rule name="Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function 1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.APIResponse"/>
+					<p name="Text2" type="string" v="API Failure"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function 2" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.APIResponse"/>
+					<p name="Text2" type="string" v="@EMPTY"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function 3">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.APIResponse"/>
+					<p name="Text2" type="string" v="API Response Received"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="AddCustomColumn">
+					<p name="ColumnName" type="string" qi="Enter Column name." v="pb_errdesc"/>
+					<p name="ColumnValue" type="string" qi="Provide Column value." v=""/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="101" name="Block batch API Failure" ver="3" modder="dmstest10.1" qi="" dt="11/16/23 18:49:53.998 ">
+		<rule name="Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function 1" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.APIResponse"/>
+					<p name="Text2" type="string" v="API Failure"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function 2" qi="" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.APIResponse"/>
+					<p name="Text2" type="string" v="@EMPTY"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function 3" disabled="y" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.APIResponse"/>
+					<p name="Text2" type="string" v="API Response Received"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="AddCustomColumn">
+					<p name="ColumnName" type="string" qi="Enter Column name." v="pb_errdesc"/>
+					<p name="ColumnValue" type="string" qi="Provide Column value." v=""/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

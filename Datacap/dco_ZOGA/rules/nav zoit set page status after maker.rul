@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="60" name="NAV ZOIT Set Page Status after maker" ver="24" modder="admin.1" qi="" dt="10/03/23 21:52:50.424 ">
+  <rule name="NAV Set page status rule" id="1" dcomap.open="P=OFFICE NOTES" qi="">
+    <func name="Function1" qi="">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+        <p name="Source" type="string" v="0" />
+        <p name="Target" type="string" v="@P.STATUS" />
+      </a>
+    </func>
+  </rule>
+  <rule name="NAV ReFormat Date" id="2" qi="" dcomap.open="F=DATE">
+    <func name="Function1" qi="">
+      <a ns="Validations" name="DateStampField" disabled="y">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+        <p type="strParam" v="dd/mm/yyyy" name="StrParam" />
+      </a>
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+        <p name="Source" type="string" v="en-IN" />
+        <p name="Target" type="string" v="@F.hr_locale" />
+      </a>
+      <a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat" qi="">
+        <p name="NewDateFormat" type="string" v="yyyy/mm/dd" />
+      </a>
+    </func>
+    <func name="Copy ofFunction1">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrGet" qi="" disabled="y">
+        <p name="Source" type="string" v="@DATE" />
+      </a>
+      <a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat" qi="" disabled="y">
+        <p name="NewDateFormat" type="string" v="dd/mm/yyyy" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

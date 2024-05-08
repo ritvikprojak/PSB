@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="35" name="Json Parsing" ver="4" modder="admin.1" dt="06/05/23 19:40:32.857 ">
+	<rule name="Json Parsing Rule1" id="1" dcomap.open="B" qi="">
+		<func name="Function2" qi="">
+			<a name="JsonParseGetEmployee" ns="net:CASAPSBCustomLibrary.SampleAction" qi=""/>
+		</func>
+	</rule>
+</ruleset>

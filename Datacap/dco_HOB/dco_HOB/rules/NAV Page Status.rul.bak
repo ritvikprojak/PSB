@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="16" name="NAV Page Status" ver="1" modder="admin.1">
+		<rule name="Page Status Rule" id="1" dcomap.open="D=Document" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+					<p name="Text1" type="string" v="@B.D.P.ID"/>
+					<p name="Text2" type="string" v="TM000001"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="NAV Page Status" ver="2" modder="admin.1" dt="01/13/23 19:45:39.344 ">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@P.ID"/>
+					<p name="Text2" type="string" v="TM000001"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="NAV Page Status" ver="3" modder="admin.1" dt="01/15/23 21:58:52.233 ">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="$12,567.00"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="NAV Page Status" ver="4" modder="admin.1" dt="01/18/23 14:47:13.276 ">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="NAV Page Status" ver="5" modder="admin.1" dt="01/26/23 14:36:43.321 ">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="B">
+			<func name="Function1" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@B.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="NAV Page Status" ver="6" modder="admin.1" dt="01/26/23 14:41:54.452 ">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+			<func name="Function2" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@B.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="NAV Page Status" ver="7" modder="admin.1" dt="01/26/23 16:55:35.555 ">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="D">
+			<func name="Function1" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@D.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="NAV Page Status" ver="8" modder="admin.1" dt="01/26/23 18:16:47.298 ">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+			<func name="Function2" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@D.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="NAV Page Status" ver="9" modder="admin.1" dt="02/03/23 12:55:54.668 " qi="">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+			<func name="Function2" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@D.STATUS"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Variable" id="2" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=""/>
+					<p name="Target" type="string" v="@P.CustomPageType"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="NAV Page Status" ver="10" modder="admin.1" dt="02/03/23 13:09:23.547 " qi="">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+			<func name="Function2" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@D.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="NAV Page Status" ver="11" modder="admin.1" dt="03/02/23 12:14:46.599 " qi="">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="16" name="NAV Page Status" ver="12" modder="admin.1" dt="03/28/23 10:33:25.421 " qi="">
+		<rule name="NAV Page Status Rule" id="1" qi="" dcomap.open="P">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="45" name="NAV Page Status" ver="1" modder="admin.1" qi="">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="45" name="NAV Page Status" ver="2" modder="admin.1" qi="" dt="06/27/23 12:23:27.176 ">
+		<rule name="Page Status Rule" id="1" qi="" dcomap.open="P=Page">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="@P.STATUS"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

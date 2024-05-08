@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="3" name="Fixup " ver="1" modder="admin.1" qi="">
+  <rule name="Fixup Rule" id="2" dcomap.open="P=Other" qi="">
+    <func name="Unidentified Page (Other)">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+        <p name="Source" type="string" v="No" />
+        <p name="Target" type="string" v="@B.NeedsFixup" />
+      </a>
+      <a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="HasDCOChildOfType">
+        <p name="Type" v="Other" />
+      </a>
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+        <p name="Source" type="string" v="Yes" />
+        <p name="Target" type="string" v="@B.NeedsFixup" />
+      </a>
+      <a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi="" />
+    </func>
+    <func name="Check batch integrity">
+      <a name="CheckAllIntegrity" ns="rrunner">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+      </a>
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompareNot">
+        <p name="Text1" type="string" v="Yes" />
+        <p name="Text2" type="string" v="@B.NeedsFixup" />
+      </a>
+    </func>
+    <func name="Batch Route To Fixup">
+      <a name="Task_NumberOfSplits" ns="rrunner">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+        <p type="strParam" v="1" name="nNumOfSplits" />
+      </a>
+      <a name="Task_RaiseCondition" ns="rrunner">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+        <p type="strParam" v="0,0" name="strParam" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

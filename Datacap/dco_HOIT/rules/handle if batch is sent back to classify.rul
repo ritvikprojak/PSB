@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="97" name="Handle if batch is sent back to classify" ver="1" modder="dmstest10.1" qi="">
+	<rule name="Page level rule for routing to classify" id="1" dcomap.open="P" qi="">
+		<func name="Function1">
+			<a name="DeleteDCOChildren" ns="com:Datacap.Libraries.ApplicationObjects.Actions"/>
+		</func>
+	</rule>
+</ruleset>

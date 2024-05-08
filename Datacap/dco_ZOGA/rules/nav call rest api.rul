@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="43" name="NAV Call REST API" ver="4" modder="dmstest10.1" qi="" dt="07/05/23 15:58:42.458 ">
+  <rule name="NAV REST API Rule1" id="1" dcomap.open="B" qi="">
+    <func name="Function1" qi="">
+      <a ns="net:PSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="" disabled="y">
+        <p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator" />
+      </a>
+      <a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails">
+        <p name="ldaploginId" type="string" qi="Provide the LoginID." v="@B.ScanOperator" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

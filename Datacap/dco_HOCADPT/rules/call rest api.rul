@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="34" name="Call REST API" ver="11" modder="dmstest10.1" dt="06/02/23 20:17:41.678 " qi="">
+  <rule name="REST API Rule1" id="1" dcomap.open="B" qi="">
+    <func name="Function1" qi="">
+      <a ns="net:CASAPSBCustomLibrary.SampleAction" name="GetEmployeeDetails" qi="">
+        <p name="ldaploginId" type="string" qi="Provide the LoginID." v="N12816" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

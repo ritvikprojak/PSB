@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="93" name="Sort for HOATM DPT" ver="15" modder="admin.1" qi="" dt="04/17/23 12:57:25.878 ">
+	<rule name="Sort Unorder Pages Rule1" id="1" dcomap.open="B" qi="">
+		<func name="Function1">
+			<a ns="SortPages" name="SortPages" qi="">
+				<p name="OrderString" v="OFFICE NOTE,OFFICE NOTE_TrailingPage,AUDIT,AUDIT_TrailingPage,REPORTING,REPORTING_TrailingPage,DATA,DATA_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURE,ANNEXURE_TrailingPage,SUPPORTING DOCUMENTS,SUPPORTING DOCUMENTS_TrailingPage"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

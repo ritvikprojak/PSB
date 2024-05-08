@@ -1,0 +1,58 @@
+{
+	
+	// fields (includes batch-level fields)
+	"field.CREDIT_AUDIT":"CREDIT AUDIT",
+	"field.ZO_CA":"ZO",
+	"field.BRANCH_CODE":"BRANCH CODE",
+	"field.FINANCIAL_YEAR":"FINANCIAL YEAR",
+	"field.REPORT_DATED":"REPORT DATED",
+	"field.DOCUMENT_TYPE_CA":"DOCUMENT TYPE",
+	"field.DOCUMENT_TYPE_MISC":"DOCUMENT TYPE",
+	"field.MONTH_MISC":"MONTH",
+	"field.BRANCH_CODE_MISC":"BRANCH CODE",
+	"field.REFERENCE_DOCUMENTS":"REFERENCE DOCUMENTS",
+	"field.DOCUMENT_TYPE_RD":"DOCUMENT TYPE",
+	"field.ZO_DEPARTMENT":"ZO DEPARTMENT",
+	"field.MISC_AUDIT":"MISC AUDIT",
+	"field.BRANCH_CODE_MA":"BRANCH CODE",
+	"field.DOCUMENT_TYPE_MA":"DOCUMENT TYPE",
+	"field.ZONE_NAME":"ZONE NAME",
+	"field.VOR_TYPE":"VOR TYPE",
+	"field.DOCUMENT_TYPE_VR":"DOCUMENT TYPE",
+	"field.DOCUMENT_TYPE_CCA":"DOCUMENT TYPE",
+	"field.DOCUMENT_TYPE_MAI":"DOCUMENT TYPE",
+	"field.RFP_TENDER":"RFP/TENDER",
+	"field.IS_AUDIT_GENERAL_CONTROLS":"IS AUDIT GENERAL CONTROLS",
+	"field.VAPT_AUDIT":"VAPT AUDIT",
+	"field.APPLICATION_AUDIT":"APPLICATION AUDIT",
+	"field.FINANCIAL_YEAR_1":"FINANCIAL YEAR",
+	"field.FINANCIAL_YEAR_2":"FINANCIAL YEAR",
+	"field.FINANCIAL_YEAR_3":"FINANCIAL YEAR",
+	"field.OTHER_AUDITS":"OTHER AUDITS",
+	"field.BOARD_ACB_NOTES":"BOARD/ACB NOTES",
+	"field.COMMITTEE_IT_ADVISORY_BOARD_NOTES":"COMMITTEE/IT ADVISORY BOARD NOTES",
+	"field.BRANCH_IS_AUDIT":"BRANCH IS AUDIT",
+	"field.ZONE_NAME_RBIA":"ZONE NAME",
+	"field.BRANCH_CODE_NAME_RBIA":"BRANCH CODE/NAME",
+	"field.DATE_OF_RBIA":"DATE OF RBIA",
+	"field.DOCUMENT_TYPE_RBIA":"DOCUMENT TYPE",
+	"field.BRANCH_NAME_SAC":"BRANCH NAME",
+	"field.FILE_NAME_SAC":"FILE NAME",
+	
+	// shortcuts
+	"shortcut.NAVVScan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyIS":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVScan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyIS":"Classify Document",
+	"task.NAVMaker":"Document Details",								
+	"task.NAVChecker":"Checker",
+	"task.NAVExport":"Export"
+}

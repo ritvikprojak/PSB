@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="102" name="NAV Classify Return" ver="1" modder="dmstest10.1" qi="">
+		<rule name="Rule2" id="1" qi="" dcomap.open="B">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.ReturntoClassify"/>
+					<p name="Text2" type="string" v="true"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="false"/>
+					<p name="Target" type="string" v="@B.ReturntoClassify"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="TaskNumberOfSplits">
+					<p name="NumberOfSplits" type="string" v="1"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="TaskRaiseCondition">
+					<p name="ChildBatchIndex" type="string" v="0"/>
+					<p name="ChildBatchCondition" type="string" v="0"/>
+				</a>
+			</func>
+			<func name="Function2" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.ReturntoMaker"/>
+					<p name="Text2" type="string" v="true"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="false"/>
+					<p name="Target" type="string" v="@B.ReturntoMaker"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="TaskNumberOfSplits" qi="">
+					<p name="NumberOfSplits" type="string" v="1"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="TaskRaiseCondition">
+					<p name="ChildBatchIndex" type="string" v="0"/>
+					<p name="ChildBatchCondition" type="string" v="0"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

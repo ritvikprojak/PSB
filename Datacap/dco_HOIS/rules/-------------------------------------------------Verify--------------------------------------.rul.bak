@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="9" name="-------------------------------------------------Verify--------------------------------------" ver="1" modder="admin.1" qi=""/>
+	<ruleset id="9" name="-------------------------------------------------Verify--------------------------------------" ver="2" modder="admin.1" qi="" dt="01/11/23 13:34:27.187 ">
+		<rule name="Rule1" id="1">
+			<func name="Function1"/>
+		</rule>
+	</ruleset>
+	<ruleset id="9" name="-------------------------------------------------Verify--------------------------------------" ver="3" modder="admin.1" qi="" dt="01/11/23 13:36:24.216 ">
+		<rule name="Rule1" id="1">
+			<func name="Function1"/>
+		</rule>
+	</ruleset>
+</archive>

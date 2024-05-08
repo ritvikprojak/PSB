@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="96" name="NAV Populate DEPT Code" ver="9" modder="dmstest10.1" qi="" dt="11/08/23 20:22:49.364 ">
+	<rule name="NAV POPULATE DEPT CODE" id="1" dcomap.open="F=BRANCH_CODE;F=ZONE_CODE;F=CUSTOMER_ID;F=BRANCH_NAME;F=ZONE_NAME" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@B.DeptName"/>
+				<p name="Target" type="string" v="@F"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV POPULATE BRANCH NAME" id="3" dcomap.open="F=BRANCH_CODE;F=ZONE_CODE;F=CUSTOMER_ID" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="@B.BranchName"/>
+				<p name="Target" type="string" v="@F"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV POPULATE ZONE NAME" id="2" dcomap.open="F=BRANCH_CODE;F=ZONE_CODE;F=CUSTOMER_ID" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="@B.ZoneName"/>
+				<p name="Target" type="string" v="@F"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

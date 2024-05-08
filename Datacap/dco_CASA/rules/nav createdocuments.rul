@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="79" name="NAV CreateDocuments" ver="3" modder="dmstest10.1" qi="" dt="08/17/23 12:50:17.79 ">
+	<rule name="NAV CreateDocuments" id="1" dcomap.open="B">
+		<func name="Stop If Documents Exist" disabled="False" qi="This check prevents documents from being created twice, as may happen if a batch is rolled back.">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="IsDocumentCountMoreThan" disabled="" qi="Do not create documents again if they already exist.">
+				<p name="Count" v="1"/>
+				<p name="ReturnTrueIfMore" v="True"/>
+			</a>
+		</func>
+		<func name="Create Document Objects" disabled="False" qi="This function creates the documents.">
+			<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="False"/>
+			<a name="SetReturnValue" ns="rrunner.dll" qi="Run the next function.&#xA;">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="False" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV CreateFields" id="3" qi="" dcomap.open="P=Signature;P=Photograph">
+		<func name="Function1">
+			<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+		</func>
+	</rule>
+	<rule name="NAV RefreshFields" id="2" dcomap.open="P" dcomap.close="" qi="">
+		<func name="CreateFields 1" disabled="False">
+			<a name="RefreshFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+		</func>
+	</rule>
+</ruleset>

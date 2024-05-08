@@ -1,0 +1,50 @@
+{
+	
+	// fields (includes batch-level fields)
+	"field.ADDENDUM SUBJECT_SWIFT TENDER RFP":"ADDENDUM SUBJECT",
+	"field.ADDENDUM DATE_SWIFT TENDER RFP":"ADDENDUM DATE",
+	"field.FREQUENCY_SWIFT NOTES":"FREQUENCY",
+	"field.SUBJECT_SWIFT NOTES":"SUBJECT",
+	"field.FREQUENCY_SWIFT AUDIT":"FREQUENCY",
+	"field.AUDIT TYPE_SWIFT AUDIT":"AUDIT TYPE",
+	"field.AUDIT DATE_SWIFT AUDIT":"AUDIT DATE",
+	"field.AUDIT SUBJECT_SWIFT AUDIT":"AUDIT SUBJECT",
+	"field.FREQUENCY_SWIFT REPORTING":"FREQUENCY",
+	"field.FREQUENCY_SWIFT DATA":"FREQUENCY",
+	"field.FREQUENCY_VENDOR":"FREQUENCY",
+	"field.FREQUENCY_PAYMENT NOTE":"FREQUENCY",
+	"field.SUBJECT_PAYMENT NOTE":"SUBJECT",
+	"field.DATE_PAYMENT NOTE":"DATE",
+	"field.FREQUENCY_COMPLIANCE":"FREQUENCY",
+	"field.DOCUMENT TYPE_COMPLIANCE MANUAL":"DOCUMENT TYPE",
+	"field.DOCUMENT TYPE_COMPLIANCE NOTE":"DOCUMENT TYPE",
+	"field.DOCUMENT TYPE_COMPLIANCE AUDIT":"DOCUMENT TYPE",
+	"field.FREQUENCY_AB EXPORT NOTE":"FREQUENCY",
+	"field.DOCUMENT TYPE_AB EXPORT NOTE":"DOCUMENT TYPE",
+	"field.FREQUENCY_BACKUP REPORT":"FREQUENCY",
+	"field.DOCUMENT TYPE_BACKUP REPORT":"DOCUMENT TYPE",
+	"field.FREQUENCY_EDPMS NOTE":"FREQUENCY",
+	"field.DOCUMENT TYPE_EDPMS NOTE":"DOCUMENT TYPE",
+	"field.FREQUENCY_RECONCILIATION NOTE":"FREQUENCY",
+	"field.DOCUMENT TYPE_RECONCILIATION NOTE":"DOCUMENT TYPE",
+
+	
+	
+	
+	// shortcuts
+	"shortcut.NAVVScan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyFOREX":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVScan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyFOREX":"Classify Document",
+	"task.NAVMaker":"Document Details",								
+	"task.NAVChecker":"Checker",
+	"task.NAVExport":"Export"
+}

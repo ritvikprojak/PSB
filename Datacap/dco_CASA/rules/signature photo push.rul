@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="40" name="Signature Photo push" ver="9" modder="dmstest10.1" qi="" dt="11/03/23 17:39:53.148 ">
+	<rule name="push photograph and Signature" id="2" qi="" dcomap.open="D=SignatureNPhotograph">
+		<func name="Function1">
+			<a ns="net:CASAPSBCustomLibrary.SampleAction" name="PhotographSignatureUploadAPI" qi="">
+				<p name="photoFilePath" type="string" qi="Photograph file path to be provided as Input parameter. Smart parameters are supported" v="@D\Photograph.IMAGEFILE"/>
+				<p name="signatureFilePath" type="string" qi="Signature file path to be provided as Input parameter. Smart parameters are supported" v="@D\Signature.IMAGEFILE"/>
+				<p name="customerid" type="string" qi="Customer ID to be provided as Input parameter. Smart parameters are supported" v="@D.P\CIF"/>
+			</a>
+			<a ns="net:CASAPSBCustomLibrary.SampleAction" name="PhotographUploadAPI" qi="">
+				<p name="photoFilePath" type="string" qi="Photograph file path to be provided as Input parameter.Smart parameters are supported" v="@P.IMAGEFILE"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="push signature" id="1" qi="">
+		<func name="Function1" disabled="y">
+			<a ns="net:CASAPSBCustomLibrary.SampleAction" name="SignatureUploadAPI" qi="">
+				<p name="signatureFilePath" type="string" qi="Signature file path to be provided as Input parameter. Smart parameters are supported" v="@P.IMAGEFILE"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

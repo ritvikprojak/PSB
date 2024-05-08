@@ -1,0 +1,26 @@
+<?xml-stylesheet type="text/xsl" href="..\..\ProgramSet\set.xsl"?>
+<S>
+  <P n="BatchProcessing" tip="General Batch Processing Settings" title="Batch Processing">
+    <V label="Output DCO File" n="TaskDCOFile" tip="Specifies name for the output dco file for the task" type="text">taskname.xml</V>
+  </P>
+  <P n="Rulerunner" tip="Settings that enable RRS rules execution" title="Rulerunner Service">
+    <V label="Main Task Profile" n="TProfile" tip="Main task profile to run on Submit" type="text">PageID            </V>
+    <P n="RRSLog" tip="RRS log settings for the task" title="RRS Log Settings">
+      <V label="Service Log" n="ServiceLog" tip="Enable RRS service logging" type="text">3</V>
+      <V label="Batch Log" n="BatchLog" tip="Produce RRS log in batch folder" type="text">
+      </V>
+      <V label="Action Log Level" n="ActionLogLevel" tip="Severity level for RRS logging from action execution" type="text">
+      </V>
+      <V label="Flush Buffer" n="LogReflush" tip="Flushes file buffer after each write operation - degrades performance" type="checkbox">0</V>
+    </P>
+    <V label="RRS Type" n="RRSType" tip="Switch between LocalRRS and HttpWRRS execution" type="text">LocalRRS</V>
+    <V label="WRRS URL" n="HttpWRRS" tip="Specify HTTP URL path for WRRS execution" type="text">http://127.0.0.1/RRS/</V>
+  </P>
+  <P n="DcDesktop" tip="Datacap Desktop-specific settings" title="Datacap Desktop">
+    <G n="Desktop-Panels" tip="Key-Value pairs to associate DCO Type to Panel class" title="Bind DCO Type to Panel">
+      <V label="" n="Page_TYPE" tip="Assocciation of DCO Type to Panel (.cs) class name" type="text">Panel name</V>
+      <V label="" n="Default" tip="Assocciation of DCO Type to Panel (.cs) class name" type="text">dcDTlib.rulerunner:B</V>
+    </G>
+  </P>
+</S>
+<!-- Program changed by admin -->

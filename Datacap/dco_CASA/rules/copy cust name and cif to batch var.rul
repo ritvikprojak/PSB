@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="97" name="copy cust name and cif to batch var" ver="4" modder="dmstest10.1" dt="06/30/23 19:46:30.283 " qi="">
+	<rule name="copy customer 1 details to batch var" id="1" qi="" dcomap.open="D=SAVING ACCOUNT OPENING FORM DOC;D=CURRENT ACCOUNT OPENING FORM DOC;D=FD ACCOUNT OPENING FORM DOC">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.bCustName1"/>
+				<p name="Text2" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@D.P\CUSTOMER NAME"/>
+				<p name="Target" type="string" v="@B.bCustName1"/>
+			</a>
+			<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi=""/>
+		</func>
+		<func name="Function2">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.bCIF1"/>
+				<p name="Text2" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@D.P\CIF"/>
+				<p name="Target" type="string" v="@B.bCIF1"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="copy customer 2 details to batch var" id="2" qi="" dcomap.open="D=SAVING KYC DOCUMENT DOC;D=CURRENT KYC_DOCUMENT DOC;D=FD ACCOUNT OPENING FORM DOC">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.bCustName2"/>
+				<p name="Text2" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@D.P\CUSTOMER NAME"/>
+				<p name="Target" type="string" v="@B.bCustName2"/>
+			</a>
+			<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi=""/>
+		</func>
+		<func name="Function 2" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.bCIF2"/>
+				<p name="Text2" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@D.P\CIF"/>
+				<p name="Target" type="string" v="@B.bCIF2"/>
+			</a>
+		</func>
+		<func name="Function 3">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompareNot">
+				<p name="Text1" type="string" v="@B.bCustName2"/>
+				<p name="Text2" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@D.P\CUSTOMER NAME"/>
+				<p name="Target" type="string" v="@B.bCustName2"/>
+			</a>
+			<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi=""/>
+		</func>
+		<func name="Function 4">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompareNot">
+				<p name="Text1" type="string" v="@B.bCIF2"/>
+				<p name="Text2" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@D.P\CIF"/>
+				<p name="Target" type="string" v="@B.bCIF2"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

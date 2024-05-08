@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="43" name="CreateDocuments" ver="1" modder="admin.1" qi="">
+		<rule name="CreateDocuments" id="1" dcomap.open="B">
+			<func name="Stop If Documents Exist" disabled="False" qi="This check prevents documents from being created twice, as may happen if a batch is rolled back.">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="IsDocumentCountMoreThan" disabled="" qi="Do not create documents again if they already exist.">
+					<p name="Count" v="1"/>
+					<p name="ReturnTrueIfMore" v="True"/>
+				</a>
+			</func>
+			<func name="Create Document Objects" disabled="False" qi="This function creates the documents.">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="False"/>
+				<a name="SetReturnValue" ns="rrunner.dll" qi="Run the next function.&#xA;">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="43" name="CreateDocuments" ver="2" modder="admin.1185" qi="" dt="04/18/23 16:18:39.3 ">
+		<rule name="CreateDocuments" id="1" dcomap.open="B">
+			<func name="Stop If Documents Exist" disabled="False" qi="This check prevents documents from being created twice, as may happen if a batch is rolled back.">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="IsDocumentCountMoreThan" disabled="" qi="Do not create documents again if they already exist.">
+					<p name="Count" v="1"/>
+					<p name="ReturnTrueIfMore" v="True"/>
+				</a>
+			</func>
+			<func name="Create Document Objects" disabled="False" qi="This function creates the documents.">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="False"/>
+				<a name="SetReturnValue" ns="rrunner.dll" qi="Run the next function.&#xA;">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2" dcomap.open="D,P" dcomap.close="" qi="">
+			<func name="CreateFields 1" disabled="False">
+				<a name="RefreshFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="43" name="CreateDocuments" ver="3" modder="admin.1" qi="" dt="04/19/23 14:58:49.605 ">
+		<rule name="CreateDocuments" id="1" dcomap.open="B">
+			<func name="Stop If Documents Exist" disabled="False" qi="This check prevents documents from being created twice, as may happen if a batch is rolled back.">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="IsDocumentCountMoreThan" disabled="" qi="Do not create documents again if they already exist.">
+					<p name="Count" v="1"/>
+					<p name="ReturnTrueIfMore" v="True"/>
+				</a>
+			</func>
+			<func name="Create Document Objects" disabled="False" qi="This function creates the documents.">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="False"/>
+				<a name="SetReturnValue" ns="rrunner.dll" qi="Run the next function.&#xA;">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2" dcomap.open="D,P" dcomap.close="" qi="">
+			<func name="CreateFields 1" disabled="False">
+				<a name="RefreshFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Promate Signature Doc" id="3" dcomap.open="P=Signature">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="PromotePageToDocument" qi="">
+					<p name="NewDocumentType" v="Signature"/>
+					<p name="NewDocumentID" v=""/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Promate Photograph Doc" id="4" dcomap.open="P=Photograph" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="PromotePageToDocument" qi="">
+					<p name="NewDocumentType" v="Photograph"/>
+					<p name="NewDocumentID" v=""/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="43" name="CreateDocuments" ver="4" modder="admin.0606" qi="" dt="04/19/23 16:39:43.883 ">
+		<rule name="CreateDocuments" id="1" dcomap.open="B">
+			<func name="Stop If Documents Exist" disabled="False" qi="This check prevents documents from being created twice, as may happen if a batch is rolled back.">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="IsDocumentCountMoreThan" disabled="" qi="Do not create documents again if they already exist.">
+					<p name="Count" v="1"/>
+					<p name="ReturnTrueIfMore" v="True"/>
+				</a>
+			</func>
+			<func name="Create Document Objects" disabled="False" qi="This function creates the documents.">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="False"/>
+				<a name="SetReturnValue" ns="rrunner.dll" qi="Run the next function.&#xA;">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2" dcomap.open="D,P" dcomap.close="" qi="">
+			<func name="CreateFields 1" disabled="False">
+				<a name="RefreshFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Promate Signature Doc" id="3" dcomap.open="P=Signature">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="AddChildDCONodeToBatch">
+					<p name="ObjectType" v="1"/>
+					<p name="ID" v=""/>
+					<p name="Type" v="Signature"/>
+					<p name="Status" v="1"/>
+					<p name="Index" v="-1"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="PromotePageToDocument" qi="" disabled="y">
+					<p name="NewDocumentType" v="Signature"/>
+					<p name="NewDocumentID" v=""/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Promate Photograph Doc" id="4" dcomap.open="P=Photograph" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="AddChildDCONodeToBatch">
+					<p name="ObjectType" v="1"/>
+					<p name="ID" v=""/>
+					<p name="Type" v="Photograph"/>
+					<p name="Status" v="1"/>
+					<p name="Index" v="-1"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="PromotePageToDocument" qi="" disabled="y">
+					<p name="NewDocumentType" v="Photograph"/>
+					<p name="NewDocumentID" v=""/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="43" name="CreateDocuments" ver="5" modder="admin.0606" qi="" dt="04/19/23 16:53:10.153 ">
+		<rule name="CreateDocuments" id="1" dcomap.open="B">
+			<func name="Stop If Documents Exist" disabled="False" qi="This check prevents documents from being created twice, as may happen if a batch is rolled back.">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="IsDocumentCountMoreThan" disabled="" qi="Do not create documents again if they already exist.">
+					<p name="Count" v="1"/>
+					<p name="ReturnTrueIfMore" v="True"/>
+				</a>
+			</func>
+			<func name="Create Document Objects" disabled="False" qi="This function creates the documents.">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="False"/>
+				<a name="SetReturnValue" ns="rrunner.dll" qi="Run the next function.&#xA;">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2" dcomap.open="D,P" dcomap.close="" qi="">
+			<func name="CreateFields 1" disabled="False">
+				<a name="RefreshFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="Promate Signature Doc" id="3" dcomap.open="P=Signature">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="AddChildDCONodeToBatch">
+					<p name="ObjectType" v="1"/>
+					<p name="ID" v=""/>
+					<p name="Type" v="Signature"/>
+					<p name="Status" v="1"/>
+					<p name="Index" v="-1"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="PromotePageToDocument" qi="" disabled="y">
+					<p name="NewDocumentType" v="Signature"/>
+					<p name="NewDocumentID" v=""/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Promate Photograph Doc" id="4" dcomap.open="P=Photograph" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="AddChildDCONodeToBatch">
+					<p name="ObjectType" v="1"/>
+					<p name="ID" v=""/>
+					<p name="Type" v="Photograph"/>
+					<p name="Status" v="1"/>
+					<p name="Index" v="-1"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="PromotePageToDocument" qi="" disabled="y">
+					<p name="NewDocumentType" v="Photograph"/>
+					<p name="NewDocumentID" v=""/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="43" name="CreateDocuments" ver="6" modder="admin.0606" qi="" dt="04/19/23 16:56:39.614 ">
+		<rule name="CreateDocuments" id="1" dcomap.open="B">
+			<func name="Stop If Documents Exist" disabled="False" qi="This check prevents documents from being created twice, as may happen if a batch is rolled back.">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="IsDocumentCountMoreThan" disabled="" qi="Do not create documents again if they already exist.">
+					<p name="Count" v="1"/>
+					<p name="ReturnTrueIfMore" v="True"/>
+				</a>
+			</func>
+			<func name="Create Document Objects" disabled="False" qi="This function creates the documents.">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="False"/>
+				<a name="SetReturnValue" ns="rrunner.dll" qi="Run the next function.&#xA;">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2" dcomap.open="D,P" dcomap.close="" qi="">
+			<func name="CreateFields 1" disabled="False">
+				<a name="RefreshFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="43" name="CreateDocuments" ver="7" modder="admin.1" qi="" dt="06/14/23 14:13:53.545 ">
+		<rule name="CreateDocuments" id="1" dcomap.open="B">
+			<func name="Stop If Documents Exist" disabled="False" qi="This check prevents documents from being created twice, as may happen if a batch is rolled back.">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="IsDocumentCountMoreThan" disabled="" qi="Do not create documents again if they already exist.">
+					<p name="Count" v="1"/>
+					<p name="ReturnTrueIfMore" v="True"/>
+				</a>
+			</func>
+			<func name="Create Document Objects" disabled="False" qi="This function creates the documents.">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="False"/>
+				<a name="SetReturnValue" ns="rrunner.dll" qi="Run the next function.&#xA;">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2" dcomap.open="D,P" dcomap.close="" qi="">
+			<func name="CreateFields 1" disabled="False">
+				<a name="RefreshFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="CreateFields for Signature and Photograph" id="3" qi="" dcomap.open="D;P=Photograph;P=Signature">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="43" name="CreateDocuments" ver="8" modder="admin.1" qi="" dt="06/14/23 14:30:09.228 ">
+		<rule name="CreateDocuments" id="1" dcomap.open="B">
+			<func name="Stop If Documents Exist" disabled="False" qi="This check prevents documents from being created twice, as may happen if a batch is rolled back.">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="IsDocumentCountMoreThan" disabled="" qi="Do not create documents again if they already exist.">
+					<p name="Count" v="1"/>
+					<p name="ReturnTrueIfMore" v="True"/>
+				</a>
+			</func>
+			<func name="Create Document Objects" disabled="False" qi="This function creates the documents.">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="False"/>
+				<a name="SetReturnValue" ns="rrunner.dll" qi="Run the next function.&#xA;">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2" dcomap.open="D,P" dcomap.close="" qi="">
+			<func name="CreateFields 1" disabled="False">
+				<a name="RefreshFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="CreateFields for Signature and Photograph" id="3" qi="" dcomap.open="P=Photograph;P=Signature">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="43" name="CreateDocuments" ver="9" modder="admin.1" qi="" dt="06/14/23 15:30:28.497 ">
+		<rule name="CreateFields for Signature and Photograph" id="3" qi="" dcomap.open="P=Photograph;P=Signature">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="CreateDocuments" id="1" dcomap.open="B">
+			<func name="Stop If Documents Exist" disabled="False" qi="This check prevents documents from being created twice, as may happen if a batch is rolled back.">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="IsDocumentCountMoreThan" disabled="" qi="Do not create documents again if they already exist.">
+					<p name="Count" v="1"/>
+					<p name="ReturnTrueIfMore" v="True"/>
+				</a>
+			</func>
+			<func name="Create Document Objects" disabled="False" qi="This function creates the documents.">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="False"/>
+				<a name="SetReturnValue" ns="rrunner.dll" qi="Run the next function.&#xA;">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2" dcomap.open="D,P" dcomap.close="" qi="">
+			<func name="CreateFields 1" disabled="False">
+				<a name="RefreshFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="43" name="CreateDocuments" ver="10" modder="admin.1" qi="" dt="06/14/23 15:32:42.322 ">
+		<rule name="CreateFields for Signature and Photograph" id="3" qi="" dcomap.open="P=Photograph;P=Signature">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="CreateDocuments" id="1" dcomap.open="B">
+			<func name="Stop If Documents Exist" disabled="False" qi="This check prevents documents from being created twice, as may happen if a batch is rolled back.">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="IsDocumentCountMoreThan" disabled="" qi="Do not create documents again if they already exist.">
+					<p name="Count" v="1"/>
+					<p name="ReturnTrueIfMore" v="True"/>
+				</a>
+			</func>
+			<func name="Create Document Objects" disabled="False" qi="This function creates the documents.">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="False"/>
+				<a name="SetReturnValue" ns="rrunner.dll" qi="Run the next function.&#xA;">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2" dcomap.open="D,P" dcomap.close="" qi="">
+			<func name="CreateFields 1" disabled="False">
+				<a name="RefreshFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="43" name="CreateDocuments" ver="11" modder="admin.1" qi="" dt="06/15/23 12:37:17.787 ">
+		<rule name="CreateFields for Signature and Photograph" id="3" qi="" dcomap.open="P=Photograph;P=Signature">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="CreateDocuments" id="1" dcomap.open="B">
+			<func name="Stop If Documents Exist" disabled="False" qi="This check prevents documents from being created twice, as may happen if a batch is rolled back.">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="IsDocumentCountMoreThan" disabled="" qi="Do not create documents again if they already exist.">
+					<p name="Count" v="1"/>
+					<p name="ReturnTrueIfMore" v="True"/>
+				</a>
+			</func>
+			<func name="Create Document Objects" disabled="False" qi="This function creates the documents.">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="False"/>
+				<a name="SetReturnValue" ns="rrunner.dll" qi="Run the next function.&#xA;">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2" dcomap.open="D;P" dcomap.close="" qi="">
+			<func name="CreateFields 1" disabled="False">
+				<a name="RefreshFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="43" name="CreateDocuments" ver="12" modder="admin.1" qi="" dt="06/15/23 12:40:18.303 ">
+		<rule name="CreateFields for Signature and Photograph" id="3" qi="" dcomap.open="P=Photograph;P=Signature">
+			<func name="Function1">
+				<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+		<rule name="CreateDocuments" id="1" dcomap.open="B">
+			<func name="Stop If Documents Exist" disabled="False" qi="This check prevents documents from being created twice, as may happen if a batch is rolled back.">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="IsDocumentCountMoreThan" disabled="" qi="Do not create documents again if they already exist.">
+					<p name="Count" v="1"/>
+					<p name="ReturnTrueIfMore" v="True"/>
+				</a>
+			</func>
+			<func name="Create Document Objects" disabled="False" qi="This function creates the documents.">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="False"/>
+				<a name="SetReturnValue" ns="rrunner.dll" qi="Run the next function.&#xA;">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Create Fields" id="2" dcomap.open="D;P" dcomap.close="" qi="">
+			<func name="CreateFields 1" disabled="False">
+				<a name="RefreshFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

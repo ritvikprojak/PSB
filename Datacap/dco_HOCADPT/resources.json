@@ -1,0 +1,22 @@
+{
+	// fields (includes batch-level fields)
+	"field.Document Type_ON":"Document Type",
+	
+	
+		// shortcuts 
+	"shortcut.NAVVscan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyCA":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVscan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyCA":"Classify Document",
+	"task.NAVMaker":"Document Details",								
+	"task.NAVChecker":"Checker",
+	"task.NAVExport":"Export"
+}

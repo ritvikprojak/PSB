@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="123" name="NAV Trunc Acc No" ver="11" modder="dmstest10.1" qi="" dt="12/06/23 12:50:06.531 ">
+	<rule name="Exact position to Identify Acc Type" id="1" dcomap.open="B" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromEnd" qi="">
+				<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+				<p name="Length" type="string" v="6"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart" qi="">
+				<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+				<p name="Length" type="string" v="2"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

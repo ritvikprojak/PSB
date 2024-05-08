@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="1" modder="admin.1" qi="">
+		<rule name="NAV Page Delete Rule" id="1">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="2" modder="admin.1" qi="" dt="04/04/23 15:16:42.848 ">
+		<rule name="NAV Page Delete Rule" id="1">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="3" modder="admin.1" qi="" dt="04/04/23 15:26:57.415 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="4" modder="dmstest10.1" qi="" dt="06/22/23 08:20:52.720 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="(P) NAV Page Set when if no seperator" id="2" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+					<p name="PreviousTypeToMatch" v="Page"/>
+					<p name="LevelToCheck" v="2"/>
+					<p name="IgnoreTypes" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+					<p name="Type" type="string" v="TrailPage"/>
+				</a>
+			</func>
+			<func name="Function 2 for trail page">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType" qi="">
+					<p name="PreviousTypeToMatch" v="TrailPage"/>
+					<p name="LevelToCheck" v="2"/>
+					<p name="IgnoreTypes" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+					<p name="Type" type="string" v="TrailPage"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="5" modder="dmstest10.1" qi="" dt="06/23/23 09:12:06.739 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

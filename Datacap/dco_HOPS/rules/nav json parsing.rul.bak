@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="35" name="NAV Json Parsing" ver="1" modder="admin.1">
+		<rule name="Json Parsing Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function2">
+				<a name="JsonParseGetEmployee" ns="net:PSBCustomLibrary.SampleAction" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="35" name="NAV Json Parsing" ver="2" modder="admin.1" dt="03/28/23 10:41:20.868 " qi="">
+		<rule name="NAV Json Parsing Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function2">
+				<a name="JsonParseGetEmployee" ns="net:PSBCustomLibrary.SampleAction" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="60" name="NAV Json Parsing" ver="1" modder="admin.1" qi="">
+		<rule name="Json Parsing Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function2">
+				<a name="JsonParseGetEmployee" ns="net:PSBCustomLibrary.SampleAction" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

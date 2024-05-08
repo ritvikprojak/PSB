@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="123" name="NAV Trunc Acc No" ver="1" modder="dmstest10.1" qi="">
+		<rule name="Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart">
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+					<p name="Length" type="string" v="4"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.AccNoTrunc1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="123" name="NAV Trunc Acc No" ver="2" modder="dmstest10.1" qi="" dt="12/06/23 12:11:58.823 ">
+		<rule name="Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumber"/>
+					<p name="Length" type="string" v="4"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.AccNoTrunc1"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="123" name="NAV Trunc Acc No" ver="3" modder="dmstest10.1" qi="" dt="12/06/23 12:13:40.285 ">
+		<rule name="Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromEnd" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="Length" type="string" v="6"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="123" name="NAV Trunc Acc No" ver="4" modder="dmstest10.1" qi="" dt="12/06/23 12:19:16.665 ">
+		<rule name="Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromEnd" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="Length" type="string" v="6"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="Length" type="string" v="4"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="123" name="NAV Trunc Acc No" ver="5" modder="dmstest10.1" qi="" dt="12/06/23 12:24:54.659 ">
+		<rule name="Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromEnd" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="Length" type="string" v="6"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="Length" type="string" v="2"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="123" name="NAV Trunc Acc No" ver="6" modder="dmstest10.1" qi="" dt="12/06/23 12:26:32.33 ">
+		<rule name="Exact position to Identify Acc Type" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromEnd" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="Length" type="string" v="6"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="Length" type="string" v="2"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="123" name="NAV Trunc Acc No" ver="7" modder="dmstest10.1" qi="" dt="12/06/23 12:27:26.450 ">
+		<rule name="Exact position to Identify Acc Type" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromEnd" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="Length" type="string" v="6"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="Length" type="string" v="2"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Rule1" id="2">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains" qi="">
+					<p name="SearchForValue" type="string" v="11"/>
+					<p name="SearchInValue" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="Current"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="123" name="NAV Trunc Acc No" ver="8" modder="dmstest10.1" qi="" dt="12/06/23 12:34:19.515 ">
+		<rule name="Exact position to Identify Acc Type" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromEnd" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="Length" type="string" v="6"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="Length" type="string" v="2"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Rule1" id="2" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains" qi="">
+					<p name="SearchForValue" type="string" v="11"/>
+					<p name="SearchInValue" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="Current"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="123" name="NAV Trunc Acc No" ver="9" modder="dmstest10.1" qi="" dt="12/06/23 12:37:20.674 ">
+		<rule name="Exact position to Identify Acc Type" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromEnd" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="Length" type="string" v="6"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="Length" type="string" v="2"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Rule1" id="2" dcomap.open="B" qi="">
+			<func name="Function1" disabled="y" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains" qi="">
+					<p name="SearchForValue" type="string" v="11"/>
+					<p name="SearchInValue" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="Current"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="123" name="NAV Trunc Acc No" ver="10" modder="dmstest10.1" qi="" dt="12/06/23 12:48:24.642 ">
+		<rule name="Exact position to Identify Acc Type" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromEnd" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="Length" type="string" v="6"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="TruncateFromStart" qi="">
+					<p name="Target" type="string" v="@B.bAccountNumberTrunc"/>
+					<p name="Length" type="string" v="2"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

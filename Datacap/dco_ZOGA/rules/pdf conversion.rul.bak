@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="88" name="PDF Conversion" ver="2" modder="admin.1" qi="" dt="01/06/23 11:24:09.566 ">
+		<rule name="Convert PDF Rule" id="1" dcomap.open="P" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckDCOStatus" disabled="False" qi="">
+					<p name="ExpectedStatus" v="49"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v=".Secure"/>
+					<p name="Target" type="string" v="@X.y_PdfBackupSuffix"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="1"/>
+					<p name="Target" type="string" v="convPdfIgnoreContent"/>
+				</a>
+				<a ns="com:Datacap.Libraries.Convert.PdfFRE" name="PDFFREDocumentToImage">
+					<p name="resolution" type="string" qi="The resolution of extracted images." v="300"/>
+					<p name="compressionBW" type="string" qi="The compression of extracted black and white image files." v="18"/>
+					<p name="compressionColor" type="string" qi="The compression of extracted color image files." v="33"/>
+					<p name="compressionGray" type="string" qi="The compression of extracted grayscale image files." v="32"/>
+					<p name="extensionBW" type="string" qi="The file extension of extracted black and white image files." v=".tif"/>
+					<p name="extensionColor" type="string" qi="The file extension of extracted color image files." v=".tif"/>
+					<p name="extensionGray" type="string" qi="The file extension of extracted grayscale image files." v=".tif"/>
+					<p name="convertMode" type="string" qi="Preserve colors on images or convert all to black and white." v="0"/>
+					<p name="useFastBinarization" type="string" qi="Use fast image binarization algorithm when convertMode is set to preserve colors." v="false"/>
+					<p name="jpegQuality" type="string" qi="Jpeg quality of the of images extracted with JPEG compression." v="100"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Batch Rule" id="2" dcomap.open="B" dcomap.close="" qi="" rem="batch level settings">
+			<func name="Function Setup Name pattern" rem="derived page name pattern" disabled="False">
+				<a name="SetNamePattern" ns="com:Datacap.Libraries.Convert.Common" qi="">
+					<p name="PatternType" type="string" qi="A single positive numeric value." v="2"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Release PDFFRE engine Batch Rule" id="3" dcomap.open="" dcomap.close="B" qi="">
+			<func name="Function Release PDFFRE engine" disabled="False">
+				<a name="PDFFREReleaseEngine" ns="com:Datacap.Libraries.Convert.PdfFRE"/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="88" name="PDF Conversion" ver="3" modder="admin.1" qi="" dt="01/11/23 01:18:29.829 ">
+		<rule name="Convert PDF Rule" id="1" dcomap.open="P" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.Convert.PdfFRE" name="PDFFREDocumentToImage">
+					<p name="resolution" type="string" qi="The resolution of extracted images." v="300"/>
+					<p name="compressionBW" type="string" qi="The compression of extracted black and white image files." v="18"/>
+					<p name="compressionColor" type="string" qi="The compression of extracted color image files." v="33"/>
+					<p name="compressionGray" type="string" qi="The compression of extracted grayscale image files." v="32"/>
+					<p name="extensionBW" type="string" qi="The file extension of extracted black and white image files." v=".tif"/>
+					<p name="extensionColor" type="string" qi="The file extension of extracted color image files." v=".tif"/>
+					<p name="extensionGray" type="string" qi="The file extension of extracted grayscale image files." v=".tif"/>
+					<p name="convertMode" type="string" qi="Preserve colors on images or convert all to black and white." v="0"/>
+					<p name="useFastBinarization" type="string" qi="Use fast image binarization algorithm when convertMode is set to preserve colors." v="false"/>
+					<p name="jpegQuality" type="string" qi="Jpeg quality of the of images extracted with JPEG compression." v="100"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Batch Rule" id="2" dcomap.open="B" dcomap.close="" qi="" rem="batch level settings">
+			<func name="Function Setup Name pattern" rem="derived page name pattern" disabled="False">
+				<a name="SetNamePattern" ns="com:Datacap.Libraries.Convert.Common" qi="">
+					<p name="PatternType" type="string" qi="A single positive numeric value." v="2"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Release PDFFRE engine Batch Rule" id="3" dcomap.open="" dcomap.close="B" qi="">
+			<func name="Function Release PDFFRE engine" disabled="False">
+				<a name="PDFFREReleaseEngine" ns="com:Datacap.Libraries.Convert.PdfFRE"/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="88" name="PDF Conversion" ver="4" modder="admin.1" qi="" dt="01/11/23 01:24:59.859 ">
+		<rule name="Batch Rule" id="2" dcomap.open="B" dcomap.close="" qi="" rem="batch level settings">
+			<func name="Function Setup Name pattern" rem="derived page name pattern" disabled="False">
+				<a name="SetNamePattern" ns="com:Datacap.Libraries.Convert.Common" qi="">
+					<p name="PatternType" type="string" qi="A single positive numeric value." v="2"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Convert PDF Rule" id="1" dcomap.open="P" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.Convert.PdfFRE" name="PDFFREDocumentToImage">
+					<p name="resolution" type="string" qi="The resolution of extracted images." v="300"/>
+					<p name="compressionBW" type="string" qi="The compression of extracted black and white image files." v="18"/>
+					<p name="compressionColor" type="string" qi="The compression of extracted color image files." v="33"/>
+					<p name="compressionGray" type="string" qi="The compression of extracted grayscale image files." v="32"/>
+					<p name="extensionBW" type="string" qi="The file extension of extracted black and white image files." v=".tif"/>
+					<p name="extensionColor" type="string" qi="The file extension of extracted color image files." v=".tif"/>
+					<p name="extensionGray" type="string" qi="The file extension of extracted grayscale image files." v=".tif"/>
+					<p name="convertMode" type="string" qi="Preserve colors on images or convert all to black and white." v="0"/>
+					<p name="useFastBinarization" type="string" qi="Use fast image binarization algorithm when convertMode is set to preserve colors." v="false"/>
+					<p name="jpegQuality" type="string" qi="Jpeg quality of the of images extracted with JPEG compression." v="100"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Release PDFFRE engine Batch Rule" id="3" dcomap.open="" dcomap.close="B" qi="">
+			<func name="Function Release PDFFRE engine" disabled="False">
+				<a name="PDFFREReleaseEngine" ns="com:Datacap.Libraries.Convert.PdfFRE"/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="88" name="PDF Conversion" ver="5" modder="admin.1" qi="" dt="01/13/23 20:49:05.883 ">
+		<rule name="Batch Rule" id="2" dcomap.open="B" dcomap.close="" qi="" rem="batch level settings">
+			<func name="Function Setup Name pattern" rem="derived page name pattern" disabled="False">
+				<a name="SetNamePattern" ns="com:Datacap.Libraries.Convert.Common" qi="">
+					<p name="PatternType" type="string" qi="A single positive numeric value." v="2"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Convert PDF Rule" id="1" dcomap.open="P" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.Convert.PdfFRE" name="PDFFREDocumentToImage">
+					<p name="resolution" type="string" qi="The resolution of extracted images." v="300"/>
+					<p name="compressionBW" type="string" qi="The compression of extracted black and white image files." v="18"/>
+					<p name="compressionColor" type="string" qi="The compression of extracted color image files." v="33"/>
+					<p name="compressionGray" type="string" qi="The compression of extracted grayscale image files." v="32"/>
+					<p name="extensionBW" type="string" qi="The file extension of extracted black and white image files." v=".tif"/>
+					<p name="extensionColor" type="string" qi="The file extension of extracted color image files." v=".tif"/>
+					<p name="extensionGray" type="string" qi="The file extension of extracted grayscale image files." v=".tif"/>
+					<p name="convertMode" type="string" qi="Preserve colors on images or convert all to black and white." v="0"/>
+					<p name="useFastBinarization" type="string" qi="Use fast image binarization algorithm when convertMode is set to preserve colors." v="false"/>
+					<p name="jpegQuality" type="string" qi="Jpeg quality of the of images extracted with JPEG compression." v="100"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Release PDFFRE engine Batch Rule" id="3" dcomap.open="" dcomap.close="B" qi="">
+			<func name="Function Release PDFFRE engine" disabled="False" qi="">
+				<a name="PDFFREReleaseEngine" ns="com:Datacap.Libraries.Convert.PdfFRE"/>
+				<a ns="com:Datacap.Libraries.Convert.Common" name="DeleteSourceImagePages" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="88" name="PDF Conversion" ver="6" modder="admin.1" qi="" dt="01/15/23 22:07:35.520 ">
+		<rule name="Batch Rule" id="2" dcomap.open="B" dcomap.close="" qi="" rem="batch level settings">
+			<func name="Function Setup Name pattern" rem="derived page name pattern" disabled="False">
+				<a name="SetNamePattern" ns="com:Datacap.Libraries.Convert.Common" qi="">
+					<p name="PatternType" type="string" qi="A single positive numeric value." v="2"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="$12,567.00"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Convert PDF Rule" id="1" dcomap.open="P" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.Convert.PdfFRE" name="PDFFREDocumentToImage">
+					<p name="resolution" type="string" qi="The resolution of extracted images." v="300"/>
+					<p name="compressionBW" type="string" qi="The compression of extracted black and white image files." v="18"/>
+					<p name="compressionColor" type="string" qi="The compression of extracted color image files." v="33"/>
+					<p name="compressionGray" type="string" qi="The compression of extracted grayscale image files." v="32"/>
+					<p name="extensionBW" type="string" qi="The file extension of extracted black and white image files." v=".tif"/>
+					<p name="extensionColor" type="string" qi="The file extension of extracted color image files." v=".tif"/>
+					<p name="extensionGray" type="string" qi="The file extension of extracted grayscale image files." v=".tif"/>
+					<p name="convertMode" type="string" qi="Preserve colors on images or convert all to black and white." v="0"/>
+					<p name="useFastBinarization" type="string" qi="Use fast image binarization algorithm when convertMode is set to preserve colors." v="false"/>
+					<p name="jpegQuality" type="string" qi="Jpeg quality of the of images extracted with JPEG compression." v="100"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Release PDFFRE engine Batch Rule" id="3" dcomap.open="" dcomap.close="B" qi="">
+			<func name="Function Release PDFFRE engine" disabled="False" qi="">
+				<a name="PDFFREReleaseEngine" ns="com:Datacap.Libraries.Convert.PdfFRE"/>
+				<a ns="com:Datacap.Libraries.Convert.Common" name="DeleteSourceImagePages" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

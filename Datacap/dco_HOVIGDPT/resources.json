@@ -1,0 +1,28 @@
+{
+	
+	// fields (includes batch-level fields)
+	"field.NAME OF ACCOUNT_CBI":"NAME OF ACCOUNT",
+	"field.NAME OF ACCOUNT_ABBFF":"NAME OF ACCOUNT",
+	"field.NAME_IAC":"NAME",
+	"field.DA_IAC":"DA",
+	"field.YEAR_QPR":"YEAR",
+	"field.SUBJECT_INTEGRITY PACT":"SUBJECT",
+	
+	
+	// shortcuts
+	"shortcut.NAVVScan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyVIG":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVScan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyVIG":"Classify Document",
+	"task.NAVMaker":"Document Details",								
+	"task.NAVChecker":"Checker",
+	"task.NAVExport":"Export"
+}

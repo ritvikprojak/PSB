@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="101" name="NAV Return checker to maker" ver="1" modder="dmstest10.1" qi="">
+		<rule name="(P) Rule- Return to Maker" id="1" dcomap.open="P" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="true"/>
+					<p name="Target" type="string" v="@B.ReturntoMaker"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="101" name="NAV Return checker to maker" ver="2" modder="dmstest10.1" qi="" dt="08/22/23 17:09:07.476 ">
+		<rule name="(P) Rule1" id="1" dcomap.open="P" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="true"/>
+					<p name="Target" type="string" v="@B.ReturntoMaker"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

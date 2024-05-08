@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="32" name="NAV Docs Count" ver="1" modder="admin.1">
+		<rule name="Docs Count Rules" id="2" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@PILOT(DocsInBatch)"/>
+					<p name="Target" type="string" v="@B.PagesCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="32" name="NAV Docs Count" ver="2" modder="admin.1" dt="02/07/23 15:44:18.6 ">
+		<rule name="Docs Count Rules" id="2" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@PILOT(DocsInBatch)"/>
+					<p name="Target" type="string" v="@B.DocsCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="32" name="NAV Docs Count" ver="3" modder="admin.1" dt="03/28/23 10:49:38.50 " qi="">
+		<rule name="NAV Docs Count Rules" id="2" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@PILOT(DocsInBatch)"/>
+					<p name="Target" type="string" v="@B.DocsCount"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

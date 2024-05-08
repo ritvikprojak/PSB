@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="87" name="NAV Delete Traling Object" ver="1" modder="admin.1" qi="">
+  <rule name="Delete Traling Object" id="1" dcomap.open="P=RFP DETAILS_TrailingPage;P=RFP DOCUMENTS_TrailingPage;P=ADDENDUM_TrailingPage;P=ANNEXURE_TrailingPage;P=SUPPORTING-DOCUMENTS_TrailingPage" qi="">
+    <func name="Function1" qi="" disabled="y">
+      <a name="DeleteDCOChildrenAndVariables" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="y" />
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains" disabled="y">
+        <p name="SearchForValue" type="string" v="@P.TYPE" />
+        <p name="SearchInValue" type="string" v="_TrailingPage" />
+        <p name="CaseSensitive" type="string" v="False" />
+      </a>
+      <a ns="com:Datacap.Libraries.FileIO.Actions" name="DeleteFile">
+        <p name="filename" type="string" v="@APPPATH(runtime)+\+@BATCHID+\+@P.ID+.xml" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

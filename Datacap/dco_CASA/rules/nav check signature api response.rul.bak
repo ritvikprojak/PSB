@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="111" name="NAV Check Signature API Response" ver="1" modder="dmstest10.1" qi="">
+		<rule name="NAV Check ACK API Response Rule1" id="1" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.SIGNAPIResponse"/>
+					<p name="Text2" type="string" v="API Failure"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function2" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.SIGNAPIResponse"/>
+					<p name="Text2" type="string" v="@EMPTY"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function3">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.SIGNAPIResponse"/>
+					<p name="Text2" type="string" v="API Response Success"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="111" name="NAV Check Signature API Response" ver="2" modder="dmstest10.1" qi="" dt="10/31/23 19:45:13.621 ">
+		<rule name="NAV Check ACK API Response Rule1" id="1" dcomap.open="B">
+			<func name="Function1" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.SIGNAPIResponse"/>
+					<p name="Text2" type="string" v="API Failure"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function2" qi="" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.SIGNAPIResponse"/>
+					<p name="Text2" type="string" v="@EMPTY"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function3" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.SIGNAPIResponse"/>
+					<p name="Text2" type="string" v="API Response Success"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="111" name="NAV Check Signature API Response" ver="3" modder="dmstest10.1" qi="" dt="11/01/23 13:52:34.21 ">
+		<rule name="NAV Check ACK API Response Rule1" id="1" dcomap.open="B">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.SIGNAPIResponse"/>
+					<p name="Text2" type="string" v="API Failure"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function2" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.SIGNAPIResponse"/>
+					<p name="Text2" type="string" v="@EMPTY"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function3" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.SIGNAPIResponse"/>
+					<p name="Text2" type="string" v="API Response Success"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="111" name="NAV Check Signature API Response" ver="4" modder="dmstest10.1" qi="" dt="11/01/23 19:05:22.624 ">
+		<rule name="NAV Check ACK API Response Rule1" id="1" dcomap.open="D=Signature" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.SIGNAPIResponse"/>
+					<p name="Text2" type="string" v="API Failure"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function2" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.SIGNAPIResponse"/>
+					<p name="Text2" type="string" v="@EMPTY"/>
+				</a>
+				<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+			<func name="Function3" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@B.SIGNAPIResponse"/>
+					<p name="Text2" type="string" v="API Response Success"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

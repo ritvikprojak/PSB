@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="9" name="SplitFileName" ver="3" modder="bhiward1.1" qi="" dt="02/20/20 08:34:29.570 ">
+		<rule name="SplitFileName Rule1" id="1">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.FileIO.Actions" name="SplitFileName">
+					<p name="inputFilename" type="string" v="@P.ScanSrcPath"/>
+					<p name="rootPathVariable" type="string" v="@P.FROOT"/>
+					<p name="pathVariable" type="string" v="@P.FPATH"/>
+					<p name="fileVariable" type="string" v="@P.FFILENAME"/>
+					<p name="extVariable" type="string" v="@P.FEXT"/>
+				</a>
+				<a ns="rrunner" name="rrSet">
+					<p name="varSource" v="@P.FFILENAME"/>
+					<p name="varTarget" v="@B.FNAME"/>
+				</a>
+				<a ns="rrunner" name="rrSet" qi="">
+					<p name="varSource" v="@P.FEXT"/>
+					<p name="varTarget" v="@B.FileType"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="SetFileName" id="2">
+			<func name="Function1" disabled="y" qi="">
+				<a ns="rrunner" name="rrSet" qi="">
+					<p name="varSource" v="@B.FNAME"/>
+					<p name="varTarget" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="9" name="SplitFileName" ver="4" modder="admin.1" qi="" dt="02/05/23 13:04:07.398 ">
+		<rule name="SplitFileName Rule1" id="1" dcomap.open="P=Other" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.FileIO.Actions" name="SplitFileName">
+					<p name="inputFilename" type="string" v="@P.ScanSrcPath"/>
+					<p name="rootPathVariable" type="string" v="@P.FROOT"/>
+					<p name="pathVariable" type="string" v="@P.FPATH"/>
+					<p name="fileVariable" type="string" v="@P.FFILENAME"/>
+					<p name="extVariable" type="string" v="@P.FEXT"/>
+				</a>
+				<a ns="rrunner" name="rrSet">
+					<p name="varSource" v="@P.FFILENAME"/>
+					<p name="varTarget" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="9" name="SplitFileName" ver="5" modder="admin.1" qi="" dt="02/08/23 12:45:41.154 ">
+		<rule name="SplitFileName Rule1" id="1" dcomap.open="P=Other" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@P.ID"/>
+					<p name="Text2" type="string" v="TM000002"/>
+				</a>
+				<a ns="com:Datacap.Libraries.FileIO.Actions" name="SplitFileName">
+					<p name="inputFilename" type="string" v="@P.ScanSrcPath"/>
+					<p name="rootPathVariable" type="string" v="@P.FROOT"/>
+					<p name="pathVariable" type="string" v="@P.FPATH"/>
+					<p name="fileVariable" type="string" v="@P.FFILENAME"/>
+					<p name="extVariable" type="string" v="@P.FEXT"/>
+				</a>
+				<a ns="rrunner" name="rrSet" qi="">
+					<p name="varSource" v="@P.FFILENAME"/>
+					<p name="varTarget" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="9" name="SplitFileName" ver="6" modder="dmstest10.1" qi="" dt="05/29/23 13:57:40.237 ">
+		<rule name="SplitFileName Rule1" id="1" dcomap.open="P=Other" qi="">
+			<func name="Function1" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@P.ID"/>
+					<p name="Text2" type="string" v="TM000002"/>
+				</a>
+				<a ns="com:Datacap.Libraries.FileIO.Actions" name="SplitFileName">
+					<p name="inputFilename" type="string" v="@P.ScanSrcPath"/>
+					<p name="rootPathVariable" type="string" v="@P.FROOT"/>
+					<p name="pathVariable" type="string" v="@P.FPATH"/>
+					<p name="fileVariable" type="string" v="@P.FFILENAME"/>
+					<p name="extVariable" type="string" v="@P.FEXT"/>
+				</a>
+				<a ns="rrunner" name="rrSet" qi="">
+					<p name="varSource" v="@P.FFILENAME"/>
+					<p name="varTarget" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="9" name="SplitFileName" ver="7" modder="dmstest10.1" qi="" dt="05/30/23 15:17:34.449 ">
+		<rule name="SplitFileName Rule1" id="1" dcomap.open="P=Other" qi="">
+			<func name="Function1" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@P.ID"/>
+					<p name="Text2" type="string" v="TM000002"/>
+				</a>
+				<a ns="com:Datacap.Libraries.FileIO.Actions" name="SplitFileName">
+					<p name="inputFilename" type="string" v="@P.ScanSrcPath"/>
+					<p name="rootPathVariable" type="string" v="@P.FROOT"/>
+					<p name="pathVariable" type="string" v="@P.FPATH"/>
+					<p name="fileVariable" type="string" v="@P.FFILENAME"/>
+					<p name="extVariable" type="string" v="@P.FEXT"/>
+				</a>
+				<a ns="rrunner" name="rrSet" qi="">
+					<p name="varSource" v="@P.FFILENAME"/>
+					<p name="varTarget" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="9" name="SplitFileName" ver="8" modder="dmstest10.1" qi="" dt="05/30/23 15:40:47.807 ">
+		<rule name="SplitFileName Rule1" id="1" dcomap.open="P=Other" qi="">
+			<func name="Function1" qi="" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@P.ID"/>
+					<p name="Text2" type="string" v="TM000002"/>
+				</a>
+				<a ns="com:Datacap.Libraries.FileIO.Actions" name="SplitFileName">
+					<p name="inputFilename" type="string" v="@P.ScanSrcPath"/>
+					<p name="rootPathVariable" type="string" v="@P.FROOT"/>
+					<p name="pathVariable" type="string" v="@P.FPATH"/>
+					<p name="fileVariable" type="string" v="@P.FFILENAME"/>
+					<p name="extVariable" type="string" v="@P.FEXT"/>
+				</a>
+				<a ns="rrunner" name="rrSet" qi="">
+					<p name="varSource" v="@P.FFILENAME"/>
+					<p name="varTarget" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

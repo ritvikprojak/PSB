@@ -1,0 +1,26 @@
+{
+	
+	// fields (includes batch-level fields)
+	"field.SUBJECT_NOTES":"SUBJECT",
+	"field.NOTE DATE_NOTES":"NOTE DATE",
+	"field.REMARKS_NOTES":"REMARKS",
+	"field.DATE_LETTERS":"DATE",
+	
+	
+	// shortcuts
+	"shortcut.NAVVScan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyMD":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVScan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyMD":"Classify Document",
+	"task.NAVMaker":"Document Details",								
+	"task.NAVChecker":"Checker",
+	"task.NAVExport":"Export"
+}

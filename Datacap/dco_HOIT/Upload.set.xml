@@ -1,0 +1,13 @@
+<?xml-stylesheet type="text/xsl" href="..\..\ProgramSet\set.xsl"?>
+<S lang="en-US">
+  <P tip="" title="Batch processing" n="BatchProcessing">
+    <V n="Page1" label="Web page" tip="Enter the file name and extension of the Active Server Page Extended File (ASPX) &#xA;that Taskmaster Web presents to the user during this task." type="text" disabled="true">uplbfcl.aspx</V>
+    <V n="CreateDir" label="Create batch directory" tip="Select this checkbox when this task is a batch creation task and &#xA;you want Taskmaster to automatically create a batch folder for each new batch." type="checkbox">0</V>
+    <V n="TaskDCOFile" label="Page file" tip="Enter the name of the page file that will be created during this task. &#xA;Use taskname.xml to automatically assign the name of the task to the page file." type="text">taskname.xml</V>
+    <V n="Hold" label="Allow hold" tip="Select this check box to display the Hold button on the web page. &#xA;When the Hold button is visible, users can place a batch on hold before processing is complete." type="checkbox">1</V>
+  </P>
+  <P tip="" title="Upload" n="UpSet">
+    <V n="Delay" label="Upload pause" tip="Enter how long you want to pause in milliseconds between the completed upload &#xA;of a single image or the group of images and the beginning of the next upload." type="text">300</V>
+    <V n="MaxUploadSizeKb" label="Maximum upload size" tip="Enter the maximum size in kilobytes (KB) of an upload. &#xA;When this size is larger than the size of a single image, multiple images are automatically combined and uploaded as a group, which can increase the speed of the upload." type="text">0</V>
+  </P>
+</S>

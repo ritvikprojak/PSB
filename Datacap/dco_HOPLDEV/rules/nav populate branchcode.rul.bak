@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="72" name="NAV POPULATE BRANCHCODE" ver="1" modder="dmstest10.1" qi="">
+		<rule name="Rule1" id="1">
+			<func name="Function1"/>
+		</rule>
+	</ruleset>
+	<ruleset id="72" name="NAV POPULATE BRANCHCODE" ver="2" modder="dmstest10.1" qi="" dt="06/28/23 19:44:40.567 ">
+		<rule name="Rule1" id="1">
+			<func name="FUNCTION for branch code" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.BranchCode"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

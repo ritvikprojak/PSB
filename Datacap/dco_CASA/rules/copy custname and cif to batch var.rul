@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="96" name="Copy custname and cif to batch var" ver="1" modder="dmstest10.1" qi="">
+	<rule name="copy cust 1 name  to batch var" id="1" dcomap.open="D=SAVING ACCOUNT OPENING FORM DOC;D=CURRENT ACCOUNT OPENING FORM DOC;D=FD ACCOUNT OPENING FORM DOC" qi="">
+		<func name="cust 1 name">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.bCustName1"/>
+				<p name="Text2" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@D.P\CUSTOMER NAME"/>
+				<p name="Target" type="string" v="@B.bCustName1"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="copy cust 1 cif to batch var" id="3" dcomap.open="D=SAVING ACCOUNT OPENING FORM DOC;D=CURRENT ACCOUNT OPENING FORM DOC;D=FD ACCOUNT OPENING FORM DOC" qi="">
+		<func name="cust 1 cif">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.bCIF1"/>
+				<p name="Text2" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@D.P\CIF"/>
+				<p name="Target" type="string" v="@B.bCIF1"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="copy cust 2 name to batch var" id="2" dcomap.open="D=SAVING ACCOUNT OPENING FORM DOC;D=CURRENT ACCOUNT OPENING FORM DOC;D=FD ACCOUNT OPENING FORM DOC" qi="">
+		<func name="cust 2 name">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.bCustName2"/>
+				<p name="Text2" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@D.P\CUSTOMER NAME"/>
+				<p name="Target" type="string" v="@B.bCustName2"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="copy cust 2 cif to batch var" id="4" dcomap.open="D=SAVING ACCOUNT OPENING FORM DOC;D=CURRENT ACCOUNT OPENING FORM DOC;D=FD ACCOUNT OPENING FORM DOC" qi="">
+		<func name="cust 2 cif">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.bCIF2"/>
+				<p name="Text2" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@D.P\CIF"/>
+				<p name="Target" type="string" v="@B.bCIF2"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

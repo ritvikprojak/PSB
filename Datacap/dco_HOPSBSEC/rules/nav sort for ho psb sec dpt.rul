@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="56" name="NAV Sort for HO PSB SEC DPT" ver="3" modder="admin.1" qi="" dt="07/12/23 15:20:31.586 ">
+	<rule name="Sort Unorder Pages" id="1" dcomap.open="B">
+		<func name="Function1" qi="">
+			<a ns="SortPages" name="SortPages" disabled="y" qi="">
+				<p name="OrderString" v="NOTES,NOTES_TrailingPage,POLICY,POLICY_TrailingPage,SOP,SOP_TrailingPage,GUIDELINES,GUIDELINES_TrailingPage"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

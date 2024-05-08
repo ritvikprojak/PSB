@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="78" name="NAV RemoveDocuments" ver="4" modder="dmstest10.1" qi="" dt="12/21/23 10:32:43.471 ">
+	<rule name="NAV Rule1" id="1" dcomap.open="B" qi="">
+		<func name="Function1">
+			<a name="RemoveDocumentStructure" ns="com:Datacap.Libraries.ApplicationObjects.Actions"/>
+		</func>
+	</rule>
+	<rule name="NAV Set Document Type for Photograph" id="2" dcomap.open="P=Photograph" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetDCOType">
+				<p name="Type" type="string" v="Photograph"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetDocumentStatus">
+				<p name="Type" type="string" v="0"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV Set Document Type for Signature" id="3" dcomap.open="P=Signature" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetDCOType">
+				<p name="Type" type="string" v="Signature"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetDocumentStatus" qi="">
+				<p name="Type" type="string" v="0"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

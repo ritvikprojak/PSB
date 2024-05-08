@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="108" name="Nav Page Id Delete Blank Pages" ver="1" modder="dmstest10.1" qi="">
+	<rule name="Rule1" id="1" dcomap.open="B">
+		<func name="Function1">
+			<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="5000,Blank,0" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

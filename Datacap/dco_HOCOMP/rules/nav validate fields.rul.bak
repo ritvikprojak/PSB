@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="52" name="NAV Validate Fields" ver="1" modder="admin.1" qi="">
+		<rule name="Parent Rule" id="1" dcomap.open="P">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Validate Rule" id="2" dynamic="open" dcomap.open="F">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a name="SetIsOverrideable" ns="rrunner.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="True" name="StrParam"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="52" name="NAV Validate Fields" ver="2" modder="admin.1" qi="" dt="06/27/23 12:27:46.430 ">
+		<rule name="Parent Rule" id="1" dcomap.open="P">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Validate Rule" id="2" dynamic="open" dcomap.open="F">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a ns="rrunner" name="SetIsOverrideable" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="False"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

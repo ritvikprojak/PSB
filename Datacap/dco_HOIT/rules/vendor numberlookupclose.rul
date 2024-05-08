@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="98" name="Vendor NumberLookUPClose" ver="1" modder="admin.1" qi="">
+	<rule name="Close Connection Rule" id="1">
+    <func name="Close Connection Function">
+      <a name="CloseConnection" ns="Lookup">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

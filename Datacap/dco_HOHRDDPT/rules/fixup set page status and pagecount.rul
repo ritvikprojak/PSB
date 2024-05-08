@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="111" name="FIXUP Set Page Status And PageCount" ver="1" modder="dmstest10.1" qi="">
+	<rule name="Set page status rule1" id="1" dcomap.open="P=Training Cell;P=Personal File;P=CORRESPONDANCE;P=PROMOTION PROCESS;P=MEDICAL SEAT;P=OSR;P=COURT CASE;P=LABOUR MATTER;P=I R MEETING;P=OTHER MEETING;P=UNION_CORRESPONDANCE;P=DAC Document;P=CEC DOCUMENT;P=TAX CHALLAN" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Set page status rule1 - TrailingPages" id="2" dcomap.open="P=Training Cell;P=Personal File_TrailingPage;P=CORRESPONDANCE_TrailingPage;P=PROMOTION PROCESS_TrailingPage;P=MEDICAL SEAT_TrailingPage;P=OSR_TrailingPage;P=COURT CASE_TrailingPage;P=LABOUR MATTER_TrailingPage;P=I R MEETING_TrailingPage;P=OTHER MEETING_TrailingPage;P=UNION_CORRESPONDANCE_TrailingPage;P=DAC Document_TrailingPage;P=CEC DOCUMENT_TrailingPage;P=TAX CHALLAN_TrailingPage" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Pages Count" id="3" dcomap.open="B">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+				<p name="Target" type="string" v="@B.PagesCount"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

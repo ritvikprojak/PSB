@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="126" name="GETCHECKER" ver="2" modder="dmstest10.1" qi="" dt="03/08/24 17:57:56.539 ">
+	<rule name="Initialize Variable" id="1" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v=""/>
+				<p name="Target" type="string" v="@B.bCheckerOperator"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV getChecker" id="2" qi="" dcomap.open="B">
+		<func name="Get values from custom column" qi="">
+			<a ns="Lookup" name="OpenConnection" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+			</a>
+			<a ns="Lookup" name="SmartSQLEx" qi="">
+				<p name="sStringIn" v="SELECT TS_OPERATOR from taskstats where TS_BATCHID = '+@BATCHID+' and TS_TASKNAME = 'NAVChecker'"/>
+				<p name="sPopulate" type="bool" v="True"/>
+				<p name="sTarget" v="@B.bCheckerOperator"/>
+			</a>
+			<a name="CloseConnection" ns="Lookup.dll">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

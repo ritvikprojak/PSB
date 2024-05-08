@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="52" name="NAV PDF Conversion" ver="3" modder="dmstest10.1" qi="" dt="06/30/23 20:07:23.725 ">
+	<rule name="NAV Batch Rule" id="1" dcomap.open="B" dcomap.close="" qi="" rem="batch level settings">
+		<func name="Function Setup Name pattern" rem="derived page name pattern" disabled="False">
+			<a name="SetNamePattern" ns="com:Datacap.Libraries.Convert.Common" qi="">
+				<p name="PatternType" type="string" qi="A single positive numeric value." v="2"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV Convert PDF Rule" id="2" dcomap.open="P=Other" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.Convert.PdfFRE" name="PDFFREDocumentToImage">
+				<p name="resolution" type="string" qi="The resolution of extracted images." v="300"/>
+				<p name="compressionBW" type="string" qi="The compression of extracted black and white image files." v="18"/>
+				<p name="compressionColor" type="string" qi="The compression of extracted color image files." v="33"/>
+				<p name="compressionGray" type="string" qi="The compression of extracted grayscale image files." v="32"/>
+				<p name="extensionBW" type="string" qi="The file extension of extracted black and white image files." v=".tif"/>
+				<p name="extensionColor" type="string" qi="The file extension of extracted color image files." v=".tif"/>
+				<p name="extensionGray" type="string" qi="The file extension of extracted grayscale image files." v=".tif"/>
+				<p name="convertMode" type="string" qi="Preserve colors on images or convert all to black and white." v="0"/>
+				<p name="useFastBinarization" type="string" qi="Use fast image binarization algorithm when convertMode is set to preserve colors." v="false"/>
+				<p name="jpegQuality" type="string" qi="Jpeg quality of the of images extracted with JPEG compression." v="100"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV Release PDFFRE engine Batch Rule" id="3" dcomap.open="" dcomap.close="B" qi="">
+		<func name="Function Release PDFFRE engine" disabled="False" qi="">
+			<a name="PDFFREReleaseEngine" ns="com:Datacap.Libraries.Convert.PdfFRE"/>
+			<a ns="com:Datacap.Libraries.Convert.Common" name="DeleteSourceImagePages" qi=""/>
+		</func>
+	</rule>
+</ruleset>

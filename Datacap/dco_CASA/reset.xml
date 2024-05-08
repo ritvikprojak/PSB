@@ -1,0 +1,80 @@
+<?xml-stylesheet type="text/xsl" href="..\..\dco.xsl"?>
+<P id="TM000001">
+  <F id="Document_Type">
+    <V n="TYPE">Document_Type</V>
+    <V n="Position">0,0,0,0</V>
+    <V n="STATUS">0</V>
+  </F>
+  <F id="ACCOUNT NUMBER">
+    <V n="TYPE">ACCOUNT NUMBER</V>
+    <V n="Position">0,0,0,0</V>
+    <V n="STATUS">0</V>
+    <C cn="10" cr="0,0,0,0">49</C>
+    <C cn="10" cr="0,0,0,0">49</C>
+    <C cn="10" cr="0,0,0,0">56</C>
+    <C cn="10" cr="0,0,0,0">53</C>
+    <C cn="10" cr="0,0,0,0">49</C>
+    <C cn="10" cr="0,0,0,0">48</C>
+    <C cn="10" cr="0,0,0,0">48</C>
+    <C cn="10" cr="0,0,0,0">48</C>
+    <C cn="10" cr="0,0,0,0">48</C>
+    <C cn="10" cr="0,0,0,0">48</C>
+    <C cn="10" cr="0,0,0,0">48</C>
+    <C cn="10" cr="0,0,0,0">54</C>
+    <C cn="10" cr="0,0,0,0">48</C>
+    <C cn="10" cr="0,0,0,0">53</C>
+  </F>
+  <F id="CUSTOMER NAME">
+    <V n="TYPE">CUSTOMER NAME</V>
+    <V n="Position">0,0,0,0</V>
+    <V n="STATUS">0</V>
+    <C cn="10" cr="0,0,0,0">83</C>
+    <C cn="10" cr="0,0,0,0">121</C>
+    <C cn="10" cr="0,0,0,0">115</C>
+    <C cn="10" cr="0,0,0,0">116</C>
+    <C cn="10" cr="0,0,0,0">101</C>
+    <C cn="10" cr="0,0,0,0">109</C>
+    <C cn="10" cr="0,0,0,0">46</C>
+    <C cn="10" cr="0,0,0,0">68</C>
+    <C cn="10" cr="0,0,0,0">97</C>
+    <C cn="10" cr="0,0,0,0">116</C>
+    <C cn="10" cr="0,0,0,0">97</C>
+    <C cn="10" cr="0,0,0,0">46</C>
+    <C cn="10" cr="0,0,0,0">68</C>
+    <C cn="10" cr="0,0,0,0">97</C>
+    <C cn="10" cr="0,0,0,0">116</C>
+    <C cn="10" cr="0,0,0,0">97</C>
+    <C cn="10" cr="0,0,0,0">82</C>
+    <C cn="10" cr="0,0,0,0">111</C>
+    <C cn="10" cr="0,0,0,0">119</C>
+    <C cn="10" cr="0,0,0,0">86</C>
+    <C cn="10" cr="0,0,0,0">105</C>
+    <C cn="10" cr="0,0,0,0">101</C>
+    <C cn="10" cr="0,0,0,0">119</C>
+  </F>
+  <F id="CIF">
+    <V n="TYPE">CIF</V>
+    <V n="Position">0,0,0,0</V>
+    <V n="STATUS">0</V>
+  </F>
+  <F id="DOB">
+    <V n="TYPE">DOB</V>
+    <V n="Position">0,0,0,0</V>
+    <V n="STATUS">0</V>
+  </F>
+  <F id="MOBILE">
+    <V n="TYPE">MOBILE</V>
+    <V n="Position">0,0,0,0</V>
+    <V n="STATUS">0</V>
+  </F>
+  <F id="SOL ID">
+    <V n="TYPE">SOL ID</V>
+    <V n="Position">0,0,0,0</V>
+    <V n="STATUS">0</V>
+  </F>
+  <F id="ACCOUNT OPEN DATE">
+    <V n="TYPE">ACCOUNT OPEN DATE</V>
+    <V n="Position">0,0,0,0</V>
+    <V n="STATUS">0</V>
+  </F>
+</P>

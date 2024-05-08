@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rsapp name="HOACCTSANDAUDIT">
+	<rsc>
+		<ruleset id="4" name="-------------------------------------------------------VScan--------------------------------------------" depends=""/>
+		<ruleset id="1" name="VScan" depends=""/>
+		<ruleset id="12" name="PDF Conversion" depends=""/>
+		<ruleset id="39" name="----------------------------------------------------NAV VScan---------------------------------------------" depends=""/>
+		<ruleset id="40" name="NAV VScan" depends=""/>
+		<ruleset id="41" name="NAV PDF Conversion" depends=""/>
+		<ruleset id="5" name="------------------------------------------------------PageID--------------------------------" depends=""/>
+		<ruleset id="30" name="SplitFileName" depends=""/>
+		<ruleset name.dll="IdentifyPages" id="IdentifyPages" depends=""/>
+		<ruleset id="16" name="Page Status" depends=""/>
+		<ruleset id="34" name="Call REST API" depends=""/>
+		<ruleset id="38" name="Custom identify pages1" depends=""/>
+		<ruleset id="3" name="Fixup" depends=""/>
+		<ruleset id="42" name="---------------------------------------------------NAV PageID---------------------------------" depends=""/>
+		<ruleset id="43" name="NAV SplitFileName" depends=""/>
+		<ruleset id="104" name="(P) Blank Page Detection" depends=""/>
+		<ruleset id="103" name="Rule for Deletion of blank page" depends=""/>
+		<ruleset id="94" name="(P) NAV PageIdByBarcode" depends=""/>
+		<ruleset id="44" name="NAV Identify Pages" depends=""/>
+		<ruleset id="45" name="NAV Page Status" depends=""/>
+		<ruleset id="48" name="(P) Handle Batch if No Seperator" depends=""/>
+		<ruleset id="93" name="(B) NAV Page Delete Seperator" depends=""/>
+		<ruleset id="46" name="NAV Call REST API" depends=""/>
+		<ruleset id="77" name="NAV Check API Response" depends=""/>
+		<ruleset id="99" name="Block batch API Failure" depends=""/>
+		<ruleset id="97" name="Handle if batch is sent back to classify" depends=""/>
+		<ruleset id="47" name="NAV Custom identify pages1" depends=""/>
+		<ruleset id="98" name="NAV Create Fields" depends=""/>
+		<ruleset id="17" name="-------------------------------------------------------ClassifyIT---------------------------" depends=""/>
+		<ruleset name.dll="ValidateFields" id="ValidateFields" depends=""/>
+		<ruleset id="49" name="------------------------------------------------NAV ClassifyIT----------------------------------------" depends=""/>
+		<ruleset id="52" name="NAV Validate Fields" depends=""/>
+		<ruleset id="6" name="-----------------------------------------------Profiler----------------------------------------------" depends=""/>
+		<ruleset id="24" name="Create Custom Variable" depends=""/>
+		<ruleset id="25" name="Assign Doc Type" depends=""/>
+		<ruleset id="20" name="Sort for HO IT DPT" depends=""/>
+		<ruleset name.dll="CreateDocuments" id="CreateDocuments" depends=""/>
+		<ruleset id="21" name="Custom ReClassify for IT DPT" depends=""/>
+		<ruleset id="27" name="Set Page Status And PageCount" depends=""/>
+		<ruleset id="35" name="Json Parsing" depends=""/>
+		<ruleset id="95" name="Populate DEPT CODE" depends=""/>
+		<ruleset id="31" name="AddCustomColumn" depends=""/>
+		<ruleset id="53" name="----------------------------------------------------NAV Profiler-----------------------------" depends=""/>
+		<ruleset id="54" name="NAV Create Custom Variable" depends=""/>
+		<ruleset id="55" name="NAV Assign Doc Type" depends=""/>
+		<ruleset id="56" name="NAV Sort for HO IT DPT" depends=""/>
+		<ruleset id="57" name="NAV Create Documents" depends=""/>
+		<ruleset id="58" name="NAV Custom ReClassify for HO ACCTS AND AUDIT DPT" depends=""/>
+		<ruleset id="59" name="NAV Set Page Status And PageCount" depends=""/>
+		<ruleset id="60" name="NAV Json Parsing" depends=""/>
+		<ruleset id="96" name="NAV Populate DEPT Code" depends=""/>
+		<ruleset id="61" name="NAV AddCustomColumn" depends=""/>
+		<ruleset id="9" name="----------------------------------------------Maker-----------------------------------------" depends=""/>
+		<ruleset id="51" name="HOIT Custom Validation" depends=""/>
+		<ruleset id="62" name="-------------------------------------------------NAV Maker-------------------------------" depends=""/>
+		<ruleset id="63" name="NAV HOIT Custom Validation" depends=""/>
+		<ruleset id="33" name="---------------------------------------------Pre-Checker-----------------------------------" depends=""/>
+		<ruleset id="50" name="HOIT Set Page Status after maker" depends=""/>
+		<ruleset id="29" name="Create PDFs Doc" depends=""/>
+		<ruleset id="32" name="Docs Count" depends=""/>
+		<ruleset id="64" name="------------------------------------------NAV Pre-Checker------------------------------------------" depends=""/>
+		<ruleset id="65" name="NAV HOIT Set Page Status after maker" depends=""/>
+		<ruleset id="66" name="NAV Create PDFs Doc" depends=""/>
+		<ruleset id="67" name="NAV Docs Count" depends=""/>
+		<ruleset id="13" name="--------------------------------------------------Export-----------------------------------" depends=""/>
+		<ruleset name="Export to Filenet" id="36" depends=""/>
+		<ruleset id="68" name="------------------------------------------------NAV Export--------------------------------" depends=""/>
+		<ruleset id="69" name="NAV Export to Filenet" depends=""/>
+		<ruleset id="14" name="------------------------------------------------Unused Rulesets---------------------" depends=""/>
+		<ruleset name="Export Statistics" id="Export Statistics" depends=""/>
+		<ruleset name="recognize page" id="15" depends=""/>
+		<ruleset name.dll="RecognizePagesAndFields" id="RecognizePagesAndFields" depends=""/>
+		<ruleset id="23" name="Sort for PL DEV DPT" depends=""/>
+		<ruleset id="ImportFiles.Rul.dll" name.dll="ImportFiles" depends=""/>
+		<ruleset name.dll="ImageEnhancement" id="ImageEnhancement" depends=""/>
+		<ruleset name="Export" id="7" depends=""/>
+		<ruleset id="2" name="Import Files - All" depends=""/>
+		<ruleset id="19" name="ReclassifyPages" depends=""/>
+		<ruleset name.dll="Image_Convert" id="Image_Convert" depends=""/>
+		<ruleset name="Document Integrity" id="11" depends=""/>
+		<ruleset name="Routing" id="10" depends=""/>
+		<ruleset name="FingerprintAdd" id="8" depends=""/>
+		<ruleset name="Profile Statistics" id="Profile Statistics" depends=""/>
+		<ruleset id="18" name="Create PDF DOc" depends=""/>
+		<ruleset id="26" name="Custom ReClassify pages" depends=""/>
+		<ruleset id="28" name="Delete Traling Object" depends=""/>
+		<ruleset id="22" name="Custom ReClassify for PL DEV DPT" depends=""/>
+		<ruleset name="-------------------------------------------------Classify---------------------------------" id="classify----------------------------------------------------------------------------------" depends=""/>
+		<ruleset name="remove spaces" id="remove spaces" depends=""/>
+		<ruleset name="-------------------------------------------------Verify--------------------------------------" id="verify---------------------------------------------------------------------------------------" depends=""/>
+		<ruleset id="37" name="Custom Identify PAges" depends=""/>
+		<ruleset id="70" name="-----------------------------------------------NAV Unused Rulesets----------------------------" depends=""/>
+		<ruleset id="71" name="NAV Export Statistics" depends=""/>
+		<ruleset id="72" name="NAV Recognize page" depends=""/>
+		<ruleset id="73" name="NAV Recognize Pages and Fields " depends=""/>
+		<ruleset id="74" name="NAV Sort for PL DEV DPT" depends=""/>
+		<ruleset id="75" name="NAV Import Files" depends=""/>
+		<ruleset id="76" name="NAV Image Enhancement" depends=""/>
+		<ruleset id="78" name="NAV Import Files - All" depends=""/>
+		<ruleset id="79" name="NAV ReclassifyPages" depends=""/>
+		<ruleset id="80" name="NAV Convert Files To Images" depends=""/>
+		<ruleset id="81" name="NAV Document Integrity" depends=""/>
+		<ruleset id="82" name="NAV Routing" depends=""/>
+		<ruleset id="83" name="NAV FingerprintAdd" depends=""/>
+		<ruleset id="84" name="NAV Profile Statistics" depends=""/>
+		<ruleset id="85" name="NAV Create PDF DOc" depends=""/>
+		<ruleset id="86" name="NAV Custom ReClassify pages" depends=""/>
+		<ruleset id="87" name="NAV Delete Traling Object" depends=""/>
+		<ruleset id="88" name="NAV Custom ReClassify for PL DEV DPT" depends=""/>
+		<ruleset id="89" name="---------------------------------------------NAV Classify-------------------------------------" depends=""/>
+		<ruleset id="90" name="NAV Remove spaces" depends=""/>
+		<ruleset id="91" name="---------------------------------------------NAV Verify--------------------------------" depends=""/>
+		<ruleset id="92" name="NAV Custom Identify PAges" depends=""/>
+		<ruleset id="100" name="NAV Return - Maker to Classify" depends=""/>
+		<ruleset id="101" name="NAV Classify Return" depends=""/>
+		<ruleset id="102" name="NAV Fixup- Recreate Doc Structure" depends=""/>
+		<ruleset id="105" name="----------------------------------NAV FIXUP Profiler-----------------------------" depends=""/>
+		<ruleset id="106" name="NAV FIXUP Create Custom Variable" depends=""/>
+		<ruleset id="107" name="NAV FIXUP Assign Doc Type" depends=""/>
+		<ruleset id="108" name="NAV FIXUP Sort for HO IT DPT" depends=""/>
+		<ruleset id="109" name="NAV FIXUP Create Documents" depends=""/>
+		<ruleset id="110" name="NAV FIXUP Custom ReClassify for HO ACCTS AND AUDIT DPT" depends=""/>
+		<ruleset id="111" name="NAV FIXUP Set Page Status And PageCount" depends=""/>
+		<ruleset id="112" name="NAV FIXUP Json Parsing" depends=""/>
+		<ruleset id="113" name="NAV FIXUP Populate DEPT Code" depends=""/>
+		<ruleset id="114" name="NAV FIXUP AddCustomColumn" depends=""/>
+	</rsc>
+	<tps>
+		<tprofile name="ScanFromDisk_MultiFormat">
+			<ruleset id="2"/>
+			<ruleset id="Image_Convert"/>
+		</tprofile>
+		<tprofile name="PageID">
+			<ruleset id="30"/>
+			<ruleset id="38"/>
+			<ruleset id="16"/>
+			<ruleset id="34"/>
+			<ruleset id="95"/>
+			<ruleset id="31"/>
+		</tprofile>
+		<tprofile name="Profiler">
+			<ruleset id="24"/>
+			<ruleset id="25"/>
+			<ruleset id="20"/>
+			<ruleset id="CreateDocuments"/>
+			<ruleset id="21"/>
+			<ruleset id="27"/>
+			<ruleset id="35"/>
+			<ruleset id="95"/>
+			<ruleset id="31"/>
+		</tprofile>
+		<tprofile name="Verify">
+			<ruleset id="ValidateFields"/>
+		</tprofile>
+		<tprofile name="Export">
+			<ruleset id="36"/>
+		</tprofile>
+		<tprofile name="FingerprintAdd">
+			<ruleset id="ImageEnhancement"/>
+			<ruleset id="8"/>
+		</tprofile>
+		<tprofile name="ScanFromDisk_SingleTIFFs">
+			<ruleset id="ImportFiles.Rul.dll"/>
+		</tprofile>
+		<tprofile name="FixUp"/>
+		<tprofile name="iVScan"/>
+		<tprofile name="Convert">
+			<ruleset id="Image_Convert"/>
+		</tprofile>
+		<tprofile name="VScan">
+			<ruleset id="1"/>
+			<ruleset id="12"/>
+		</tprofile>
+		<tprofile name="Maker">
+			<ruleset id="51"/>
+		</tprofile>
+		<tprofile name="Checker">
+			<ruleset id="ValidateFields"/>
+		</tprofile>
+		<tprofile name="PreChecker">
+			<ruleset id="50"/>
+			<ruleset id="29"/>
+			<ruleset id="32"/>
+		</tprofile>
+		<tprofile name="ClassifyIT">
+			<ruleset id="ValidateFields"/>
+		</tprofile>
+		<tprofile name="NAVVScan">
+			<ruleset id="40"/>
+			<ruleset id="41"/>
+		</tprofile>
+		<tprofile name="NAVPageID">
+			<ruleset id="43"/>
+			<ruleset id="41"/>
+			<ruleset id="104"/>
+			<ruleset id="103"/>
+			<ruleset id="94"/>
+			<ruleset id="45"/>
+			<ruleset id="46"/>
+			<ruleset id="77"/>
+			<ruleset id="99"/>
+			<ruleset id="48"/>
+			<ruleset id="93"/>
+			<ruleset id="60"/>
+			<ruleset id="97"/>
+			<ruleset id="61"/>
+			<ruleset id="98"/>
+		</tprofile>
+		<tprofile name="NAVProfiler">
+			<ruleset id="54"/>
+			<ruleset id="55"/>
+			<ruleset id="58"/>
+			<ruleset id="57"/>
+			<ruleset id="59"/>
+			<ruleset id="60"/>
+			<ruleset id="96"/>
+			<ruleset id="61"/>
+		</tprofile>
+		<tprofile name="NAVMaker">
+			<ruleset id="63"/>
+		</tprofile>
+		<tprofile name="NAVPreChecker">
+			<ruleset id="101"/>
+			<ruleset id="65"/>
+			<ruleset id="66"/>
+			<ruleset id="67"/>
+		</tprofile>
+		<tprofile name="NAVChecker">
+			<ruleset id="52"/>
+		</tprofile>
+		<tprofile name="NAVExport">
+			<ruleset id="69"/>
+		</tprofile>
+		<tprofile name="NAVClassifyHOAA">
+			<ruleset id="52"/>
+		</tprofile>
+		<tprofile name="NAVPreExport">
+			<ruleset id="101"/>
+		</tprofile>
+		<tprofile name="ReturnBatch">
+			<ruleset id="100"/>
+		</tprofile>
+		<tprofile name="ReCreateDocStructure">
+			<ruleset id="102"/>
+		</tprofile>
+		<tprofile name="ClassifyReturn">
+			<ruleset id="101"/>
+		</tprofile>
+		<tprofile name="NAVFixUpProfiler1">
+			<ruleset id="106"/>
+			<ruleset id="107"/>
+			<ruleset id="108"/>
+			<ruleset id="109"/>
+			<ruleset id="110"/>
+			<ruleset id="111"/>
+			<ruleset id="112"/>
+			<ruleset id="113"/>
+			<ruleset id="114"/>
+		</tprofile>
+	</tps>
+</rsapp>

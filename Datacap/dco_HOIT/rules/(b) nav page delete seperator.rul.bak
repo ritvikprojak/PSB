@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="1" modder="admin.1" qi="">
+		<rule name="NAV Page Delete Rule" id="1">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="2" modder="admin.1" qi="" dt="04/04/23 15:16:42.848 ">
+		<rule name="NAV Page Delete Rule" id="1">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="3" modder="admin.1" qi="" dt="04/04/23 15:26:57.415 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="4" modder="dmstest10.1" qi="" dt="06/22/23 08:20:52.720 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="(P) NAV Page Set when if no seperator" id="2" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+					<p name="PreviousTypeToMatch" v="Page"/>
+					<p name="LevelToCheck" v="2"/>
+					<p name="IgnoreTypes" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+					<p name="Type" type="string" v="TrailPage"/>
+				</a>
+			</func>
+			<func name="Function 2 for trail page">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType" qi="">
+					<p name="PreviousTypeToMatch" v="TrailPage"/>
+					<p name="LevelToCheck" v="2"/>
+					<p name="IgnoreTypes" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+					<p name="Type" type="string" v="TrailPage"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="5" modder="dmstest10.1" qi="" dt="06/23/23 09:12:06.739 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="6" modder="dmstest10.1" qi="" dt="09/20/23 15:11:27.15 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank_Page"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="7" modder="dmstest10.1" qi="" dt="09/20/23 15:21:50.331 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,Blank_Page" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank_Page"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="8" modder="dmstest10.1" qi="" dt="09/20/23 15:26:11.677 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="1000,Blank_Page"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank_Page"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="9" modder="dmstest10.1" qi="" dt="09/20/23 15:36:34.139 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1000,Blank_Page" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank_Page"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Blank page delete" id="2" dcomap.open="P" qi="">
+			<func name="Function1" disabled="y">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="1000,Blank"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType">
+					<p name="Type" v="Blank"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="10" modder="dmstest10.1" qi="" dt="09/20/23 15:39:20.243 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1000,Blank_Page" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank_Page"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Blank page delete" id="2" dcomap.open="P=Blank" qi="">
+			<func name="Function1" disabled="y">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1000,Blank" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType">
+					<p name="Type" v="Blank"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="11" modder="dmstest10.1" qi="" dt="09/20/23 15:40:08.169 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1000,Blank_Page" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank_Page"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Blank page delete" id="2" dcomap.open="P=Blank" qi="">
+			<func name="Function1" disabled="y">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1000,Blank" name="StrParam"/>
+				</a>
+				<a ns="Validations" name="DeleteChildType" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Blank"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="12" modder="dmstest10.1" qi="" dt="09/20/23 15:42:41.433 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1000,Blank_Page" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank_Page"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Blank page delete" id="2" dcomap.open="P=Blank" qi="">
+			<func name="Function1" disabled="y">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="5000,Blank"/>
+				</a>
+				<a ns="Validations" name="DeleteChildType" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Blank" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="13" modder="dmstest10.1" qi="" dt="09/20/23 15:48:48.103 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1000,Blank_Page" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank_Page"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Blank page delete" id="2" qi="" dcomap.open="B">
+			<func name="Function1" disabled="y">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5000,Blank" name="StrParam"/>
+				</a>
+				<a ns="Validations" name="DeleteChildType" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Blank" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="14" modder="dmstest10.1" qi="" dt="09/20/23 15:49:07.147 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page" disabled="y">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1000,Blank_Page" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank_Page"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Blank page delete" id="2" qi="" dcomap.open="B">
+			<func name="Function1" disabled="y">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="5000,Blank" name="StrParam"/>
+				</a>
+				<a ns="Validations" name="DeleteChildType" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Blank" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="15" modder="dmstest10.1" qi="" dt="09/20/23 15:52:11.738 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page" disabled="y">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1000,Blank_Page" name="StrParam"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank_Page"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Blank page delete" id="2" qi="" dcomap.open="B">
+			<func name="Function1" disabled="y">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner" qi="No matter what, jump to the next function to continue.&#xA;"/>
+			</func>
+			<func name="Function for blank page">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="autodoc" name="BlankPagesIDBySize">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="1000,Blank"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="16" modder="dmstest10.1" qi="" dt="09/20/23 16:05:48.631 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Blank page delete" id="2" qi="" dcomap.open="P=Blank">
+			<func name="Function for blank page">
+				<a ns="autodoc" name="BlankPagesIDBySize">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1000,Blank" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Blank page delete2" id="3" qi="" dcomap.open="B">
+			<func name="Function for blank page" qi="">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="17" modder="dmstest10.1" qi="" dt="09/20/23 16:21:02.540 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Blank page delete" id="2" qi="" dcomap.open="B">
+			<func name="Function for blank page">
+				<a ns="autodoc" name="BlankPagesIDBySize">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1000,Blank" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Blank page delete2" id="3" qi="" dcomap.open="B">
+			<func name="Function for blank page" qi="">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="18" modder="dmstest10.1" qi="" dt="09/20/23 17:12:09.697 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Blank page delete" id="2" qi="" dcomap.open="B">
+			<func name="Function for blank page">
+				<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="5000,Blank,0"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Blank page delete2" id="3" qi="" dcomap.open="B">
+			<func name="Function for blank page" qi="">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="19" modder="dmstest10.1" qi="" dt="09/20/23 17:18:34.315 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="20" modder="dmstest10.1" qi="" dt="09/20/23 17:24:44.16 ">
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="21" modder="dmstest10.1" qi="" dt="09/20/23 17:30:09.287 ">
+		<rule name="Deleting blank page" id="2" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="" disabled="y">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Blank"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+					<p name="Type" v="Document_Separator"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="" disabled="y">
+					<p name="Type" v="Blank"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

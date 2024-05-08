@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="73" name="NAV Check API Response" ver="1" modder="dmstest10.1" qi="">
+	<rule name="NAV Check response" id="1" dcomap.open="B" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.APIResponse"/>
+				<p name="Text2" type="string" v="API Failure"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetTaskStatus">
+				<p name="TaskStatus" type="string" v="0"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

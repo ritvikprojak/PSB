@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="53" name="NAV Sort for HOPLDEV DPT" ver="3" modder="admin.1" qi="" dt="04/27/23 12:20:41.324 ">
+	<rule name="NAV Sort Unorder Pages Rule1" id="1" dcomap.open="B" qi="">
+		<func name="Function1">
+			<a ns="SortPages" name="SortPages" qi="" disabled="y">
+				<p name="OrderString" v="OFFICE NOTES,OFFICE NOTES_TrailingPage,OPEINING/CLOSING/MERGING,OPEINING/CLOSING/MERGING_TrailingPage,RTI,RTI_TrailingPage,RFP DOCUMENTS,RFP DOCUMENTS_TrailingPage,ADDENDUM,ADDENDUM_TrailingPage,ANNEXURES,ANNEXURES_TrailingPage,SUPPORTING DOCUMENTS,SUPPORTING DOCUMENTS_TrailingPage,"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

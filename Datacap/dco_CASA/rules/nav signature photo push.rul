@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="90" name="NAV Signature Photo push" ver="8" modder="dmstest10.1" qi="" dt="11/21/23 14:52:51.647 ">
+	<rule name="NAV push photograph" id="1" qi="" dcomap.open="D=SignatureNPhotograph">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompareNot">
+				<p name="Text1" type="string" v="@B.PHOTOAPIResponse"/>
+				<p name="Text2" type="string" v="API Response Success"/>
+			</a>
+			<a ns="net:CASAPSBCustomLibrary.SampleAction" name="PhotographSignatureUploadAPI" qi="">
+				<p name="photoFilePath" type="string" qi="Photograph file path to be provided as Input parameter. Smart parameters are supported" v="@D\Photograph.IMAGEFILE"/>
+				<p name="signatureFilePath" type="string" qi="Signature file path to be provided as Input parameter. Smart parameters are supported" v="@D\Signature.IMAGEFILE"/>
+				<p name="customerid" type="string" qi="Customer ID to be provided as Input parameter. Smart parameters are supported" v="@D.P\CIF"/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.CUSTOMER_TYPE"/>
+				<p name="Text2" type="string" v="JOINT"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompareNot" disabled="y" qi="">
+				<p name="Text1" type="string" v="@B.PHOTOAPIResponse"/>
+				<p name="Text2" type="string" v="API Response Success"/>
+			</a>
+			<a ns="net:CASAPSBCustomLibrary.SampleAction" name="PhotographSignatureUploadAPI" qi="">
+				<p name="photoFilePath" type="string" qi="Photograph file path to be provided as Input parameter. Smart parameters are supported" v="@D\Photograph.IMAGEFILE"/>
+				<p name="signatureFilePath" type="string" qi="Signature file path to be provided as Input parameter. Smart parameters are supported" v="@D\Signature.IMAGEFILE"/>
+				<p name="customerid" type="string" qi="Customer ID to be provided as Input parameter. Smart parameters are supported" v="@D.P\CIF"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

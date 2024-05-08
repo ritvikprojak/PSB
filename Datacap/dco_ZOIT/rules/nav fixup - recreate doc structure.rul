@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="103" name="NAV Fixup - Recreate Doc Structure" ver="1" modder="dmstest10.1" qi="">
+  <rule name="Rule1 - ReCreateDocStructure" id="1" dcomap.open="B;P">
+    <func name="Function1" qi="">
+      <a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" />
+    </func>
+  </rule>
+  <rule name="Rule2 - Auto Populate Default value" id="2" dcomap.open="F=HO DEPARTMENT CODE" qi="">
+    <func name="Function1" qi="">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+        <p name="Source" type="string" v="@B.DeptName" />
+        <p name="Target" type="string" v="@F" />
+      </a>
+    </func>
+  </rule>
+  <rule name="Rule3 - Auto Populate Branch" id="3" qi="">
+    <func name="Function1" qi="" disabled="y">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" disabled="y">
+        <p name="Source" type="string" v="@B.BranchCode" />
+        <p name="Target" type="string" v="@F" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

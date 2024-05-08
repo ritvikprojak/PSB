@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="63" name="NAV ValidateFields" ver="1" modder="admin.1" qi="">
+		<rule name="NAV Parent Rule" id="1" dcomap.open="P">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Validate Rule" id="2" dynamic="open" dcomap.open="F">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a name="SetIsOverrideable" ns="rrunner.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="True" name="StrParam"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="63" name="NAV ValidateFields" ver="2" modder="dmstest10.1" qi="" dt="06/29/23 08:57:34.728 ">
+		<rule name="NAV Parent Rule" id="1" dcomap.open="P">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Validate Rule" id="2" dynamic="open" dcomap.open="F">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a ns="rrunner" name="SetIsOverrideable" qi="">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="False"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="63" name="NAV ValidateFields" ver="3" modder="dmstest10.1" qi="" dt="08/09/23 17:07:17.389 ">
+		<rule name="NAV Parent Rule" id="1" dcomap.open="P">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Validate Rule" id="2" dynamic="open" dcomap.open="F">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a ns="rrunner" name="SetIsOverrideable" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account No if Missing" id="3" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="63" name="NAV ValidateFields" ver="4" modder="dmstest10.1" qi="" dt="08/09/23 17:11:53.681 ">
+		<rule name="NAV Parent Rule" id="1" dcomap.open="P">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Validate Rule" id="2" dynamic="open" dcomap.open="F">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a ns="rrunner" name="SetIsOverrideable" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account No if Missing" id="3" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="63" name="NAV ValidateFields" ver="5" modder="dmstest10.1" qi="" dt="08/09/23 17:23:53.238 ">
+		<rule name="NAV Parent Rule" id="1" dcomap.open="P">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Validate Rule" id="2" dynamic="open" dcomap.open="F">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a ns="rrunner" name="SetIsOverrideable" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account No if Missing" id="3" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="rrunner" name="rrCompare">
+					<p name="object1" v="@P\ACCOUNT_NUMBER"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT_NUMBER"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="63" name="NAV ValidateFields" ver="6" modder="dmstest10.1" qi="" dt="08/09/23 17:24:42.641 ">
+		<rule name="NAV Parent Rule" id="1" dcomap.open="P">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Validate Rule" id="2" dynamic="open" dcomap.open="F">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a ns="rrunner" name="SetIsOverrideable" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account No if Missing" id="3" dcomap.open="P=Page">
+			<func name="Function1" qi="">
+				<a ns="rrunner" name="rrCompare">
+					<p name="object1" v="@P\ACCOUNT_NUMBER"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT_NUMBER"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="63" name="NAV ValidateFields" ver="7" modder="dmstest10.1" qi="" dt="08/09/23 17:43:11.26 ">
+		<rule name="NAV Parent Rule" id="1" dcomap.open="P">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Validate Rule" id="2" dynamic="open" dcomap.open="F">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a ns="rrunner" name="SetIsOverrideable" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account No if Missing" id="3" dcomap.open="P=Page">
+			<func name="Function1" qi="">
+				<a ns="rrunner" name="rrCompare">
+					<p name="object1" v="@P\ACCOUNT NUMBER"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="63" name="NAV ValidateFields" ver="8" modder="dmstest10.1" qi="" dt="08/10/23 10:49:01.838 ">
+		<rule name="NAV Parent Rule" id="1" dcomap.open="P">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Validate Rule" id="2" dynamic="open" dcomap.open="F">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a ns="rrunner" name="SetIsOverrideable" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account No if Missing" id="3" dcomap.open="P" qi="">
+			<func name="Function1" qi="">
+				<a ns="rrunner" name="rrCompare">
+					<p name="object1" v="@P\ACCOUNT NUMBER"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="63" name="NAV ValidateFields" ver="9" modder="dmstest10.1" qi="" dt="08/10/23 11:03:20.981 ">
+		<rule name="NAV Parent Rule" id="1" dcomap.open="P">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Validate Rule" id="2" dynamic="open" dcomap.open="F">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a ns="rrunner" name="SetIsOverrideable" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account No if Missing" id="3" dcomap.open="P" qi="">
+			<func name="Function1" qi="">
+				<a ns="rrunner" name="rrCompare">
+					<p name="object1" v="@P\ACCOUNT NUMBER"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@P\SOL ID"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.BranchCode"/>
+					<p name="Target" type="string" v="@P\SOL ID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="63" name="NAV ValidateFields" ver="10" modder="dmstest10.1" qi="" dt="10/10/23 09:44:37.973 ">
+		<rule name="NAV Parent Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Validate Rule" id="2" dynamic="open" dcomap.open="F">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a ns="rrunner" name="SetIsOverrideable" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account No if Missing" id="3" dcomap.open="P" qi="">
+			<func name="Function1" qi="">
+				<a ns="rrunner" name="rrCompare">
+					<p name="object1" v="@P\ACCOUNT NUMBER"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@P\SOL ID"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.BranchCode"/>
+					<p name="Target" type="string" v="@P\SOL ID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="63" name="NAV ValidateFields" ver="11" modder="dmstest10.1" qi="" dt="10/10/23 09:45:26.725 ">
+		<rule name="NAV Parent Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Validate Rule" id="2" dynamic="open" dcomap.open="F">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompareNot" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="rrunner" name="rrCompare" qi="" disabled="y">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a ns="rrunner" name="SetIsOverrideable" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account No if Missing" id="3" dcomap.open="P" qi="">
+			<func name="Function1" qi="">
+				<a ns="rrunner" name="rrCompare">
+					<p name="object1" v="@P\ACCOUNT NUMBER"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@P\SOL ID"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.BranchCode"/>
+					<p name="Target" type="string" v="@P\SOL ID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="63" name="NAV ValidateFields" ver="12" modder="dmstest10.1" qi="" dt="10/18/23 15:14:42.384 ">
+		<rule name="NAV Parent Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Validate Rule" id="2" dynamic="open" dcomap.open="F=Document_Type;F=ACCOUNT NUMBER;F=CUSTOMER NAME;F=CIF;F=SOL ID;F=ACCOUNT OPEN DATE" qi="">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompareNot" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="rrunner" name="rrCompare" qi="" disabled="y">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a ns="rrunner" name="SetIsOverrideable" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account No if Missing" id="3" dcomap.open="P" qi="">
+			<func name="Function1" qi="">
+				<a ns="rrunner" name="rrCompare">
+					<p name="object1" v="@P\ACCOUNT NUMBER"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@P\SOL ID"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.BranchCode"/>
+					<p name="Target" type="string" v="@P\SOL ID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="63" name="NAV ValidateFields" ver="13" modder="dmstest10.1" qi="" dt="10/27/23 15:11:06.329 ">
+		<rule name="NAV Parent Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Validate Rule" id="2" dynamic="open" dcomap.open="F=Document_Type;F=ACCOUNT NUMBER;F=CUSTOMER NAME;F=CIF;F=SOL ID;F=ACCOUNT OPEN DATE" qi="">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompareNot" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="rrunner" name="rrCompare" qi="" disabled="y">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a ns="rrunner" name="SetIsOverrideable" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account No if Missing" id="3" dcomap.open="P=Page" qi="">
+			<func name="Function1" qi="">
+				<a ns="rrunner" name="rrCompare">
+					<p name="object1" v="@P\ACCOUNT NUMBER"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@P\SOL ID"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.BranchCode"/>
+					<p name="Target" type="string" v="@P\SOL ID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="63" name="NAV ValidateFields" ver="14" modder="dmstest10.1" qi="" dt="10/27/23 15:17:56.897 ">
+		<rule name="NAV Parent Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Validate Rule" id="2" dynamic="open" dcomap.open="F=Document_Type;F=ACCOUNT NUMBER;F=CUSTOMER NAME;F=CIF;F=SOL ID;F=ACCOUNT OPEN DATE" qi="">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompareNot" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="rrunner" name="rrCompare" qi="" disabled="y">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a ns="rrunner" name="SetIsOverrideable" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account No if Missing" id="3" dcomap.open="P=Page" qi="">
+			<func name="Function1" qi="">
+				<a ns="rrunner" name="rrCompare">
+					<p name="object1" v="@P\ACCOUNT NUMBER"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@P\SOL ID"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.BranchCode"/>
+					<p name="Target" type="string" v="@P\SOL ID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="63" name="NAV ValidateFields" ver="15" modder="dmstest10.1" qi="" dt="10/27/23 16:22:11.295 ">
+		<rule name="NAV Parent Rule" id="1" dcomap.open="P=Page" qi="">
+			<func name="Function1">
+				<a name="Status_Preserve_OFF" ns="rrunner">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+				<a name="ClearErrorMsg" ns="Invoice.dll" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Validate Rule" id="2" dynamic="open" dcomap.open="F=Document_Type;F=ACCOUNT NUMBER;F=CUSTOMER NAME;F=CIF;F=SOL ID;F=ACCOUNT OPEN DATE" qi="">
+			<func name="Skip Empty Function">
+				<a ns="rrunner" name="rrCompareNot" qi="">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="rrunner" name="rrCompare" qi="" disabled="y">
+					<p name="object1" v="@F"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+			</func>
+			<func name="Common Function">
+				<a ns="rrunner" name="SetIsOverrideable" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="False" name="StrParam"/>
+				</a>
+				<a name="GoToNextFunction" ns="rrunner"/>
+			</func>
+			<func name="Length Function">
+				<a name="IsTextLength" ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" qi="IsFieldLengthMin">
+					<p name="Target" type="string" v="@F"/>
+					<p name="Length" type="string" v=""/>
+					<p name="ComparisonOperator" type="string" v="&gt;="/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Account No if Missing" id="3" dcomap.open="P" qi="">
+			<func name="Function1" qi="">
+				<a ns="rrunner" name="rrCompare">
+					<p name="object1" v="@P\ACCOUNT NUMBER"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="rrunner" name="rrCompare" qi="">
+					<p name="object1" v="@P\SOL ID"/>
+					<p name="object2" v="@EMPTY"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.BranchCode"/>
+					<p name="Target" type="string" v="@P\SOL ID"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

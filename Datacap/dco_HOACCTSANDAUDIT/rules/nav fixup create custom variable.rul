@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="106" name="NAV FIXUP Create Custom Variable" ver="1" modder="dmstest10.1" qi="">
+	<rule name="rCreate Variable" id="1" qi="" dcomap.open="F=Document_Type">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="@F"/>
+				<p name="Target" type="string" v="@P.CustomPageType"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

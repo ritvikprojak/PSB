@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="96" name="NAV Populate DEPT Code" ver="1" modder="admin.1" qi="">
+		<rule name="NAV POPULATE DEPT CODE" id="1" dcomap.open="F=HO DEPARTMENT CODE" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.DeptName"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="96" name="NAV Populate DEPT Code" ver="2" modder="dmstest10.1" qi="" dt="10/25/23 22:22:14.234 ">
+		<rule name="NAV POPULATE DEPT CODE" id="1" dcomap.open="F=HO DEPARTMENT CODE;F=BRANCH_CODE;F=BRANCH_CODE_MA;F=BRANCH_CODE_MISC;F=BRANCH_CODE_NAME_RBIA" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.DeptName"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="96" name="NAV Populate DEPT Code" ver="3" modder="dmstest10.1" qi="" dt="11/08/23 22:30:01.189 ">
+		<rule name="NAV POPULATE DEPT CODE" id="1" dcomap.open="F=HO DEPARTMENT CODE;F=BRANCH_CODE;F=BRANCH_CODE_MA;F=BRANCH_CODE_MISC;F=BRANCH_CODE_NAME_RBIA" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.DeptName"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

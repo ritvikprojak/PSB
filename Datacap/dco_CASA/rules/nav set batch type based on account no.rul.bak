@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="124" name="NAV Set Batch Type Based on Account No" ver="1" modder="dmstest10.1" qi="">
+		<rule name="Rule1" id="1" dcomap.open="F=BATCHTYPE" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="11"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="Current"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="124" name="NAV Set Batch Type Based on Account No" ver="2" modder="dmstest10.1" qi="" dt="12/06/23 13:03:14.8 ">
+		<rule name="Rule1" id="1" qi="" dcomap.open="B;F=BATCHTYPE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="11"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="Current"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="124" name="NAV Set Batch Type Based on Account No" ver="3" modder="dmstest10.1" qi="" dt="12/06/23 13:10:26.920 ">
+		<rule name="CA" id="1" qi="" dcomap.open="B;F=BATCHTYPE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="11"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="CURRENT"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="SA" id="2" qi="" dcomap.open="B;F=BATCHTYPE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="10"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="SAVING"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="FD" id="3" qi="" dcomap.open="B;F=BATCHTYPE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="14"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="FD"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="124" name="NAV Set Batch Type Based on Account No" ver="4" modder="dmstest10.1" qi="" dt="12/06/23 13:15:09.461 ">
+		<rule name="CA" id="1" qi="" dcomap.open="B;F=BATCHTYPE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="11"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="CURRENT"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="SA" id="2" qi="" dcomap.open="B;F=BATCHTYPE">
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="10"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="SAVING"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="FD" id="3" qi="" dcomap.open="B;F=BATCHTYPE">
+			<func name="Function3">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="14"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="FD"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="124" name="NAV Set Batch Type Based on Account No" ver="5" modder="dmstest10.1" qi="" dt="12/06/23 13:28:14.824 ">
+		<rule name="Set Account Type" id="1" qi="" dcomap.open="B;F=BATCHTYPE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="11"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="CURRENT"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="10"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="SAVING"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+			<func name="Function3">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="14"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="FD"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="124" name="NAV Set Batch Type Based on Account No" ver="6" modder="dmstest10.1" qi="" dt="12/06/23 13:51:25.979 ">
+		<rule name="Set Account Type" id="1" qi="" dcomap.open="B;F=BATCHTYPE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="11"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="CURRENT"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="10"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="SAVING"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+			<func name="Function3">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="14"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="FD"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set BatchType to Field" id="2" dcomap.open="F=BATCHTYPE" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="124" name="NAV Set Batch Type Based on Account No" ver="7" modder="dmstest10.1" qi="" dt="12/06/23 15:48:42.812 ">
+		<rule name="Set Account Type" id="1" qi="" dcomap.open="B;F=BATCHTYPE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="11"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="CURRENT"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="10"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="SAVING"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+			<func name="Function3">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="14"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="FD"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set BatchType to Field" id="2" dcomap.open="F=BATCHTYPE" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@P\BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="124" name="NAV Set Batch Type Based on Account No" ver="8" modder="dmstest10.1" qi="" dt="12/06/23 15:56:00.413 ">
+		<rule name="Set Account Type" id="1" qi="" dcomap.open="B;F=BATCHTYPE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="11"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="CURRENT"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="10"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="SAVING"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+			<func name="Function3">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="14"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="FD"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set BatchType to Field" id="2" dcomap.open="F=BATCHTYPE" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="124" name="NAV Set Batch Type Based on Account No" ver="9" modder="dmstest10.1" qi="" dt="12/06/23 16:00:14.154 ">
+		<rule name="Set Account Type" id="1" qi="" dcomap.open="B;F=BATCHTYPE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="11"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="CURRENT"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="10"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="SAVING"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+			<func name="Function3">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="14"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="FD"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set BatchType to Field" id="2" dcomap.open="F=BATCHTYPE" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.BATCHTYPE"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="124" name="NAV Set Batch Type Based on Account No" ver="10" modder="dmstest10.1" qi="" dt="12/15/23 09:53:27.668 ">
+		<rule name="Set Account Type" id="1" qi="" dcomap.open="B;F=BATCHTYPE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="11"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="CURRENT"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="10"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="SAVING"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+			<func name="Function3">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="14"/>
+					<p name="Text2" type="string" v="@B.bAccountNumberTrunc"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="FD"/>
+					<p name="Target" type="string" v="@B.BATCHTYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Set BatchType to Field" id="2" dcomap.open="F=BATCHTYPE" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.BATCHTYPE"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

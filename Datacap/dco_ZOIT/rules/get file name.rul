@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="104" name="get file name" ver="3" modder="dmstest10.1" qi="" dt="09/22/23 17:24:18.440 ">
+  <rule name="SplitFileName Rule1" id="1" dcomap.open="P=Other" qi="">
+    <func name="Function1" disabled="y" qi="">
+      <a ns="rrunner" name="rr_Get" qi="">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+        <p type="strParam" v="@P.FNAME" name="StrParam" />
+      </a>
+      <a ns="rrunner" name="rrSet" qi="">
+        <p name="varSource" v="@P.FFILENAME" />
+        <p name="varTarget" v="@B.FNAME" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

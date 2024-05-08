@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="16" name="Page Status" ver="11" modder="admin.1" dt="03/02/23 12:14:46.599 " qi="">
+  <rule name="Page Status Rule" id="1" qi="" dcomap.open="P">
+    <func name="Function1">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+        <p name="Source" type="string" v="1" />
+        <p name="Target" type="string" v="@P.STATUS" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

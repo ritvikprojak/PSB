@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="59" name="NAV Set Page Status And PageCount" ver="10" modder="dmstest10.1" qi="" dt="01/24/24 14:10:41.848 ">
+	<rule name="Set page status rule1" id="1" dcomap.open="P=INCOME TAX NOTICE;P=EMPLOYEE SIGNATURE CARD;P=MISC;P=TRUST AUDIT;P=STAFF FILES;P=TRUST DOCUMENTS;P=TRUSTEE MEETING;P=MINUTES;P=TRUST BALANCE SHEET;P=TRUST INCOME TAX RETURN;P=INCOME TAX NOTICE;P=INVESTMENT APPROVALS;P=INVESTMENT CERTIFICATES;P=NOTES;P=GUIDELINES;P=CASES;P=PF OPTEE;P=PRAN CARD GENERATION FORM;P=NOMINATION CHANGE FORM NPS;P=ADDRESS CHANGE FORM;P=NPS PARTIAL WITHDRAWAL;P=PENSION;P=PF WITHDRAWAL;P=NPS OPTEE;P=TERMINAL DUES;P=DEPARTMENT AUDIT" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Set page status rule1 - TrailingPages" id="3" dcomap.open="P=TRUST DOCUMENTS_TrailingPage;P=DEPARTMENT AUDIT_TrailingPage;P=STAFF FILES_TrailingPage;P=MISC_TrailingPage;P=EMPLOYEE SIGNATURE CARD_TrailingPage;P=TRUSTEE MEETING_TrailingPage;P=MINUTES_TrailingPage;P=TRUST INCOME TAX RETURN_TrailingPage;P=INCOME TAX NOTICE_TrailingPage;P=INVESTMENT APPROVALS_TrailingPage;P=INVESTMENT CERTIFICATES_TrailingPage;P=NOTES_TrailingPage;P=GUIDELINES_TrailingPage;P=CASES_TrailingPage;P=PF OPTEE_TrailingPage;P=PRAN CARD GENERATION FORM_TrailingPage;P=NOMINATION CHANGE FORM NPS_TrailingPage;P=ADDRESS CHANGE FORM_TrailingPage;P=NPS PARTIAL WITHDRAWAL_TrailingPage;P=NPS OPTEE_TrailingPage;P=TERMINAL DUES_TrailingPage;P=PENSION_TrailingPage;P=PF WITHDRAWAL_TrailingPage;P=TRUST AUDIT_TrailingPage" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Pages Count" id="2" dcomap.open="B">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+				<p name="Target" type="string" v="@B.PagesCount"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

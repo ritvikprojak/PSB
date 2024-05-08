@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="1" modder="admin.1" qi="">
+		<rule name="Accnum,CBS ver" id="1">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" disabled="y">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Datacap\CASA\CASAEng.mdb;"/>
+				</a>
+				<a name="ExecuteSQLEx" ns="Lookup.dll" qi="" disabled="y">
+					<p name="sStringIn"/>
+					<p name="sPopulate" type="bool"/>
+					<p name="sTarget"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER FROM tmbatch  WHERE PB_BATCH = @BATCHID"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.accountNumber"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_CBSSOURCE FROM tmbatch  WHERE PB_BATCH = @BATCHID"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.CBSSource"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="2" modder="admin.1" qi="" dt="03/29/23 13:15:45.953 ">
+		<rule name="Accnum,CBS ver" id="1" qi="">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" disabled="y">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Datacap\CASA\CASAEng.mdb;" name="strParam"/>
+				</a>
+				<a name="ExecuteSQLEx" ns="Lookup.dll" qi="" disabled="y">
+					<p name="sStringIn"/>
+					<p name="sPopulate" type="bool"/>
+					<p name="sTarget"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER FROM tmbatch  WHERE PB_BATCH = @BATCHID"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.accountNumber"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_CBSSOURCE FROM tmbatch  WHERE PB_BATCH = @BATCHID"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.CBSSource"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="3" modder="admin.1" qi="" dt="03/29/23 15:07:50.107 ">
+		<rule name="Accnum,CBS ver" id="1" qi="">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" disabled="y">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Datacap\CASA\CASAEng.mdb;" name="strParam"/>
+				</a>
+				<a name="ExecuteSQLEx" ns="Lookup.dll" qi="" disabled="y">
+					<p name="sStringIn"/>
+					<p name="sPopulate" type="bool"/>
+					<p name="sTarget"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER FROM tmbatch  WHERE PB_BATCH = @BATCHID"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.accountNumber"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_CBSSOURCE FROM tmbatch  WHERE PB_BATCH = @BATCHID"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.CBSSource"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="4" modder="admin.0606" qi="" dt="03/29/23 17:42:16.512 ">
+		<rule name="Accnum,CBS ver" id="1" qi="">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER FROM tmbatch  WHERE PB_BATCH = @BATCHID"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.accountNumber"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_CBSSOURCE FROM tmbatch  WHERE PB_BATCH = @BATCHID"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.CBSSource"/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="5" modder="admin.0606" qi="" dt="03/29/23 17:44:46.708 ">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER FROM tmbatch  WHERE PB_BATCH = @BATCHID"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.accountNumber"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_CBSSOURCE FROM tmbatch  WHERE PB_BATCH = @BATCHID"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.CBSSource"/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="6" modder="admin.0606" qi="" dt="03/29/23 17:51:15.140 ">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.accountNumber"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_CBSSOURCE FROM tmbatch  WHERE PB_BATCH = @BATCHID"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.CBSSource"/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="7" modder="admin.0606" qi="" dt="03/29/23 17:55:13.462 ">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.accountNumber"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_CBSSOURCE FROM tmbatch  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.CBSSource"/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="8" modder="admin.1" qi="" dt="04/05/23 12:47:30.722 ">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.accountNumber"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_CBSSOURCE FROM tmbatch  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.CBSSource"/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Assign Account number to field" id="2">
+			<func name="Set field value">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.accountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="9" modder="admin.1" qi="" dt="04/05/23 12:49:29.297 ">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.accountNumber"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_CBSSOURCE FROM tmbatch  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.CBSSource"/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Assign Account number to field" id="2" qi="">
+			<func name="Set field value">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@B.accountNumber"/>
+					<p name="Target" type="string" v="@F"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="10" modder="admin.1" qi="" dt="04/10/23 13:34:43.545 ">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.accountNumber"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_CBSSOURCE FROM tmbatch  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.CBSSource"/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="11" modder="admin.1" qi="" dt="04/10/23 15:35:45.217 ">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.bAccountNumber"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_CBSSOURCE FROM tmbatch  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.CBSSource"/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="12" modder="admin.1" qi="" dt="04/18/23 13:33:51.459 ">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a name="ExecuteSQLEx" ns="Lookup.dll">
+					<p name="sStringIn"/>
+					<p name="sPopulate" type="bool"/>
+					<p name="sTarget"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.bAccountNumber"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_CBSSOURCE FROM tmbatch  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v="@B.CBSSource"/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate Field Level Value" id="2">
+			<func name="Function1"/>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="13" modder="admin.1" qi="" dt="04/18/23 13:42:06.462 ">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="ExecuteSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="1,FALSE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate SOL Value" id="3" dcomap.open="F">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="2,FALSE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate CB7 Value" id="4" dcomap.open="F=SOL ID">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter"/>
+					<p type="bDebug"/>
+					<p type="strParam" v="3,FALSE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="14" modder="admin.1185" qi="" dt="04/18/23 15:26:10.27 ">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="ExecuteSQLEx" qi="">
+					<p name="sStringIn" v="&quot;SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID FROM TMBATCH  WHERE PB_BATCH ='%s';&quot;,@BATCHID"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate SOL Value" id="3" dcomap.open="F">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate CB7 Value" id="4" dcomap.open="F=SOL ID">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="15" modder="admin.1185" qi="" dt="04/18/23 15:32:55.915 ">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="False"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate SOL Value" id="3" dcomap.open="F">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate CB7 Value" id="4" dcomap.open="F=SOL ID">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="16" modder="admin.1185" qi="" dt="04/18/23 15:36:03.985 ">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate SOL Value" id="3" dcomap.open="F">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate CB7 Value" id="4" dcomap.open="F=SOL ID">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="17" modder="admin.1185" qi="" dt="04/18/23 15:42:15.347 ">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="18" modder="admin.1185" qi="" dt="04/18/23 15:47:31.463 ">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="37" name="Get Accountnumber, CBS version" ver="19" modder="admin.1185" qi="" dt="04/18/23 15:55:15.422 ">
+		<rule name="Accnum,CBS ver" id="1" qi="" dcomap.open="B">
+			<func name="Get values from custom column" qi="">
+				<a ns="Lookup" name="OpenConnection" qi="">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@APPVAR(tmengine:cs)" name="strParam"/>
+				</a>
+				<a ns="Lookup" name="SmartSQLEx" qi="">
+					<p name="sStringIn" v="SELECT PB_ACCOUNTNUMBER,PB_CBSSOURCE,PB_SOLID FROM TMBATCH  WHERE PB_BATCH = '+@BATCHID+'"/>
+					<p name="sPopulate" type="bool" v="True"/>
+					<p name="sTarget" v=""/>
+				</a>
+				<a name="CloseConnection" ns="Lookup.dll">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate AccountNo Value" id="2" dcomap.open="F=ACCOUNT NUMBER">
+			<func name="Function1">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="1,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate CBSource Value" id="3">
+			<func name="Function2">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="2,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Populate SOL Value" id="4" dcomap.open="F=SOL ID" qi="">
+			<func name="Function3" qi="">
+				<a ns="Lookup" name="PopulateWithResult">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="3,FALSE" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

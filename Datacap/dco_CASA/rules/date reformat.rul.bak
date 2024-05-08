@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="96" name="date reformat" ver="1" modder="dmstest10.1">
+		<rule name="Rule1" id="1" dcomap.open="F=ACCOUNT OPEN DATE;F=DOB" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat" qi="">
+					<p name="NewDateFormat" type="string" v="mm/dd/yyyy"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="96" name="date reformat" ver="2" modder="dmstest10.1" dt="06/30/23 17:54:03.603 " qi="">
+		<rule name="Rule1" id="1" dcomap.open="F=ACCOUNT OPEN DATE;F=DOB" qi="">
+			<func name="Function1" disabled="y">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat" qi="">
+					<p name="NewDateFormat" type="string" v="mm/dd/yyyy"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="96" name="date reformat" ver="3" modder="dmstest10.1" dt="06/30/23 17:57:30.985 " qi="">
+		<rule name="Rule1" id="1" dcomap.open="F=ACCOUNT OPEN DATE;F=DOB" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat" qi="">
+					<p name="NewDateFormat" type="string" v="dd/mm/yy"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="96" name="date reformat" ver="4" modder="dmstest10.1" dt="06/30/23 18:00:52.50 " qi="">
+		<rule name="Rule1" id="1" dcomap.open="F=ACCOUNT OPEN DATE;F=DOB" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="ReplaceCharacters">
+					<p name="Find" type="string" v="-"/>
+					<p name="Replacement" type="string" v="/"/>
+					<p name="Count" type="string" v="*"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat" qi="">
+					<p name="NewDateFormat" type="string" v="dd/mm/yy"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="96" name="date reformat" ver="5" modder="dmstest10.1" dt="06/30/23 18:05:08.431 " qi="">
+		<rule name="Rule1" id="1" dcomap.open="F=ACCOUNT OPEN DATE;F=DOB" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="ReplaceCharacters" qi="">
+					<p name="Find" type="string" v="-"/>
+					<p name="Replacement" type="string" v="/"/>
+					<p name="Count" type="string" v="*"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat" qi="" disabled="y">
+					<p name="NewDateFormat" type="string" v="dd/mm/yy"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="96" name="date reformat" ver="6" modder="dmstest10.1" dt="06/30/23 18:12:01.294 " qi="">
+		<rule name="Rule1" id="1" dcomap.open="F=ACCOUNT OPEN DATE;F=DOB" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="ReplaceCharacters" qi="">
+					<p name="Find" type="string" v="-"/>
+					<p name="Replacement" type="string" v="/"/>
+					<p name="Count" type="string" v="*"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat">
+					<p name="NewDateFormat" type="string" v="mm/dd/yyyy"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="96" name="date reformat" ver="7" modder="dmstest10.1" dt="07/11/23 08:41:34.982 " qi="">
+		<rule name="NAV Check response for ACK API" id="2" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+					<p name="Text1" type="string" v="@B.ACKAPIResponse"/>
+					<p name="Text2" type="string" v="API Failure"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetTaskStatus" qi="">
+					<p name="TaskStatus" type="string" v="0"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Rule1" id="1" dcomap.open="F=ACCOUNT OPEN DATE;F=DOB" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="ReplaceCharacters" qi="">
+					<p name="Find" type="string" v="-"/>
+					<p name="Replacement" type="string" v="/"/>
+					<p name="Count" type="string" v="*"/>
+				</a>
+				<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat">
+					<p name="NewDateFormat" type="string" v="mm/dd/yyyy"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

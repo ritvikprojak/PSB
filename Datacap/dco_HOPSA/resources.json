@@ -1,0 +1,24 @@
+{
+	
+	// fields (includes batch-level fields)
+	"field.DATE OF AGREEMENT_ADDENDUM_VOUCHER":"DATE OF AGREEMENT/ADDENDUM/VOUCHER",
+	"field.NAME OF PARTY_VENDOR":"NAME OF PARTY/VENDOR",
+	"field.INVOICE_VOUCHER AMOUNT":"INVOICE/VOUCHER AMOUNT",
+	
+	// shortcuts
+	"shortcut.NAVVScan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyPSA":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVScan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyPSA":"Classify Document",
+	"task.NAVMaker":"Document Details",								
+	"task.NAVChecker":"Checker",
+	"task.NAVExport":"Export"
+}

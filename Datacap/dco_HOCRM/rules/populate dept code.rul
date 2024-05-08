@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="95" name="Populate DEPT CODE" ver="2" modder="admin.1" qi="" dt="05/05/23 20:39:17.993 ">
+  <rule name="POPULATE DEPT CODE" id="1" dcomap.open="F=HO DEPARTMENT CODE" qi="">
+    <func name="Function1">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+        <p name="Source" type="string" v="@B.DeptName" />
+        <p name="Target" type="string" v="@F" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

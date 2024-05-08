@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="38" name="Custom identify pages1" ver="2" modder="admin.1" qi="" dt="03/23/23 17:56:45.966 ">
+	<rule name="Rule1" id="1" dcomap.open="P=Other" qi="">
+		<func name="VSCAN from scanner">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompareNot">
+				<p name="Text1" type="string" v="@P.ORIGINAL"/>
+				<p name="Text2" type="string" v="@EMPTY"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="Page"/>
+			</a>
+		</func>
+		<func name="VSCAN from directory">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="Page"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

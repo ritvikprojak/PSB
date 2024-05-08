@@ -1,0 +1,144 @@
+<?xml version='1.0' ?>
+<rrx namespace="Templates" v="8.0.0"><i ref="rrunner"/><g>
+  <![CDATA[
+'*********************************
+'template Actions
+'Templates.rrx
+' Licensed Materials - Property of IBM
+' "Restricted Materials of IBM"
+' 5725-C15 5725-C69
+'
+' (c) Copyright IBM Corp. 1994, 2011 All Rights Reserved
+'
+' US Government Users Restricted Rights - Use, duplication or
+' disclosure restricted by GSA ADP Schedule Contract with
+' IBM Corp.
+
+' Version
+'  9.0.0 - 02/14/2011   Tom Stuart
+'        - Original Template RRX File
+'
+'*********************************
+
+]]></g>
+
+<f name="RemoveChildrenByStatus" access="public" qi="Delete child objects by status">
+ 
+  <ap>
+   Status - the current status of the child objects you wish to delete<br/>
+  </ap>
+  <h>
+        This action, when placed on an object, will check the status of all child objects and delete the ones
+from the current parent.  Note:if you delete pages, the images will still exist in the batch directory, but
+the reference to them will be removed from the page file.<br/>
+    <e>
+        RemoveChildrenByStatus(75)<br/>
+    </e>
+  </h>
+  <lvl>
+      Any level.
+  </lvl>
+  <ret>
+    Always TRUE <br/>
+  
+  </ret>
+  <see>
+   
+  </see>
+  <p name="ChildStatus"/>
+  <g>
+  <![CDATA[
+  'Your VBScript code goes here.
+
+    RemoveChildrenByStatus = TRUE       'Actions must always return a TRUE or FALSE.
+
+    for i = CurrentObj.NumOfChildren -1 to 0 step - 1
+       if cLng(CurrentObj.GetChild(i).Status) = cLng(ChildStatus) then
+          Writelog("Deleting: " & CurrentObj.GetChild(i).Type)
+          CurrentObj.DeleteChild(i)
+       end if
+    next 'i
+
+  ]]>
+  </g>
+</f>
+
+<f name="MoveBatchPageToPreviousDocument" access="public" qi="Take a batche's child pages and move them to a document structure">
+ 
+  <ap>
+   NewDocumentType<br/>
+  </ap>
+  <h>
+        This action, when placed on a page that is a child of the batch level object, will move it in to the previous document structure, or create a new document structure if no previous document exists<br/>
+    <e>
+        MoveBatchPageToPreviousDocument(OtherDoc)<br/>
+    </e>
+  </h>
+  <lvl>
+      Page Level, but will execute only if the page's parent is the batch level object.
+  </lvl>
+  <ret>
+    Always TRUE <br/>
+  
+  </ret>
+  <see>
+   
+  </see>
+  <p name="NewDocumentType"/>
+  <g>
+  <![CDATA[
+  'Your VBScript code goes here.
+
+    Dim oNewDoc
+
+    MoveBatchPageToPreviousDocument = TRUE       'Actions must always return a TRUE or FALSE.
+
+    if CurrentObj.ObjectType <> 2 then
+       Writelog("This action is to be placed on page objects only.  Exiting")
+       Exit Function
+    end if
+
+    If currentObj.Parent.ObjectType <> 0 then
+       Writelog("This action will only execute on pages that are not already assigned to a document.  Exiting")
+       Exit Function
+    end if
+
+
+    CurrentBatchIndex = CurrentObj.Parent.FindChildIndex(CurrentObj.ID)
+    Writelog("CurrentBatchIndex: " & cStr(CurrentBatchIndex) )
+
+    if CurrentBatchIndex = 0 then
+       Writelog("Page was first child.  Creating a document at the start of the batch")
+       Set oNewDoc = DCO.AddChild(1,Pilot.BatchID & ".added",0)
+       Call CurrentObj.MoveIn(oNewDoc,0)
+       oNewDoc.Type = NewDocumentType
+       oNewDoc.Status = 0
+       Exit Function
+    end if
+          
+    CurrentBatchIndex = CurrentBatchIndex -1
+
+    While CurrentBatchIndex > -1
+       if DCO.GetChild(CurrentBatchIndex).ObjectType = 1 then
+          Writelog("Detected a document at index: " & cStr(CurrentBatchIndex) )
+          Call CurrentObj.MoveIn(DCO.GetChild(CurrentBatchIndex),-1) 
+          Exit Function
+       end if
+       CurrentBatchIndex = CurrentBatchIndex -1
+    wend 
+
+    if CurrentBatchIndex = 0 then
+       Writelog("Page was first child.  Creating a document at the start of the batch")
+       Set oNewDoc = DCO.AddChild(1,Pilot.BatchID & ".added",0)
+       Call CurrentObj.MoveIn(oNewDoc,0)
+       oNewDoc.Type = NewDocumentType
+       Exit Function
+    end if
+     
+
+  ]]>
+  </g>
+</f>
+
+
+</rrx>

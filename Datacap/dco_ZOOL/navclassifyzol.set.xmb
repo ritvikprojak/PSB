@@ -1,0 +1,55 @@
+<?xml-stylesheet type="text/xsl" href="..\..\ProgramSet\set.xsl"?>
+<S>
+	<P tip="General Batch Processing Settings" title="Batch Processing" n="BatchProcessing">
+		<V n="TaskDCOFile" label="Output DCO File" tip="Specifies name for the output dco file for the task" type="text">taskname.xml</V>
+		<P tip="Settings that determine batch navigation" title="Navigation" n="Navigation">
+			<V n="DPS" label="Done Page Status(es)" tip="Cooma-separated list of Done statuses, used to determine next problem page, and when to release a batch" type="text">79,70,0,2</V>
+			<V n="IPS" label="Ignored Page Status(es)" tip="Comma-separated list of Ignored statuses, used to skip Attachment pages from processing" type="text">75,128</V>
+			<V n="DOF" label="Validation Statuses" tip="Comma-separated list of Done,Override,Fail statuses assigned after validation, according to results" type="text">0,2,1</V>
+		</P>
+	</P>
+	<P tip="Page Processing Settings" title="Page Processing" n="PageProcessing">
+		<P tip="Settings that determine page navigation, field display" title="Navigation/Display" n="PageNavDisplay">
+			<V n="DFS" label="Done Field Status(es)" tip="Cooma-separated list of Done field statuses, used to determine next field in Alt+L (next problem) order, or when Problems Only checkbox is ON - to hide such fields" type="text">0</V>
+			<V n="IFS" label="Ignored Field Status(es)" tip="Comma-separated list of statuses of fields such as anchors or other fields that should never show up for indexing/verify" type="text">-1</V>
+		</P>
+		<P tip="Background field colors, as web literal colors (blue, magenta, etc.)" title="Background Field Colors" n="BackColors">
+			<V n="LC" label="Low Conf Fields" tip="Background to distinguish fields recognized with low confidence" type="text">yellow</V>
+			<V n="PC" label="Invalid Fields" tip="Background to distinguish fields that failed validation" type="text">lightpink</V>
+			<V n="DC" label="Normal Fields" tip="Background for norml fields" type="text">white</V>
+		</P>
+	</P>
+	<P tip="Settings that enable RRS rules execution" title="Rulerunner Service" n="Rulerunner">
+		<V n="TProfile" label="Main Task Profile" tip="Main task profile to run" type="text"></V>
+		<P tip="RRS log settings for the task" title="RRS Log Settings" n="RRSLog">
+			<V n="ServiceLog" label="Service Log" tip="Enable RRS service logging" type="text">3</V>
+			<V n="BatchLog" label="Batch Log" tip="Produce RRS log in batch folder" type="text">1</V>
+			<V n="ActionLogLevel" label="Action Log Level" tip="Severity level for RRS logging from action execution" type="text">1</V>
+			<V n="LogReflush" label="Flush Buffer" tip="Flushes file buffer after each write operation - degrades performance" type="checkbox">0</V>
+		</P>
+	</P>
+	<P tip="Defines FastDoc settings" title="FastDoc" n="FastDoc">
+		<P title="DiskScanUI" tip="Scan from disk" n="DiskScanUI">
+			<V n="Enabled" label="Enabled" tip="" type="checkbox">1</V>
+			<V n="DiskScanTProfile" label="Task Profile" tip="Run this task profile for files as they are imported" type="text"></V>
+		</P>
+		<P title="TwainScanUI" tip="Scan using TWAIN" n="TwainScanUI">
+			<V n="Enabled" label="Enabled" tip="" type="checkbox">1</V>
+		</P>
+    <P title="ISISScanUI" tip="Scan using ISIS" n="ISISScanUI">
+      <V n="Enabled" label="Enabled" tip="" type="checkbox">1</V>
+    </P>
+		<P title="Scan" tip="Start batch panel" n="Scan">
+			<V n="Enabled" label="Enabled" tip="" type="checkbox">0</V>
+		</P>
+		<P title="RR" tip="Process a Task Profile" n="RR">
+			<V n="Enabled" label="Name" tip="" type="checkbox">0</V>
+		</P>
+		<P title="Verify" tip="Perfom indexing and validate data" n="Verify">
+			<V n="Enabled" label="Enabled" tip="" type="checkbox">0</V>
+			<V n="Required" label="Required" tip="Panel must be open to complete task" type="checkbox">1</V>
+		</P>
+	</P>
+</S>
+
+<!-- Program changed by admin -->

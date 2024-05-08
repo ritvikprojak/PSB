@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="73" name="NAV Recognize Pages and Fields " ver="1" modder="admin.1" qi="">
+  <rule name="RecogPage Page" id="1" dcomap.open="P:Page,P=Page" qi="Recognize text on a page">
+    <func name="Recognize Page OCRA and Barcode" disabled="false" qi="Recognize page">
+      <a ns="net:SharedRecognitionTools.Actions" name="SetFingerprintRecognitionPriority">
+        <p name="CreateCCO" type="string" v="True" />
+      </a>
+      <a name="RecognizePageOCR_A" ns="net:RecognitionOCRA.OCRAActions" disabled="True" />
+      <a name="CreateTextFile" ns="net:SharedRecognitionTools.Actions" disabled="True" />
+      <a name="rrSet" ns="rrunner" disabled="True">
+        <p name="varSource" v="0" />
+        <p name="varTarget" v="@P.bp_tp" />
+      </a>
+      <a name="GetAllBarcodesBP" ns="Barcode_P" disabled="True">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+        <p type="strParam" v=";" name="StrParam" />
+      </a>
+      <a name="GoToNextFunction" ns="rrunner.dll" qi="" />
+    </func>
+    <func name="ReadZones if FPX">
+      <a name="rrCompareNot" ns="rrunner.dll" qi="Continue in this function only if a fingerprint has been found.&#xA;">
+        <p name="object1" v="@P.TemplateID" />
+        <p name="object2" v="@EMPTY" />
+      </a>
+      <a name="ReadZonesFPX" ns="FPXML" qi="">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+      </a>
+      <a name="rrSet" ns="rrunner" qi="">
+        <p name="varSource" v="FPXML" />
+        <p name="varTarget" v="@P.ZoneRead" />
+      </a>
+      <a name="GoToNextFunction" ns="rrunner.dll" qi="" />
+    </func>
+    <func name="ReadZones if not FPX">
+      <a name="rrCompareNot" ns="rrunner.dll" qi="Continue in this function only if a fingerprint has been found.&#xA;">
+        <p name="object1" v="@P.TemplateID" />
+        <p name="object2" v="@EMPTY" />
+      </a>
+      <a name="rrCompareNot" ns="rrunner" qi="">
+        <p name="object1" v="@P.ZoneRead" />
+        <p name="object2" v="FPXML" />
+      </a>
+      <a name="ReadZones" ns="Zones.dll" qi="">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+      </a>
+      <a name="GoToNextFunction" ns="rrunner.dll" />
+    </func>
+    <func name="Pass Ruleset">
+      <a name="SetReturnValue" ns="rrunner.dll" qi="Fields may not exist for creation, so ignore the error by returning true.&#xA;">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+        <p type="strParam" v="True" name="StrParam" />
+      </a>
+    </func>
+  </rule>
+  <rule name="Recog Batch Rule Setup Read Zones" id="2" dcomap.open="B" qi="">
+    <func name="Setup FPX Directory">
+      <a name="SetDirectoryFPX" ns="FPXML">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+        <p type="strParam" v="@APPPATH(fingerprint)" name="StrParam" />
+      </a>
+    </func>
+    <func name="Pass Ruleset">
+      <a name="SetReturnValue" ns="rrunner.dll" qi="Fields may not exist for creation, so ignore the error by returning true.&#xA;">
+        <p type="bInter" name="bInter" />
+        <p type="bDebug" name="bDebug" />
+        <p type="strParam" v="True" name="StrParam" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

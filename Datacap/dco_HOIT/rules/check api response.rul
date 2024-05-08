@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="69" name="Check API Response" ver="2" modder="admin.1" qi="" dt="06/15/23 16:59:09.893 ">
+	<rule name="Rule1check response" id="1" dcomap.open="B" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.APIResponse"/>
+				<p name="Text2" type="string" v="API Failure"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetTaskStatus" qi="">
+				<p name="TaskStatus" type="string" v="0"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

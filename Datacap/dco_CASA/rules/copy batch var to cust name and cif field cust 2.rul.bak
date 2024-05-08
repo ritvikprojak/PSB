@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="99" name="copy batch var to cust name and cif field cust 2" ver="1" modder="dmstest10.1" qi="">
+		<rule name="copy batch var to field doc3" id="1" dcomap.open="P=Photograph">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_03"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@D.P\CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@D.P\CIF"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="copy batch var to field doc4" id="2" dcomap.open="P=Signature">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_04"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@D.P\CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@D.P\CIF"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="99" name="copy batch var to cust name and cif field cust 2" ver="2" modder="dmstest10.1" qi="" dt="09/23/23 12:20:48.436 ">
+		<rule name="copy batch var to field doc3" id="1" dcomap.open="P=Photograph">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_03"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@D.P\CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@D.P\CIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@D.P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="Photograph"/>
+					<p name="Target" type="string" v="@D.P\Document_Type"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="copy batch var to field doc4" id="2" dcomap.open="P=Signature">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_04"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@D.P\CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@D.P\CIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@D.P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="Signature"/>
+					<p name="Target" type="string" v="@D.P\Document_Type"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="99" name="copy batch var to cust name and cif field cust 2" ver="3" modder="dmstest10.1" qi="" dt="11/03/23 18:47:46.292 ">
+		<rule name="batch var to field doc3" id="1" dcomap.open="P=Photograph;P=Signature">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_03"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@D.P\CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@D.P\CIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@D.P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="Photograph"/>
+					<p name="Target" type="string" v="@D.P\Document_Type"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_04"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@D.P\CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@D.P\CIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@D.P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="Signature"/>
+					<p name="Target" type="string" v="@D.P\Document_Type"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="copy batch var to field doc4" id="2">
+			<func name="Function1" disabled="y" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_04"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@D.P\CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@D.P\CIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@D.P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="Signature"/>
+					<p name="Target" type="string" v="@D.P\Document_Type"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="99" name="copy batch var to cust name and cif field cust 2" ver="4" modder="dmstest10.1" qi="" dt="11/03/23 18:58:18.23 ">
+		<rule name="batch var to field doc3" id="1" dcomap.open="P=Photograph;P=Signature">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_03"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@P.CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@P.CIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P.ACCOUNT NUMBER"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="Photograph"/>
+					<p name="Target" type="string" v="@P.Document_Type"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_04"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@P.CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@P.CIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P.ACCOUNT NUMBER"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="Signature"/>
+					<p name="Target" type="string" v="@P.Document_Type"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="copy batch var to field doc4" id="2">
+			<func name="Function1" disabled="y" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_04"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@D.P\CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@D.P\CIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@D.P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="Signature"/>
+					<p name="Target" type="string" v="@D.P\Document_Type"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="99" name="copy batch var to cust name and cif field cust 2" ver="5" modder="dmstest10.1" qi="" dt="11/03/23 19:10:32.517 ">
+		<rule name="batch var to field doc3" id="1" dcomap.open="P=Photograph;P=Signature">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_03"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@P\CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@P\CIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="Photograph"/>
+					<p name="Target" type="string" v="@P\Document_Type"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_04"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@P\CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@P\CIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="Signature"/>
+					<p name="Target" type="string" v="@P\Document_Type"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="copy batch var to field doc4" id="2">
+			<func name="Function1" disabled="y" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_04"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@D.P\CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@D.P\CIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@D.P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="Signature"/>
+					<p name="Target" type="string" v="@D.P\Document_Type"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="99" name="copy batch var to cust name and cif field cust 2" ver="6" modder="dmstest10.1" qi="" dt="12/21/23 12:03:21.188 ">
+		<rule name="batch var to field doc3" id="1" dcomap.open="P=Photograph;P=Signature" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_03"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@P\CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@P\CIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="Signature"/>
+					<p name="Target" type="string" v="@P\Document_Type"/>
+				</a>
+			</func>
+			<func name="Function2">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_04"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@P\CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@P\CIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="Photograph"/>
+					<p name="Target" type="string" v="@P\Document_Type"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="copy batch var to field doc4" id="2">
+			<func name="Function1" disabled="y" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+					<p name="SearchForValue" type="string" v="_04"/>
+					<p name="SearchInValue" type="string" v="@P.IMAGEFILE"/>
+					<p name="CaseSensitive" type="string" v=""/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCustName2"/>
+					<p name="Target" type="string" v="@D.P\CUSTOMER NAME"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bCIF2"/>
+					<p name="Target" type="string" v="@D.P\CIF"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@B.bAccountNumber"/>
+					<p name="Target" type="string" v="@D.P\ACCOUNT NUMBER"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="Signature"/>
+					<p name="Target" type="string" v="@D.P\Document_Type"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

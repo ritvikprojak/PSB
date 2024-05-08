@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="71" name="NAV Set Page Status And PageCount" ver="6" modder="dmstest10.1" qi="" dt="11/16/23 13:56:40.438 ">
+	<rule name="NAV Set page status 1 Main Page" id="1" dcomap.open="P=SAVING ACCOUNT OPENING FORM;P=SAVING ATM APPLICATION;P=SAVING CHEQUE BOOK APPLICATION;P=SAVING KYC DOCUMENT;P=SAVING NOMINATION FORM;P=CURRENT ACCOUNT OPENING FORM;P=CURRENT ATM_APPLICATION;P=CURRENT CHEQUE_BOOK_APPLICATION;P=CURRENT KYC_DOCUMENT;P=CURRENT NOMINATION-FORM;P=FD ACCOUNT OPENING FORM;P=FD NOMINATION_FORM;P=FD 15G_15H;P=OTHER LETTERS;P=FD KYC DOCUMENT" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV Set page status 1 Trailing Page" id="4" dcomap.open="P=SAVING ACCOUNT OPENING FORM_TrailingPage;P=SAVING ATM_APPLICATION_TrailingPage;P=SAVING CHEQUE_BOOK_APPLICATION_TrailingPage;P=SAVING KYC_DOCUMENT_TrailingPage;P=SAVING NOMINATION_FORM_1_TralingPage;P=CURRENT ACCOUNT OPENING FORM_TrailingPage;P=CURRENT ATM_APPLICATION_TrailingPage;P=CURRENT CHEQUE_BOOK_APPLICATION_TrailingPage;P=CURRENT KYC_DOCUMENT_TrailingPage;P=CURRENT NOMINATION-FORM_TrailingPage;P=FD ACCOUNT OPENING FORM_TrailingPage;P=FD NOMINATION_FORM_TrailingPage;P=FD 15G_15H_TrailingPage;P=FD KYC_DOCUMENT_TrailingPage;P=OTHER LETTER_TrailingPage" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV Pages Count" id="2" dcomap.open="B" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+				<p name="Target" type="string" v="@B.PagesCount"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV Set Doc Status Rule1" id="3" dcomap.open="D" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@D.STATUS"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

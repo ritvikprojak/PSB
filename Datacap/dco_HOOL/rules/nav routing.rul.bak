@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset name="NAV Routing" id="10" ver="7" modder="admin.1" dt="10/15/14 17:52:25.221 " qi="Routes documents that need verification to the Verify_Export job.  Documents that do not need verification are sent directly to the Export task.">
+		<rule name="Page Level Rule" id="1" qi="" dcomap.open="P:Page;P=Page">
+			<func name="Mark Docs with Status 1 for Verify">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckDCOStatus">
+					<p name="ExpectedStatus" v="1"/>
+				</a>
+				<a ns="rrunner" name="rrSet">
+					<p name="varSource" v="Yes"/>
+					<p name="varTarget" v="@D.NeedsVerify"/>
+				</a>
+			</func>
+			<func name="Check for Confidence">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckFieldConfidence" qi="">
+					<p name="MinimumConfidence" v="8"/>
+					<p name="NewPageStatus" v="1"/>
+					<p name="PageStatusToCheck" v=""/>
+				</a>
+			</func>
+			<func name="Mark Docs with Low Confidence for Verify">
+				<a ns="rrunner" name="rrSet">
+					<p name="varSource" v="Yes"/>
+					<p name="varTarget" v="@D.NeedsVerify"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Split Batch between Verify and Quick Export" id="2" dcomap.close="B">
+			<func name="Function1">
+				<a ns="split" name="SplitBatch">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@D.NeedsVerify" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset name="NAV Routing" id="10" ver="8" modder="admin.1" dt="03/28/23 12:08:49.544 " qi="Routes documents that need verification to the Verify_Export job.  Documents that do not need verification are sent directly to the Export task.">
+		<rule name="NAV Page Level Rule" id="1" qi="" dcomap.open="P:Page;P=Page">
+			<func name="Mark Docs with Status 1 for Verify">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckDCOStatus">
+					<p name="ExpectedStatus" v="1"/>
+				</a>
+				<a ns="rrunner" name="rrSet">
+					<p name="varSource" v="Yes"/>
+					<p name="varTarget" v="@D.NeedsVerify"/>
+				</a>
+			</func>
+			<func name="Check for Confidence">
+				<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckFieldConfidence" qi="">
+					<p name="MinimumConfidence" v="8"/>
+					<p name="NewPageStatus" v="1"/>
+					<p name="PageStatusToCheck" v=""/>
+				</a>
+			</func>
+			<func name="Mark Docs with Low Confidence for Verify">
+				<a ns="rrunner" name="rrSet">
+					<p name="varSource" v="Yes"/>
+					<p name="varTarget" v="@D.NeedsVerify"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="NAV Split Batch between Verify and Quick Export" id="2" dcomap.close="B">
+			<func name="Function1">
+				<a ns="split" name="SplitBatch">
+					<p type="bInter" name="bInter"/>
+					<p type="bDebug" name="bDebug"/>
+					<p type="strParam" v="@D.NeedsVerify" name="StrParam"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

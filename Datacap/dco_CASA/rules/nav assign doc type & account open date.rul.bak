@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="66" name="NAV Assign Doc Type &amp; Account open Date" ver="1" modder="admin.1" qi="">
+		<rule name="NAV Assign Doc Type Rule" id="1" dcomap.open="P=Page">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="66" name="NAV Assign Doc Type &amp; Account open Date" ver="2" modder="dmstest10.1" qi="" dt="07/26/23 12:41:47.848 ">
+		<rule name="NAV Assign Doc Type Rule" id="1" dcomap.open="P=Page">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+					<p name="Source" type="string" v="@P.CustomPageType"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Fetch Account Open Date Property" id="2" dcomap.open="F=ACCOUNT OPEN DATE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@EMPTY"/>
+					<p name="Text2" type="string" v="@B.bACCTOPENDATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bACCTOPENDATE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="66" name="NAV Assign Doc Type &amp; Account open Date" ver="3" modder="dmstest10.1" qi="" dt="10/20/23 20:28:22.351 ">
+		<rule name="NAV Assign Doc Type Rule" id="1" dcomap.open="P=Page">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@P.\Document_Type"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Fetch Account Open Date Property" id="2" dcomap.open="F=ACCOUNT OPEN DATE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@EMPTY"/>
+					<p name="Text2" type="string" v="@B.bACCTOPENDATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bACCTOPENDATE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="66" name="NAV Assign Doc Type &amp; Account open Date" ver="4" modder="dmstest10.1" qi="" dt="11/06/23 12:56:16.394 ">
+		<rule name="NAV Assign Doc Type Rule" id="1" dcomap.open="P=Page">
+			<func name="Function1">
+				<a name="RefreshFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi=""/>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@P.\Document_Type"/>
+					<p name="Target" type="string" v="@P.TYPE"/>
+				</a>
+			</func>
+		</rule>
+		<rule name="Fetch Account Open Date Property" id="2" dcomap.open="F=ACCOUNT OPEN DATE">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@EMPTY"/>
+					<p name="Text2" type="string" v="@B.bACCTOPENDATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@F"/>
+					<p name="Target" type="string" v="@B.bACCTOPENDATE"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

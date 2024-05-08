@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="45" name="Acknoowledgement" ver="2" modder="admin.1" qi="" dt="04/20/23 17:37:43.650 ">
+	<rule name="ACK Rule" id="1" dcomap.open="B" qi="">
+		<func name="ACK Func">
+			<a name="AcknowledgementAPI" ns="net:PSBCustomLibrary.SampleAction"/>
+		</func>
+	</rule>
+</ruleset>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="9" name="SplitFileName" ver="7" modder="dmstest10.1" qi="" dt="06/02/23 20:28:13.654 ">
+  <rule name="SplitFileName Rule1" id="1" dcomap.open="P=Other" qi="">
+    <func name="Function1" qi="">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+        <p name="Text1" type="string" v="@P.ID" />
+        <p name="Text2" type="string" v="TM000002" />
+      </a>
+      <a ns="com:Datacap.Libraries.FileIO.Actions" name="SplitFileName">
+        <p name="inputFilename" type="string" v="@P.ScanSrcPath" />
+        <p name="rootPathVariable" type="string" v="@P.FROOT" />
+        <p name="pathVariable" type="string" v="@P.FPATH" />
+        <p name="fileVariable" type="string" v="@P.FFILENAME" />
+        <p name="extVariable" type="string" v="@P.FEXT" />
+      </a>
+      <a ns="rrunner" name="rrSet" qi="">
+        <p name="varSource" v="@P.FFILENAME" />
+        <p name="varTarget" v="@B.FNAME" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

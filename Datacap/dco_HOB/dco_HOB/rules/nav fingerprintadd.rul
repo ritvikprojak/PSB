@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="83" name="NAV FingerprintAdd" ver="1" modder="admin.1" qi="">
+  <rule name="FingerprintAdd" id="1" dcomap.open="P=Other" qi="">
+    <func name="FingeprintAdd: Other Function 1">
+      <a name="AnalyzeImage" ns="net:SharedRecognitionTools.Actions" qi="" />
+    </func>
+  </rule>
+</ruleset>

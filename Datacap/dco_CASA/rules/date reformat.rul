@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="96" name="date reformat" ver="8" modder="dmstest10.1" dt="07/11/23 08:42:11.420 " qi="">
+	<rule name="NAV Check response for ACK API" id="2" dcomap.open="B" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.ACKAPIResponse"/>
+				<p name="Text2" type="string" v="API Failure"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetTaskStatus" qi="">
+				<p name="TaskStatus" type="string" v="0"/>
+			</a>
+		</func>
+		<func name="Function 2">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.ACKAPIResponse"/>
+				<p name="Text2" type="string" v="API Response Success"/>
+			</a>
+			<a ns="net:CASAPSBCustomLibrary.SampleAction" name="AddCustomColumn">
+				<p name="ColumnName" type="string" qi="Enter Column name." v="pb_errdesc"/>
+				<p name="ColumnValue" type="string" qi="Provide Column value." v=""/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Rule1" id="1" dcomap.open="F=ACCOUNT OPEN DATE;F=DOB" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="ReplaceCharacters" qi="">
+				<p name="Find" type="string" v="-"/>
+				<p name="Replacement" type="string" v="/"/>
+				<p name="Count" type="string" v="*"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat">
+				<p name="NewDateFormat" type="string" v="mm/dd/yyyy"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

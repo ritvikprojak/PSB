@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="81" name="NAV Document Integrity" ver="1" modder="admin.1" qi="">
+	<rule name="Batch Document Integrity Check" id="1" dcomap.open="B" qi="">
+		<func name="Check batch integrity">
+			<a name="CheckAllIntegrity" ns="rrunner">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="Batch Route To Fixup">
+			<a name="Task_NumberOfSplits" ns="rrunner">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="1" name="nNumOfSplits"/>
+			</a>
+			<a name="Task_RaiseCondition" ns="rrunner">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="0,0" name="strParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Unidentified Page (Other)" id="2" dcomap.open="P=Other">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetDCOStatus" qi="">
+				<p name="Type" type="string" v="1"/>
+			</a>
+			<a ns="Templates" name="MoveBatchPageToPreviousDocument">
+				<p name="NewDocumentType" v="Document"/>
+			</a>
+			<a ns="rrunner" name="Task_NumberOfSplits" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="1" name="nNumOfSplits"/>
+			</a>
+			<a ns="rrunner" name="Task_RaiseCondition">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="0,0" name="strParam"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

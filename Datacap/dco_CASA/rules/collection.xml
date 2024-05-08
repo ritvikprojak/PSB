@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rsapp name="CASA">
+	<rsc>
+		<ruleset id="4" name="VScan---------------------------------------------------------------------------------------" depends=""/>
+		<ruleset id="1" name="VScan" depends=""/>
+		<ruleset id="12" name="PDF Conversion" depends=""/>
+		<ruleset id="5" name="PageID--------------------------------------------------------------------------------------" depends=""/>
+		<ruleset id="31" name="SplitFileName" depends=""/>
+		<ruleset name.dll="IdentifyPages" id="IdentifyPages" depends=""/>
+		<ruleset id="41" name="(P) NAV PageIdeByBarcode" depends=""/>
+		<ruleset id="42" name="(B) NAV Page Delete Seperator" depends=""/>
+		<ruleset id="16" name="Page Status" depends=""/>
+		<ruleset id="3" name="Fixup" depends=""/>
+		<ruleset id="34" name="Call REST API" depends=""/>
+		<ruleset id="89" name="Check API Response" depends=""/>
+		<ruleset id="38" name="Batch level activities" depends=""/>
+		<ruleset id="37" name="Get Accountnumber, CBS version" depends=""/>
+		<ruleset id="17" name="Classify CASA----------------------------------------------------------------------------------" depends=""/>
+		<ruleset id="19" name="ReclassifyPages" depends=""/>
+		<ruleset id="6" name="Profiler-----------------------------------------------------------------------------------" depends=""/>
+		<ruleset id="24" name="Create Custom Variable" depends=""/>
+		<ruleset id="25" name="Assign Doc Type" depends=""/>
+		<ruleset id="22" name="Custom ReClassify for CASA" depends=""/>
+		<ruleset id="36" name="Cropping Ruleset" depends=""/>
+		<ruleset name.dll="CreateDocuments" id="CreateDocuments" depends=""/>
+		<ruleset id="43" name="CreateDocuments" depends=""/>
+		<ruleset id="27" name="Set Page Status And PageCount" depends=""/>
+		<ruleset id="39" name="Populate field values" depends=""/>
+		<ruleset id="33" name="Json Parsing" depends=""/>
+		<ruleset id="32" name="AddCustomColumn" depends=""/>
+		<ruleset id="9" name="Verify-------------------------------------------------------------------------------------" depends=""/>
+		<ruleset id="51" name="CASA Custom Validation" depends=""/>
+		<ruleset name.dll="ValidateFields" id="ValidateFields" depends=""/>
+		<ruleset id="20" name="Pre-Checker--------------------------------------------------------------------------------" depends=""/>
+		<ruleset id="50" name="CASA Set Page Status after maker" depends=""/>
+		<ruleset id="23" name="Sorting CASA" depends=""/>
+		<ruleset id="44" name="RemoveDocuments" depends=""/>
+		<ruleset id="29" name="Create PDFs Doc" depends=""/>
+		<ruleset id="30" name="Docs Count" depends=""/>
+		<ruleset id="46" name="Acknowledgement-------------------------------------------------------------------------------------" depends=""/>
+		<ruleset id="45" name="Acknowledgement" depends=""/>
+		<ruleset id="92" name="Check ACK API Response" depends=""/>
+		<ruleset id="13" name="Export-------------------------------------------------------------------------------------" depends=""/>
+		<ruleset name="Export" id="7" depends=""/>
+		<ruleset id="40" name="Signature Photo push" depends=""/>
+		<ruleset id="35" name="Export to Filenet" depends=""/>
+		<ruleset id="47" name="--------------------------Navigator Workflow--------------------------" depends=""/>
+		<ruleset id="49" name="----------Navigator Scan----------" depends=""/>
+		<ruleset id="48" name="NAVVScan" depends=""/>
+		<ruleset id="52" name="NAV PDF Conversion" depends=""/>
+		<ruleset id="53" name="----------Navigator PageID----------" depends=""/>
+		<ruleset id="54" name="NAV SplitFileName" depends=""/>
+		<ruleset id="106" name="Rule for deletion of Blank Page" depends=""/>
+		<ruleset id="107" name="(P) Blank Page Detection" depends=""/>
+		<ruleset id="56" name="(B) NAV PageIdByBarcode" depends=""/>
+		<ruleset id="58" name="NAV Page Status" depends=""/>
+		<ruleset id="60" name="NAV Batch level activities" depends=""/>
+		<ruleset id="61" name="NAV Get Accountnumber, CBS version" depends=""/>
+		<ruleset id="123" name="NAV Trunc Acc No" depends=""/>
+		<ruleset id="124" name="NAV Set Batch Type Based on Account No" depends=""/>
+		<ruleset id="59" name="NAV Call REST API" depends=""/>
+		<ruleset id="91" name="NAV Check API Response" depends=""/>
+		<ruleset id="101" name="Block batch API Failure" depends=""/>
+		<ruleset id="95" name="(P) Handle Batch if No Seperator" depends=""/>
+		<ruleset id="105" name="Status scanned for batch without seperator" depends=""/>
+		<ruleset id="57" name="(B) Navigator Page Delete Seperator" depends=""/>
+		<ruleset id="55" name="NAV Identify Pages" depends=""/>
+		<ruleset id="62" name="----------Navigator Classify----------" depends=""/>
+		<ruleset id="63" name="NAV ValidateFields" depends=""/>
+		<ruleset id="94" name="NAV SetPage status to 0" depends=""/>
+		<ruleset id="64" name="----------Navigator Profiler----------" depends=""/>
+		<ruleset id="65" name="NAV Check doctype rule" depends=""/>
+		<ruleset id="100" name="NAV Check mandatory doctype rule" depends=""/>
+		<ruleset id="66" name="NAV Assign Doc Type &amp; Account open Date" depends=""/>
+		<ruleset id="67" name="NAV Custom ReClassify for CASA" depends=""/>
+		<ruleset id="68" name="NAV Sorting CASA" depends=""/>
+		<ruleset id="70" name="NAV Create Documents" depends=""/>
+		<ruleset id="71" name="NAV Set Page Status And PageCount" depends=""/>
+		<ruleset id="72" name="NAV Json Parsing" depends=""/>
+		<ruleset id="73" name="NAV AddCustomColumn" depends=""/>
+		<ruleset id="108" name="NAV Populate Account No" depends=""/>
+		<ruleset id="74" name="----------Navigator Maker----------" depends=""/>
+		<ruleset id="75" name="NAV CASA Custom Validation" depends=""/>
+		<ruleset id="76" name="----------Navigator PreChecker----------" depends=""/>
+		<ruleset id="77" name="NAV CASA Set Page Status after maker" depends=""/>
+		<ruleset id="97" name="copy cust name and cif to batch var" depends=""/>
+		<ruleset id="69" name="NAV Cropping Ruleset" depends=""/>
+		<ruleset id="78" name="NAV RemoveDocuments" depends=""/>
+		<ruleset id="79" name="NAV CreateDocuments" depends=""/>
+		<ruleset id="98" name="copy batch var to cust name and cif field cust 1" depends=""/>
+		<ruleset id="99" name="copy batch var to cust name and cif field cust 2" depends=""/>
+		<ruleset id="80" name="NAV Create PDFs Doc" depends=""/>
+		<ruleset id="81" name="NAV Docs Count" depends=""/>
+		<ruleset id="102" name="NAV Return - Maker to Classify" depends=""/>
+		<ruleset id="103" name="NAV Classify Return" depends=""/>
+		<ruleset id="82" name="----------Navigator Checker----------" depends=""/>
+		<ruleset id="83" name="NAV Validate Fields" depends=""/>
+		<ruleset id="86" name="----------Navigator Export----------" depends=""/>
+		<ruleset id="90" name="NAV Signature Photo push" depends=""/>
+		<ruleset id="96" name="NAV date reformat" depends=""/>
+		<ruleset id="110" name="NAV Check PhotographSignature API Response" depends=""/>
+		<ruleset id="111" name="NAV Check Signature API Response" depends=""/>
+		<ruleset id="88" name="NAV Export to Filenet" depends=""/>
+		<ruleset id="84" name="----------Navigator Acknowledgement----------" depends=""/>
+		<ruleset id="85" name="NAV Acknowledgement" depends=""/>
+		<ruleset id="93" name="NAV Check ACK API Response" depends=""/>
+		<ruleset id="112" name="-----------------------------NAV Fixup---------------------------------------" depends=""/>
+		<ruleset id="104" name="NAV Fixup - ReCreate Doc Structure" depends=""/>
+		<ruleset id="113" name="---------------------NAV FixUp Profiler1-----------------------" depends=""/>
+		<ruleset id="114" name="NAV FixUpProfiler Check doctype rule" depends=""/>
+		<ruleset id="115" name="NAV FixUpProfiler Check mandatory doctype rule" depends=""/>
+		<ruleset id="116" name="NAV FixUpProfiler Assign Doc Type &amp; Account open Date" depends=""/>
+		<ruleset id="117" name="NAV FixUpProfiler Custom ReClassify for CASA" depends=""/>
+		<ruleset id="118" name="NAV FixUpProfiler Create Documents" depends=""/>
+		<ruleset id="119" name="NAV FixUpProfiler Set Page Status And PageCount" depends=""/>
+		<ruleset id="120" name="NAV FixUpProfiler Json Parsing" depends=""/>
+		<ruleset id="121" name="NAV FixUpProfiler AddCustomColumn" depends=""/>
+		<ruleset id="122" name="NAV FixUpProfiler Populate Account No" depends=""/>
+		<ruleset id="14" name="Unused Rulesets---------------------------------------------------------------------------" depends=""/>
+		<ruleset id="87" name="NAV Export" depends=""/>
+		<ruleset name="Export Statistics" id="Export Statistics" depends=""/>
+		<ruleset name="recognize page" id="15" depends=""/>
+		<ruleset id="18" name="Create PDF DOc" depends=""/>
+		<ruleset name.dll="RecognizePagesAndFields" id="RecognizePagesAndFields" depends=""/>
+		<ruleset id="109" name="NAV Export to IBM FileNet" depends=""/>
+		<ruleset name.dll="ImageEnhancement" id="ImageEnhancement" depends=""/>
+		<ruleset id="ImportFiles.Rul.dll" name.dll="ImportFiles" depends=""/>
+		<ruleset id="2" name="Import Files - All" depends=""/>
+		<ruleset name.dll="Image_Convert" id="Image_Convert" depends=""/>
+		<ruleset name="Document Integrity" id="11" depends=""/>
+		<ruleset name="Routing" id="10" depends=""/>
+		<ruleset name="FingerprintAdd" id="8" depends=""/>
+		<ruleset name="Profile Statistics" id="Profile Statistics" depends=""/>
+		<ruleset id="26" name="Custom ReClassify pages" depends=""/>
+		<ruleset id="28" name="Delete Traling Object" depends=""/>
+		<ruleset id="21" name="Custom ReClassify for IT DPT" depends=""/>
+		<ruleset id="ExportToFileNet.Rul.dll" name.dll="ExportToFileNet" depends=""/>
+		<ruleset id="125" name="GETMAKEROP" depends=""/>
+		<ruleset id="126" name="GETCHECKER" depends=""/>
+	</rsc>
+	<tps>
+		<tprofile name="ScanFromDisk_MultiFormat">
+			<ruleset id="2"/>
+			<ruleset id="Image_Convert"/>
+		</tprofile>
+		<tprofile name="PageID">
+			<ruleset id="31"/>
+			<ruleset id="12"/>
+			<ruleset id="41"/>
+			<ruleset id="16"/>
+			<ruleset id="34"/>
+			<ruleset id="89"/>
+			<ruleset id="33"/>
+			<ruleset id="42"/>
+			<ruleset id="60"/>
+			<ruleset id="37"/>
+		</tprofile>
+		<tprofile name="Verify">
+			<ruleset id="83"/>
+			<ruleset id="104"/>
+		</tprofile>
+		<tprofile name="Export">
+			<ruleset id="96"/>
+			<ruleset id="40"/>
+			<ruleset id="35"/>
+		</tprofile>
+		<tprofile name="FingerprintAdd">
+			<ruleset id="ImageEnhancement"/>
+			<ruleset id="8"/>
+		</tprofile>
+		<tprofile name="ScanFromDisk_SingleTIFFs">
+			<ruleset id="ImportFiles.Rul.dll"/>
+		</tprofile>
+		<tprofile name="FixUp">
+			<ruleset id="104"/>
+		</tprofile>
+		<tprofile name="iVScan"/>
+		<tprofile name="Convert">
+			<ruleset id="Image_Convert"/>
+		</tprofile>
+		<tprofile name="VScan">
+			<ruleset id="1"/>
+			<ruleset id="12"/>
+		</tprofile>
+		<tprofile name="Classify">
+			<ruleset id="ValidateFields"/>
+		</tprofile>
+		<tprofile name="Maker">
+			<ruleset id="51"/>
+		</tprofile>
+		<tprofile name="Checker">
+			<ruleset id="ValidateFields"/>
+		</tprofile>
+		<tprofile name="PreChecker">
+			<ruleset id="50"/>
+			<ruleset id="97"/>
+			<ruleset id="36"/>
+			<ruleset id="44"/>
+			<ruleset id="43"/>
+			<ruleset id="98"/>
+			<ruleset id="99"/>
+			<ruleset id="29"/>
+			<ruleset id="30"/>
+		</tprofile>
+		<tprofile name="Profiler1">
+			<ruleset id="24"/>
+			<ruleset id="25"/>
+			<ruleset id="22"/>
+			<ruleset id="23"/>
+			<ruleset id="43"/>
+			<ruleset id="27"/>
+			<ruleset id="33"/>
+			<ruleset id="32"/>
+		</tprofile>
+		<tprofile name="ClassifyPL">
+			<ruleset id="ValidateFields"/>
+		</tprofile>
+		<tprofile name="ClassifyCASA">
+			<ruleset id="ValidateFields"/>
+			<ruleset id="94"/>
+		</tprofile>
+		<tprofile name="Acknowledgement">
+			<ruleset id="45"/>
+			<ruleset id="92"/>
+		</tprofile>
+		<tprofile name="NAVVScan">
+			<ruleset id="48"/>
+			<ruleset id="52"/>
+		</tprofile>
+		<tprofile name="NAVPageID">
+			<ruleset id="54"/>
+			<ruleset id="52"/>
+			<ruleset id="107"/>
+			<ruleset id="106"/>
+			<ruleset id="56"/>
+			<ruleset id="58"/>
+			<ruleset id="60"/>
+			<ruleset id="61"/>
+			<ruleset id="123"/>
+			<ruleset id="124"/>
+			<ruleset id="59"/>
+			<ruleset id="95"/>
+			<ruleset id="105"/>
+			<ruleset id="57"/>
+			<ruleset id="91"/>
+			<ruleset id="101"/>
+			<ruleset id="72"/>
+		</tprofile>
+		<tprofile name="NAVClassifyCASA">
+			<ruleset id="63"/>
+			<ruleset id="94"/>
+		</tprofile>
+		<tprofile name="NAVProfiler1">
+			<ruleset id="65"/>
+			<ruleset id="100"/>
+			<ruleset id="66"/>
+			<ruleset id="67"/>
+			<ruleset id="70"/>
+			<ruleset id="71"/>
+			<ruleset id="72"/>
+			<ruleset id="73"/>
+			<ruleset id="108"/>
+		</tprofile>
+		<tprofile name="NAVMaker">
+			<ruleset id="63"/>
+		</tprofile>
+		<tprofile name="NAVPreChecker">
+			<ruleset id="103"/>
+			<ruleset id="77"/>
+			<ruleset id="97"/>
+			<ruleset id="69"/>
+			<ruleset id="78"/>
+			<ruleset id="79"/>
+			<ruleset id="98"/>
+			<ruleset id="99"/>
+			<ruleset id="80"/>
+			<ruleset id="81"/>
+		</tprofile>
+		<tprofile name="NAVChecker">
+			<ruleset id="83"/>
+		</tprofile>
+		<tprofile name="NAVAcknowledgement">
+			<ruleset id="85"/>
+			<ruleset id="93"/>
+		</tprofile>
+		<tprofile name="NAVExport">
+			<ruleset id="90"/>
+			<ruleset id="96"/>
+			<ruleset id="110"/>
+			<ruleset id="88"/>
+		</tprofile>
+		<tprofile name="NAVAPIResposne">
+			<ruleset id="101"/>
+		</tprofile>
+		<tprofile name="ClassifyReturn">
+			<ruleset id="103"/>
+		</tprofile>
+		<tprofile name="NAVPreExport">
+			<ruleset id="103"/>
+			<ruleset id="125"/>
+			<ruleset id="126"/>
+		</tprofile>
+		<tprofile name="ReCreateDocStructure">
+			<ruleset id="104"/>
+		</tprofile>
+		<tprofile name="ReturnBatch">
+			<ruleset id="102"/>
+		</tprofile>
+		<tprofile name="NAVFixUpProfiler1">
+			<ruleset id="114"/>
+			<ruleset id="115"/>
+			<ruleset id="116"/>
+			<ruleset id="117"/>
+			<ruleset id="118"/>
+			<ruleset id="119"/>
+			<ruleset id="120"/>
+			<ruleset id="121"/>
+			<ruleset id="122"/>
+		</tprofile>
+	</tps>
+</rsapp>

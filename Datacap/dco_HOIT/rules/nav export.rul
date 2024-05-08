@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="77" name="NAV Export" ver="1" modder="admin.1" qi="">
+	<rule name="Set Export Params" id="1" qi="" dcomap.open="B">
+		<func name="Export: Batch Function 1">
+			<a name="SetExportPath" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@APPPATH(export)" name="strParam"/>
+			</a>
+			<a name="SetFileName" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="@BatchID" name="StrParam"/>
+			</a>
+			<a name="SetExtensionName" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="txt" name="StrParam"/>
+			</a>
+			<a name="SetElementSeparator" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="," name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Export Page Fields" id="2" dcomap.open="P" qi="">
+		<func name="Export: Page Function 1">
+			<a name="ExportAllFields" ns="Export">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="110" name="FIXUP Set Page Status And PageCount" ver="1" modder="dmstest10.1" qi="">
+	<rule name="Set page status rule1" id="1" dcomap.open="P=APY Death Claim Form;P=APY Enrollment Form;P=APY KYC;P=APY SUPPORTING DOCUMENT;P=NOTES;P=PMJJBY DEATH CLAIM FORM;P=PMJJBY Enrollment Form;P=PMJJBY KYC;P=PMJJBY SUPPORTING DOCUMENTS;P=PMSBY Death Claim form;P=PMSBY Enrollment Form;P=PMSBY KYC;P=PMSBY SUPPORTING DOCUMENTS;P=PPF ACCOUNT OPENING FORM;P=PPF DEATH CLAIM FORM;P=PPF KYC;P=PPF SUPPORTING DOCUMENTS;P=SCSS ACCOUNT OPENING FORM;P=SCSS DEATH CLAIM FORM;P=SCSS KYC;P=SCSS SUPPORTING DOCUMENT;P=SSA ACCOUNT OPENING FORM;P=SSA SUPPORTING DOCUMENT;P=SSA DEATH CLAIM FORM;P=SSA ACCOUNT OPENING FORM;P=SSA KYC" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Set page status rule1 - TrailingPages" id="2" dcomap.open="P=APY Death Claim Form_TrailingPage;P=APY Enrollment Form_TrailingPage;P=APY KYC_TrailingPage;P=APY SUPPORTING DOCUMENT_TrailingPage;P=NOTES_TrailingPage;P=PMJJBY DEATH CLAIM FORM_TrailingPage;P=PMJJBY Enrollment Form_TrailingPage;P=PMJJBY KYC_TrailingPage;P=PMJJBY SUPPORTING DOCUMENTS_TrailingPage;P=PMSBY Death Claim form_TrailingPage;P=PMSBY Enrollment Form_TrailingPage;P=PMSBY KYC_TrailingPage;P=PMSBY SUPPORTING DOCUMENTS_TrailingPage;P=PPF ACCOUNT OPENING FORM_TrailingPage;P=PPF DEATH CLAIM FORM_TrailingPage;P=PPF KYC_TrailingPage;P=PPF SUPPORTING DOCUMENTS_TrailingPage;P=SCSS ACCOUNT OPENING FORM_TrailingPage;P=SCSS DEATH CLAIM FORM_TrailingPage;P=SCSS KYC_TrailingPage;P=SCSS SUPPORTING DOCUMENT_TrailingPage;P=SSA ACCOUNT OPENING FORM_TrailingPage;P=SSA DEATH CLAIM FORM_TrailingPage;P=SSA KYC_TrailingPage;P=SSA SUPPORTING DOCUMENT_TrailingPage" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Pages Count" id="3" dcomap.open="B">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+				<p name="Target" type="string" v="@B.PagesCount"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

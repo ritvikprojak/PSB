@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="96" name="NAV date reformat" ver="9" modder="dmstest10.1" dt="10/31/23 00:45:05.830 " qi="">
+	<rule name="Rule1" id="1" dcomap.open="F=ACCOUNT OPEN DATE;F=DOB" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="ReplaceCharacters" qi="">
+				<p name="Find" type="string" v="-"/>
+				<p name="Replacement" type="string" v="/"/>
+				<p name="Count" type="string" v="*"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat">
+				<p name="NewDateFormat" type="string" v="mm/dd/yyyy"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

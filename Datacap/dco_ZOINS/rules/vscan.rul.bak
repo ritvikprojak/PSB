@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="1" name="VScan" ver="1" modder="admin.1" qi="">
+		<rule name="Scan" id="1" dcomap.open="B" dcomap.close="">
+			<func name="Import Files" qi="">
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder" qi="">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/Input)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="1"/>
+				</a>
+				<a name="set_multipage_burst" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="bBurst" type="bool" qi="Non-zero to force bursting of TIFF image files. Default = 0, no bursting." v="True"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a name="set_metadata_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="extensions" type="string" v="" qi="Metadata image file extension(s). If specified, XML metadata files (AKA trigger files) control ingestion of pages into batches, along with associated metadata. See additional documentation for syntax and usage of metadata trigger files.  If specified, these extensions override any prior call to set_types()"/>
+				</a>
+				<a name="set_problem_folder" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="folderpath" type="string" v="@APPPATH(problemimagedir)" qi="Path to folder to contain any files that cannot be ingested"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPPATH(vscanimagedir_Multi)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="1" name="VScan" ver="2" modder="admin.1" qi="" dt="01/11/23 01:08:10.664 ">
+		<rule name="Scan" id="1" dcomap.open="B" dcomap.close="">
+			<func name="HO IT DPT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@TASKNAME"/>
+					<p name="Text2" type="string" v="HO IT DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOITInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="1"/>
+				</a>
+				<a name="set_multipage_burst" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="bBurst" type="bool" qi="Non-zero to force bursting of TIFF image files. Default = 0, no bursting." v="True"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a name="set_metadata_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="extensions" type="string" v="" qi="Metadata image file extension(s). If specified, XML metadata files (AKA trigger files) control ingestion of pages into batches, along with associated metadata. See additional documentation for syntax and usage of metadata trigger files.  If specified, these extensions override any prior call to set_types()"/>
+				</a>
+				<a name="set_problem_folder" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="folderpath" type="string" v="@APPPATH(problemimagedir)" qi="Path to folder to contain any files that cannot be ingested"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPPATH(vscanimagedir_Multi)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+			<func name="HO PL DEV DPT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+					<p name="Text1" type="string" v="@TASKNAME"/>
+					<p name="Text2" type="string" v="HO PL DEV DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOPLInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="1"/>
+				</a>
+				<a name="set_multipage_burst" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="bBurst" type="bool" qi="Non-zero to force bursting of TIFF image files. Default = 0, no bursting." v="True"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a name="set_metadata_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="extensions" type="string" v="" qi="Metadata image file extension(s). If specified, XML metadata files (AKA trigger files) control ingestion of pages into batches, along with associated metadata. See additional documentation for syntax and usage of metadata trigger files.  If specified, these extensions override any prior call to set_types()"/>
+				</a>
+				<a name="set_problem_folder" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="folderpath" type="string" v="@APPPATH(problemimagedir)" qi="Path to folder to contain any files that cannot be ingested"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPPATH(vscanimagedir_Multi)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="1" name="VScan" ver="3" modder="admin.1" qi="" dt="01/11/23 01:22:26.437 ">
+		<rule name="Scan" id="1" dcomap.open="B" dcomap.close="">
+			<func name="HO IT DPT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@JOBNAME"/>
+					<p name="Text2" type="string" v="HO IT DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOITInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="1"/>
+				</a>
+				<a name="set_multipage_burst" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="bBurst" type="bool" qi="Non-zero to force bursting of TIFF image files. Default = 0, no bursting." v="True"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a name="set_metadata_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="extensions" type="string" v="" qi="Metadata image file extension(s). If specified, XML metadata files (AKA trigger files) control ingestion of pages into batches, along with associated metadata. See additional documentation for syntax and usage of metadata trigger files.  If specified, these extensions override any prior call to set_types()"/>
+				</a>
+				<a name="set_problem_folder" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="folderpath" type="string" v="@APPPATH(problemimagedir)" qi="Path to folder to contain any files that cannot be ingested"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPVAR(values/gen/ProcessedFolder)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+			<func name="HO PL DEV DPT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+					<p name="Text1" type="string" v="@JOBNAME"/>
+					<p name="Text2" type="string" v="HO PL DEV DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOPLInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="1"/>
+				</a>
+				<a name="set_multipage_burst" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="bBurst" type="bool" qi="Non-zero to force bursting of TIFF image files. Default = 0, no bursting." v="True"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a name="set_metadata_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="extensions" type="string" v="" qi="Metadata image file extension(s). If specified, XML metadata files (AKA trigger files) control ingestion of pages into batches, along with associated metadata. See additional documentation for syntax and usage of metadata trigger files.  If specified, these extensions override any prior call to set_types()"/>
+				</a>
+				<a name="set_problem_folder" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="folderpath" type="string" v="@APPPATH(problemimagedir)" qi="Path to folder to contain any files that cannot be ingested"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPVAR(values/gen/ProcessedFolder)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="1" name="VScan" ver="4" modder="admin.1" qi="" dt="02/03/23 21:28:10.206 ">
+		<rule name="Scan" id="1" dcomap.open="B" dcomap.close="">
+			<func name="HO IT DPT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@JOBNAME"/>
+					<p name="Text2" type="string" v="HO IT DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOITInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="1"/>
+				</a>
+				<a name="set_multipage_burst" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="bBurst" type="bool" qi="Non-zero to force bursting of TIFF image files. Default = 0, no bursting." v="True"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a name="set_metadata_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="extensions" type="string" v="" qi="Metadata image file extension(s). If specified, XML metadata files (AKA trigger files) control ingestion of pages into batches, along with associated metadata. See additional documentation for syntax and usage of metadata trigger files.  If specified, these extensions override any prior call to set_types()"/>
+				</a>
+				<a name="set_problem_folder" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="folderpath" type="string" v="@APPPATH(problemimagedir)" qi="Path to folder to contain any files that cannot be ingested"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPVAR(values/gen/ProcessedFolder)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+			<func name="HO PL DEV DPT" qi="" disabled="y">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+					<p name="Text1" type="string" v="@JOBNAME"/>
+					<p name="Text2" type="string" v="HO PL DEV DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOPLInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="1"/>
+				</a>
+				<a name="set_multipage_burst" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="bBurst" type="bool" qi="Non-zero to force bursting of TIFF image files. Default = 0, no bursting." v="True"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a name="set_metadata_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="extensions" type="string" v="" qi="Metadata image file extension(s). If specified, XML metadata files (AKA trigger files) control ingestion of pages into batches, along with associated metadata. See additional documentation for syntax and usage of metadata trigger files.  If specified, these extensions override any prior call to set_types()"/>
+				</a>
+				<a name="set_problem_folder" ns="com:Datacap.Libraries.mvScan.Actions" disabled="True">
+					<p name="folderpath" type="string" v="@APPPATH(problemimagedir)" qi="Path to folder to contain any files that cannot be ingested"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPVAR(values/gen/ProcessedFolder)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="1" name="VScan" ver="5" modder="admin.1" qi="" dt="03/02/23 12:09:54.892 ">
+		<rule name="Scan" id="1" dcomap.open="B" dcomap.close="">
+			<func name="HO IT DPT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@JOBNAME"/>
+					<p name="Text2" type="string" v="HO IT DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOITInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="1"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPVAR(values/gen/ProcessedFolder)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="1" name="VScan" ver="6" modder="admin.1" qi="" dt="03/03/23 12:58:55.996 ">
+		<rule name="Scan" id="1" dcomap.open="B" dcomap.close="">
+			<func name="HO IT DPT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@JOBNAME"/>
+					<p name="Text2" type="string" v="HO IT DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOITInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="1"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder" disabled="y">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPVAR(values/gen/ProcessedFolder)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="1" name="VScan" ver="7" modder="dmstest10.1" qi="" dt="05/29/23 19:35:17.360 ">
+		<rule name="Scan" id="1" dcomap.open="B" dcomap.close="">
+			<func name="HO IT DPT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@JOBNAME"/>
+					<p name="Text2" type="string" v="HO IT DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOITInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="1"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder" disabled="y">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPVAR(values/gen/ProcessedFolder)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+					<p name="Source" type="string" v="@OPERATOR"/>
+					<p name="Target" type="string" v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="1" name="VScan" ver="8" modder="dmstest10.1" qi="" dt="06/01/23 17:30:09.724 ">
+		<rule name="Scan" id="1" dcomap.open="B" dcomap.close="">
+			<func name="HO IT DPT" qi="">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+					<p name="Text1" type="string" v="@JOBNAME"/>
+					<p name="Text2" type="string" v="HO IT DPT"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_folder">
+					<p name="folderpath" type="string" qi="Path to folder containing files to be ingested" v="@APPVAR(values/gen/HOITInput)"/>
+				</a>
+				<a name="set_types" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="">
+					<p name="extensions" type="string" qi="Comma-separated list of file image file extensions to import" v="*"/>
+				</a>
+				<a name="set_tree_mode" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Toggle subfolder file search to any depth below the scan folder.">
+					<p name="bTreeFlag" type="bool" v="false" qi="False: Ingnore subfolders. True: Search subfolders to any depth (DEFAULT)."/>
+				</a>
+				<a name="set_delete_empty_folders" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False" qi="Delete subfolders when all child documents have been scanned.">
+					<p name="bParam" type="bool" v="false" qi="False: Leave empty subfolders intact. True: Delete subfolders if they are empty (DEFAULT)."/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_max_docs">
+					<p name="nDocs" type="int" qi="Number of documents in a batch.  Default 100." v="1"/>
+				</a>
+				<a name="set_sort_method" ns="com:Datacap.Libraries.mvScan.Actions" disabled="False">
+					<p name="method" type="string" qi="Sort method can be either DATE (default) or NAME.  The parameter is not case sensitive." v="Name" default="DATE"/>
+				</a>
+				<a ns="com:Datacap.Libraries.mvScan.Actions" name="set_copy_folder" disabled="y">
+					<p name="folderpath" type="string" qi="Path to folder to contain a copy of each ingested file" v="@APPVAR(values/gen/ProcessedFolder)"/>
+				</a>
+				<a name="scan" ns="com:Datacap.Libraries.mvScan.Actions" qi=""/>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="" disabled="y">
+					<p name="Source" type="string" v="@OPERATOR"/>
+					<p name="Target" type="string" v="@B.ScanOperator"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

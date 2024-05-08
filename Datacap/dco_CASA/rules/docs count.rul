@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="30" name="Docs Count" ver="1" modder="admin.1">
+  <rule name="Docs Count Rule1" id="1" dcomap.open="B" qi="">
+    <func name="Function1">
+      <a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+        <p name="Source" type="string" v="@PILOT(DocsInBatch)" />
+        <p name="Target" type="string" v="@B.DocsCount" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

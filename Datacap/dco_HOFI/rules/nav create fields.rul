@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="99" name="NAV Create fields" ver="2" modder="dmstest10.1" qi="" dt="10/18/23 11:53:45.838 ">
+	<rule name="Create Fields" id="2" dcomap.open="P" dcomap.close="" qi="">
+		<func name="CreateFields 1" disabled="False">
+			<a name="CreateFields" ns="com:Datacap.Libraries.ApplicationObjects.Actions" disabled="" qi=""/>
+		</func>
+	</rule>
+</ruleset>

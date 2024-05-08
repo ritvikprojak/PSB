@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="106" name="(P) Blank Page Detection" ver="2" modder="dmstest10.1" qi="" dt="12/12/23 18:08:47.849 ">
+	<rule name="Blank Page Delete" id="2" qi="" dcomap.open="P">
+		<func name="Function1" qi="">
+			<a ns="barcode_p" name="MatchBarcodeBP" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="ENDDOC" name="StrParam"/>
+			</a>
+		</func>
+		<func name="Function2">
+			<a ns="autodoc" name="BlankPagesIDBySize" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+				<p type="strParam" v="7000,Blank,0" name="StrParam"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

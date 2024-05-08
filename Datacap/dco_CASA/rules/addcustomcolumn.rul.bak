@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="12" name="AddCustomColumn" ver="4" modder="admin.1" dt="02/05/23 13:06:36.575 ">
+		<rule name="AddCustomColumn Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a ns="InsertCustomColumn" name="InsertCustomColumn" qi="">
+					<p name="ColumnName" v="PB_FILENAME"/>
+					<p name="ColumnValue" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="AddCustomColumn" ver="5" modder="admin.1" dt="02/07/23 16:35:48.854 ">
+		<rule name="AddCustomColumn Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a ns="AddValueToCustomColumn" name="AddValueToCustomColumn">
+					<p name="varSource" v="PB_FILENAME"/>
+					<p name="varTarget" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="AddCustomColumn" ver="6" modder="admin.1" dt="02/07/23 16:46:28.585 ">
+		<rule name="AddCustomColumn Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a ns="AddValueToCustomColumn" name="AddValueToCustomColumn" qi="">
+					<p name="varSource" v="pb_FILENAME"/>
+					<p name="varTarget" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="AddCustomColumn" ver="7" modder="admin.1" dt="02/07/23 17:53:52.897 ">
+		<rule name="AddCustomColumn Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="" disabled="y">
+				<a ns="AddValueToCustomColumn" name="AddValueToCustomColumn" qi="">
+					<p name="varSource" v="pb_FILENAME"/>
+					<p name="varTarget" v="@B.FNAME"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="AddCustomColumn" ver="8" modder="admin.1" dt="02/18/23 15:07:52.83 ">
+		<rule name="AddCustomColumn Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="AddCustomColumn">
+					<p name="ColumnName" type="string" qi="Enter Column name." v="pb_FileName"/>
+					<p name="ColumnValue" type="string" qi="Provide Column value." v="@B.FNAME"/>
+				</a>
+				<a ns="net:PSBCustomLibrary.SampleAction" name="AddCustomColumn">
+					<p name="ColumnName" type="string" qi="Enter Column name." v="pb_DeptCode"/>
+					<p name="ColumnValue" type="string" qi="Provide Column value." v="@DeptName"/>
+				</a>
+				<a ns="net:PSBCustomLibrary.SampleAction" name="AddCustomColumn">
+					<p name="ColumnName" type="string" qi="Enter Column name." v="pb_DeptName"/>
+					<p name="ColumnValue" type="string" qi="Provide Column value." v="@B.DeptCode"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="AddCustomColumn" ver="9" modder="admin.1" dt="03/01/23 19:26:16.468 ">
+		<rule name="AddCustomColumn Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a ns="net:PSBCustomLibrary.SampleAction" name="AddCustomColumn">
+					<p name="ColumnName" type="string" qi="Enter Column name." v="pb_FileName"/>
+					<p name="ColumnValue" type="string" qi="Provide Column value." v="@B.FNAME"/>
+				</a>
+				<a ns="net:PSBCustomLibrary.SampleAction" name="AddCustomColumn">
+					<p name="ColumnName" type="string" qi="Enter Column name." v="pb_DeptCode"/>
+					<p name="ColumnValue" type="string" qi="Provide Column value." v="@B.DeptName"/>
+				</a>
+				<a ns="net:PSBCustomLibrary.SampleAction" name="AddCustomColumn">
+					<p name="ColumnName" type="string" qi="Enter Column name." v="pb_DeptName"/>
+					<p name="ColumnValue" type="string" qi="Provide Column value." v="@B.DeptCode"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="12" name="AddCustomColumn" ver="10" modder="admin.1" dt="05/29/23 17:01:59.240 ">
+		<rule name="AddCustomColumn Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function1" qi="">
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="AddCustomColumn">
+					<p name="ColumnName" type="string" qi="Enter Column name." v="pb_FileName"/>
+					<p name="ColumnValue" type="string" qi="Provide Column value." v="@B.FNAME"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="AddCustomColumn">
+					<p name="ColumnName" type="string" qi="Enter Column name." v="pb_DeptCode"/>
+					<p name="ColumnValue" type="string" qi="Provide Column value." v="@B.DeptName"/>
+				</a>
+				<a ns="net:CASAPSBCustomLibrary.SampleAction" name="AddCustomColumn" qi="">
+					<p name="ColumnName" type="string" qi="Enter Column name." v="pb_DeptName"/>
+					<p name="ColumnValue" type="string" qi="Provide Column value." v="@B.DeptCode"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

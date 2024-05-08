@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="58" name="NAV Custom ReClassify for ZOLR DPT" ver="5" modder="admin.1" qi="" dt="07/31/23 15:36:55.714 ">
+	<rule name="Setup trailing pages" id="1" qi="" dcomap.open="P=TrailPage">
+		<func name="Function1: Last Page Type MRP FIXATION1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="MRP FIXATION"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="MRP FIXATION_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function2: Last Page Type MRP FIXATION_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType" qi="">
+				<p name="PreviousTypeToMatch" v="MRP FIXATION_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="RFP DETAILS_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function3: Last Page Type OTS DOCUMENTS1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="OTS DOCUMENTS"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="OTS DOCUMENTS_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function4: Last Page Type OTS DOCUMENTS_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="OTS DOCUMENTS_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="OTS DOCUMENTS_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function5: Last Page Type SUITFILE PERMISSION1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SUITFILE PERMISSION"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="SUITFILE PERMISSION_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function6: Last Page Type SUITFILE PERMISSION_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="SUITFILE PERMISSION_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="SUITFILE PERMISSION_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function7: Last Page Type EMPANELMENT AND RENEWAL OF ADVOCATES1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="EMPANELMENT AND RENEWAL OF ADVOCATES"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="EMPANELMENT AND RENEWAL OF ADVOCATES_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function8: Last Page Type EMPANELMENT AND RENEWAL OF ADVOCATES_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType" qi="">
+				<p name="PreviousTypeToMatch" v="EMPANELMENT AND RENEWAL OF ADVOCATES_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="ANNEXURE_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function9: Last Page Type EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function10: Last Page Type EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function11: Last Page Type BILL PAYMENT OF ADVOCATES1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="BILL PAYMENT OF ADVOCATES"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="BILL PAYMENT OF ADVOCATES_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function12: Last Page Type BILL PAYMENT OF ADVOCATES_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="BILL PAYMENT OF ADVOCATES_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="BILL PAYMENT OF ADVOCATES_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function13: Last Page Type BILL PAYMENT OF ENFORCEMENT AGENT1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="BILL PAYMENT OF ENFORCEMENT AGENT"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="BILL PAYMENT OF ENFORCEMENT AGENT_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function14: Last Page Type BILL PAYMENT OF ENFORCEMENT AGENT_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="BILL PAYMENT OF ENFORCEMENT AGENT_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="BILL PAYMENT OF ENFORCEMENT AGENT_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function15: Last Page Type BILL PAYMENT OF PUBLICATION BILL1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="BILL PAYMENT OF PUBLICATION BILL"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="BILL PAYMENT OF PUBLICATION BILL_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function16: Last Page Type BILL PAYMENT OF PUBLICATION BILL_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="BILL PAYMENT OF PUBLICATION BILL_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="BILL PAYMENT OF PUBLICATION BILL_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function17: Last Page Type APPOINTMENT OF AUTHORIZED OFFICER1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="APPOINTMENT OF AUTHORIZED OFFICER"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType">
+				<p name="Type" type="string" v="APPOINTMENT OF AUTHORIZED OFFICER_TrailingPage"/>
+			</a>
+		</func>
+		<func name="Function18: Last Page Type APPOINTMENT OF AUTHORIZED OFFICER_TrailingPage1" qi="" disabled="False">
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="CheckLastDCOType">
+				<p name="PreviousTypeToMatch" v="APPOINTMENT OF AUTHORIZED OFFICER_TrailingPage"/>
+				<p name="LevelToCheck" v="2"/>
+				<p name="IgnoreTypes" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="SetPageType" qi="">
+				<p name="Type" type="string" v="APPOINTMENT OF AUTHORIZED OFFICER_TrailingPage"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

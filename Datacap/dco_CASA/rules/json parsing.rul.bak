@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="35" name="Json Parsing" ver="1" modder="admin.1">
+		<rule name="Json Parsing Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function2">
+				<a name="JsonParseGetEmployee" ns="net:PSBCustomLibrary.SampleAction" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="35" name="Json Parsing" ver="2" modder="admin.1" dt="04/18/23 10:45:50.535 ">
+		<rule name="Json Parsing Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function2" disabled="y" qi="">
+				<a name="JsonParseGetEmployee" ns="net:PSBCustomLibrary.SampleAction" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="35" name="Json Parsing" ver="3" modder="admin.1" dt="05/29/23 17:01:34.30 ">
+		<rule name="Json Parsing Rule1" id="1" dcomap.open="B" qi="">
+			<func name="Function2" disabled="y" qi="">
+				<a name="JsonParseGetEmployee" ns="net:CASAPSBCustomLibrary.SampleAction" qi=""/>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

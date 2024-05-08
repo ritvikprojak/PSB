@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="111" name="FIXUP Set Page Status And PageCount" ver="1" modder="dmstest10.1" qi="">
+	<rule name="Set page status rule1" id="1" dcomap.open="P=COMPLAINTS;P=REPORTS;P=VO VISIT;P=RDA;P=FRAUD FMRS;P=COMPLAINTS LODGED WITH CBI;P=ABBFF REPORTING;P=PROSECUTION SANCTION CASES;P=APPROVAL FOR SECTION 17 A OF PC ACT, 1988 CASES;P=RTI / APPEAL / CIC;P=SUMMON;P=IAC_FSA;P=CTE TYPE EXAMINATION;P=CTE EXAMINATION BY CTEO, CVC;P=QUARTERLY PROGRESS REPORT;P=INTEGRITY PACT" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Set page status rule1 - TrailingPages" id="2" dcomap.open="P=COMPLAINTS_TrailingPage;P=REPORTS_TrailingPage;P=VO VISIT_TrailingPage;P=RDA_TrailingPage;P=FRAUD FMRS_TrailingPage;P=COMPLAINTS LODGED WITH CBI_TrailingPage;P=ABBFF REPORTING_TrailingPage;P=PROSECUTION SANCTION CASES_TrailingPage;P=APPROVAL FOR SECTION 17 A OF PC ACT, 1988 CASES_TrailingPage;P=RTI / APPEAL / CIC_TrailingPage;P=SUMMON_TrailingPage;P=IAC_FSA_TrailingPage;P=CTE TYPE EXAMINATION_TrailingPage;P=CTE EXAMINATION BY CTEO, CVC_TrailingPage;P=QUARTERLY PROGRESS REPORT_TrailingPage;P=INTEGRITY PACT_TrailingPage" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="Pages Count" id="3" dcomap.open="B">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@PILOT(PagesInBatch)"/>
+				<p name="Target" type="string" v="@B.PagesCount"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

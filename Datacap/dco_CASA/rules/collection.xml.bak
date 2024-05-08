@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rsapp name="HOPLDEV">
+	<rsc>
+		<ruleset id="4" name="VScan---------------------------------------------------------------------------------------" depends=""/>
+		<ruleset id="1" name="VScan" depends=""/>
+		<ruleset id="12" name="PDF Conversion" depends=""/>
+		<ruleset id="5" name="PageID--------------------------------------------------------------------------------------" depends=""/>
+		<ruleset name.dll="ImageEnhancement" id="ImageEnhancement" depends=""/>
+		<ruleset id="31" name="SplitFileName" depends=""/>
+		<ruleset name.dll="IdentifyPages" id="IdentifyPages" depends=""/>
+		<ruleset id="16" name="Page Status" depends=""/>
+		<ruleset id="3" name="Fixup" depends=""/>
+		<ruleset id="34" name="call rest api" depends=""/>
+		<ruleset id="17" name="Classify----------------------------------------------------------------------------------" depends=""/>
+		<ruleset id="19" name="ReclassifyPages" depends=""/>
+		<ruleset id="6" name="Profiler-----------------------------------------------------------------------------------" depends=""/>
+		<ruleset id="32" name="AddCustomColumn" depends=""/>
+		<ruleset id="24" name="Create Custom Variable" depends=""/>
+		<ruleset id="25" name="Assign Doc Type" depends=""/>
+		<ruleset id="23" name="Sort for PL DEV DPT" depends=""/>
+		<ruleset name.dll="CreateDocuments" id="CreateDocuments" depends=""/>
+		<ruleset id="22" name="Custom ReClassify for PL DEV DPT" depends=""/>
+		<ruleset id="27" name="Set Page Status And PageCount" depends=""/>
+		<ruleset id="33" name="json parsing" depends=""/>
+		<ruleset id="9" name="Verify-------------------------------------------------------------------------------------" depends=""/>
+		<ruleset name.dll="ValidateFields" id="ValidateFields" depends=""/>
+		<ruleset id="20" name="Pre-Checker--------------------------------------------------------------------------------" depends=""/>
+		<ruleset id="29" name="Create PDFs Doc" depends=""/>
+		<ruleset id="30" name="Docs Count" depends=""/>
+		<ruleset id="13" name="Export-------------------------------------------------------------------------------------" depends=""/>
+		<ruleset name="Export" id="7" depends=""/>
+		<ruleset id="35" name="optimized export to filenet content manager"  depends=""/>
+		<ruleset name="Export Statistics" id="Export Statistics" depends=""/>
+		<ruleset id="14" name="Unused Rulesets---------------------------------------------------------------------------" depends=""/>
+		<ruleset name="recognize page" id="15" depends=""/>
+		<ruleset id="18" name="Create PDF DOc" depends=""/>
+		<ruleset name.dll="RecognizePagesAndFields" id="RecognizePagesAndFields" depends=""/>
+		<ruleset id="ImportFiles.Rul.dll" name.dll="ImportFiles" depends=""/>
+		<ruleset id="2" name="Import Files - All" depends=""/>
+		<ruleset name.dll="Image_Convert" id="Image_Convert" depends=""/>
+		<ruleset name="Document Integrity" id="11" depends=""/>
+		<ruleset name="Routing" id="10" depends=""/>
+		<ruleset name="FingerprintAdd" id="8" depends=""/>
+		<ruleset name="Profile Statistics" id="Profile Statistics" depends=""/>
+		<ruleset id="26" name="Custom ReClassify pages" depends=""/>
+		<ruleset id="28" name="Delete Traling Object" depends=""/>
+		<ruleset id="21" name="Custom ReClassify for IT DPT" depends=""/>
+	</rsc>
+	<tps>
+		<tprofile name="ScanFromDisk_MultiFormat">
+			<ruleset id="2"/>
+			<ruleset id="Image_Convert"/>
+		</tprofile>
+		<tprofile name="PageID">
+			<ruleset id="31"/>
+			<ruleset id="IdentifyPages"/>
+			<ruleset id="16"/>
+			<ruleset id="34"/>
+		</tprofile>
+		<tprofile name="Verify">
+			<ruleset id="ValidateFields"/>
+		</tprofile>
+		<tprofile name="Export">
+			<ruleset id="7"/>
+		</tprofile>
+		<tprofile name="FingerprintAdd">
+			<ruleset id="ImageEnhancement"/>
+			<ruleset id="8"/>
+		</tprofile>
+		<tprofile name="ScanFromDisk_SingleTIFFs">
+			<ruleset id="ImportFiles.Rul.dll"/>
+		</tprofile>
+		<tprofile name="FixUp"/>
+		<tprofile name="iVScan"/>
+		<tprofile name="Convert">
+			<ruleset id="Image_Convert"/>
+		</tprofile>
+		<tprofile name="VScan">
+			<ruleset id="1"/>
+			<ruleset id="12"/>
+		</tprofile>
+		<tprofile name="Classify">
+			<ruleset id="ValidateFields"/>
+		</tprofile>
+		<tprofile name="Maker">
+			<ruleset id="ValidateFields"/>
+		</tprofile>
+		<tprofile name="Checker">
+			<ruleset id="ValidateFields"/>
+		</tprofile>
+		<tprofile name="PreChecker">
+			<ruleset id="29"/>
+			<ruleset id="27"/>
+			<ruleset id="30"/>
+		</tprofile>
+		<tprofile name="Profiler1">
+			<ruleset id="32"/>
+			<ruleset id="24"/>
+			<ruleset id="25"/>
+			<ruleset id="23"/>
+			<ruleset id="CreateDocuments"/>
+			<ruleset id="22"/>
+			<ruleset id="27"/>
+			<ruleset id="33"/>
+		</tprofile>
+		<tprofile name="ClassifyPL">
+			<ruleset id="ValidateFields"/>
+		</tprofile>
+	</tps>
+</rsapp>

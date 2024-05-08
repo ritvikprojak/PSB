@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archive>
+	<ruleset id="70" name="Check API Response" ver="1" modder="admin.1" qi="">
+		<rule name="Check Response" id="1">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+					<p name="Text1" type="string" v="@B.APIResponse"/>
+					<p name="Text2" type="string" v="API Failure"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetTaskStatus">
+					<p name="TaskStatus" type="string" v="0"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="70" name="Check API Response" ver="2" modder="admin.1" qi="" dt="06/15/23 16:59:43.322 ">
+		<rule name="Check Response" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+					<p name="Text1" type="string" v="@B.APIResponse"/>
+					<p name="Text2" type="string" v="API Failure"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetTaskStatus">
+					<p name="TaskStatus" type="string" v="0"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+	<ruleset id="70" name="Check API Response" ver="3" modder="admin.1" qi="" dt="06/15/23 17:21:05.904 ">
+		<rule name="Check Response" id="1" dcomap.open="B" qi="">
+			<func name="Function1">
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrGet" qi="">
+					<p name="Source" type="string" v="@B.APIResponse"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="" disabled="y">
+					<p name="Text1" type="string" v="@B.APIResponse"/>
+					<p name="Text2" type="string" v="API Failure"/>
+				</a>
+				<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="SetTaskStatus" disabled="y" qi="">
+					<p name="TaskStatus" type="string" v="0"/>
+				</a>
+			</func>
+		</rule>
+	</ruleset>
+</archive>

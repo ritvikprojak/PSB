@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="65" name="NAV HO VIGILANCE DPT Set Page Status after maker" ver="3" modder="admin.1" qi="" dt="07/28/23 06:36:23.175 ">
+	<rule name="Set page status rule" id="1" dcomap.open="P=COMPLAINTS;P=REPORTS;P=VO VISIT;P=RDA;P=FRAUD FMRS;P=COMPLAINTS LODGED WITH CBI;P=ABBFF REPORTING;P=PROSECUTION SANCTION CASES;P=APPROVAL FOR SECTION 17 A OF PC ACT, 1988 CASES;P=RTI / APPEAL / CIC;P=SUMMON;P=IAC_FSA;P=CTE TYPE EXAMINATION;P=CTE EXAMINATION BY CTEO, CVC;P=QUARTERLY PROGRESS REPORT;P=INTEGRITY PACT" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="ReFormat Date" id="2" qi="" dcomap.open="F=DATE OF COMPLAINT;F=DATE OF CLOSURE;F=REPORTING DATE;F=DATE OF VISIT;F=DOC;F=DATE OF RECEIPT;F=DATE OF REPORTING TO RBI;F=DATE OF OCCURRENCE;F=DATE OF DETECTION;F=DATE OF APPROVAL SENT TO FMD AFTER APPROVAL;F=DATE OF COMPLAINT LODGED WITH CBI;F=DATE OF FIR;F=DATE OF REPORTING TO ABBFF;F=DATE OF COMPLAINT LODGED WITH CBI;F=DATE OF RECEIPT OF IAC;F=DATE OF REFERENCE TO ABBFF;F=DATE OF RECEIPT OF ABBFF ADVICE;F=DATE OF RTI APPLICATION;F=DATE OF MINUTES;F=DATE OF CHARGE SHEET;F=OFFICE NOTE DATE;F=OFFICE NOTE /LETTER DATE">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="en-IN"/>
+				<p name="Target" type="string" v="@F.hr_locale"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat">
+				<p name="NewDateFormat" type="string" v="yyyy/mm/dd"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

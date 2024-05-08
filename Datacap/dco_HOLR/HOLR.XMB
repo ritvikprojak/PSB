@@ -1,0 +1,1062 @@
+<?xml-stylesheet type="text/xsl" href="..\..\dco.xsl"?>
+<S>
+	<B type="HOLR">
+		<V n="ID">0</V>
+		<V n="TYPE">Batch</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Other" pos="0" min="0" max="0"/>
+		<D type="Document" pos="0" min="0" max="0"/>
+		<D type="POSESSION NOTICE DOC" pos="0" min="0" max="0"/>
+		<D type="SALE NOTICE DOC" pos="0" min="0" max="0"/>
+		<D type="SA/WP before DRT/High Court DOC" pos="0" min="0" max="0"/>
+		<D type="SA/WP before DRT/High Court/RECALL NOTICE DOC" pos="0" min="0" max="0"/>
+		<D type="DRT/ Civil Recovery Suit Action DOC" pos="0" min="0" max="0"/>
+		<D type="NCLT action DOC" pos="0" min="0" max="0"/>
+		<D type="POLICY DOCUMENTS DOC" pos="0" min="0" max="0"/>
+		<D type="LEGALCELL DOCUMENTS DOC" pos="0" min="0" max="0"/>
+		<D type="WILFUL DEFAULT DECLARTION DOC" pos="0" min="0" max="0"/>
+		<D type="OTS DOCUMENTS DOC" pos="0" min="0" max="0"/>
+		<D type="SUITFILEPERMISSION ANNEXURE DOC" pos="0" min="0" max="0"/>
+		<D type="NI ACT Proceeding DOC" pos="0" min="0" max="0"/>
+	</B>
+	<D type="Document">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Page" pos="1" min="1" max="0"/>
+		<P type="TrailPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="POSESSION NOTICE DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="POSESSION NOTICE" pos="0" min="0" max="0"/>
+		<P type="POSESSION NOTICE_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SALE NOTICE DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SALE NOTICE" pos="0" min="0" max="0"/>
+		<P type="SALE NOTICE_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SA/WP before DRT/High Court DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SA/WP before DRT/High Court" pos="0" min="0" max="0"/>
+		<P type="SA/WP before DRT/High Court_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SA/WP before DRT/High Court/RECALL NOTICE DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SA/WP before DRT/High Court/RECALL NOTICE" pos="0" min="0" max="0"/>
+		<P type="SA/WP before DRT/High Court/RECALL NOTICE_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="DRT/ Civil Recovery Suit Action DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="DRT/ Civil Recovery Suit Action" pos="0" min="0" max="0"/>
+		<P type="DRT/ Civil Recovery Suit Action_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="NCLT action DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="NCLT action" pos="0" min="0" max="0"/>
+		<P type="NCLT action_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="POLICY DOCUMENTS DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="POLICY DOCUMENTS" pos="0" min="0" max="0"/>
+		<P type="POLICY DOCUMENTS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="LEGALCELL DOCUMENTS DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="LEGAL CELL DOCUMENTS" pos="0" min="0" max="0"/>
+		<P type="LEGAL CELL DOCUMENTS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="OTS DOCUMENTS DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="OTS DOCUMENTS" pos="0" min="0" max="0"/>
+		<P type="OTS DOCUMENTS_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="WILFUL DEFAULT DECLARTION DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="WILFUL DEFAULT DECLARATION" pos="0" min="0" max="0"/>
+		<P type="WILFUL DEFAULT DECLARATION_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="SUITFILEPERMISSION ANNEXURE DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="SUITFILE PERMISSION ANNEXURE" pos="0" min="0" max="0"/>
+		<P type="SUITFILE PERMISSION ANNEXURE_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<D type="NI ACT Proceeding DOC">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="NI ACT Proceeding" pos="0" min="0" max="0"/>
+		<P type="NI ACT Proceeding_TrailingPage" pos="0" min="0" max="0"/>
+	</D>
+	<P type="Other">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="Page">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Document_Type" pos="0" min="0" max="0"/>
+	</P>
+	<P type="POSESSION NOTICE">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="GUARANTOR NAME" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER  ADDRESS" pos="0" min="0" max="0"/>
+		<F type="DATE OF NPA" pos="0" min="0" max="0"/>
+		<F type="GUARANTOR ADDRESS" pos="0" min="0" max="0"/>
+		<F type="BRANCH NAME" pos="0" min="0" max="0"/>
+		<F type="SECURITIES TYPE" pos="0" min="0" max="0"/>
+		<F type="SECURITIES DETAILS" pos="0" min="0" max="0"/>
+		<F type="BRANCH CODE" pos="0" min="0" max="0"/>
+		<F type="BALANCE OUTSTANDING" pos="0" min="0" max="0"/>
+		<F type="CUSTOMERNAME" pos="0" min="0" max="0"/>
+		<F type="DOCTYPE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="POSESSION NOTICE_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SALE NOTICE">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="CUSTOMERNAME" pos="0" min="0" max="0"/>
+		<F type="GUARANTOR NAME" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER  ADDRESS" pos="0" min="0" max="0"/>
+		<F type="GUARANTOR ADDRESS" pos="0" min="0" max="0"/>
+		<F type="DATE OF NPA" pos="0" min="0" max="0"/>
+		<F type="SECURITIES TYPE" pos="0" min="0" max="0"/>
+		<F type="SECURITIES DETAILS" pos="0" min="0" max="0"/>
+		<F type="BALANCE OUTSTANDING" pos="0" min="0" max="0"/>
+		<F type="BRANCH CODE" pos="0" min="0" max="0"/>
+		<F type="BRANCH NAME" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="DOCTYPE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SALE NOTICE_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SA/WP before DRT/High Court">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NAME" pos="0" min="0" max="0"/>
+		<F type="SECURITIES DETAILS" pos="0" min="0" max="0"/>
+		<F type="DOCTYPEHC" pos="0" min="0" max="0"/>
+		<F type="GUARANTOR_NAME" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SA/WP before DRT/High Court_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SA/WP before DRT/High Court/RECALL NOTICE">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="GUARANTOR_NAME" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NAME" pos="0" min="0" max="0"/>
+		<F type="SECURITIES DETAILS" pos="0" min="0" max="0"/>
+		<F type="DOCTYPERECALL" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SA/WP before DRT/High Court/RECALL NOTICE_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="DRT/ Civil Recovery Suit Action">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="GUARANTOR_NAME" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NAME" pos="0" min="0" max="0"/>
+		<F type="SECURITIES DETAILS" pos="0" min="0" max="0"/>
+		<F type="DOCTYPE_DRT" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+	</P>
+	<P type="DRT/ Civil Recovery Suit Action_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="NCLT action">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="GUARANTOR_NAME" pos="0" min="0" max="0"/>
+		<F type="SECURITIES DETAILS" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NAME" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="DOCTYPE_NCLT" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NO" pos="0" min="0" max="0"/>
+	</P>
+	<P type="NCLT action_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="POLICY DOCUMENTS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="SUBJECT MATTER" pos="0" min="0" max="0"/>
+		<F type="DOCTYPE_POLICY" pos="0" min="0" max="0"/>
+	</P>
+	<P type="POLICY DOCUMENTS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="LEGAL CELL DOCUMENTS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="SUBJECT MATTER" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NAME and PARTY NAME" pos="0" min="0" max="0"/>
+		<F type="ENFORCEMENT AGENCY NAME" pos="0" min="0" max="0"/>
+		<F type="PARTY NAME" pos="0" min="0" max="0"/>
+		<F type="DOCTYPE_LC" pos="0" min="0" max="0"/>
+	</P>
+	<P type="LEGAL CELL DOCUMENTS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="OTS DOCUMENTS">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="DATE OF NPA" pos="0" min="0" max="0"/>
+		<F type="BRANCH CODE" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="DOCTYPE_OTS" pos="0" min="0" max="0"/>
+	</P>
+	<P type="OTS DOCUMENTS_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="SUITFILE PERMISSION ANNEXURE">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="BORROWER NAME" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER ID" pos="0" min="0" max="0"/>
+		<F type="DOCTYPE_SA" pos="0" min="0" max="0"/>
+	</P>
+	<P type="SUITFILE PERMISSION ANNEXURE_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="NI ACT Proceeding">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="ACCOUNT NO" pos="0" min="0" max="0"/>
+		<F type="CUSTOMER NAME" pos="0" min="0" max="0"/>
+		<F type="BRANCH CODE" pos="0" min="0" max="0"/>
+		<F type="DOCUMENT TYPE" pos="0" min="0" max="0"/>
+	</P>
+	<P type="NI ACT Proceeding_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="TrailPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="WILFUL DEFAULT DECLARATION">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="PARTY NAME" pos="0" min="0" max="0"/>
+		<F type="DOCTYPE_DEFAULT" pos="0" min="0" max="0"/>
+		<F type="ACCOUNT NAME and PARTY NAME" pos="0" min="0" max="0"/>
+		<F type="SUBJECT MATTER" pos="0" min="0" max="0"/>
+	</P>
+	<P type="WILFUL DEFAULT DECLARATION_TrailingPage">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<F type="Frequency_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="RecogType">4</V>
+		<F type="Frequency_OMR1_OMR1" pos="0" min="0" max="0"/>
+	</F>
+	<F type="Signature_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Frequency_OMR1_OMR1">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Field11">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Document_Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NO">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="GUARANTOR NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER  ADDRESS">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="GUARANTOR ADDRESS">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DATE OF NPA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="PictureString">dd/MM/yyyy</V>
+		<V n="DatePattern">dd/MM/yyyy</V>
+		<V n="DataType">3</V>
+	</F>
+	<F type="SECURITIES TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:SECURITIES TYPE_SN</V>
+	</F>
+	<F type="SECURITIES DETAILS">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCUMENT TYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_NIACT</V>
+	</F>
+	<F type="ACCOUNT NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="SUBJECT MATTER">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ENFORCEMENT AGENCY NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="PARTY NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ACCOUNT NAME and PARTY NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="BORROWER NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMER ID">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="BALANCE OUTSTANDING">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="BRANCH CODE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="BRANCH NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="CUSTOMERNAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCTYPE">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:DOCUMENT TYPE_SN</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCTYPEHC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:DOCUMENT TYPE_SAWP_HC</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCTYPERECALL">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_SAWP_RN</V>
+	</F>
+	<F type="DOCTYPE_DRT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_DRT_CR</V>
+	</F>
+	<F type="DOCTYPE_NCLT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_NCLT</V>
+	</F>
+	<F type="DOCTYPE_POLICY">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_PD</V>
+	</F>
+	<F type="DOCTYPE_LC">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_LD</V>
+	</F>
+	<F type="DOCTYPE_OTS">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="DICT">P:DOCUMENT TYPE_OTS</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCTYPE_SA">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:DOCUMENT TYPE_SA</V>
+	</F>
+	<F type="GUARANTOR_NAME">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="DOCTYPE_DEFAULT">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">P:P:DOCUMENT TYPE_DDW</V>
+	</F>
+	<DICT n="P:DOCUMENT TYPE_SN">
+		<W v="Copy of All the sanction letters">Copy of All the sanction letters</W>
+		<W v="Copy of Demand Notice U/s 13(2)">Copy of Demand Notice U/s 13(2)</W>
+		<W v="Copy of Proof of Delivery / Newpaper Publication (if undelivered)">Copy of Proof of Delivery / Newpaper Publication (if undelivered)</W>
+		<W v="Copy of Representation from Borrower u/s 13(3A)">Copy of Representation from Borrower u/s 13(3A)</W>
+		<W v="Copy of Symbolic Possession Notice U/s 13 (4)">Copy of Symbolic Possession Notice U/s 13 (4)</W>
+		<W v="Copy of Publication of Symbolic Possession 8.Notice Under Rule 8(2)">Copy of Publication of Symbolic Possession 8.Notice Under Rule 8(2)</W>
+		<W v="Copy of CMM/CJM/DM Order">Copy of CMM/CJM/DM Order</W>
+		<W v="Copy of Physical Possession Notice U/s 13 (4)">Copy of Physical Possession Notice U/s 13 (4)</W>
+		<W v="Copy of Publication of Physical Possession Notice Under Rule 8(2)">Copy of Publication of Physical Possession Notice Under Rule 8(2)</W>
+		<W v="Copy of latest Valuation reports of Secured assets">Copy of latest Valuation reports of Secured assets</W>
+		<W v="Copy of MRP Fixation Note">Copy of MRP Fixation Note</W>
+		<W v="Copy of MRP sanction letter">Copy of MRP sanction letter</W>
+		<W v="Copy of E-auction Sale Notice">Copy of E-auction Sale Notice</W>
+		<W v="Copy of Sale Certificate">Copy of Sale Certificate</W>
+	</DICT>
+	<DICT n="P:SECURITIES TYPE_SN">
+		<W v="Movable">Movable</W>
+		<W v="Immovable">Immovable</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_SAWP_HC">
+		<W v="Copy of Stay Order">Copy of Stay Order</W>
+		<W v="Copy of Disposal of Stay Order">Copy of Disposal of Stay Order</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_SAWP_RN">
+		<W v="Copy of Recall Notice (if any)">Copy of Recall Notice (if any)</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_DRT_CR">
+		<W v="Copy of Legal Notice sent to borrower/guarantor">Copy of Legal Notice sent to borrower/guarantor</W>
+		<W v="Copy of Plaints of OA/Civil Suit">Copy of Plaints of OA/Civil Suit</W>
+		<W v="Copy of all Annexures of Plaint including copy of sanction letter and secured asset details">Copy of all Annexures of Plaint including copy of sanction letter and secured asset details</W>
+		<W v="Copy of Written Statement by borrower/guarantor">Copy of Written Statement by borrower/guarantor</W>
+		<W v="Copy of Rejoinder by Bank Copy of Counter Claim by borrower/guarantor (if any)">Copy of Rejoinder by Bank Copy of Counter Claim by borrower/guarantor (if any)</W>
+		<W v="Copy of Counter Claim by borrower/guarantor (if any)">Copy of Counter Claim by borrower/guarantor (if any)</W>
+		<W v="Copy of Reply by Bank to Counter Claim of the Borrower/guarantor (if any)">Copy of Reply by Bank to Counter Claim of the Borrower/guarantor (if any)</W>
+		<W v="Copy of Evidence in Affidavit filed by Bank">Copy of Evidence in Affidavit filed by Bank</W>
+		<W v="Copy of RC issued by DRT/Decce of Civil Court">Copy of RC issued by DRT/Decce of Civil Court</W>
+		<W v="Copy of detail of property of the borrower/guarantor  submitted before RO/ Execution Court">Copy of detail of property of the borrower/guarantor  submitted before RO/ Execution Court</W>
+		<W v="Copy of Attachment Order">Copy of Attachment Order</W>
+		<W v="Copy of Sale Notice by DRT">Copy of Sale Notice by DRT</W>
+		<W v="Copy of Sale Certificate issued by DRT">Copy of Sale Certificate issued by DRT</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_NCLT">
+		<W v="Copy of application of filing CIRP against CD (Form 1)">Copy of application of filing CIRP against CD (Form 1)</W>
+		<W v="Copy of Admission Order passed by NCLT Form A (Public Notice)">Copy of Admission Order passed by NCLT Form A (Public Notice)</W>
+		<W v="Copy of Form C (Claim form) submitted by bank">Copy of Form C (Claim form) submitted by bank</W>
+		<W v="Minutes of CoC meetings">Minutes of CoC meetings</W>
+		<W v="Information Memorandum">Information Memorandum</W>
+		<W v="Form G (Expression of Interest)">Form G (Expression of Interest)</W>
+		<W v="Resolution Plan (if submitted)">Resolution Plan (if submitted)</W>
+		<W v="Form B ( Public announcement of liquidation)">Form B ( Public announcement of liquidation)</W>
+		<W v="Form D (Claim submitted for liquidation)">Form D (Claim submitted for liquidation)</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_PD">
+		<W v="Copy of MD CEO Note">Copy of MD CEO Note</W>
+		<W v="Copy of Board Note">Copy of Board Note</W>
+		<W v="Copy of ED">Copy of ED</W>
+		<W v="GM Note">GM Note</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_LD">
+		<W v="Copy of Yearly Review of Advocate">Copy of Yearly Review of Advocate</W>
+		<W v="Copy of Yearly Review of Enforcement Agency">Copy of Yearly Review of Enforcement Agency</W>
+		<W v="Copy of Office Note for Circulars/ Advisory">Copy of Office Note for Circulars/ Advisory</W>
+		<W v="Copy of Quarterly Review Of Supreme Court">Copy of Quarterly Review Of Supreme Court</W>
+		<W v="Cases and Consumer Cases">Cases and Consumer Cases</W>
+		<W v="Copy of Quarterly Review of Vetting/Legal Opinion">Copy of Quarterly Review of Vetting/Legal Opinion</W>
+		<W v="Copy of Yearly Review of Claim Against Bank">Copy of Yearly Review of Claim Against Bank</W>
+		<W v="Board Review">Board Review</W>
+		<W v="Office Note of Advocate appointment in">Office Note of Advocate appointment in</W>
+		<W v="Supreme Court and NCDRC">Supreme Court and NCDRC</W>
+		<W v="Copy of SA/WP quarterly review Note">Copy of SA/WP quarterly review Note</W>
+		<W v="Copy of yearly review Note of Detective Agency">Copy of yearly review Note of Detective Agency</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_DDW">
+		<W v="Office Note of Wilful Defaulter Declaration for ED committee">Office Note of Wilful Defaulter Declaration for ED committee</W>
+		<W v="Office Note of Wilful Defaulter Declaration for Review committee">Office Note of Wilful Defaulter Declaration for Review committee</W>
+		<W v="Copies of all the supporting documents">Copies of all the supporting documents</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_OTS">
+		<W v="Copy of OTS sanction Note of Branch, Zone and Head Office">Copy of OTS sanction Note of Branch, Zone and Head Office</W>
+		<W v="Other related documents">Other related documents</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_SA">
+		<W v="Copy of Office Note of Suit filed permission">Copy of Office Note of Suit filed permission</W>
+		<W v="Copy of authorization letter">Copy of authorization letter</W>
+	</DICT>
+	<DICT n="P:DOCUMENT TYPE_NIACT">
+		<W v="Copy of Notice u/s  138 of NI Act served upon borrower">Copy of Notice u/s  138 of NI Act served upon borrower</W>
+		<W v="Copy of Reply by borrower (if any)">Copy of Reply by borrower (if any)</W>
+		<W v="Copy of Petition filed before Court">Copy of Petition filed before Court</W>
+		<W v="Copy of Order passed by Court">Copy of Order passed by Court</W>
+	</DICT>
+</S>

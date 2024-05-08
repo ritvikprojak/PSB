@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="115" name="FIXUP Add custom column" ver="1" modder="dmstest10.1" qi="">
+	<rule name="AddCustomColumn Rule1" id="1" dcomap.open="B" qi="">
+		<func name="Function1" qi="">
+			<a ns="net:PSBCustomLibrary.SampleAction" name="AddCustomColumn">
+				<p name="ColumnName" type="string" qi="Enter Column name." v="pb_FileName"/>
+				<p name="ColumnValue" type="string" qi="Provide Column value." v="@B.FNAME"/>
+			</a>
+			<a ns="net:PSBCustomLibrary.SampleAction" name="AddCustomColumn">
+				<p name="ColumnName" type="string" qi="Enter Column name." v="pb_DeptName"/>
+				<p name="ColumnValue" type="string" qi="Provide Column value." v="@B.DeptCode"/>
+			</a>
+			<a ns="net:PSBCustomLibrary.SampleAction" name="AddCustomColumn">
+				<p name="ColumnName" type="string" qi="Enter Column name." v="pb_DeptCode"/>
+				<p name="ColumnValue" type="string" qi="Provide Column value." v="@B.DeptName"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

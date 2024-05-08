@@ -1,0 +1,30 @@
+{
+	
+	// fields (includes batch-level fields)
+	"field.DOCUMENT TYPE_MRP FIXATION":"DOCUMENT TYPE",
+	"field.DOCUMENT TYPE_SUITFILE PERMISSION":"DOCUMENT TYPE",
+	"field.DOCUMENT TYPE_EMPANELMENT AND RENEWAL OF ADVOCATES":"DOCUMENT TYPE",
+	"field.DOCUMENT TYPE_EMPANELMENT AND REVIEW OF ENFORCEMENT AGENT":"DOCUMENT TYPE",
+	"field.DOCUMENT TYPE_BILL PAYMENT OF ADVOCATES":"DOCUMENT TYPE",
+	"field.DOCUMENT TYPE_BILL PAYMENT OF ENFORCEMENT AGENT":"DOCUMENT TYPE",
+	"field.DOCUMENT TYPE_BILL PAYMENT OF PUBLICATION BILL":"DOCUMENT TYPE",
+	"field.DOCUMENT TYPE_APPOINTMENT OF AUTHORIZED OFFICER":"DOCUMENT TYPE",
+	
+	
+	// shortcuts
+	"shortcut.NAVVScan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyZLR":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVScan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyZLR":"Classify Document",
+	"task.NAVMaker":"Document Details",								
+	"task.NAVChecker":"Checker",
+	"task.NAVExport":"Export"
+}

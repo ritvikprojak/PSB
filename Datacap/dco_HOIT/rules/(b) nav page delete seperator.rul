@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="93" name="(B) NAV Page Delete Seperator" ver="22" modder="dmstest10.1" qi="" dt="09/20/23 17:35:33.207 ">
+	<rule name="NAV Page Delete Rule" id="1" dcomap.open="B" qi="">
+		<func name="Function1">
+			<a name="CreateDocuments" ns="com:Datacap.Libraries.ApplicationObjects.Actions" qi="" disabled="y"/>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="">
+				<p name="Type" v="Document_Separator"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ApplicationObjects.Actions" name="DeleteDCOChildOfType" qi="" disabled="y">
+				<p name="Type" v="Blank"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

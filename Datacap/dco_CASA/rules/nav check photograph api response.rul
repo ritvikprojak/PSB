@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="110" name="NAV Check Photograph API Response" ver="4" modder="dmstest10.1" qi="" dt="11/01/23 18:49:37.212 ">
+	<rule name="NAV Check ACK API Response Rule1" id="1" dcomap.open="D=Photograph" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.PHOTOAPIResponse"/>
+				<p name="Text2" type="string" v="API Failure"/>
+			</a>
+			<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="Function2" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.PHOTOAPIResponse"/>
+				<p name="Text2" type="string" v="@EMPTY"/>
+			</a>
+			<a name="rr_AbortBatch" ns="rrunner.dll" qi="">
+				<p type="bInter" name="bInter"/>
+				<p type="bDebug" name="bDebug"/>
+			</a>
+		</func>
+		<func name="Function3">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.PHOTOAPIResponse"/>
+				<p name="Text2" type="string" v="API Response Success"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

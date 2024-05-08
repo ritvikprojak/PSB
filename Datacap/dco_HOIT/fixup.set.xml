@@ -1,0 +1,73 @@
+<?xml-stylesheet type="text/xsl" href="..\..\ProgramSet\set.xsl"?><S>
+  <P n="ScannerSettings" tip="Basic scanner settings for the task" title="Scanner Setup">
+		<V label="Enable Autofeeder" n="Autofeed" tip="Controls scanner source - manual vs. autofeeder option" type="checkbox">1</V>
+		<V label="Use Duplex Mode" n="Duplex" tip="When enabled - scans both sides of the image - duplex mode" type="checkbox">0</V>
+		<V label="Pixel Type" n="PixelType" tip="Specify pixel type for scanning (0-BnW, 1-Grayscale, 2-RGB)" type="text">0</V>
+		<V label="Image Resolution DPI" n="Resolution" tip="Specify image resolution (X and Y resolution assumed the same) DPI" type="text">300</V>
+		<V label="Paper Size" n="PaperSize" tip="Specify pager size" type="text">0</V>
+	</P>
+	<P n="BatchProcessing" tip="General Batch Processing Settings" title="Batch Processing">
+		<V label="Output DCO File" n="TaskDCOFile" tip="Specifies name for the output dco file for the task" type="text">taskname.xml</V>
+		<V label="Allow Hold" n="Hold" tip="Allows placing batches on hold to continue later" type="checkbox">1</V>
+		<V label="Allow Rescan" n="Rescan" tip="Allows replacing pages with rescan status" type="checkbox">1</V>
+		<P n="Navigation" tip="Settings that determine batch navigation" title="Navigation">
+			<V label="Done Page Status(es)" n="DPS" tip="Cooma-separated list of Done statuses, used to determine next problem page, and when to release a batch" type="text">0,2</V>
+			<V label="Ignored Page Status(es)" n="IPS" tip="Comma-separated list of Ignored statuses, used to skip Attachment pages from processing" type="text">128,75,72,74,49</V>
+			<V label="Validation Statuses" n="DOF" tip="Comma-separated list of Done,Override,Fail statuses assigned after validation, according to results" type="text">0,2,1</V>
+		</P>
+		<P n="DocumentStartup" tip="Settings that determine document startup" title="Document Startup">
+			<V label="Load all Datafiles" n="LoadDoc" tip="In case of cross-page validations, instucts to load all data files when entering new document" type="text">0</V>
+		</P>
+	</P>
+	<P n="PageProcessing" tip="Page Processing Settings" title="Page Processing">
+		<V label="Show Field Bounds" n="ShowFields" tip="Always display all field bounds (rectangles) on the main image" type="checkbox">0</V>
+		<P n="PageNavDisplay" tip="Settings that determine page navigation, field display" title="Navigation/Display">
+			<V label="Done Field Status(es)" n="DFS" tip="Cooma-separated list of Done field statuses, used to determine next field in Alt+L (next problem) order, or when Problems Only checkbox is ON - to hide such fields" type="text">0</V>
+			<V label="Ignored Field Status(es)" n="IFS" tip="Comma-separated list of statuses of fields such as anchors or other fields that should never show up for indexing/verify" type="text">-1</V>
+			<V label="Read-Only Field Status(es)" n="RFS" tip="Makes field read-only when it has specified status" type="text">-2</V>
+		</P>
+		<P n="BackColors" tip="Background field colors, as web literal colors (blue, magenta, etc.)" title="Background Field Colors">
+			<V label="Low Conf Fields" n="LC" tip="Background to distinguish fields recognized with low confidence" type="text">yellow</V>
+			<V label="Invalid Fields" n="PC" tip="Background to distinguish fields that failed validation" type="text">lightpink</V>
+			<V label="Normal Fields" n="DC" tip="Background for norml fields" type="text">white</V>
+		</P>
+	</P>
+	<P n="AltTexts" tip="Alternative field texts and double-blind data entry features" title="Alternative/Blind Texts">
+		<V label="DCO Field AltText Index" n="AltText" tip="What is the working field alt text index" type="text">0</V>
+		<V label="Blind Confirm Index" n="AltCompare" tip="Turns on auto double-blind algorythm - required to match another alt value (specified index) or retype same value twice" type="text">-1</V>
+	</P>
+	<P n="Rulerunner" tip="Settings that enable RRS rules execution" title="Rulerunner Service">
+		<V label="Main Task Profile(s)" n="TProfile" tip="Main task profile to run on Submit" type="text">Verify</V>
+		<V label="Alternative Task Profile(s)" n="AltTProfile" tip="Alternative task profile setting creates extra buttons for special data handling cases" type="text">RecreateDocStructure</V>
+		<V label="Preparation Task Profile" n="PreTProfile" tip="Task profile to prepare date before display" type="text"/>
+	</P>
+	<P n="StaticWebSet" tip="Settings for static task panels" title="Custom Web Panels">
+		<V label="Enable Custom Panels" n="Static" tip="Setting to use pre-made custom data entry panels" type="checkbox">0</V>
+		<G n="Web-Panels" tip="Key-Value pairs to associate DCO Type to Panel class" title="Bind Panel to DCO Type">
+<V label="" n="webPage_TYPE" tip="Association of DCO Type to Panel class name" type="text">Panel.ascx</V>
+</G>
+	</P>
+	<P n="TreeWebSet" tip="Settings for BatchView in web tasks" title="DCO Tree View">
+		<V label="Read Only View" n="TreeReadOnly" tip="Setting to allow modification to batch structure" type="checkbox">0</V>
+		<P n="OperationEnabled" tip="Setting to allow operation to batch structure." title="Actions">
+			<V label="Split Document" n="split" tip="Split documents in batch structure" type="checkbox">1</V>	
+			<V label="Join Document" n="join" tip="Join documents in batch structure" type="checkbox">1</V>	
+			<V label="Copy Page" n="copy" tip="Copy page in batch structure" type="checkbox">1</V>	
+			<V label="Mark for Deleted Status" n="markForDeleted" tip="Mark page or document for deleted status in batch structure" type="checkbox">1</V>	
+			<V label="Remove Page" n="removePage" tip="Remove pages in batch structure" type="checkbox">1</V>
+			<V label="Move" n="move" tip="Move up or down pages or documents in batch structure" type="checkbox">1</V>
+			<V label="Disassemble Documents" n="disassembleDocs" tip="Disassemble all documents in batch structure" type="checkbox">1</V>
+			<V label="Check Integrity" n="checkIntegrity" tip="Run rule to check integrity" type="checkbox">1</V>
+			<V label="Undo" n="undo" tip="Undo the batch structure actions" type="checkbox">1</V>
+			<V label="Drag and Drop" n="dragAndDrop" tip="Drag and Drop pages or documents in batch structure" type="checkbox">1</V>
+		</P>
+		<V label="Highlighted Types" n="HiTypes" tip="Comma-separated list of page types to highlight for better visual separation" type="text">Other</V>
+		<G n="TreeVars" tip="Key-Value pairs to determine what to show in DCO View" title="Display Variables">
+<V client="ICN" label="Props for var" n="TYPE" tip="Comma-separated  readOnly,VarMapping(options: [{name:'xxx', value:'xxx'},...])" type="text">1</V>
+<V client="ICN" label="Props for var" n="STATUS" tip="Comma-separated  readOnly,VarMapping(options: [{name:'xxx', value:'xxx'},...])" type="text">0</V>
+</G>
+	</P>
+	<P n="NCLayout" tip="Defines run-time layout." title="Navigator Layout">
+		<V label="Layout" n="Layout" tip="Defines the run-time layout" type="text"/>
+	</P>
+</S>

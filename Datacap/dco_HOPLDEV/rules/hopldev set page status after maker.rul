@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="50" name="HOPLDEV Set Page Status after maker" ver="10" modder="admin.1" dt="05/23/23 11:46:16.520 " qi="">
+	<rule name="Set page status rule" id="2" dcomap.open="P=ADDENDUM;P=ANNEXURES;P=OFFICE NOTES;P=RFP DOCUMENTS;P=RTI;P=SUPPORTING DOCUMENTS;P=OPENING/CLOSING/MERGING" qi="">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@P.STATUS"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="ReFormat Date" id="1" qi="" dcomap.open="F=DATE;F=DATE_1;F=DATE_4;F=DATE_5;F=RTI DATE;F=ADDENDUM DATED;F=BRANCH OPEN DATE;F=NOTE DATE;F=REPLY DATE;F=DATE_2">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="en-IN"/>
+				<p name="Target" type="string" v="@F.hr_locale"/>
+			</a>
+			<a ns="com:Datacap.Libraries.ValidationsAndTextAdjustments.Actions" name="IsFieldDateWithReformat">
+				<p name="NewDateFormat" type="string" v="yyyy/mm/dd"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

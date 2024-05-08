@@ -1,0 +1,18 @@
+{
+		// shortcuts 
+	"shortcut.NAVVscan":"Scan",
+	"shortcut.NAVPageID":"Processing",
+	"shortcut.NAVClassifyPL":"Classify Document",
+	"shortcut.NAVMaker":"Document Details",
+	"shortcut.NAVChecker":"Checker",
+	"shortcut.NAVExport":"Export",
+		
+	
+	// tasks
+	"task.NAVVscan":"Scan",
+	"task.NAVPageID":"Processing",
+	"task.NAVClassifyPL":"Classify Document",
+	"task.NAVMaker":"Document Details",								
+	"task.NAVChecker":"Checker",
+	"task.NAVExport":"Export"
+}

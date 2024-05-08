@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="72" name="NAV Recognize page" ver="1" modder="admin.1" qi="">
+	<rule name="Recognize page" id="1">
+		<func name="Function1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="English"/>
+				<p name="Target" type="string" v="@X.y_lg"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@X.y_EnableAggressiveTextExtraction"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@X.y_EnableExhaustiveAnalysisMode"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@X.y_DetectFontFormatting"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="1"/>
+				<p name="Target" type="string" v="@X.y_DetectFontFormattingAtPageLevel"/>
+			</a>
+			<a name="Recognize" ns="net:RecognitionOCRA.OCRAActions"/>
+		</func>
+	</rule>
+</ruleset>

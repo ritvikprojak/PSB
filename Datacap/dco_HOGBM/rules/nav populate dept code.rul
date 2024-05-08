@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="96" name="NAV Populate DEPT Code" ver="3" modder="dmstest10.1" qi="" dt="10/30/23 08:24:55.73 ">
+	<rule name="NAV POPULATE DEPT CODE" id="1" qi="">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@B.DeptName"/>
+				<p name="Target" type="string" v="@F"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>

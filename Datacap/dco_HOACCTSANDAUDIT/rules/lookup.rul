@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="48" name="Lookup" ver="1" modder="admin.1" qi="">
+  <rule name="Vendor Lookup Rule" id="1" dcomap.open="F=TENDER NO" qi="">
+    <func name="get Vendor Function">
+      <a ns="Lookup" name="ExecuteSQL">
+        <p type="bInter" />
+        <p type="bDebug" />
+        <p type="strParam" v="&quot;SELECT Host.hs_RefName FROM Host INNER JOIN Template ON Host.hs_HostID = Template.tp_HostID WHERE (((Template.tp_TemplateID) LIKE '%s'));&quot;,RFP DETAILS.TemplateID" />
+      </a>
+    </func>
+  </rule>
+</ruleset>

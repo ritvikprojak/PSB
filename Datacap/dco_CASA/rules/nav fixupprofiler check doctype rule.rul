@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ruleset id="114" name="NAV FixUpProfiler Check doctype rule" ver="17" modder="dmstest10.1" qi="" dt="11/14/23 18:52:21.289 ">
+	<rule name="NAV reset batchvar" id="3" qi="" dcomap.open="B">
+		<func name="Function1">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="N"/>
+				<p name="Text2" type="string" v="@B.DOC_FLG"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="NO"/>
+				<p name="Target" type="string" v="@B.FormDocPresent"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="NO"/>
+				<p name="Target" type="string" v="@B.C1KYCDoc1Present"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="NO"/>
+				<p name="Target" type="string" v="@B.C1KYCDoc2Present"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="NO"/>
+				<p name="Target" type="string" v="@B.C2KYCDoc1Present"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="NO"/>
+				<p name="Target" type="string" v="@B.C2KYCDoc2Present"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@B.C1KYCDoc"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@B.C2KYCDoc"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@EMPTY"/>
+				<p name="Target" type="string" v="@B.C2"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@EMPTY"/>
+				<p name="Target" type="string" v="@B.C1"/>
+			</a>
+		</func>
+		<func name="Function2-skip mandatory check" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="Y"/>
+				<p name="Text2" type="string" v="@B.DOC_FLG"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.FormDocPresent"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.C1KYCDoc1Present"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.C1KYCDoc2Present"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.C2KYCDoc1Present"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.C2KYCDoc2Present"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@B.C1KYCDoc"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="0"/>
+				<p name="Target" type="string" v="@B.C2KYCDoc"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@EMPTY"/>
+				<p name="Target" type="string" v="@B.C1"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@EMPTY"/>
+				<p name="Target" type="string" v="@B.C2"/>
+			</a>
+		</func>
+	</rule>
+	<rule name="NAV set batchvar" id="1" qi="" dcomap.open="P=SAVING ACCOUNT OPENING FORM;P=Page;P=SAVING KYC DOCUMENT">
+		<func name="SA" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+				<p name="SearchForValue" type="string" v="SAVING ACCOUNT OPENING FORM"/>
+				<p name="SearchInValue" type="string" v="@P\Document_Type"/>
+				<p name="CaseSensitive" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="@P\CUSTOMER_TYPE"/>
+				<p name="Target" type="string" v="@B.CUSTOMER_TYPE"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.FormDocPresent"/>
+			</a>
+		</func>
+		<func name="CA" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+				<p name="SearchForValue" type="string" v="CURRENT ACCOUNT OPENING FORM"/>
+				<p name="SearchInValue" type="string" v="@F"/>
+				<p name="CaseSensitive" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.FormDocPresent"/>
+			</a>
+			<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" qi=""/>
+		</func>
+		<func name="FD" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+				<p name="SearchForValue" type="string" v="FD ACCOUNT OPENING FORM"/>
+				<p name="SearchInValue" type="string" v="@F"/>
+				<p name="CaseSensitive" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.FormDocPresent"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.KYCDocPresent"/>
+			</a>
+			<a name="GoToNextFunction" ns="com:Datacap.Libraries.RuleRunnerLogic.Actions"/>
+		</func>
+		<func name="C1 -SAKYC 1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains" qi="">
+				<p name="SearchForValue" type="string" v="SAVING KYC DOCUMENT"/>
+				<p name="SearchInValue" type="string" v="@P\Document_Type"/>
+				<p name="CaseSensitive" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="0"/>
+				<p name="Text2" type="string" v="@B.C1KYCDoc"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.C1"/>
+				<p name="Text2" type="string" v="@EMPTY"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@P\CIF"/>
+				<p name="Target" type="string" v="@B.C1"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.C1KYCDoc1Present"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="IncrementVariable">
+				<p name="Target" type="string" v="@B.C1KYCDoc"/>
+				<p name="Amount" type="string" v="1"/>
+			</a>
+		</func>
+		<func name="C1-SAKYC 2" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains" qi="">
+				<p name="SearchForValue" type="string" v="SAVING KYC DOCUMENT"/>
+				<p name="SearchInValue" type="string" v="@P\Document_Type"/>
+				<p name="CaseSensitive" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.C1KYCDoc"/>
+				<p name="Text2" type="string" v="1"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@P\CIF"/>
+				<p name="Text2" type="string" v="@B.C1"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.C1KYCDoc2Present"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="IncrementVariable" qi="">
+				<p name="Target" type="string" v="@B.C1KYCDoc"/>
+				<p name="Amount" type="string" v="1"/>
+			</a>
+		</func>
+		<func name="C2 -SAKYC 1" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains" qi="">
+				<p name="SearchForValue" type="string" v="SAVING KYC DOCUMENT"/>
+				<p name="SearchInValue" type="string" v="@P\Document_Type"/>
+				<p name="CaseSensitive" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompareNot">
+				<p name="Text1" type="string" v="@P\CIF"/>
+				<p name="Text2" type="string" v="@B.C1"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="0"/>
+				<p name="Text2" type="string" v="@B.C2KYCDoc"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare">
+				<p name="Text1" type="string" v="@B.C2"/>
+				<p name="Text2" type="string" v="@EMPTY"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.C2KYCDoc1Present"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="@P\CIF"/>
+				<p name="Target" type="string" v="@B.C2"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="IncrementVariable">
+				<p name="Target" type="string" v="@B.C2KYCDoc"/>
+				<p name="Amount" type="string" v="1"/>
+			</a>
+		</func>
+		<func name="C2-SAKYC 2" qi="">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains" qi="">
+				<p name="SearchForValue" type="string" v="SAVING KYC DOCUMENT"/>
+				<p name="SearchInValue" type="string" v="@P\Document_Type"/>
+				<p name="CaseSensitive" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@B.C2KYCDoc"/>
+				<p name="Text2" type="string" v="1"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompare" qi="">
+				<p name="Text1" type="string" v="@P\CIF"/>
+				<p name="Text2" type="string" v="@B.C2"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.C2KYCDoc2Present"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="IncrementVariable">
+				<p name="Target" type="string" v="@B.C2KYCDoc"/>
+				<p name="Amount" type="string" v="1"/>
+			</a>
+		</func>
+		<func name="CAKYC" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrContains">
+				<p name="SearchForValue" type="string" v="CURRENT KYC_DOCUMENT"/>
+				<p name="SearchInValue" type="string" v="@F"/>
+				<p name="CaseSensitive" type="string" v=""/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.KYCDocPresent"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet" qi="">
+				<p name="Source" type="string" v="set"/>
+				<p name="Target" type="string" v="@B.MandatoryDocType2"/>
+			</a>
+		</func>
+		<func name="Others" qi="" disabled="y">
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrCompareNot" qi="">
+				<p name="Text1" type="string" v="SAVING"/>
+				<p name="Text2" type="string" v="@B.BATCHTYPE"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.C1KYCDoc2Present"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.C2KYCDoc1Present"/>
+			</a>
+			<a ns="com:Datacap.Libraries.RuleRunnerLogic.Actions" name="rrSet">
+				<p name="Source" type="string" v="YES"/>
+				<p name="Target" type="string" v="@B.C3FormDocPresent"/>
+			</a>
+		</func>
+	</rule>
+</ruleset>
