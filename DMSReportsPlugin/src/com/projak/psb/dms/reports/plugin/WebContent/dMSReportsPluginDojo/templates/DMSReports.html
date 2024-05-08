@@ -1,0 +1,75 @@
+<div  class="claro">
+
+<div class="reportsNavbar">
+    <h1>Welcome to DMS Customized Reports Panel</h1>
+  </div>
+  
+  <div class="centerContainer">
+	<div data-dojo-attach-point="objStorediv" id="objStorediv">		
+	   <table >
+	   <tr>
+			<td><b><label data-dojo-attach-point="objStorelabel"></label></b></td>
+			</tr>
+			<tr>
+			<td><div data-dojo-attach-point="objStoreCombo"></div>
+			</td>
+	   </tr>
+       </table>
+</div>
+<div>
+	<table>
+	<tr>
+	<td><b><label data-dojo-attach-point="reports"></label></b></td>
+	</tr>
+	<tr>
+	<td><div data-dojo-attach-point="reportsComboBox" style="width: 20em !important" ></div></td></tr>
+	</table> 
+		
+</div>
+				
+<div data-dojo-attach-point="tableDates" id="tableDates">
+		<table >
+		<tr>
+			<td><b><label data-dojo-attach-point="sdate"></label></b></td>
+			</tr>
+			<tr>
+			<td><input data-dojo-attach-point="reportFromDate" data-dojo-type="ecm/widget/DatePicker" value="now" data-dojo-attach-event='onChange: fromDateValidation' data-dojo-props="constraints:{max: new Date()}" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td><b><label data-dojo-attach-point="edate" ></label></b></td>
+			</tr>
+			<tr>
+			<td><input data-dojo-attach-point="reportToDate" data-dojo-type="ecm/widget/DatePicker"  value="now" data-dojo-attach-event='onChange: toDateValidation' data-dojo-props="constraints:{max: new Date()}"/>
+			</td>
+		</tr>
+        </table>
+</div>
+
+<div data-dojo-attach-point="documentdiv" id="documentdiv">
+		
+	   <table >
+	   <tr>
+			<td><b><label data-dojo-attach-point="doclabel"></label></b></td>
+			<td><div data-dojo-attach-point="documentCombo"></div>
+			</td>
+	   </tr>
+       </table>
+</div>
+
+<br>
+		
+		<div data-dojo-attach-point="buttondiv" id="buttondiv">
+		<table>
+		    <tr>
+			<td style="background:#fff;"></td>
+		
+		    <td style="background:#fff;"><button data-dojo-type="dijit/form/Button" 
+				data-dojo-attach-event="onClick:ReportsGeneration">Generate Report</button>
+			</td>
+	      </tr>				
+	  </table>
+	</div>
+	</div>
+	</div>

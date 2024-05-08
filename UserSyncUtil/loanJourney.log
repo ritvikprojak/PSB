@@ -1,0 +1,112 @@
+2023-08-22 21:29:48 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-22 21:29:49 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-22 21:29:49 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-22 21:29:49 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2023-08-22 21:30:44 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-22 21:30:44 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-22 21:30:44 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-22 21:30:44 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2023-08-23 11:45:07 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-23 11:45:07 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-23 11:45:07 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-23 11:45:07 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2023-08-23 12:15:01 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-23 12:15:01 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-23 12:15:01 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-23 12:15:01 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2023-08-23 12:19:05 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-23 12:19:05 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-23 12:19:05 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-23 12:19:05 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2023-08-23 16:35:30 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-23 16:35:30 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-23 16:35:30 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-23 16:35:30 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2023-08-23 16:36:55 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-23 16:36:55 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-23 16:36:55 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-23 16:36:55 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2023-08-23 16:38:00 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-23 16:38:00 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-23 16:38:01 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-23 16:38:01 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2023-08-23 18:23:06 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-23 18:23:06 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-23 18:23:06 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-23 18:23:06 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2023-08-23 18:33:00 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-23 18:33:00 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-23 18:33:00 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-23 18:33:00 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2023-08-23 18:36:39 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-23 18:36:39 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-23 18:36:39 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-23 18:36:39 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2023-08-24 09:16:00 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-24 09:16:00 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-24 09:16:00 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-24 09:16:00 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2023-08-24 09:26:19 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-24 09:26:19 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-24 09:26:19 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-24 09:26:19 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2023-08-24 09:47:29 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-24 09:47:29 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-24 09:47:30 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-24 09:47:30 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2023-08-24 10:14:24 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-24 10:14:24 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-24 10:14:24 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-24 10:14:24 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2023-08-24 10:19:57 INFO  ConfigValueLookup:88 - Configuration property file search order:
+    user.dir = C:\Users\Hp\Documents\Projak\PSB\Dev_Workspace\Sprint-2\UserSyncUtil
+    user.home = C:\Users\Hp
+    java.home = C:\Program Files\Java\jre1.8.0_202
+2023-08-24 10:19:57 INFO  ConfigValueLookup:88 - Loading configuration resource: FileNetBuild.properties
+2023-08-24 10:19:57 INFO  AuthnUtil:25 - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2023-08-24 10:19:57 WARN  J2EEUtil:506 - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
